@@ -55,6 +55,12 @@
       "description": "Type of Inspection.",
       "type": "string"
     },
+    "notes": {
+      "$comment": "{\"term\": \"notes\", \"@id\": \"https://schema.org/Comment\"}",
+      "title": "Inspection Notes",
+      "description": "Any notes or comments the inspector wishes to make relevant to the inspection.",
+      "type": "string"
+    },
     "observation": {
       "$comment": "{\"term\": \"observation\", \"@id\": \"https://schema.org/ItemList\", \"@type\": \"https://schema.org/ItemList\"}",
       "title": "Observation List",

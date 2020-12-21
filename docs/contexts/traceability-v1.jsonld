@@ -31,6 +31,9 @@
         "inspectionType": {
           "@id": "https://www.schema.org/value"
         },
+        "notes": {
+          "@id": "https://schema.org/Comment"
+        },
         "observation": {
           "@id": "https://schema.org/ItemList"
         }

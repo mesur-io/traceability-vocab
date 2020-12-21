@@ -76,7 +76,8 @@ const getAgInspectionReport = () => {
         applicant,
         inspectionDate: inspectDate.getMonth() + "-" + inspectDate.getDay() + "-" + inspectDate.getFullYear(),
         inspectionType,
-        observation,
+        notes: faker.lorem.sentence(),
+        observation
     };
     return example;
 };
