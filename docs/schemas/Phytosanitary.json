@@ -1,0 +1,97 @@
+{
+    "$id": "https://w3id.org/traceability/schemas/Phytosanitary.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$comment": "{\"term\": \"Phytosanitary\", \"@id\": \"https://w3id.org/traceability/Phytosanitary\"}",
+    "title": "Phytosanitary",
+    "description": "Generalized schema capture of most common phytosanitary inspection data and properties.  Any phyto forms that deviate greatly from this will need their own schemas unless it seems like the properties are more universal and should be added to this schema.",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "type": "array"
+        },
+        "type": {
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "certificateNumber": {
+            "$comment": "{\"term\": \"certificateNumber\", \"@id\": \"https://schema.org/identifier\", \"@type\": \"https://schema.org/identifier\"}",
+            "title": "Certificate Number",
+            "description": "ID number of the certificate",
+            "type": "string"
+        },
+        "distinguishingMarks": {
+            "$comment": "{\"term\": \"distinguishingMarks\", \"@id\": \"https://www.gs1.org/voc/variantDescription\", \"@type\": \"https://www.gs1.org/voc/variantDescription\"}",
+            "title": "Distinguishing Marks",
+            "description": "Any notable marks or variants of the items being inspected.",
+            "type": "string"
+        },
+        "botanicalName": {
+            "$comment": "{\"term\": \"botanicalName\", \"@id\": \"https://schema.org/DefinedTerm\", \"@type\": \"https://schema.org/DefinedTerm\"}",
+            "title": "Botanical Name",
+            "description": "The botanical name of the plants relevant to this inspection.",
+            "type": "string"
+        },
+        "additionalDeclaration": {
+            "$comment": "{\"term\": \"additionalDeclaration\", \"@id\": \"https://schema.org/Comment\"}",
+            "title": "Additional Declaration",
+            "description": "Addition declaration for the plants being shipped and inspected.",
+            "type": "string"
+        },
+        "disinfectionDate": {
+            "$comment": "{\"term\": \"signatureDate\", \"@id\": \"https://w3id.org/traceability/schemas/Phytosanitary.json#disinfectionDate\", \"@type\": \"https://schema.org/DateTime\"}",
+            "title": "Disinfection Date",
+            "description": "Date when the disinfection treatment was applied.",
+            "type": "string"
+        },
+        "disinfectionTreatment": {
+            "$comment": "{\"term\": \"disinfectionTreatment\", \"@id\": \"https://www.ecfr.gov/cgi-bin/text-idx?rgn=div5&node=7:5.1.1.1.4#se7.5.305_12\"}",
+            "title": "Disinfection Treatment",
+            "description": "Type of disinfection treatment applied to the product.",
+            "type": "string"
+        },
+        "disinfectionChemical": {
+            "$comment": "{\"term\": \"disinfectionChemical\", \"@id\": \"https://schema.org/activeIngredient\"}",
+            "title": "Disinfection Chemical",
+            "description": "Chemical and/or active ingredient used in the disinfection.",
+            "type": "string"
+        },
+        "disinfectionDuration": {
+            "$comment": "{\"term\": \"disinfectionDuration\", \"@id\": \"https://schema.org/duration\"}",
+            "title": "Disinfection Duration",
+            "description": "Duraction that the disinfection chemical was applied.",
+            "type": "string"
+        },
+        "disinfectionTemperature": {
+            "$comment": "{\"term\": \"disinfectionTemperature\", \"@id\": \"https://schema.org/MeasuredValue\"}",
+            "title": "Disinfection Temperature",
+            "description": "Temperature at which the disinfection chemical was applied.",
+            "$ref": "https://w3id.org/traceability/schemas/MeasuredValue.json"
+        },
+        "disinfectionConcentration": {
+            "$comment": "{\"term\": \"disinfectionConcentration\", \"@id\": \"https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/04._Reactions_in_Aqueous_Solution/4.5%3A_Concentration_of_Solutions\"}",
+            "title": "Disinfection Concentration",
+            "description": "Chemical concentration at which it was applied in the disinfection process.",
+            "$ref": "https://w3id.org/traceability/schemas/MeasuredValue.json"
+        },
+        "signatureDate": {
+            "$comment": "{\"term\": \"signatureDate\", \"@id\": \"https://w3id.org/traceability/schemas/ppq203.json#signatureDate\", \"@type\": \"https://w3id.org/traceability/schemas/DateTime.json\"}",
+            "title": "signatureDate",
+            "description": "Date when the inspection was signed by the inspection officer.",
+            "type": "string"
+        },
+        "AgInspectionReport": {
+            "$comment": "{\"term\": \"AgInspectionReport\", \"@id\": \"https://w3id.org/traceability/schemas/AgInspectionReport\"}",
+            "title": "Agriculture Inspection Report",
+            "description": "Template for agriculture inspection reports.",
+            "$ref": "https://w3id.org/traceability/schemas/AgInspectionReport.json"
+        }
+    },
+    "additionalProperties": false,
+    "examples": []
+}

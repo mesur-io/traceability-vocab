@@ -31,6 +31,12 @@
             "description": "Address from where the shipment was sent.",
             "$ref": "https://w3id.org/traceability/schemas/PostalAddress.json"
         },
+        "deliveryMethod": {
+            "$comment": "{\"term\": \"deliveryMethod\", \"@id\": \"https://schema.org/DeliveryMethod\"}",
+            "title": "Delivery Method",
+            "description": "The means of transportation used in delivering the shipment.",
+            "type": "string"
+        },
         "trackingNumber": {
             "$comment": "{\"term\": \"trackingNumber\", \"@id\": \"https://schema.org/trackingNumber\"}",
             "title": "Tracking Number",
