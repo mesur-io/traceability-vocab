@@ -19,6 +19,7 @@ const { getAgInspectionReport } = require('./AgInspectionReport');
 const { getAgProduct } = require('./AgProduct');
 const { getAgPackage } = require('./AgPackage');
 const { getppq203 } = require('./ppq203');
+const { getPhytosanitary } = require('./Phytosanitary');
 
 const generatorConfig = {
   Place: getPlace,
@@ -41,7 +42,8 @@ const generatorConfig = {
   AgProduct: getAgProduct,
   AgPackage: getAgPackage,
   AgInspectionReport: getAgInspectionReport,
-  ppq203: getppq203
+  ppq203: getppq203,
+  Phytosanitary: getPhytosanitary
 };
 
 module.exports = generatorConfig;

@@ -228,6 +228,9 @@
         "originAddress": {
           "@id": "https://schema.org/originAddress"
         },
+        "deliveryMethod": {
+          "@id": "https://schema.org/DeliveryMethod"
+        },
         "trackingNumber": {
           "@id": "https://schema.org/trackingNumber"
         },
@@ -256,6 +259,47 @@
         },
         "jobTitle": {
           "@id": "https://schema.org/jobTitle"
+        }
+      }
+    },
+    "Phytosanitary": {
+      "@id": "https://w3id.org/traceability/Phytosanitary",
+      "@context": {
+        "certificateNumber": {
+          "@id": "https://schema.org/identifier"
+        },
+        "distinguishingMarks": {
+          "@id": "https://www.gs1.org/voc/variantDescription"
+        },
+        "portOfEntry": {
+          "@id": "https://www.govinfo.gov/content/pkg/CFR-2011-title19-vol1/pdf/CFR-2011-title19-vol1-sec24-24.pdf"
+        },
+        "additionalDeclaration": {
+          "@id": "https://schema.org/Comment"
+        },
+        "disinfectionDate": {
+          "@id": "https://schema.org/validFrom"
+        },
+        "disinfectionTreatment": {
+          "@id": "https://www.ecfr.gov/cgi-bin/text-idx?rgn=div5&node=7:5.1.1.1.4#se7.5.305_12"
+        },
+        "disinfectionChemical": {
+          "@id": "https://schema.org/activeIngredient"
+        },
+        "disinfectionDuration": {
+          "@id": "https://schema.org/duration"
+        },
+        "disinfectionTemperature": {
+          "@id": "https://schema.org/MeasuredValue"
+        },
+        "disinfectionConcentration": {
+          "@id": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/04._Reactions_in_Aqueous_Solution/4.5%3A_Concentration_of_Solutions"
+        },
+        "signatureDate": {
+          "@id": "https://schema.org/DateTime"
+        },
+        "AgInspectionReport": {
+          "@id": "https://w3id.org/traceability/schemas/AgInspectionReport"
         }
       }
     },
@@ -352,7 +396,7 @@
           "@id": "https://w3id.org/traceability/schemas/ppq203.json#carrierId"
         },
         "portOfEntry": {
-          "@id": "https://w3id.org/traceability/schemas/ppq203.json#portOfEntry"
+          "@id": "https://www.govinfo.gov/content/pkg/CFR-2011-title19-vol1/pdf/CFR-2011-title19-vol1-sec24-24.pdf"
         },
         "signatureDate": {
           "@id": "https://w3id.org/traceability/schemas/ppq203.json#signatureDate"

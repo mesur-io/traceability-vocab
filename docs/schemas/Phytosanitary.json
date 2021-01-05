@@ -20,22 +20,22 @@
             ]
         },
         "certificateNumber": {
-            "$comment": "{\"term\": \"certificateNumber\", \"@id\": \"https://schema.org/identifier\", \"@type\": \"https://schema.org/identifier\"}",
+            "$comment": "{\"term\": \"certificateNumber\", \"@id\": \"https://schema.org/identifier\"}",
             "title": "Certificate Number",
             "description": "ID number of the certificate",
             "type": "string"
         },
         "distinguishingMarks": {
-            "$comment": "{\"term\": \"distinguishingMarks\", \"@id\": \"https://www.gs1.org/voc/variantDescription\", \"@type\": \"https://www.gs1.org/voc/variantDescription\"}",
+            "$comment": "{\"term\": \"distinguishingMarks\", \"@id\": \"https://www.gs1.org/voc/variantDescription\"}",
             "title": "Distinguishing Marks",
             "description": "Any notable marks or variants of the items being inspected.",
             "type": "string"
         },
-        "botanicalName": {
-            "$comment": "{\"term\": \"botanicalName\", \"@id\": \"https://schema.org/DefinedTerm\", \"@type\": \"https://schema.org/DefinedTerm\"}",
-            "title": "Botanical Name",
-            "description": "The botanical name of the plants relevant to this inspection.",
-            "type": "string"
+        "portOfEntry": {
+            "$comment": "{\"term\": \"portOfEntry\", \"@id\": \"https://www.govinfo.gov/content/pkg/CFR-2011-title19-vol1/pdf/CFR-2011-title19-vol1-sec24-24.pdf\", \"@type\": \"https://schema.org/Place\"}",
+            "title": "Port of Entry",
+            "description": "US port through which the imports passed.",
+            "$ref": "https://w3id.org/traceability/schemas/Place.json"
         },
         "additionalDeclaration": {
             "$comment": "{\"term\": \"additionalDeclaration\", \"@id\": \"https://schema.org/Comment\"}",
@@ -44,7 +44,7 @@
             "type": "string"
         },
         "disinfectionDate": {
-            "$comment": "{\"term\": \"signatureDate\", \"@id\": \"https://w3id.org/traceability/schemas/Phytosanitary.json#disinfectionDate\", \"@type\": \"https://schema.org/DateTime\"}",
+            "$comment": "{\"term\": \"disinfectionDate\", \"@id\": \"https://schema.org/validFrom\"}",
             "title": "Disinfection Date",
             "description": "Date when the disinfection treatment was applied.",
             "type": "string"
@@ -80,7 +80,7 @@
             "$ref": "https://w3id.org/traceability/schemas/MeasuredValue.json"
         },
         "signatureDate": {
-            "$comment": "{\"term\": \"signatureDate\", \"@id\": \"https://w3id.org/traceability/schemas/ppq203.json#signatureDate\", \"@type\": \"https://w3id.org/traceability/schemas/DateTime.json\"}",
+            "$comment": "{\"term\": \"signatureDate\", \"@id\": \"https://schema.org/DateTime\"}",
             "title": "signatureDate",
             "description": "Date when the inspection was signed by the inspection officer.",
             "type": "string"

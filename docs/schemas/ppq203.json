@@ -38,7 +38,7 @@
             "type": "string"
         },
         "portOfEntry": {
-            "$comment": "{\"term\": \"portOfEntry\", \"@id\": \"https://w3id.org/traceability/schemas/ppq203.json#portOfEntry\", \"@type\": \"https://w3id.org/traceability/schemas/Place.json\"}",
+            "$comment": "{\"term\": \"portOfEntry\", \"@id\": \"https://www.govinfo.gov/content/pkg/CFR-2011-title19-vol1/pdf/CFR-2011-title19-vol1-sec24-24.pdf\", \"@type\": \"https://schema.org/Place\"}",
             "title": "Port of Entry",
             "description": "US port through which the imports passed.",
             "$ref": "https://w3id.org/traceability/schemas/Place.json"

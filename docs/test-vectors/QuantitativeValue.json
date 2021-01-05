@@ -6,7 +6,15 @@
       ],
       "type": "QuantitativeValue",
       "unitCode": "hg/ha",
-      "value": "5771"
+      "value": "6204"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "QuantitativeValue",
+      "unitCode": "hg/ha",
+      "value": "2689"
     },
     {
       "@context": [
@@ -15,22 +23,18 @@
       "type": "QuantitativeValue",
       "unitCode": "hg/ha",
       "value": "1609"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "QuantitativeValue",
-      "unitCode": "hg/ha",
-      "value": "858"
     }
   ],
   "bad": [
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "unitCode": "hg/ha",
+      "type": "QuantitativeValue",
+      "value": "6204",
+      "feed": "generate",
+      "matrix": "bypass",
+      "circuit": "connect"
+    },
+    {
+      "firewall": "synthesize",
       "hard drive": "compress",
       "array": "program",
       "capacitor": "generate"
@@ -44,11 +48,6 @@
       "interface": "program",
       "driver": "program",
       "firewall": "program"
-    },
-    {
-      "monitor": "synthesize",
-      "program": "compress",
-      "array": "quantify"
     }
   ]
 }

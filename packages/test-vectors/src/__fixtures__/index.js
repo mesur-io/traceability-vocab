@@ -19,6 +19,7 @@ const Product = require('../../../../docs/test-vectors/Product.json');
 const AgProduct = require('../../../../docs/test-vectors/AgProduct.json');
 const AgPackage = require('../../../../docs/test-vectors/AgPackage.json');
 const ppq203 = require('../../../../docs/test-vectors/ppq203.json');
+const Phytosanitary = require('../../../../docs/test-vectors/Phytosanitary.json');
 
 
 module.exports = {
@@ -42,5 +43,6 @@ module.exports = {
   Product,
   AgProduct,
   AgPackage,
-  ppq203
+  ppq203,
+  Phytosanitary
 };
