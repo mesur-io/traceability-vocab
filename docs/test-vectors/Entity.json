@@ -4,63 +4,71 @@
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
+      "type": "Person",
+      "firstName": "Malachi",
+      "lastName": "Wilkinson",
+      "email": "Kennedi.Kuhn36@example.org",
+      "phoneNumber": "555-281-3969",
+      "worksFor": {
+        "type": "Organization",
+        "name": "Shanahan, Sauer and Spinka",
+        "description": "Business-focused dedicated concept",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "2975 Shirley Plaza",
+          "addressLocality": "Vandervortport",
+          "addressRegion": "California",
+          "postalCode": "82979-3089",
+          "addressCountry": "Guam"
+        },
+        "email": "Alba.Abshire@example.net",
+        "phoneNumber": "555-232-7283"
+      },
+      "jobTitle": "Dynamic Directives Analyst"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
       "type": "Organization",
-      "name": "Kohler, Schultz and Ziemann",
-      "description": "Switchable next generation pricing structure",
+      "name": "Okuneva, Abshire and DuBuque",
+      "description": "Programmable next generation function",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "704 Rath Drive",
-        "addressLocality": "Weissnatside",
-        "addressRegion": "Alaska",
-        "postalCode": "03585-2858",
-        "addressCountry": "Niger"
+        "streetAddress": "357 Kuhlman Hills",
+        "addressLocality": "Jerroldmouth",
+        "addressRegion": "Florida",
+        "postalCode": "52926",
+        "addressCountry": "Luxembourg"
       },
-      "email": "Conor_Windler@example.org",
-      "phoneNumber": "555-757-6938"
+      "email": "Stuart_Skiles@example.com",
+      "phoneNumber": "555-847-2916"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Person",
-      "firstName": "Misael",
-      "lastName": "Waters",
-      "email": "Cary_Thompson40@example.com",
-      "phoneNumber": "555-573-6633",
+      "firstName": "Gregorio",
+      "lastName": "Koepp",
+      "email": "Scotty93@example.com",
+      "phoneNumber": "555-287-2641",
       "worksFor": {
         "type": "Organization",
-        "name": "Dietrich, Stehr and Veum",
-        "description": "Realigned context-sensitive synergy",
+        "name": "Jaskolski LLC",
+        "description": "Automated intangible productivity",
         "address": {
           "type": "PostalAddress",
-          "streetAddress": "7014 Hammes Underpass",
-          "addressLocality": "East Gia",
-          "addressRegion": "West Virginia",
-          "postalCode": "16881",
-          "addressCountry": "Belgium"
+          "streetAddress": "00674 Kayden Cove",
+          "addressLocality": "Lindgrentown",
+          "addressRegion": "Indiana",
+          "postalCode": "82434-6818",
+          "addressCountry": "Palau"
         },
-        "email": "Percy.MacGyver44@example.org",
-        "phoneNumber": "555-494-1802"
+        "email": "Sabrina75@example.net",
+        "phoneNumber": "555-469-8937"
       },
-      "jobTitle": "Senior Intranet Director"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "Organization",
-      "name": "Bartoletti, Stracke and Stracke",
-      "description": "Front-line actuating infrastructure",
-      "address": {
-        "type": "PostalAddress",
-        "streetAddress": "6987 Bradtke Shore",
-        "addressLocality": "West Howellhaven",
-        "addressRegion": "Georgia",
-        "postalCode": "40219-3611",
-        "addressCountry": "Nepal"
-      },
-      "email": "Hubert.Jaskolski0@example.net",
-      "phoneNumber": "555-571-8522"
+      "jobTitle": "Forward Operations Planner"
     }
   ],
   "bad": [
@@ -68,58 +76,30 @@
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "type": "Organization",
-      "name": "Kohler, Schultz and Ziemann",
-      "phoneNumber": "555-757-6938",
-      "interface": "transmit",
-      "program": "reboot",
-      "microchip": "navigate",
-      "firewall": "quantify"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
       "type": "Person",
-      "lastName": "Waters",
-      "email": "Cary_Thompson40@example.com",
-      "phoneNumber": "555-573-6633",
-      "worksFor": {
-        "type": "Organization",
-        "name": "Dietrich, Stehr and Veum",
-        "description": "Realigned context-sensitive synergy",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "7014 Hammes Underpass",
-          "addressLocality": "East Gia",
-          "addressRegion": "West Virginia",
-          "postalCode": "16881",
-          "addressCountry": "Belgium"
-        },
-        "email": "Percy.MacGyver44@example.org",
-        "phoneNumber": "555-494-1802"
-      },
-      "jobTitle": "Senior Intranet Director",
-      "hard drive": "transmit",
-      "bus": "connect",
-      "driver": "parse"
+      "firstName": "Malachi",
+      "lastName": "Wilkinson",
+      "email": "Kennedi.Kuhn36@example.org",
+      "phoneNumber": "555-281-3969",
+      "jobTitle": "Dynamic Directives Analyst",
+      "capacitor": "navigate"
     },
     {
-      "type": "Organization",
-      "description": "Front-line actuating infrastructure",
+      "description": "Programmable next generation function",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "6987 Bradtke Shore",
-        "addressLocality": "West Howellhaven",
-        "addressRegion": "Georgia",
-        "postalCode": "40219-3611",
-        "addressCountry": "Nepal"
+        "streetAddress": "357 Kuhlman Hills",
+        "addressLocality": "Jerroldmouth",
+        "addressRegion": "Florida",
+        "postalCode": "52926",
+        "addressCountry": "Luxembourg"
       },
-      "email": "Hubert.Jaskolski0@example.net",
-      "sensor": "copy",
-      "panel": "synthesize",
-      "hard drive": "input",
-      "program": "copy"
+      "email": "Stuart_Skiles@example.com",
+      "phoneNumber": "555-847-2916",
+      "monitor": "synthesize"
+    },
+    {
+      "alarm": "compress"
     }
   ]
 }

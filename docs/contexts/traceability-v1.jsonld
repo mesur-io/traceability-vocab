@@ -22,6 +22,9 @@
         "shipment": {
           "@id": "https://schema.org/ParcelDelivery"
         },
+        "agPackage": {
+          "@id": "https://www.merriam-webster.com/dictionary/parcel"
+        },
         "applicant": {
           "@id": "https://w3c-ccg.github.io/traceability-vocab/#dfn-entities"
         },
@@ -82,6 +85,9 @@
         },
         "product": {
           "@id": "https://www.gs1.org/voc/Product"
+        },
+        "scientificName": {
+          "@id": "https://www.britannica.com/science/binomial-nomenclature"
         },
         "labelImageUrl": {
           "@id": "https://schema.org/url"
@@ -233,9 +239,6 @@
         },
         "trackingNumber": {
           "@id": "https://schema.org/trackingNumber"
-        },
-        "products": {
-          "@id": "https://schema.org/ItemList"
         }
       }
     },
@@ -267,6 +270,9 @@
       "@context": {
         "certificateNumber": {
           "@id": "https://schema.org/identifier"
+        },
+        "plantOrg": {
+          "@id": "https://www.gs1.org/voc/Organization"
         },
         "distinguishingMarks": {
           "@id": "https://www.gs1.org/voc/variantDescription"

@@ -22,7 +22,7 @@
         "deliveryAddress": {
             "$comment": "{\"term\": \"deliveryAddress\", \"@id\": \"https://schema.org/deliveryAddress\"}",
             "title": "Delivery Address",
-            "description": "Address to which the shipment is being sent.",
+            "description": "Final destination address to which the shipment is being sent.",
             "$ref": "https://w3id.org/traceability/schemas/PostalAddress.json"
         },
         "originAddress": {
@@ -42,12 +42,6 @@
             "title": "Tracking Number",
             "description": "Shipper tracking number.",
             "type": "string"
-        },
-        "products": {
-            "$comment": "{\"term\": \"products\", \"@id\": \"https://schema.org/ItemList\", \"@type\": \"https://schema.org/ItemList\"}",
-            "title": "Product List",
-            "description": "List of Products",
-            "type": "array"
         }
     },
     "additionalProperties": false,

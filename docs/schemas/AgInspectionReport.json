@@ -37,6 +37,12 @@
       "description": "Details for a shipment of goods.",
       "$ref": "https://w3id.org/traceability/schemas/ParcelDelivery.json"
     },
+    "agPackage": {
+      "$comment": "{\"term\": \"agPackage\", \"@id\": \"https://www.merriam-webster.com/dictionary/parcel\"}",
+      "title": "Agriculture Package",
+      "description": "Package, crate, or generally container holding an agricultural product or products for inspection.",
+      "$ref": "https://w3id.org/traceability/schemas/AgPackage.json"
+    },
     "applicant": {
       "$comment": "{\"term\": \"applicant\", \"@id\": \"https://w3c-ccg.github.io/traceability-vocab/#dfn-entities\"}",
       "title": "Applicant",

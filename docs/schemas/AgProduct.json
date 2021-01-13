@@ -43,6 +43,12 @@
             "description": "Product details as specified in the Product.json schema",
             "$ref": "https://w3id.org/traceability/schemas/Product.json"
         },
+        "scientificName": {
+            "$comment": "{\"term\": \"scientificName\", \"@id\": \"https://www.britannica.com/science/binomial-nomenclature\"}",
+            "title": "Scientific Name",
+            "description": "The scientific name of the product in bionomial nomenclature.",
+            "type": "string"
+        },
         "labelImageUrl": {
             "$comment": "{\"term\": \"labelImageUrl\", \"@id\": \"https://schema.org/url\"}",
             "title": "Label Image URL",

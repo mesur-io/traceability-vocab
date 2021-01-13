@@ -5,84 +5,84 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Organization",
-      "name": "Abbott, Braun and Ebert",
-      "description": "Managed directional synergy",
+      "name": "Williamson Group",
+      "description": "Reverse-engineered fresh-thinking hardware",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "2397 Vandervort Ramp",
-        "addressLocality": "South Dayna",
-        "addressRegion": "Indiana",
-        "postalCode": "16486",
-        "addressCountry": "Guernsey"
+        "streetAddress": "5736 Earnest Ramp",
+        "addressLocality": "New Pamela",
+        "addressRegion": "Utah",
+        "postalCode": "33207-0165",
+        "addressCountry": "Congo"
       },
-      "email": "Jovanny_Murray84@example.net",
-      "phoneNumber": "555-724-4165"
+      "email": "Marta.Rodriguez@example.net",
+      "phoneNumber": "555-932-6001"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Organization",
-      "name": "Wehner and Sons",
-      "description": "Profit-focused object-oriented Graphic Interface",
+      "name": "Bogisich, Bode and Grimes",
+      "description": "Public-key user-facing middleware",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "29005 Harris Knolls",
-        "addressLocality": "Velvaberg",
-        "addressRegion": "New Hampshire",
-        "postalCode": "74311",
-        "addressCountry": "Liberia"
+        "streetAddress": "68620 Kaycee Highway",
+        "addressLocality": "Leannchester",
+        "addressRegion": "Mississippi",
+        "postalCode": "75576",
+        "addressCountry": "Singapore"
       },
-      "email": "Marvin_Prohaska@example.com",
-      "phoneNumber": "555-123-8423"
+      "email": "Deshawn.Reinger85@example.com",
+      "phoneNumber": "555-170-7809"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Organization",
-      "name": "Jacobs - Feil",
-      "description": "Face to face analyzing approach",
+      "name": "Bernier, Oberbrunner and Hessel",
+      "description": "Integrated clear-thinking moderator",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "5829 DuBuque Prairie",
-        "addressLocality": "Melynabury",
-        "addressRegion": "Nebraska",
-        "postalCode": "86930-1107",
-        "addressCountry": "Puerto Rico"
+        "streetAddress": "929 Boyer Lock",
+        "addressLocality": "Port Elnora",
+        "addressRegion": "New Mexico",
+        "postalCode": "18560",
+        "addressCountry": "Liechtenstein"
       },
-      "email": "Neha68@example.net",
-      "phoneNumber": "555-510-9540"
+      "email": "Timmothy96@example.org",
+      "phoneNumber": "555-504-4471"
     }
   ],
   "bad": [
     {
-      "card": "back up",
-      "transmitter": "parse",
-      "array": "hack",
-      "feed": "parse"
+      "description": "Reverse-engineered fresh-thinking hardware",
+      "panel": "back up",
+      "matrix": "program"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "sensor": "generate"
-    },
-    {
       "type": "Organization",
+      "name": "Bogisich, Bode and Grimes",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "5829 DuBuque Prairie",
-        "addressLocality": "Melynabury",
-        "addressRegion": "Nebraska",
-        "postalCode": "86930-1107",
-        "addressCountry": "Puerto Rico"
+        "streetAddress": "68620 Kaycee Highway",
+        "addressLocality": "Leannchester",
+        "addressRegion": "Mississippi",
+        "postalCode": "75576",
+        "addressCountry": "Singapore"
       },
-      "email": "Neha68@example.net",
-      "bus": "compress",
-      "system": "copy",
-      "sensor": "calculate",
-      "transmitter": "hack"
+      "phoneNumber": "555-170-7809",
+      "array": "index",
+      "program": "synthesize",
+      "port": "compress"
+    },
+    {
+      "port": "parse",
+      "microchip": "connect"
     }
   ]
 }

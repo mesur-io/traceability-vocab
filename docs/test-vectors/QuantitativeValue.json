@@ -6,7 +6,7 @@
       ],
       "type": "QuantitativeValue",
       "unitCode": "hg/ha",
-      "value": "6204"
+      "value": "8019"
     },
     {
       "@context": [
@@ -14,7 +14,7 @@
       ],
       "type": "QuantitativeValue",
       "unitCode": "hg/ha",
-      "value": "2689"
+      "value": "6182"
     },
     {
       "@context": [
@@ -22,32 +22,26 @@
       ],
       "type": "QuantitativeValue",
       "unitCode": "hg/ha",
-      "value": "1609"
+      "value": "8402"
     }
   ],
   "bad": [
     {
-      "type": "QuantitativeValue",
-      "value": "6204",
-      "feed": "generate",
-      "matrix": "bypass",
-      "circuit": "connect"
+      "value": "8019",
+      "driver": "connect",
+      "port": "navigate"
     },
     {
-      "firewall": "synthesize",
-      "hard drive": "compress",
-      "array": "program",
-      "capacitor": "generate"
+      "firewall": "index",
+      "driver": "hack"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "type": "QuantitativeValue",
-      "sensor": "quantify",
-      "interface": "program",
-      "driver": "program",
-      "firewall": "program"
+      "value": "8402",
+      "card": "generate",
+      "alarm": "synthesize"
     }
   ]
 }

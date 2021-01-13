@@ -5,27 +5,63 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Phytosanitary",
-      "certificateNumber": "377860907683",
-      "distinguishingMarks": "Iure ut ipsa est odio recusandae.",
+      "certificateNumber": "489207635769",
+      "plantOrg": {
+        "type": "Organization",
+        "name": "Nitzsche Inc",
+        "description": "Synergistic web-enabled array",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "7837 Chaz Brooks",
+          "addressLocality": "Effertzstad",
+          "addressRegion": "Wisconsin",
+          "postalCode": "75279",
+          "addressCountry": "Syrian Arab Republic"
+        },
+        "email": "Cecilia60@example.net",
+        "phoneNumber": "555-927-1904"
+      },
+      "distinguishingMarks": "Dolorem ad pariatur temporibus assumenda libero eligendi.",
       "portOfEntry": {
         "type": "Place",
         "address": {
           "type": "PostalAddress",
-          "addressLocality": "East Gillianhaven",
-          "addressRegion": "Maine"
+          "addressLocality": "Feestland",
+          "addressRegion": "Vermont"
         }
       },
-      "additionalDeclaration": "Corrupti perspiciatis dolorem ad.",
+      "additionalDeclaration": "Qui voluptas aut minus.",
       "disinfectionDate": "1-2-2021",
-      "disinfectionTreatment": "Fumigant - Methyl Bromide - Special Procedures for Container Fumigations Without a Tarpaulin",
+      "disinfectionTreatment": "Fumigant - Methyl Bromide - Tarpaulin Fumigation",
       "disinfectionChemical": "Methyl Bromide",
-      "disinfectionDuration": "175 minutes",
-      "disinfectionTemperature": "20 Celsius",
-      "disinfectionConcentration": "42",
-      "signatureDate": "1-1-2021",
+      "disinfectionDuration": "116 minutes",
+      "disinfectionTemperature": "11 Celsius",
+      "disinfectionConcentration": "15",
+      "signatureDate": "1-3-2021",
       "AgInspectionReport": {
         "facility": {
           "address": {
+            "type": "PostalAddress",
+            "organizationName": "Cartwright LLC",
+            "streetAddress": "08475 Vena Pine",
+            "addressLocality": "Bayerview",
+            "addressRegion": "Oklahoma",
+            "postalCode": "20156-0356",
+            "addressCountry": "American Samoa"
+          }
+        },
+        "notes": "Aut cum sed ipsam et et eius eligendi officiis.",
+        "inspector": {
+          "type": "Inspector",
+          "person": {
+            "type": "Person",
+            "firstName": "Laney",
+            "lastName": "Goldner"
+          }
+        },
+        "shipment": {
+          "deliveryMethod": "Truck transport",
+          "deliveryAddress": {
             "type": "PostalAddress",
             "organizationName": "Bogisich - D'Amore",
             "streetAddress": "07135 Myron Glen",
@@ -33,75 +69,17 @@
             "addressRegion": "Vermont",
             "postalCode": "23410-6766",
             "addressCountry": "Paraguay"
-          }
-        },
-        "notes": "Sequi est culpa nostrum est reiciendis et et aut aut.",
-        "inspector": {
-          "type": "Inspector",
-          "person": {
-            "type": "Person",
-            "firstName": "Milo",
-            "lastName": "Prosacco"
-          }
-        },
-        "shipment": {
-          "deliveryAddress": {
-            "type": "PostalAddress",
-            "organizationName": "Johnson, Mueller and Nienow",
-            "streetAddress": "0365 Forrest Crescent",
-            "addressLocality": "Swaniawskiview",
-            "addressRegion": "Virginia",
-            "postalCode": "24083",
-            "addressCountry": "Iceland"
           },
           "originAddress": {
             "type": "PostalAddress",
-            "organizationName": "Parisian - Denesik",
-            "streetAddress": "580 Rodrick Court",
-            "addressLocality": "Simonisburgh",
-            "addressRegion": "Indiana",
-            "postalCode": "33321-8077",
-            "addressCountry": "Rwanda"
-          },
-          "products": [
-            {
-              "type": "Product",
-              "name": "Incredible Wooden Chair",
-              "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
-              "sizeOrAmount": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "1527"
-              },
-              "weight": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "4487"
-              },
-              "sku": "649474251344"
-            },
-            {
-              "type": "Product",
-              "name": "Handcrafted Plastic Tuna",
-              "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
-              "sizeOrAmount": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "2288"
-              },
-              "weight": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "8242"
-              },
-              "sku": "983242789684"
-            }
-          ]
-        },
-        "applicant": {
-          "type": "Organization"
-        },
-        "inspectionDate": "0-1-2021"
+            "organizationName": "Jacobson Inc",
+            "streetAddress": "7516 Rempel Springs",
+            "addressLocality": "East Aniyah",
+            "addressRegion": "Maryland",
+            "postalCode": "51924",
+            "addressCountry": "Mauritius"
+          }
+        }
       }
     },
     {
@@ -109,176 +87,145 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Phytosanitary",
-      "certificateNumber": "217935537162",
-      "distinguishingMarks": "Vel vero quae ipsum.",
+      "certificateNumber": "308743671171",
+      "plantOrg": {
+        "type": "Organization",
+        "name": "Funk Group",
+        "description": "User-friendly bi-directional solution",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "61571 Homenick Meadow",
+          "addressLocality": "Marvinborough",
+          "addressRegion": "Idaho",
+          "postalCode": "33229-5652",
+          "addressCountry": "Gibraltar"
+        },
+        "email": "Cara.Pfannerstill@example.com",
+        "phoneNumber": "555-547-2205"
+      },
+      "distinguishingMarks": "Saepe autem dolorem hic et ut excepturi voluptatem quia rerum.",
       "portOfEntry": {
         "type": "Place",
         "address": {
           "type": "PostalAddress",
-          "addressLocality": "New Christophaven",
-          "addressRegion": "New Hampshire"
+          "addressLocality": "West Fabiola",
+          "addressRegion": "Illinois"
         }
       },
-      "additionalDeclaration": "Temporibus officiis aut quam nemo ut.",
-      "disinfectionDate": "1-1-2021",
-      "disinfectionTreatment": "Fumigant - Methyl Bromide - Special Procedures for Container Fumigations Without a Tarpaulin",
+      "additionalDeclaration": "Nesciunt consequatur officiis iste at omnis tempore iure voluptatem.",
+      "disinfectionDate": "1-3-2021",
+      "disinfectionTreatment": "Aerosol - d-phenothrin",
+      "disinfectionChemical": "d-phenothrin",
+      "disinfectionDuration": "183 minutes",
+      "disinfectionTemperature": "12 Celsius",
+      "disinfectionConcentration": "36",
+      "signatureDate": "1-3-2021",
+      "AgInspectionReport": {
+        "facility": {
+          "address": {
+            "type": "PostalAddress",
+            "organizationName": "Fadel, Brakus and Boyer",
+            "streetAddress": "86299 Malika Unions",
+            "addressLocality": "Runteborough",
+            "addressRegion": "Texas",
+            "postalCode": "17436-2888",
+            "addressCountry": "Romania"
+          }
+        },
+        "notes": "Aut quia quis doloribus dolore iste iusto eos aut tempore.",
+        "inspector": {
+          "type": "Inspector",
+          "person": {
+            "type": "Person",
+            "firstName": "Joany",
+            "lastName": "Klocko"
+          }
+        },
+        "shipment": {
+          "deliveryMethod": "Truck transport",
+          "deliveryAddress": {
+            "type": "PostalAddress",
+            "organizationName": "Lebsack, Medhurst and West",
+            "streetAddress": "790 Orn Pike",
+            "addressLocality": "West Camillaville",
+            "addressRegion": "Maryland",
+            "postalCode": "03487",
+            "addressCountry": "Guam"
+          },
+          "originAddress": {
+            "type": "PostalAddress",
+            "organizationName": "Kunde, Schmidt and Kuhic",
+            "streetAddress": "7120 Jaiden Road",
+            "addressLocality": "Briellechester",
+            "addressRegion": "Massachusetts",
+            "postalCode": "74986",
+            "addressCountry": "Tonga"
+          }
+        }
+      }
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "Phytosanitary",
+      "certificateNumber": "123226612924",
+      "plantOrg": {
+        "type": "Organization",
+        "name": "Dach and Sons",
+        "description": "Implemented bottom-line collaboration",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "62813 Turner Ferry",
+          "addressLocality": "Nedburgh",
+          "addressRegion": "Nevada",
+          "postalCode": "28908-8757",
+          "addressCountry": "Romania"
+        },
+        "email": "Branson_Tromp@example.net",
+        "phoneNumber": "555-345-5031"
+      },
+      "distinguishingMarks": "Libero deserunt officia molestiae delectus fuga illo sed rerum voluptatibus.",
+      "portOfEntry": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "Israelhaven",
+          "addressRegion": "Utah"
+        }
+      },
+      "additionalDeclaration": "Aliquam minima rerum cupiditate necessitatibus iusto.",
+      "disinfectionDate": "1-2-2021",
+      "disinfectionTreatment": "Fumigant - Sulfuryl Fluoride",
       "disinfectionChemical": "Methyl Bromide",
-      "disinfectionDuration": "182 minutes",
-      "disinfectionTemperature": "20 Celsius",
-      "disinfectionConcentration": "20",
-      "signatureDate": "1-2-2021",
+      "disinfectionDuration": "100 minutes",
+      "disinfectionTemperature": "4 Celsius",
+      "disinfectionConcentration": "30",
+      "signatureDate": "1-3-2021",
       "AgInspectionReport": {
         "facility": {
           "address": {
             "type": "PostalAddress",
-            "organizationName": "Schamberger, Fadel and Brakus",
-            "streetAddress": "18629 Rachelle Valley",
-            "addressLocality": "Santiagomouth",
+            "organizationName": "Treutel, Gerlach and Goodwin",
+            "streetAddress": "63683 Douglas Neck",
+            "addressLocality": "South Olafstad",
             "addressRegion": "Kentucky",
-            "postalCode": "51743-6288",
-            "addressCountry": "Switzerland"
+            "postalCode": "14837",
+            "addressCountry": "Gabon"
           }
         },
-        "notes": "Similique optio provident tempora sit dolores dolores dolor magnam possimus.",
+        "notes": "Fugit debitis in eveniet.",
         "inspector": {
           "type": "Inspector",
           "person": {
             "type": "Person",
-            "firstName": "Erik",
-            "lastName": "Rath"
+            "firstName": "Hubert",
+            "lastName": "Reichert"
           }
         },
         "shipment": {
+          "deliveryMethod": "Truck transport",
           "deliveryAddress": {
-            "type": "PostalAddress",
-            "organizationName": "Beahan, Williamson and Wolff",
-            "streetAddress": "5977 Medhurst Village",
-            "addressLocality": "New Alainaburgh",
-            "addressRegion": "Delaware",
-            "postalCode": "33034",
-            "addressCountry": "Togo"
-          },
-          "originAddress": {
-            "type": "PostalAddress",
-            "organizationName": "Smitham - Torphy",
-            "streetAddress": "7447 Anderson Crossroad",
-            "addressLocality": "Ludwigview",
-            "addressRegion": "Oregon",
-            "postalCode": "74474",
-            "addressCountry": "Zambia"
-          },
-          "products": [
-            {
-              "type": "Product",
-              "name": "Licensed Granite Gloves",
-              "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
-              "sizeOrAmount": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "5430"
-              },
-              "weight": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "4035"
-              },
-              "sku": "202050758293"
-            },
-            {
-              "type": "Product",
-              "name": "Awesome Soft Table",
-              "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
-              "sizeOrAmount": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "2697"
-              },
-              "weight": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "8113"
-              },
-              "sku": "738088869049"
-            },
-            {
-              "type": "Product",
-              "name": "Generic Metal Shirt",
-              "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
-              "sizeOrAmount": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "6381"
-              },
-              "weight": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "2189"
-              },
-              "sku": "309723505621"
-            }
-          ]
-        },
-        "applicant": {
-          "type": "Organization"
-        },
-        "inspectionDate": "0-1-2021"
-      }
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "Phytosanitary",
-      "certificateNumber": "488350537697",
-      "distinguishingMarks": "Nesciunt est qui eos debitis.",
-      "portOfEntry": {
-        "type": "Place",
-        "address": {
-          "type": "PostalAddress",
-          "addressLocality": "Port Garlandport",
-          "addressRegion": "South Carolina"
-        }
-      },
-      "additionalDeclaration": "Corporis rerum nihil voluptas officia molestiae.",
-      "disinfectionDate": "1-1-2021",
-      "disinfectionTreatment": "Dip - Sodium Hypochlorite",
-      "disinfectionChemical": "Sodium Hypochlorite",
-      "disinfectionDuration": "198 minutes",
-      "disinfectionTemperature": "14 Celsius",
-      "disinfectionConcentration": "19",
-      "signatureDate": "1-1-2021",
-      "AgInspectionReport": {
-        "facility": {
-          "address": {
-            "type": "PostalAddress",
-            "organizationName": "Borer, Hane and Prosacco",
-            "streetAddress": "90985 Herzog Circles",
-            "addressLocality": "Jaydaville",
-            "addressRegion": "Ohio",
-            "postalCode": "60963-6822",
-            "addressCountry": "British Indian Ocean Territory (Chagos Archipelago)"
-          }
-        },
-        "notes": "Perspiciatis id veniam et rerum.",
-        "inspector": {
-          "type": "Inspector",
-          "person": {
-            "type": "Person",
-            "firstName": "Alysa",
-            "lastName": "Jones"
-          }
-        },
-        "shipment": {
-          "deliveryAddress": {
-            "type": "PostalAddress",
-            "organizationName": "Feeney Group",
-            "streetAddress": "5534 Jenkins Track",
-            "addressLocality": "West Hubertchester",
-            "addressRegion": "Alabama",
-            "postalCode": "64650",
-            "addressCountry": "Montenegro"
-          },
-          "originAddress": {
             "type": "PostalAddress",
             "organizationName": "Schroeder Group",
             "streetAddress": "985 Kathryn Trail",
@@ -287,93 +234,100 @@
             "postalCode": "56917",
             "addressCountry": "Cocos (Keeling) Islands"
           },
-          "products": [
-            {
-              "type": "Product",
-              "name": "Generic Plastic Soap",
-              "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
-              "sizeOrAmount": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "114"
-              },
-              "weight": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "6528"
-              },
-              "sku": "358674575107"
-            },
-            {
-              "type": "Product",
-              "name": "Generic Steel Gloves",
-              "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
-              "sizeOrAmount": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "6401"
-              },
-              "weight": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "8686"
-              },
-              "sku": "778733427036"
-            },
-            {
-              "type": "Product",
-              "name": "Small Cotton Salad",
-              "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
-              "sizeOrAmount": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "5429"
-              },
-              "weight": {
-                "type": "QuantitativeValue",
-                "unitCode": "hg/ha",
-                "value": "3351"
-              },
-              "sku": "935710193182"
-            }
-          ]
-        },
-        "applicant": {
-          "type": "Person",
-          "worksFor": {
-            "address": {
-              "type": "PostalAddress",
-              "streetAddress": "1221 Albert Parkways",
-              "addressLocality": "Timmothyview",
-              "addressRegion": "Rhode Island",
-              "postalCode": "06200-3445",
-              "addressCountry": "France"
-            },
-            "name": "Walter, Weimann and Farrell"
+          "originAddress": {
+            "type": "PostalAddress",
+            "organizationName": "Von - Collins",
+            "streetAddress": "9720 Heller Manor",
+            "addressLocality": "Hansenburgh",
+            "addressRegion": "Colorado",
+            "postalCode": "90571",
+            "addressCountry": "Norfolk Island"
           }
-        },
-        "inspectionDate": "0-2-2021"
+        }
       }
     }
   ],
   "bad": [
     {
-      "certificateNumber": "377860907683",
-      "disinfectionTreatment": "Fumigant - Methyl Bromide - Special Procedures for Container Fumigations Without a Tarpaulin",
-      "disinfectionTemperature": "20 Celsius",
-      "signatureDate": "1-1-2021",
-      "matrix": "generate",
-      "panel": "reboot",
-      "protocol": "navigate"
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "certificateNumber": "489207635769",
+      "plantOrg": {
+        "type": "Organization",
+        "name": "Nitzsche Inc",
+        "description": "Synergistic web-enabled array",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "7837 Chaz Brooks",
+          "addressLocality": "Effertzstad",
+          "addressRegion": "Wisconsin",
+          "postalCode": "75279",
+          "addressCountry": "Syrian Arab Republic"
+        },
+        "email": "Cecilia60@example.net",
+        "phoneNumber": "555-927-1904"
+      },
+      "distinguishingMarks": "Dolorem ad pariatur temporibus assumenda libero eligendi.",
+      "portOfEntry": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "Feestland",
+          "addressRegion": "Vermont"
+        }
+      },
+      "additionalDeclaration": "Qui voluptas aut minus.",
+      "disinfectionChemical": "Methyl Bromide",
+      "disinfectionDuration": "116 minutes",
+      "disinfectionTemperature": "11 Celsius",
+      "signatureDate": "1-3-2021",
+      "array": "index"
     },
     {
-      "panel": "reboot",
-      "sensor": "quantify"
+      "bandwidth": "copy",
+      "feed": "hack",
+      "circuit": "back up",
+      "capacitor": "transmit"
     },
     {
-      "circuit": "index",
-      "interface": "hack",
-      "system": "hack"
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "Phytosanitary",
+      "certificateNumber": "123226612924",
+      "plantOrg": {
+        "type": "Organization",
+        "name": "Dach and Sons",
+        "description": "Implemented bottom-line collaboration",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "62813 Turner Ferry",
+          "addressLocality": "Nedburgh",
+          "addressRegion": "Nevada",
+          "postalCode": "28908-8757",
+          "addressCountry": "Romania"
+        },
+        "email": "Branson_Tromp@example.net",
+        "phoneNumber": "555-345-5031"
+      },
+      "distinguishingMarks": "Libero deserunt officia molestiae delectus fuga illo sed rerum voluptatibus.",
+      "portOfEntry": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "Israelhaven",
+          "addressRegion": "Utah"
+        }
+      },
+      "additionalDeclaration": "Aliquam minima rerum cupiditate necessitatibus iusto.",
+      "disinfectionDate": "1-2-2021",
+      "disinfectionTreatment": "Fumigant - Sulfuryl Fluoride",
+      "disinfectionDuration": "100 minutes",
+      "disinfectionTemperature": "4 Celsius",
+      "disinfectionConcentration": "30",
+      "signatureDate": "1-3-2021",
+      "system": "reboot"
     }
   ]
 }

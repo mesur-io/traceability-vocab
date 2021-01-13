@@ -3,6 +3,7 @@ const _ = require('lodash');
 const { getPlace } = require('./Place');
 const { getInspector } = require('./Inspector');
 const { getParcelDelivery } = require('./ParcelDelivery');
+const { getAgPackage } = require('./AgPackage');
 const { getEntity } = require('./Entity');
 const { getObservation } = require('./Observation');
 //Include test data for inspection type.  This data is very rudimentary for now, and it is probably overkill to have a separate file, but it might be useful in the future across multiple Ag schemas.
@@ -66,6 +67,8 @@ const getAgInspectionReport = () => {
     delete shipment['@context'];
     const applicant = getEntity();
     delete applicant['@context'];
+    const agPackage = getAgPackage();
+    delete agPackage['@context'];
 
     const example = {
         '@context': ['https://w3id.org/traceability/v1'],
@@ -74,7 +77,8 @@ const getAgInspectionReport = () => {
         inspector,
         shipment,
         applicant,
-        inspectionDate: inspectDate.getMonth() + "-" + inspectDate.getDay() + "-" + inspectDate.getFullYear(),
+        agPackage,
+        inspectionDate: (inspectDate.getMonth() + 1) + "-" + inspectDate.getDay() + "-" + inspectDate.getFullYear(),
         inspectionType,
         notes: faker.lorem.sentence(),
         observation

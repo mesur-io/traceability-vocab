@@ -7,32 +7,32 @@
       "type": "Product",
       "manufacturer": {
         "type": "Organization",
-        "name": "Dickinson, Prosacco and Walter",
-        "description": "Operative explicit open architecture",
+        "name": "Funk, Wunsch and Fisher",
+        "description": "Multi-lateral explicit circuit",
         "address": {
           "type": "PostalAddress",
-          "streetAddress": "7148 Cole Mountains",
-          "addressLocality": "Millermouth",
-          "addressRegion": "North Carolina",
-          "postalCode": "98569-6916",
-          "addressCountry": "Norway"
+          "streetAddress": "933 Kunde Turnpike",
+          "addressLocality": "Nolaview",
+          "addressRegion": "Washington",
+          "postalCode": "38419",
+          "addressCountry": "Macao"
         },
-        "email": "Susanna_Auer@example.org",
-        "phoneNumber": "555-507-1035"
+        "email": "Coleman_Haley@example.org",
+        "phoneNumber": "555-266-1350"
       },
-      "name": "Generic Rubber Ball",
-      "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+      "name": "Handcrafted Granite Table",
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
       "sizeOrAmount": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "5084"
+        "value": "5770"
       },
       "weight": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "9072"
+        "value": "3751"
       },
-      "sku": "901030944132"
+      "sku": "419967228655"
     },
     {
       "@context": [
@@ -41,40 +41,40 @@
       "type": "Product",
       "manufacturer": {
         "type": "Person",
-        "firstName": "Elliot",
-        "lastName": "Halvorson",
-        "email": "Richard72@example.net",
-        "phoneNumber": "555-571-2599",
+        "firstName": "Elinore",
+        "lastName": "Barrows",
+        "email": "Lee.Hackett@example.net",
+        "phoneNumber": "555-856-4954",
         "worksFor": {
           "type": "Organization",
-          "name": "Gleichner - Crist",
-          "description": "Compatible user-facing budgetary management",
+          "name": "Bogisich LLC",
+          "description": "Distributed optimizing Graphic Interface",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "95221 Juanita Lights",
-            "addressLocality": "Port Dayanafort",
-            "addressRegion": "North Dakota",
-            "postalCode": "01502",
-            "addressCountry": "Slovenia"
+            "streetAddress": "9157 Reilly Terrace",
+            "addressLocality": "Port Lorenmouth",
+            "addressRegion": "Georgia",
+            "postalCode": "93056",
+            "addressCountry": "Germany"
           },
-          "email": "Carleton_Glover@example.com",
-          "phoneNumber": "555-299-8766"
+          "email": "Katherine.Bernier@example.com",
+          "phoneNumber": "555-446-9503"
         },
-        "jobTitle": "Corporate Mobility Manager"
+        "jobTitle": "Human Configuration Orchestrator"
       },
-      "name": "Awesome Soft Pants",
-      "description": "The Football Is Good For Training And Recreational Purposes",
+      "name": "Handcrafted Rubber Towels",
+      "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
       "sizeOrAmount": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "7546"
+        "value": "8491"
       },
       "weight": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "1764"
+        "value": "3748"
       },
-      "sku": "23397841063"
+      "sku": "297001412106"
     },
     {
       "@context": [
@@ -82,79 +82,97 @@
       ],
       "type": "Product",
       "manufacturer": {
-        "type": "Organization",
-        "name": "Fadel, Kuhn and Collier",
-        "description": "Open-architected secondary function",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "2711 Nikki Keys",
-          "addressLocality": "South Ryannville",
-          "addressRegion": "Alaska",
-          "postalCode": "85791",
-          "addressCountry": "Poland"
+        "type": "Person",
+        "firstName": "Kiera",
+        "lastName": "Tromp",
+        "email": "Cynthia_Towne@example.com",
+        "phoneNumber": "555-150-3833",
+        "worksFor": {
+          "type": "Organization",
+          "name": "Schiller, Bartell and Konopelski",
+          "description": "De-engineered didactic paradigm",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "6992 Douglas Summit",
+            "addressLocality": "Kutchmouth",
+            "addressRegion": "Virginia",
+            "postalCode": "92990-7267",
+            "addressCountry": "Egypt"
+          },
+          "email": "Turner53@example.net",
+          "phoneNumber": "555-106-8484"
         },
-        "email": "Mallie23@example.com",
-        "phoneNumber": "555-272-2037"
+        "jobTitle": "Dynamic Mobility Technician"
       },
-      "name": "Intelligent Concrete Chicken",
-      "description": "The Football Is Good For Training And Recreational Purposes",
+      "name": "Refined Metal Cheese",
+      "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
       "sizeOrAmount": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "3037"
+        "value": "4637"
       },
       "weight": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "4391"
+        "value": "9943"
       },
-      "sku": "632881974511"
+      "sku": "204831231287"
     }
   ],
   "bad": [
     {
-      "firewall": "calculate",
-      "array": "bypass"
-    },
-    {
-      "manufacturer": {
-        "type": "Person",
-        "firstName": "Elliot",
-        "lastName": "Halvorson",
-        "email": "Richard72@example.net",
-        "phoneNumber": "555-571-2599",
-        "worksFor": {
-          "type": "Organization",
-          "name": "Gleichner - Crist",
-          "description": "Compatible user-facing budgetary management",
-          "address": {
-            "type": "PostalAddress",
-            "streetAddress": "95221 Juanita Lights",
-            "addressLocality": "Port Dayanafort",
-            "addressRegion": "North Dakota",
-            "postalCode": "01502",
-            "addressCountry": "Slovenia"
-          },
-          "email": "Carleton_Glover@example.com",
-          "phoneNumber": "555-299-8766"
-        },
-        "jobTitle": "Corporate Mobility Manager"
-      },
-      "name": "Awesome Soft Pants",
-      "description": "The Football Is Good For Training And Recreational Purposes",
-      "sizeOrAmount": {
+      "weight": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "7546"
+        "value": "3751"
       },
-      "interface": "transmit",
-      "circuit": "override",
-      "transmitter": "input"
+      "alarm": "reboot"
     },
     {
-      "name": "Intelligent Concrete Chicken",
-      "sku": "632881974511",
-      "monitor": "generate"
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "Product",
+      "manufacturer": {
+        "type": "Person",
+        "firstName": "Elinore",
+        "lastName": "Barrows",
+        "email": "Lee.Hackett@example.net",
+        "phoneNumber": "555-856-4954",
+        "worksFor": {
+          "type": "Organization",
+          "name": "Bogisich LLC",
+          "description": "Distributed optimizing Graphic Interface",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "9157 Reilly Terrace",
+            "addressLocality": "Port Lorenmouth",
+            "addressRegion": "Georgia",
+            "postalCode": "93056",
+            "addressCountry": "Germany"
+          },
+          "email": "Katherine.Bernier@example.com",
+          "phoneNumber": "555-446-9503"
+        },
+        "jobTitle": "Human Configuration Orchestrator"
+      },
+      "name": "Handcrafted Rubber Towels",
+      "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+      "weight": {
+        "type": "QuantitativeValue",
+        "unitCode": "hg/ha",
+        "value": "3748"
+      },
+      "system": "synthesize",
+      "hard drive": "transmit",
+      "protocol": "quantify",
+      "matrix": "navigate"
+    },
+    {
+      "program": "reboot",
+      "microchip": "navigate",
+      "firewall": "quantify",
+      "port": "hack"
     }
   ]
 }

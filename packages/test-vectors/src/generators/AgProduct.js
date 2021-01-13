@@ -36,6 +36,7 @@ const getAgProduct = () => {
         plu: faker.random.number({ min: 1000, max: 9999 }).toString(),
         gtin: faker.random.number({ min: 10000000000000, max: 99999999999999 }).toString(),
         product,
+        scientificName: faker.lorem.words(),
         labelImageUrl: faker.image.imageUrl(),
         labelImageHash
     };

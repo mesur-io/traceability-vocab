@@ -5,78 +5,78 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Person",
-      "firstName": "Paxton",
-      "lastName": "Goodwin",
-      "email": "Duane.Romaguera35@example.net",
-      "phoneNumber": "555-675-3069",
+      "firstName": "Drew",
+      "lastName": "Nienow",
+      "email": "Frederick.Erdman39@example.com",
+      "phoneNumber": "555-876-7017",
       "worksFor": {
         "type": "Organization",
-        "name": "Yost - Grady",
-        "description": "Organic non-volatile frame",
+        "name": "Beahan and Sons",
+        "description": "Re-contextualized zero administration focus group",
         "address": {
           "type": "PostalAddress",
-          "streetAddress": "47057 Viola River",
-          "addressLocality": "Lake Cordie",
-          "addressRegion": "Georgia",
-          "postalCode": "44842",
-          "addressCountry": "Ukraine"
+          "streetAddress": "05462 Ivah Route",
+          "addressLocality": "Corwinhaven",
+          "addressRegion": "Maine",
+          "postalCode": "99082-4657",
+          "addressCountry": "French Guiana"
         },
-        "email": "Kristian.Gerhold@example.org",
-        "phoneNumber": "555-803-5704"
+        "email": "Icie.Schiller@example.com",
+        "phoneNumber": "555-500-4775"
       },
-      "jobTitle": "Human Tactics Analyst"
+      "jobTitle": "Legacy Accounts Designer"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Person",
-      "firstName": "Osvaldo",
-      "lastName": "Stehr",
-      "email": "Reilly_Dach73@example.com",
-      "phoneNumber": "555-239-6248",
+      "firstName": "Summer",
+      "lastName": "Bednar",
+      "email": "Aurelio.Jakubowski@example.org",
+      "phoneNumber": "555-768-3459",
       "worksFor": {
         "type": "Organization",
-        "name": "Bins Group",
-        "description": "Adaptive modular support",
+        "name": "Reinger, O'Connell and Hand",
+        "description": "Reduced impactful implementation",
         "address": {
           "type": "PostalAddress",
-          "streetAddress": "243 Dooley Drives",
-          "addressLocality": "South Zoe",
-          "addressRegion": "New Mexico",
-          "postalCode": "83654-9474",
-          "addressCountry": "Republic of Korea"
+          "streetAddress": "706 Kozey Creek",
+          "addressLocality": "Bruceland",
+          "addressRegion": "Oklahoma",
+          "postalCode": "49190-4066",
+          "addressCountry": "Belarus"
         },
-        "email": "Catharine.Parker97@example.org",
-        "phoneNumber": "555-412-2337"
+        "email": "Dortha98@example.org",
+        "phoneNumber": "555-277-8985"
       },
-      "jobTitle": "Dynamic Group Agent"
+      "jobTitle": "Human Implementation Associate"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Person",
-      "firstName": "Anabelle",
-      "lastName": "McDermott",
-      "email": "Garett_Breitenberg@example.net",
-      "phoneNumber": "555-593-8448",
+      "firstName": "Royal",
+      "lastName": "Hermiston",
+      "email": "Corene_Hermiston67@example.com",
+      "phoneNumber": "555-827-1764",
       "worksFor": {
         "type": "Organization",
-        "name": "Pfannerstill - McClure",
-        "description": "Organic bi-directional encoding",
+        "name": "Nienow - Rosenbaum",
+        "description": "Synergized homogeneous matrices",
         "address": {
           "type": "PostalAddress",
-          "streetAddress": "6505 Ida Centers",
-          "addressLocality": "North Quinn",
-          "addressRegion": "New Mexico",
-          "postalCode": "52886",
-          "addressCountry": "Burundi"
+          "streetAddress": "56590 Marquardt Trail",
+          "addressLocality": "Lake Gerson",
+          "addressRegion": "Oregon",
+          "postalCode": "37565-2389",
+          "addressCountry": "Marshall Islands"
         },
-        "email": "Marquis.Wisozk69@example.org",
-        "phoneNumber": "555-864-9417"
+        "email": "Rosalee_Aufderhar86@example.com",
+        "phoneNumber": "555-455-2440"
       },
-      "jobTitle": "Regional Identity Technician"
+      "jobTitle": "Dynamic Interactions Coordinator"
     }
   ],
   "bad": [
@@ -84,37 +84,56 @@
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "email": "Duane.Romaguera35@example.net",
-      "panel": "parse",
-      "firewall": "override"
+      "type": "Person",
+      "firstName": "Drew",
+      "email": "Frederick.Erdman39@example.com",
+      "worksFor": {
+        "type": "Organization",
+        "name": "Beahan and Sons",
+        "description": "Re-contextualized zero administration focus group",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "05462 Ivah Route",
+          "addressLocality": "Corwinhaven",
+          "addressRegion": "Maine",
+          "postalCode": "99082-4657",
+          "addressCountry": "French Guiana"
+        },
+        "email": "Icie.Schiller@example.com",
+        "phoneNumber": "555-500-4775"
+      },
+      "jobTitle": "Legacy Accounts Designer",
+      "circuit": "bypass",
+      "application": "back up"
     },
     {
       "type": "Person",
-      "firstName": "Osvaldo",
-      "lastName": "Stehr",
+      "firstName": "Summer",
+      "phoneNumber": "555-768-3459",
       "worksFor": {
         "type": "Organization",
-        "name": "Bins Group",
-        "description": "Adaptive modular support",
+        "name": "Reinger, O'Connell and Hand",
+        "description": "Reduced impactful implementation",
         "address": {
           "type": "PostalAddress",
-          "streetAddress": "243 Dooley Drives",
-          "addressLocality": "South Zoe",
-          "addressRegion": "New Mexico",
-          "postalCode": "83654-9474",
-          "addressCountry": "Republic of Korea"
+          "streetAddress": "706 Kozey Creek",
+          "addressLocality": "Bruceland",
+          "addressRegion": "Oklahoma",
+          "postalCode": "49190-4066",
+          "addressCountry": "Belarus"
         },
-        "email": "Catharine.Parker97@example.org",
-        "phoneNumber": "555-412-2337"
+        "email": "Dortha98@example.org",
+        "phoneNumber": "555-277-8985"
       },
-      "jobTitle": "Dynamic Group Agent",
-      "interface": "parse",
-      "driver": "bypass"
+      "jobTitle": "Human Implementation Associate",
+      "feed": "transmit"
     },
     {
-      "monitor": "compress",
-      "port": "parse",
-      "capacitor": "bypass"
+      "email": "Corene_Hermiston67@example.com",
+      "phoneNumber": "555-827-1764",
+      "jobTitle": "Dynamic Interactions Coordinator",
+      "transmitter": "calculate",
+      "array": "synthesize"
     }
   ]
 }

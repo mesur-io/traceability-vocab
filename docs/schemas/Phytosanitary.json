@@ -25,6 +25,12 @@
             "description": "ID number of the certificate",
             "type": "string"
         },
+        "plantOrg": {
+            "$comment": "{\"term\": \"plantOrg\", \"@id\": \"https://www.gs1.org/voc/Organization\"}",
+            "title": "Plant Protection Organization",
+            "description": "The phytosanitary standard-setting organization for a region.",
+            "$ref": "https://w3id.org/traceability/schemas/Entity.json"
+        },
         "distinguishingMarks": {
             "$comment": "{\"term\": \"distinguishingMarks\", \"@id\": \"https://www.gs1.org/voc/variantDescription\"}",
             "title": "Distinguishing Marks",
