@@ -281,7 +281,7 @@
           "@id": "https://www.govinfo.gov/content/pkg/CFR-2011-title19-vol1/pdf/CFR-2011-title19-vol1-sec24-24.pdf"
         },
         "additionalDeclaration": {
-          "@id": "https://schema.org/Comment"
+          "@id": "https://schema.org/Comment#v2"
         },
         "disinfectionDate": {
           "@id": "https://schema.org/validFrom"
@@ -302,10 +302,34 @@
           "@id": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/04._Reactions_in_Aqueous_Solution/4.5%3A_Concentration_of_Solutions"
         },
         "signatureDate": {
+          "@id": "https://schema.org/DateTime#v2"
+        },
+        "facility": {
+          "@id": "https://www.gs1.org/voc/Place"
+        },
+        "inspector": {
+          "@id": "https://www.lawinsider.com/dictionary/food-inspector"
+        },
+        "shipment": {
+          "@id": "https://schema.org/ParcelDelivery"
+        },
+        "agPackage": {
+          "@id": "https://www.merriam-webster.com/dictionary/parcel"
+        },
+        "applicant": {
+          "@id": "https://w3c-ccg.github.io/traceability-vocab/#dfn-entities"
+        },
+        "inspectionDate": {
           "@id": "https://schema.org/DateTime"
         },
-        "AgInspectionReport": {
-          "@id": "https://w3id.org/traceability/schemas/AgInspectionReport"
+        "inspectionType": {
+          "@id": "https://www.schema.org/value"
+        },
+        "notes": {
+          "@id": "https://schema.org/Comment"
+        },
+        "observation": {
+          "@id": "https://schema.org/ItemList"
         }
       }
     },
@@ -407,8 +431,32 @@
         "signatureDate": {
           "@id": "https://w3id.org/traceability/schemas/ppq203.json#signatureDate"
         },
-        "AgInspectionReport": {
-          "@id": "https://w3id.org/traceability/schemas/AgInspectionReport"
+        "facility": {
+          "@id": "https://www.gs1.org/voc/Place"
+        },
+        "inspector": {
+          "@id": "https://www.lawinsider.com/dictionary/food-inspector"
+        },
+        "shipment": {
+          "@id": "https://schema.org/ParcelDelivery"
+        },
+        "agPackage": {
+          "@id": "https://www.merriam-webster.com/dictionary/parcel"
+        },
+        "applicant": {
+          "@id": "https://w3c-ccg.github.io/traceability-vocab/#dfn-entities"
+        },
+        "inspectionDate": {
+          "@id": "https://schema.org/DateTime"
+        },
+        "inspectionType": {
+          "@id": "https://www.schema.org/value"
+        },
+        "notes": {
+          "@id": "https://schema.org/Comment"
+        },
+        "observation": {
+          "@id": "https://schema.org/ItemList"
         }
       }
     }

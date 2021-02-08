@@ -49,11 +49,62 @@
             "description": "Date when the inspection was signed by the inspection officer.",
             "type": "string"
         },
-        "AgInspectionReport": {
-            "$comment": "{\"term\": \"AgInspectionReport\", \"@id\": \"https://w3id.org/traceability/schemas/AgInspectionReport\"}",
-            "title": "Agriculture Inspection Report",
-            "description": "Template for agriculture inspection reports.",
-            "$ref": "https://w3id.org/traceability/schemas/AgInspectionReport.json"
+        "facility": {
+            "$comment": "{\"term\": \"facility\", \"@id\": \"https://www.gs1.org/voc/Place\"}",
+            "title": "Facility",
+            "description": "Information on the inspection facility.",
+            "$ref": "https://w3id.org/traceability/schemas/Place.json"
+        },
+        "inspector": {
+            "$comment": "{\"term\": \"inspector\", \"@id\": \"https://www.lawinsider.com/dictionary/food-inspector\"}",
+            "title": "Inspector",
+            "description": "Inspector performing the Aggriculture Inspection",
+            "$ref": "https://w3id.org/traceability/schemas/Inspector.json"
+        },
+        "shipment": {
+            "$comment": "{\"term\": \"shipment\", \"@id\": \"https://schema.org/ParcelDelivery\"}",
+            "title": "Shipment",
+            "description": "Details for a shipment of goods.",
+            "$ref": "https://w3id.org/traceability/schemas/ParcelDelivery.json"
+        },
+        "agPackage": {
+            "$comment": "{\"term\": \"agPackage\", \"@id\": \"https://www.merriam-webster.com/dictionary/parcel\"}",
+            "title": "Agriculture Package",
+            "description": "Package, crate, or generally container holding an agricultural product or products for inspection.",
+            "$ref": "https://w3id.org/traceability/schemas/AgPackage.json"
+        },
+        "applicant": {
+            "$comment": "{\"term\": \"applicant\", \"@id\": \"https://w3c-ccg.github.io/traceability-vocab/#dfn-entities\"}",
+            "title": "Applicant",
+            "description": "Entity that is applying for the inspection.",
+            "$ref": "https://w3id.org/traceability/schemas/Entity.json"
+        },
+        "inspectionDate": {
+            "$comment": "{\"term\": \"inspectionDate\", \"@id\": \"https://schema.org/DateTime\"}",
+            "title": "Inspection Date",
+            "description": "Date of the completed inspection.",
+            "type": "string"
+        },
+        "inspectionType": {
+            "$comment": "{\"term\": \"inspectionType\", \"@id\": \"https://www.schema.org/value\"}",
+            "title": "Inspection Type",
+            "description": "Type of Inspection.",
+            "type": "string"
+        },
+        "notes": {
+            "$comment": "{\"term\": \"notes\", \"@id\": \"https://schema.org/Comment\"}",
+            "title": "Inspection Notes",
+            "description": "Any notes or comments the inspector wishes to make relevant to the inspection.",
+            "type": "string"
+        },
+        "observation": {
+            "$comment": "{\"term\": \"observation\", \"@id\": \"https://schema.org/ItemList\", \"@type\": \"https://schema.org/ItemList\"}",
+            "title": "Observation List",
+            "description": "List of observations",
+            "type": "array",
+            "items": {
+                "$ref": "https://w3id.org/traceability/schemas/Observation.json"
+            }
         }
     },
     "additionalProperties": false,

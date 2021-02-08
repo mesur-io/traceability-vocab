@@ -5,7 +5,7 @@ const { getInspector } = require('./Inspector');
 const { getParcelDelivery } = require('./ParcelDelivery');
 const { getAgPackage } = require('./AgPackage');
 const { getEntity } = require('./Entity');
-const { getObservation } = require('./Observation');
+const { getInspectionReport } = require('./InspectionReport');
 //Include test data for inspection type.  This data is very rudimentary for now, and it is probably overkill to have a separate file, but it might be useful in the future across multiple Ag schemas.
 const agTypes = require('../../data/generated/AgInspection-types.json');
 //Include test data for Ag products.
@@ -24,38 +24,7 @@ const getAgInspectionReport = () => {
     ];
     const itemShipped = prods[randomProd].Item;
 
-    // Start observation data prep
-    let numSubstances = faker.random.number({ min: 1, max: 4 });
-    let observation = [];
 
-    while (numSubstances > 0) {
-        const substance = getObservation();
-        delete substance['@context'];
-        observation.push(substance);
-        numSubstances -= 1;
-    }
-
-    observation = _.uniq(observation, 'property.name');
-
-    const sum = observation
-        .map((r) => (r.property.inchi ? parseFloat(r.measurement.value) : 0))
-        .reduce((a, b) => a + b, 0);
-
-    observation = observation.map((r) => {
-        const adjusted = `${(
-            (100 * parseFloat(r.measurement.value))
-            / sum
-        ).toPrecision(5)}`;
-
-        return {
-            ...r,
-            measurement: {
-                ...r.measurement,
-                value: r.property.inchi ? adjusted : r.measurement.value,
-            },
-        };
-    });
-    // End observation data prep
 
     // pull in outside schemas
     const facility = getPlace();
@@ -69,21 +38,19 @@ const getAgInspectionReport = () => {
     delete applicant['@context'];
     const agPackage = getAgPackage();
     delete agPackage['@context'];
+    const inspection = getInspectionReport();
 
-    const example = {
-        '@context': ['https://w3id.org/traceability/v1'],
-        type: 'AgInspectionReport',
-        facility,
-        inspector,
-        shipment,
-        applicant,
-        agPackage,
-        inspectionDate: (inspectDate.getMonth() + 1) + "-" + inspectDate.getDay() + "-" + inspectDate.getFullYear(),
-        inspectionType,
-        notes: faker.lorem.sentence(),
-        observation
-    };
-    return example;
+    //AgInspection is a subclass of InspectionReport. Here we bring in Inspection report, change the type and add the new properties.
+    inspection["type"] = "AgInspectionReport"
+    inspection.facility = facility;
+    inspection.inspector = inspector;
+    inspection.shipment = shipment;
+    inspection.applicant = applicant;
+    inspection.agPackage = agPackage;
+    inspection.inspectionDate = (inspectDate.getMonth() + 1) + "-" + inspectDate.getDay() + "-" + inspectDate.getFullYear();
+    inspection.inspectionType = inspectionType;
+    inspection.notes = faker.lorem.sentence();
+    return inspection;
 };
 
 module.exports = { getAgInspectionReport };
