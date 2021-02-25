@@ -5,7 +5,7 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Qualification",
-      "qualificationCategory": "Senior Program Executive",
+      "qualificationCategory": "Dynamic Directives Analyst",
       "qualificationValue": "Specialist"
     },
     {
@@ -13,36 +13,37 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Qualification",
-      "qualificationCategory": "Dynamic Optimization Director",
-      "qualificationValue": "Administrator"
+      "qualificationCategory": "National Functionality Agent",
+      "qualificationValue": "Facilitator"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Qualification",
-      "qualificationCategory": "Dynamic Integration Engineer",
-      "qualificationValue": "Assistant"
+      "qualificationCategory": "Forward Functionality Associate",
+      "qualificationValue": "Associate"
     }
   ],
   "bad": [
     {
-      "qualificationCategory": "Senior Program Executive",
+      "type": "Qualification",
+      "qualificationCategory": "Dynamic Directives Analyst",
       "qualificationValue": "Specialist",
-      "microchip": "reboot",
-      "sensor": "synthesize",
-      "program": "connect",
-      "interface": "override"
+      "matrix": "navigate",
+      "card": "program",
+      "bus": "generate"
     },
     {
-      "interface": "generate",
-      "pixel": "synthesize",
-      "matrix": "generate",
-      "card": "copy"
+      "type": "Qualification",
+      "application": "hack"
     },
     {
-      "monitor": "program",
-      "capacitor": "calculate"
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "application": "compress",
+      "feed": "override"
     }
   ]
 }

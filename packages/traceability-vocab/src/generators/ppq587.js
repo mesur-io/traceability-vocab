@@ -3,7 +3,7 @@ const faker = require('faker');
 faker.seed(42);
 const { getAgInspectionReport } = require('./AgInspectionReport');
 
-const getppq203 = () => {
+const getppq587 = () => {
   // pull in outside schemas and remove the unneeded properties.
   // Use JSON-mask (https://github.com/nemtsov/json-mask) to pull in only the properties needed for PPQ
 
@@ -19,15 +19,20 @@ const getppq203 = () => {
   // applicant(type,firstName,lastName,name,address,worksFor(address),
   // inspectionDate)';
   // const AgInspectionReport = mask(fullAgInspectionReport, fields);
-  const certNum = faker.random.number({ min: 10000000, max: 999999999999 }).toString();
-  const exCarrier = faker.random.number({ min: 10000000, max: 999999999999 }).toString();
+
   const AgInspectionReport = fullAgInspectionReport;
   const sigDate = new Date(faker.date.recent());
-  AgInspectionReport.type = 'ppq203';
-  AgInspectionReport.certificateNumber = certNum;
-  AgInspectionReport.carrierId = exCarrier;
+
+  // delete the AgInspection Fields not represented on the ppq587 form
+  delete AgInspectionReport.inspector;
+  delete AgInspectionReport.inspectionDate;
+  delete AgInspectionReport.inspectionType;
+  delete AgInspectionReport.observation;
+
+  AgInspectionReport.type = 'ppq587';
   AgInspectionReport.signatureDate = `${sigDate.getFullYear()}-02-16`;
+  AgInspectionReport.intendedUse = 'Fruits and Vegetables';
   return AgInspectionReport;
 };
 
-module.exports = { getppq203 };
+module.exports = { getppq587 };

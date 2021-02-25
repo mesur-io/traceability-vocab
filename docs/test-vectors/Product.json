@@ -7,82 +7,76 @@
       "type": "Product",
       "manufacturer": {
         "type": "Person",
-        "firstName": "Mikel",
-        "lastName": "Jenkins",
-        "email": "Isabella_Mosciski@example.net",
-        "phoneNumber": "555-712-1085",
+        "firstName": "Maxime",
+        "lastName": "Torphy",
+        "email": "Kimberly61@example.org",
+        "phoneNumber": "555-994-2326",
         "worksFor": {
           "type": "Organization",
-          "name": "Hartmann, Kub and Keebler",
-          "description": "Polarised 5th generation matrices",
+          "name": "Bradtke Group",
+          "description": "Grass-roots heuristic workforce",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "5463 Cora Orchard",
-            "addressLocality": "Heloiseland",
-            "addressRegion": "Illinois",
-            "postalCode": "85903-9322",
-            "addressCountry": "Antigua and Barbuda"
+            "streetAddress": "6204 Haag Valleys",
+            "addressLocality": "West Shaniya",
+            "addressRegion": "Montana",
+            "postalCode": "82184",
+            "addressCountry": "USA"
           },
-          "email": "Morton26@example.net",
-          "phoneNumber": "555-476-3306"
+          "email": "Mossie32@example.net",
+          "phoneNumber": "555-155-8760",
+          "faxNumber": "555-427-3116"
         },
-        "jobTitle": "Dynamic Implementation Technician"
+        "jobTitle": "Direct Operations Orchestrator"
       },
-      "name": "Incredible Soft Pizza",
-      "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
-      "sizeOrAmount": {
-        "type": "QuantitativeValue",
-        "unitCode": "hg/ha",
-        "value": "282"
-      },
-      "weight": {
-        "type": "QuantitativeValue",
-        "unitCode": "hg/ha",
-        "value": "2167"
-      },
-      "sku": "425488184751"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "Product",
-      "manufacturer": {
-        "type": "Person",
-        "firstName": "Trey",
-        "lastName": "Grant",
-        "email": "Margarette.Tremblay@example.com",
-        "phoneNumber": "555-513-2326",
-        "worksFor": {
-          "type": "Organization",
-          "name": "Rogahn - Schoen",
-          "description": "Re-engineered radical knowledge user",
-          "address": {
-            "type": "PostalAddress",
-            "streetAddress": "996 Aufderhar Forges",
-            "addressLocality": "North Alessandrashire",
-            "addressRegion": "Delaware",
-            "postalCode": "37150-1113",
-            "addressCountry": "Guyana"
-          },
-          "email": "Florence.Stroman85@example.org",
-          "phoneNumber": "555-721-1510"
-        },
-        "jobTitle": "Central Factors Executive"
-      },
-      "name": "Ergonomic Granite Gloves",
+      "name": "Handmade Metal Bike",
       "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
       "sizeOrAmount": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "8948"
+        "value": "480"
       },
       "weight": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "8980"
+        "value": "6806"
       },
-      "sku": "654616379472"
+      "sku": "430823537099"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "Product",
+      "manufacturer": {
+        "type": "Organization",
+        "name": "Davis, Swaniawski and Schroeder",
+        "description": "Cross-group background parallelism",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "96009 Jeanie Springs",
+          "addressLocality": "Gustavestad",
+          "addressRegion": "Connecticut",
+          "postalCode": "08804",
+          "addressCountry": "USA"
+        },
+        "email": "Ayana66@example.org",
+        "phoneNumber": "555-493-9605",
+        "faxNumber": "555-225-6612"
+      },
+      "name": "Generic Cotton Sausages",
+      "description": "The Football Is Good For Training And Recreational Purposes",
+      "sizeOrAmount": {
+        "type": "QuantitativeValue",
+        "unitCode": "hg/ha",
+        "value": "6851"
+      },
+      "weight": {
+        "type": "QuantitativeValue",
+        "unitCode": "hg/ha",
+        "value": "9103"
+      },
+      "sku": "430067961253"
     },
     {
       "@context": [
@@ -91,131 +85,91 @@
       "type": "Product",
       "manufacturer": {
         "type": "Person",
-        "firstName": "Arturo",
-        "lastName": "Pfannerstill",
-        "email": "Uriah_Mohr@example.com",
-        "phoneNumber": "555-486-4877",
+        "firstName": "Aylin",
+        "lastName": "Kuvalis",
+        "email": "Sydnee48@example.org",
+        "phoneNumber": "555-664-6053",
         "worksFor": {
           "type": "Organization",
-          "name": "Monahan Inc",
-          "description": "Operative mobile hierarchy",
+          "name": "Hoppe, Wisoky and Marquardt",
+          "description": "Assimilated homogeneous workforce",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "83211 Kling Turnpike",
-            "addressLocality": "Reingerchester",
-            "addressRegion": "Illinois",
-            "postalCode": "39168",
-            "addressCountry": "Bulgaria"
+            "streetAddress": "7302 Bailey Wells",
+            "addressLocality": "Bahringerview",
+            "addressRegion": "California",
+            "postalCode": "42458-9940",
+            "addressCountry": "USA"
           },
-          "email": "Clementine_Parisian21@example.org",
-          "phoneNumber": "555-617-4886"
+          "email": "Carey.Grimes@example.org",
+          "phoneNumber": "555-755-8109",
+          "faxNumber": "555-779-5599"
         },
-        "jobTitle": "Forward Marketing Manager"
+        "jobTitle": "Global Intranet Coordinator"
       },
-      "name": "Ergonomic Steel Chips",
-      "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "name": "Sleek Concrete Salad",
+      "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
       "sizeOrAmount": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "1842"
+        "value": "8404"
       },
       "weight": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "6312"
+        "value": "4721"
       },
-      "sku": "967245599908"
+      "sku": "614222962214"
     }
   ],
   "bad": [
     {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
       "type": "Product",
       "manufacturer": {
         "type": "Person",
-        "firstName": "Mikel",
-        "lastName": "Jenkins",
-        "email": "Isabella_Mosciski@example.net",
-        "phoneNumber": "555-712-1085",
+        "firstName": "Maxime",
+        "lastName": "Torphy",
+        "email": "Kimberly61@example.org",
+        "phoneNumber": "555-994-2326",
         "worksFor": {
           "type": "Organization",
-          "name": "Hartmann, Kub and Keebler",
-          "description": "Polarised 5th generation matrices",
+          "name": "Bradtke Group",
+          "description": "Grass-roots heuristic workforce",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "5463 Cora Orchard",
-            "addressLocality": "Heloiseland",
-            "addressRegion": "Illinois",
-            "postalCode": "85903-9322",
-            "addressCountry": "Antigua and Barbuda"
+            "streetAddress": "6204 Haag Valleys",
+            "addressLocality": "West Shaniya",
+            "addressRegion": "Montana",
+            "postalCode": "82184",
+            "addressCountry": "USA"
           },
-          "email": "Morton26@example.net",
-          "phoneNumber": "555-476-3306"
+          "email": "Mossie32@example.net",
+          "phoneNumber": "555-155-8760",
+          "faxNumber": "555-427-3116"
         },
-        "jobTitle": "Dynamic Implementation Technician"
+        "jobTitle": "Direct Operations Orchestrator"
       },
-      "name": "Incredible Soft Pizza",
-      "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
-      "sizeOrAmount": {
-        "type": "QuantitativeValue",
-        "unitCode": "hg/ha",
-        "value": "282"
-      },
-      "sku": "425488184751",
-      "protocol": "calculate",
-      "bus": "override",
-      "driver": "input"
-    },
-    {
-      "type": "Product",
-      "manufacturer": {
-        "type": "Person",
-        "firstName": "Trey",
-        "lastName": "Grant",
-        "email": "Margarette.Tremblay@example.com",
-        "phoneNumber": "555-513-2326",
-        "worksFor": {
-          "type": "Organization",
-          "name": "Rogahn - Schoen",
-          "description": "Re-engineered radical knowledge user",
-          "address": {
-            "type": "PostalAddress",
-            "streetAddress": "996 Aufderhar Forges",
-            "addressLocality": "North Alessandrashire",
-            "addressRegion": "Delaware",
-            "postalCode": "37150-1113",
-            "addressCountry": "Guyana"
-          },
-          "email": "Florence.Stroman85@example.org",
-          "phoneNumber": "555-721-1510"
-        },
-        "jobTitle": "Central Factors Executive"
-      },
+      "name": "Handmade Metal Bike",
       "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
-      "sizeOrAmount": {
-        "type": "QuantitativeValue",
-        "unitCode": "hg/ha",
-        "value": "8948"
-      },
       "weight": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "8980"
+        "value": "6806"
       },
-      "sku": "654616379472",
-      "interface": "program",
-      "system": "copy",
-      "circuit": "generate"
+      "sku": "430823537099",
+      "capacitor": "quantify",
+      "array": "parse"
     },
     {
-      "type": "Product",
-      "name": "Ergonomic Steel Chips",
-      "weight": {
-        "type": "QuantitativeValue",
-        "unitCode": "hg/ha",
-        "value": "6312"
-      },
-      "sku": "967245599908",
-      "protocol": "program"
+      "sku": "430067961253",
+      "capacitor": "hack",
+      "panel": "connect"
+    },
+    {
+      "alarm": "program"
     }
   ]
 }

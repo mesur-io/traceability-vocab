@@ -5,20 +5,20 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Place",
-      "globalLocationNumber": "9919481762080",
+      "globalLocationNumber": "2716621408320",
       "geo": {
         "type": "GeoCoordinates",
-        "latitude": "8.6907",
-        "longitude": "30.0969"
+        "latitude": "60.4925",
+        "longitude": "-59.3239"
       },
       "address": {
         "type": "PostalAddress",
-        "organizationName": "Brown - Fisher",
-        "streetAddress": "992 Gulgowski Village",
-        "addressLocality": "Colemanport",
-        "addressRegion": "Rhode Island",
-        "postalCode": "92448-0874",
-        "addressCountry": "Vietnam"
+        "organizationName": "Gulgowski - Kling",
+        "streetAddress": "831 Fritsch Isle",
+        "addressLocality": "Sanfordberg",
+        "addressRegion": "Wisconsin",
+        "postalCode": "96307",
+        "addressCountry": "USA"
       }
     },
     {
@@ -26,20 +26,20 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Place",
-      "globalLocationNumber": "5611474484392",
+      "globalLocationNumber": "9479929571198",
       "geo": {
         "type": "GeoCoordinates",
-        "latitude": "23.6636",
-        "longitude": "-119.9950"
+        "latitude": "-82.0985",
+        "longitude": "9.0011"
       },
       "address": {
         "type": "PostalAddress",
-        "organizationName": "Rempel, Connelly and Schumm",
-        "streetAddress": "46004 Nelda Point",
-        "addressLocality": "Port Art",
-        "addressRegion": "Montana",
-        "postalCode": "01801",
-        "addressCountry": "Netherlands Antilles"
+        "organizationName": "Hahn - Hessel",
+        "streetAddress": "4815 Sadye Shoal",
+        "addressLocality": "New Whitney",
+        "addressRegion": "Nebraska",
+        "postalCode": "06317-1607",
+        "addressCountry": "USA"
       }
     },
     {
@@ -47,68 +47,69 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Place",
-      "globalLocationNumber": "8339152466054",
+      "globalLocationNumber": "5949739914910",
       "geo": {
         "type": "GeoCoordinates",
-        "latitude": "58.2742",
-        "longitude": "-168.7340"
+        "latitude": "-32.3685",
+        "longitude": "0.2289"
       },
       "address": {
         "type": "PostalAddress",
-        "organizationName": "Wiegand, Brakus and Casper",
-        "streetAddress": "757 Koss Keys",
-        "addressLocality": "East Sarai",
-        "addressRegion": "Illinois",
-        "postalCode": "03703-1768",
-        "addressCountry": "Mali"
+        "organizationName": "Emard, Cruickshank and Predovic",
+        "streetAddress": "7111 Arvid Corners",
+        "addressLocality": "Blockmouth",
+        "addressRegion": "New Hampshire",
+        "postalCode": "63552",
+        "addressCountry": "USA"
       }
     }
   ],
   "bad": [
     {
+      "address": {
+        "type": "PostalAddress",
+        "organizationName": "Gulgowski - Kling",
+        "streetAddress": "831 Fritsch Isle",
+        "addressLocality": "Sanfordberg",
+        "addressRegion": "Wisconsin",
+        "postalCode": "96307",
+        "addressCountry": "USA"
+      },
+      "program": "reboot",
+      "sensor": "connect",
+      "bus": "input"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
       "type": "Place",
-      "address": {
-        "type": "PostalAddress",
-        "organizationName": "Brown - Fisher",
-        "streetAddress": "992 Gulgowski Village",
-        "addressLocality": "Colemanport",
-        "addressRegion": "Rhode Island",
-        "postalCode": "92448-0874",
-        "addressCountry": "Vietnam"
-      },
-      "firewall": "parse",
-      "bus": "input",
-      "application": "input"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "address": {
-        "type": "PostalAddress",
-        "organizationName": "Rempel, Connelly and Schumm",
-        "streetAddress": "46004 Nelda Point",
-        "addressLocality": "Port Art",
-        "addressRegion": "Montana",
-        "postalCode": "01801",
-        "addressCountry": "Netherlands Antilles"
-      },
-      "interface": "transmit",
-      "monitor": "back up"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "globalLocationNumber": "8339152466054",
       "geo": {
         "type": "GeoCoordinates",
-        "latitude": "58.2742",
-        "longitude": "-168.7340"
+        "latitude": "-82.0985",
+        "longitude": "9.0011"
       },
-      "microchip": "copy",
+      "address": {
+        "type": "PostalAddress",
+        "organizationName": "Hahn - Hessel",
+        "streetAddress": "4815 Sadye Shoal",
+        "addressLocality": "New Whitney",
+        "addressRegion": "Nebraska",
+        "postalCode": "06317-1607",
+        "addressCountry": "USA"
+      },
+      "card": "calculate"
+    },
+    {
+      "geo": {
+        "type": "GeoCoordinates",
+        "latitude": "-32.3685",
+        "longitude": "0.2289"
+      },
+      "hard drive": "parse",
+      "bandwidth": "copy",
       "circuit": "navigate",
-      "interface": "hack"
+      "port": "copy"
     }
   ]
 }

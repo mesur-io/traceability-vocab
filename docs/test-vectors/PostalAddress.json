@@ -5,62 +5,58 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "PostalAddress",
-      "organizationName": "Mosciski - Dare",
-      "streetAddress": "23529 Schuster Islands",
-      "addressLocality": "Port Calebville",
-      "addressRegion": "New Mexico",
-      "postalCode": "05783",
-      "addressCountry": "Swaziland"
+      "organizationName": "Johnson and Sons",
+      "streetAddress": "344 McGlynn Plains",
+      "addressLocality": "Reynoldsmouth",
+      "addressRegion": "Arkansas",
+      "postalCode": "60748",
+      "addressCountry": "USA"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "PostalAddress",
-      "organizationName": "Hahn and Sons",
-      "streetAddress": "2634 Santina Summit",
-      "addressLocality": "East Bertha",
-      "addressRegion": "Louisiana",
-      "postalCode": "56433",
-      "addressCountry": "Taiwan"
+      "organizationName": "O'Keefe Inc",
+      "streetAddress": "78442 Reichel Summit",
+      "addressLocality": "New Rosieville",
+      "addressRegion": "Alabama",
+      "postalCode": "36319-9962",
+      "addressCountry": "USA"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "PostalAddress",
-      "organizationName": "Runte, Kunze and Frami",
-      "streetAddress": "357 Heathcote Ridge",
-      "addressLocality": "Port Nicole",
-      "addressRegion": "New York",
-      "postalCode": "05302-5803",
-      "addressCountry": "Western Sahara"
+      "organizationName": "Gutmann, Rau and Dickens",
+      "streetAddress": "0111 Pollich Hollow",
+      "addressLocality": "South Nayelifort",
+      "addressRegion": "Oregon",
+      "postalCode": "51388-0841",
+      "addressCountry": "USA"
     }
   ],
   "bad": [
     {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
       "type": "PostalAddress",
-      "organizationName": "Mosciski - Dare",
-      "streetAddress": "23529 Schuster Islands",
-      "addressLocality": "Port Calebville",
-      "addressRegion": "New Mexico",
-      "postalCode": "05783",
-      "addressCountry": "Swaziland",
-      "hard drive": "synthesize",
-      "system": "transmit",
-      "feed": "generate",
-      "application": "index"
+      "organizationName": "Johnson and Sons",
+      "addressCountry": "USA",
+      "alarm": "back up"
     },
     {
-      "organizationName": "Hahn and Sons",
-      "driver": "transmit",
-      "array": "connect"
+      "streetAddress": "78442 Reichel Summit",
+      "addressLocality": "New Rosieville",
+      "addressRegion": "Alabama",
+      "postalCode": "36319-9962",
+      "addressCountry": "USA",
+      "capacitor": "hack"
     },
     {
-      "addressRegion": "New York",
-      "bus": "navigate",
-      "interface": "back up",
-      "port": "input"
+      "pixel": "reboot"
     }
   ]
 }

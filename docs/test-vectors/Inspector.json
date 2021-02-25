@@ -7,37 +7,43 @@
       "type": "Inspector",
       "person": {
         "type": "Person",
-        "firstName": "May",
-        "lastName": "Johnson",
-        "email": "Prudence_Schaefer@example.com",
-        "phoneNumber": "555-270-5341",
+        "firstName": "Paxton",
+        "lastName": "Anderson",
+        "email": "Colton_Halvorson21@example.net",
+        "phoneNumber": "555-758-5047",
         "worksFor": {
           "type": "Organization",
-          "name": "Flatley and Sons",
-          "description": "Switchable 4th generation help-desk",
+          "name": "Reichel, Walter and Hackett",
+          "description": "Distributed empowering help-desk",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "0986 Grayson Landing",
-            "addressLocality": "Juvenalside",
-            "addressRegion": "Nebraska",
-            "postalCode": "93041",
-            "addressCountry": "Canada"
+            "streetAddress": "8668 Schoen Pines",
+            "addressLocality": "Port Rubiemouth",
+            "addressRegion": "California",
+            "postalCode": "08636",
+            "addressCountry": "USA"
           },
-          "email": "Arnold_Labadie40@example.net",
-          "phoneNumber": "555-954-8440"
+          "email": "Treva_Brakus@example.org",
+          "phoneNumber": "555-703-9849",
+          "faxNumber": "555-477-9449"
         },
-        "jobTitle": "Future Applications Director"
+        "jobTitle": "International Accountability Coordinator"
       },
       "qualification": [
         {
           "type": "Qualification",
-          "qualificationCategory": "Investor Integration Executive",
-          "qualificationValue": "Technician"
+          "qualificationCategory": "International Operations Representative",
+          "qualificationValue": "Coordinator"
         },
         {
           "type": "Qualification",
-          "qualificationCategory": "Future Marketing Assistant",
-          "qualificationValue": "Strategist"
+          "qualificationCategory": "Lead Tactics Specialist",
+          "qualificationValue": "Coordinator"
+        },
+        {
+          "type": "Qualification",
+          "qualificationCategory": "International Marketing Facilitator",
+          "qualificationValue": "Technician"
         }
       ]
     },
@@ -48,127 +54,156 @@
       "type": "Inspector",
       "person": {
         "type": "Person",
-        "firstName": "Quentin",
-        "lastName": "Bailey",
-        "email": "Marlon_White@example.net",
-        "phoneNumber": "555-966-3901",
+        "firstName": "Allie",
+        "lastName": "Rutherford",
+        "email": "Torrance_Donnelly@example.com",
+        "phoneNumber": "555-450-3099",
         "worksFor": {
           "type": "Organization",
-          "name": "Gottlieb - Little",
-          "description": "Ameliorated even-keeled adapter",
+          "name": "Hickle, Harvey and Hegmann",
+          "description": "Quality-focused methodical website",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "64176 Grant Village",
-            "addressLocality": "South Camylle",
-            "addressRegion": "Tennessee",
-            "postalCode": "94358",
-            "addressCountry": "Burundi"
+            "streetAddress": "527 Tevin Walks",
+            "addressLocality": "North Luciousland",
+            "addressRegion": "Utah",
+            "postalCode": "19180-6372",
+            "addressCountry": "USA"
           },
-          "email": "Deven.Bergnaum@example.net",
-          "phoneNumber": "555-200-9240"
+          "email": "Darrel.Connelly45@example.net",
+          "phoneNumber": "555-140-2247",
+          "faxNumber": "555-336-4505"
         },
-        "jobTitle": "Chief Solutions Architect"
+        "jobTitle": "Internal Response Facilitator"
       },
       "qualification": [
         {
           "type": "Qualification",
-          "qualificationCategory": "Regional Operations Technician",
+          "qualificationCategory": "Legacy Directives Representative",
+          "qualificationValue": "Manager"
+        }
+      ]
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "Inspector",
+      "person": {
+        "type": "Person",
+        "firstName": "Randal",
+        "lastName": "Stoltenberg",
+        "email": "Meghan.Kassulke@example.net",
+        "phoneNumber": "555-308-8960",
+        "worksFor": {
+          "type": "Organization",
+          "name": "Stroman - Runte",
+          "description": "Fundamental systematic interface",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "04773 King Port",
+            "addressLocality": "East Maritzamouth",
+            "addressRegion": "Idaho",
+            "postalCode": "01862",
+            "addressCountry": "USA"
+          },
+          "email": "Nina_Kunde@example.org",
+          "phoneNumber": "555-968-9251",
+          "faxNumber": "555-921-8259"
+        },
+        "jobTitle": "Investor Directives Supervisor"
+      },
+      "qualification": [
+        {
+          "type": "Qualification",
+          "qualificationCategory": "Global Division Supervisor",
+          "qualificationValue": "Specialist"
+        },
+        {
+          "type": "Qualification",
+          "qualificationCategory": "Global Metrics Designer",
           "qualificationValue": "Officer"
         },
         {
           "type": "Qualification",
-          "qualificationCategory": "Chief Tactics Officer",
-          "qualificationValue": "Manager"
-        },
-        {
-          "type": "Qualification",
-          "qualificationCategory": "Future Branding Analyst",
-          "qualificationValue": "Planner"
-        }
-      ]
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "Inspector",
-      "person": {
-        "type": "Person",
-        "firstName": "Daryl",
-        "lastName": "Schneider",
-        "email": "Chanelle_Bogan@example.com",
-        "phoneNumber": "555-100-3668",
-        "worksFor": {
-          "type": "Organization",
-          "name": "Hartmann - Murazik",
-          "description": "Programmable 6th generation contingency",
-          "address": {
-            "type": "PostalAddress",
-            "streetAddress": "83376 Hoeger Corner",
-            "addressLocality": "Percivalbury",
-            "addressRegion": "Virginia",
-            "postalCode": "11292-9543",
-            "addressCountry": "Cape Verde"
-          },
-          "email": "Jaunita_Bahringer98@example.net",
-          "phoneNumber": "555-712-7866"
-        },
-        "jobTitle": "District Optimization Specialist"
-      },
-      "qualification": [
-        {
-          "type": "Qualification",
-          "qualificationCategory": "National Research Orchestrator",
-          "qualificationValue": "Agent"
+          "qualificationCategory": "Human Brand Director",
+          "qualificationValue": "Administrator"
         }
       ]
     }
   ],
   "bad": [
     {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "Inspector",
       "qualification": [
         {
           "type": "Qualification",
-          "qualificationCategory": "Investor Integration Executive",
-          "qualificationValue": "Technician"
+          "qualificationCategory": "International Operations Representative",
+          "qualificationValue": "Coordinator"
         },
         {
           "type": "Qualification",
-          "qualificationCategory": "Future Marketing Assistant",
-          "qualificationValue": "Strategist"
+          "qualificationCategory": "Lead Tactics Specialist",
+          "qualificationValue": "Coordinator"
+        },
+        {
+          "type": "Qualification",
+          "qualificationCategory": "International Marketing Facilitator",
+          "qualificationValue": "Technician"
         }
       ],
-      "array": "program",
-      "microchip": "copy"
+      "monitor": "reboot",
+      "array": "input"
+    },
+    {
+      "application": "parse"
     },
     {
       "person": {
         "type": "Person",
-        "firstName": "Quentin",
-        "lastName": "Bailey",
-        "email": "Marlon_White@example.net",
-        "phoneNumber": "555-966-3901",
+        "firstName": "Randal",
+        "lastName": "Stoltenberg",
+        "email": "Meghan.Kassulke@example.net",
+        "phoneNumber": "555-308-8960",
         "worksFor": {
           "type": "Organization",
-          "name": "Gottlieb - Little",
-          "description": "Ameliorated even-keeled adapter",
+          "name": "Stroman - Runte",
+          "description": "Fundamental systematic interface",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "64176 Grant Village",
-            "addressLocality": "South Camylle",
-            "addressRegion": "Tennessee",
-            "postalCode": "94358",
-            "addressCountry": "Burundi"
+            "streetAddress": "04773 King Port",
+            "addressLocality": "East Maritzamouth",
+            "addressRegion": "Idaho",
+            "postalCode": "01862",
+            "addressCountry": "USA"
           },
-          "email": "Deven.Bergnaum@example.net",
-          "phoneNumber": "555-200-9240"
+          "email": "Nina_Kunde@example.org",
+          "phoneNumber": "555-968-9251",
+          "faxNumber": "555-921-8259"
         },
-        "jobTitle": "Chief Solutions Architect"
+        "jobTitle": "Investor Directives Supervisor"
       },
-      "feed": "quantify"
-    },
-    {
-      "protocol": "transmit"
+      "qualification": [
+        {
+          "type": "Qualification",
+          "qualificationCategory": "Global Division Supervisor",
+          "qualificationValue": "Specialist"
+        },
+        {
+          "type": "Qualification",
+          "qualificationCategory": "Global Metrics Designer",
+          "qualificationValue": "Officer"
+        },
+        {
+          "type": "Qualification",
+          "qualificationCategory": "Human Brand Director",
+          "qualificationValue": "Administrator"
+        }
+      ],
+      "pixel": "bypass"
     }
   ]
 }

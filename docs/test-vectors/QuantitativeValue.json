@@ -6,7 +6,7 @@
       ],
       "type": "QuantitativeValue",
       "unitCode": "hg/ha",
-      "value": "4074"
+      "value": "8662"
     },
     {
       "@context": [
@@ -14,7 +14,7 @@
       ],
       "type": "QuantitativeValue",
       "unitCode": "hg/ha",
-      "value": "3167"
+      "value": "1409"
     },
     {
       "@context": [
@@ -22,32 +22,30 @@
       ],
       "type": "QuantitativeValue",
       "unitCode": "hg/ha",
-      "value": "1286"
+      "value": "4002"
     }
   ],
   "bad": [
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "value": "4074",
-      "bus": "calculate"
-    },
-    {
       "unitCode": "hg/ha",
-      "value": "3167",
-      "port": "synthesize",
-      "feed": "quantify",
-      "interface": "quantify",
-      "bus": "bypass"
+      "interface": "override",
+      "matrix": "reboot"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "QuantitativeValue",
-      "pixel": "override",
-      "protocol": "navigate"
+      "value": "1409",
+      "interface": "override",
+      "monitor": "parse"
+    },
+    {
+      "unitCode": "hg/ha",
+      "value": "4002",
+      "application": "compress",
+      "array": "parse",
+      "capacitor": "override"
     }
   ]
 }

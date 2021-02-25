@@ -5,18 +5,18 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIregistration",
-      "initialRegistrationDate": "2020-8-0",
-      "lastUpdateDate": "2020-8-0",
-      "status": "CONFIRMED",
-      "nextRenewalDate": "2021-11-5",
-      "managingLou": "WWZIIOZMKVXIEOQKKFHB",
+      "initialRegistrationDate": "2020-7-5",
+      "lastUpdateDate": "2020-7-5",
+      "status": "IN PROGRESS",
+      "nextRenewalDate": "2022-1-2",
+      "managingLou": "TLYIIHRNMICIDWWXEUGB",
       "validationSources": "PARTIALLY_CORROBORATED",
       "validationAuthority": [
         {
           "type": "LEIauthority",
-          "validationAuthorityID": "RA000661",
-          "otherValidationAuthorityID": "0KXV99XL",
-          "validationAuthorityEntityID": "Z2S1OMPYCJHWM1WI1P0A"
+          "validationAuthorityID": "RA000001",
+          "otherValidationAuthorityID": "K3XQKNVY",
+          "validationAuthorityEntityID": "Z5XJ73FDKRCM5S4O0193"
         }
       ]
     },
@@ -25,38 +25,38 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIregistration",
-      "initialRegistrationDate": "2020-3-3",
-      "lastUpdateDate": "2020-3-3",
-      "status": "IN PROGRESS",
-      "nextRenewalDate": "2022-0-2",
-      "managingLou": "FUYYYYNWCVVELRYZDWEP",
+      "initialRegistrationDate": "2020-2-4",
+      "lastUpdateDate": "2020-2-4",
+      "status": "CONFIRMED",
+      "nextRenewalDate": "2021-2-4",
+      "managingLou": "ZKYIYNHMRBIABULYZKFA",
       "validationSources": "PARTIALLY_CORROBORATED",
+      "validationAuthority": [
+        {
+          "type": "LEIauthority",
+          "validationAuthorityID": "RA000001",
+          "otherValidationAuthorityID": "X40C3CT7",
+          "validationAuthorityEntityID": "H7MQUN7DMNH1FF096JRT"
+        }
+      ]
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "LEIregistration",
+      "initialRegistrationDate": "2020-2-1",
+      "lastUpdateDate": "2020-2-1",
+      "status": "CONFIRMED",
+      "nextRenewalDate": "2022-0-0",
+      "managingLou": "REQATRNPGIIUJXCINWGT",
+      "validationSources": "FULLY_CORROBORATED",
       "validationAuthority": [
         {
           "type": "LEIauthority",
           "validationAuthorityID": "RA000004",
-          "otherValidationAuthorityID": "HRSEQL1L",
-          "validationAuthorityEntityID": "XKRXIWONR9WWKWDGVRD8"
-        }
-      ]
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "LEIregistration",
-      "initialRegistrationDate": "2020-6-5",
-      "lastUpdateDate": "2020-6-5",
-      "status": "REQUESTED",
-      "nextRenewalDate": "2022-1-0",
-      "managingLou": "ZZSTZKGMBOMWZQREMPWH",
-      "validationSources": "NOT_CORROBORATED",
-      "validationAuthority": [
-        {
-          "type": "LEIauthority",
-          "validationAuthorityID": "RA000002",
-          "otherValidationAuthorityID": "I96MHN6Y",
-          "validationAuthorityEntityID": "ONCKQNUJH4T2M6Y50I3Z"
+          "otherValidationAuthorityID": "BIM1X2VG",
+          "validationAuthorityEntityID": "M6WZZB52N3OJ7N40T40H"
         }
       ]
     }
@@ -66,29 +66,42 @@
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "type": "LEIregistration",
-      "lastUpdateDate": "2020-8-0",
-      "status": "CONFIRMED",
-      "nextRenewalDate": "2021-11-5",
+      "initialRegistrationDate": "2020-7-5",
+      "status": "IN PROGRESS",
+      "nextRenewalDate": "2022-1-2",
+      "managingLou": "TLYIIHRNMICIDWWXEUGB",
       "validationSources": "PARTIALLY_CORROBORATED",
       "validationAuthority": [
         {
           "type": "LEIauthority",
-          "validationAuthorityID": "RA000661",
-          "otherValidationAuthorityID": "0KXV99XL",
-          "validationAuthorityEntityID": "Z2S1OMPYCJHWM1WI1P0A"
+          "validationAuthorityID": "RA000001",
+          "otherValidationAuthorityID": "K3XQKNVY",
+          "validationAuthorityEntityID": "Z5XJ73FDKRCM5S4O0193"
         }
       ],
-      "bus": "override",
-      "sensor": "back up"
+      "microchip": "parse",
+      "card": "compress",
+      "pixel": "input"
     },
     {
-      "initialRegistrationDate": "2020-3-3",
-      "capacitor": "compress"
+      "validationAuthority": [
+        {
+          "type": "LEIauthority",
+          "validationAuthorityID": "RA000001",
+          "otherValidationAuthorityID": "X40C3CT7",
+          "validationAuthorityEntityID": "H7MQUN7DMNH1FF096JRT"
+        }
+      ],
+      "feed": "reboot",
+      "firewall": "copy",
+      "application": "bypass",
+      "circuit": "hack"
     },
     {
-      "protocol": "calculate",
-      "matrix": "compress"
+      "nextRenewalDate": "2022-0-0",
+      "card": "bypass",
+      "driver": "bypass",
+      "interface": "reboot"
     }
   ]
 }

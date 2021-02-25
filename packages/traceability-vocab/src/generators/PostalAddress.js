@@ -9,7 +9,7 @@ const getPostalAddress = () => {
     addressLocality: faker.address.city(),
     addressRegion: faker.address.state(),
     postalCode: faker.address.zipCode(),
-    addressCountry: faker.address.country(),
+    addressCountry: 'USA', // due to the other faker data being US based for the most part
   };
   return example;
 };

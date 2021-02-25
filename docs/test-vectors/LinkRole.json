@@ -27,20 +27,21 @@
   ],
   "bad": [
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "hard drive": "transmit",
-      "system": "index"
-    },
-    {
-      "circuit": "transmit"
+      "linkRelationship": "alternate",
+      "array": "parse",
+      "panel": "bypass",
+      "port": "copy"
     },
     {
       "linkRelationship": "alternate",
-      "protocol": "compress",
-      "system": "navigate",
-      "card": "quantify"
+      "sensor": "reboot",
+      "circuit": "calculate",
+      "system": "index"
+    },
+    {
+      "port": "parse",
+      "interface": "index",
+      "matrix": "hack"
     }
   ]
 }

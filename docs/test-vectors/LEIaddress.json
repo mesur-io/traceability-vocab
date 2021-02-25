@@ -5,54 +5,54 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIaddress",
-      "language": "en_AU_ocker",
+      "language": "id_ID",
       "addressLines": [
-        "Lubowitz, Spinka and Balistreri",
-        "327 Hahn Island"
+        "Howe - Jacobs",
+        "47026 Josiah Loop"
       ],
-      "addressNumber": "419",
-      "addressNumberWithinBuilding": "8",
-      "mailRouting": "18077 Catherine Run, 14074",
-      "city": "Port Monserratstad",
-      "region": "Buckinghamshire",
-      "country": "Botswana",
-      "postalCode": "01983-2064"
+      "addressNumber": "206",
+      "addressNumberWithinBuilding": "2",
+      "mailRouting": "51087 Stan Underpass, 87570-5605",
+      "city": "Victorialand",
+      "region": "Bedfordshire",
+      "country": "Syrian Arab Republic",
+      "postalCode": "18591-6972"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIaddress",
-      "language": "fr_CH",
+      "language": "de_AT",
       "addressLines": [
-        "Okuneva - Durgan",
-        "73512 Osinski Passage"
+        "Waelchi Inc",
+        "327 Webster Squares"
       ],
-      "addressNumber": "326",
-      "addressNumberWithinBuilding": "9",
-      "mailRouting": "34310 Miracle Squares, 67954-6839",
-      "city": "Wisokyfort",
+      "addressNumber": "86",
+      "addressNumberWithinBuilding": "7",
+      "mailRouting": "0032 O'Keefe Coves, 21509-6635",
+      "city": "West Ludieland",
       "region": "Buckinghamshire",
-      "country": "Macedonia",
-      "postalCode": "75930-3336"
+      "country": "Malaysia",
+      "postalCode": "17641"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIaddress",
-      "language": "ja",
+      "language": "fi",
       "addressLines": [
-        "Schulist - Mitchell",
-        "702 Marlee Camp"
+        "Douglas, Russel and Nitzsche",
+        "678 Haag Points"
       ],
-      "addressNumber": "90",
-      "addressNumberWithinBuilding": "9",
-      "mailRouting": "6694 Milford Views, 31341-9146",
-      "city": "Isomfort",
-      "region": "Buckinghamshire",
-      "country": "Equatorial Guinea",
-      "postalCode": "62399"
+      "addressNumber": "177",
+      "addressNumberWithinBuilding": "2",
+      "mailRouting": "7982 Corwin Island, 69314-7523",
+      "city": "East Sophiaville",
+      "region": "Borders",
+      "country": "Antarctica (the territory South of 60 deg S)",
+      "postalCode": "42579"
     }
   ],
   "bad": [
@@ -61,47 +61,29 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIaddress",
-      "addressNumber": "419",
-      "addressNumberWithinBuilding": "8",
-      "mailRouting": "18077 Catherine Run, 14074",
-      "city": "Port Monserratstad",
-      "region": "Buckinghamshire",
-      "postalCode": "01983-2064",
-      "microchip": "index",
-      "driver": "override",
-      "capacitor": "synthesize",
-      "program": "index"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "LEIaddress",
-      "language": "fr_CH",
+      "language": "id_ID",
       "addressLines": [
-        "Okuneva - Durgan",
-        "73512 Osinski Passage"
+        "Howe - Jacobs",
+        "47026 Josiah Loop"
       ],
-      "addressNumber": "326",
-      "addressNumberWithinBuilding": "9",
-      "city": "Wisokyfort",
-      "region": "Buckinghamshire",
-      "postalCode": "75930-3336",
-      "protocol": "bypass",
-      "pixel": "program"
+      "addressNumber": "206",
+      "mailRouting": "51087 Stan Underpass, 87570-5605",
+      "city": "Victorialand",
+      "region": "Bedfordshire",
+      "country": "Syrian Arab Republic",
+      "postalCode": "18591-6972",
+      "array": "transmit",
+      "card": "copy"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "type": "LEIaddress",
-      "language": "ja",
-      "addressNumber": "90",
-      "addressNumberWithinBuilding": "9",
-      "mailRouting": "6694 Milford Views, 31341-9146",
-      "region": "Buckinghamshire",
-      "postalCode": "62399",
-      "pixel": "navigate"
+      "bandwidth": "parse",
+      "panel": "back up"
+    },
+    {
+      "firewall": "reboot"
     }
   ]
 }

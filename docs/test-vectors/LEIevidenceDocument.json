@@ -5,73 +5,73 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIevidenceDocument",
-      "lei": "UOVXWGH8KMLO3I3Y50FZ",
+      "lei": "TC7B9S9PINJ8D5WA0D21",
       "entity": {
         "@context": [
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIentity",
-        "legalName": "Labadie, Feil and Hilll",
-        "legalNameLanguage": "en",
+        "legalName": "Gutmann LLC",
+        "legalNameLanguage": "tr",
         "otherNames": [
-          "Nolan - Weissnat",
-          "Champlin and Sons"
+          "Baumbach - Turner",
+          "Bednar - Quitzon"
         ],
         "transliteratedOtherNames": [
-          "Nolan - Weissnat",
-          "Champlin and Sons"
+          "Baumbach - Turner",
+          "Bednar - Quitzon"
         ],
         "legalAddress": {
           "type": "LEIaddress",
-          "language": "en_CA",
+          "language": "sk",
           "addressLines": [
-            "Dicki, Hansen and Kihn",
-            "066 Baumbach Haven"
+            "Wolf, Hartmann and Haley",
+            "931 Helen Mountains"
           ],
-          "addressNumber": "367",
-          "addressNumberWithinBuilding": "10",
-          "mailRouting": "1414 Stefanie Cliff, 83038-3954",
-          "city": "Port Noebury",
-          "region": "Borders",
-          "country": "Dominican Republic",
-          "postalCode": "22157"
+          "addressNumber": "237",
+          "addressNumberWithinBuilding": "4",
+          "mailRouting": "2304 Emiliano Coves, 82408",
+          "city": "Kubmouth",
+          "region": "Cambridgeshire",
+          "country": "Mauritius",
+          "postalCode": "47506-9579"
         },
         "headquartersAddress": {
           "type": "LEIaddress",
-          "language": "ar",
+          "language": "hy",
           "addressLines": [
-            "Walter - Klein",
-            "00344 Leuschke Mount"
+            "Orn, Ondricka and Romaguera",
+            "348 Friesen Skyway"
           ],
-          "addressNumber": "48",
-          "addressNumberWithinBuilding": "7",
-          "mailRouting": "7992 Bruen Radial, 48600-1628",
-          "city": "West Coreneberg",
-          "region": "Borders",
-          "country": "Saint Vincent and the Grenadines",
-          "postalCode": "57256-2890"
+          "addressNumber": "456",
+          "addressNumberWithinBuilding": "6",
+          "mailRouting": "8279 Valerie View, 80881-4699",
+          "city": "Port Christophestad",
+          "region": "Cambridgeshire",
+          "country": "Estonia",
+          "postalCode": "87676-2529"
         },
         "registrationAuthority": {
           "type": "LEIauthority",
-          "validationAuthorityID": "RA000005",
-          "otherValidationAuthorityID": "UUPKPQ9G",
-          "validationAuthorityEntityID": "66CD56V4WDISKIPTFDM1"
+          "validationAuthorityID": "RA000001",
+          "otherValidationAuthorityID": "0Y8MYI96",
+          "validationAuthorityEntityID": "MHN6YONCKQNUJH4T2M6Y"
         },
-        "legalJurisdiction": "Avon",
+        "legalJurisdiction": "Bedfordshire",
         "entityCategory": "Grocery",
         "legalForm": "LLC",
         "associatedEntity": {
           "type": "Organization",
-          "leiCode": "RN1KC7VNRVM1AHSYW8C1",
-          "name": "Orn, Kuhlman and Hirthe"
+          "leiCode": "V0KXV99XLZ2S1OMPYCJH",
+          "name": "Wiza and Sons"
         },
         "status": "REQUESTED",
-        "expirationDate": "2021-4-2",
-        "expirationReason": "innovate bleeding-edge metrics",
+        "expirationDate": "2021-6-2",
+        "expirationReason": "redefine rich mindshare",
         "successorEntity": {
           "type": "Organization",
-          "leiCode": "VEANPBLXZJ4ZOLLFYM17",
-          "name": "Wuckert - Jast"
+          "leiCode": "QZE9H1KHVZMN6GLV9PZK",
+          "name": "Beer Group"
         },
         "otherAddresses": []
       },
@@ -80,23 +80,23 @@
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIregistration",
-        "initialRegistrationDate": "2020-10-3",
-        "lastUpdateDate": "2020-10-3",
-        "status": "CONFIRMED",
-        "nextRenewalDate": "2021-5-2",
-        "managingLou": "ITKTLMVDAMJXKUQVQSYI",
-        "validationSources": "PARTIALLY_CORROBORATED",
+        "initialRegistrationDate": "2020-2-6",
+        "lastUpdateDate": "2020-2-6",
+        "status": "REJECTED",
+        "nextRenewalDate": "2021-9-4",
+        "managingLou": "BGLJIPFXBWUIXSSCTRIM",
+        "validationSources": "FULLY_CORROBORATED",
         "validationAuthority": [
           {
             "type": "LEIauthority",
-            "validationAuthorityID": "RA000661",
-            "otherValidationAuthorityID": "YIWFE5F4",
-            "validationAuthorityEntityID": "LY2GWOT79YVLCROBLN9J"
+            "validationAuthorityID": "RA000003",
+            "otherValidationAuthorityID": "102D1NY9",
+            "validationAuthorityEntityID": "LCNQFJSFFRAYAA7WSO4D"
           }
         ]
       },
       "bic": [
-        "DSVIKZTRLD"
+        "TFQMAZMYRH"
       ]
     },
     {
@@ -104,73 +104,73 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIevidenceDocument",
-      "lei": "AKBZNDGMK4E3TES941VA",
+      "lei": "213NAKZCTYM6UCP47TY5",
       "entity": {
         "@context": [
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIentity",
-        "legalName": "Adams - Hyatt",
-        "legalNameLanguage": "ko",
+        "legalName": "Goldner, Rau and Bahringer",
+        "legalNameLanguage": "nl_BE",
         "otherNames": [
-          "Kihn - Ruecker",
-          "Ruecker LLC"
+          "Ortiz and Sons",
+          "Gerlach Group"
         ],
         "transliteratedOtherNames": [
-          "Kihn - Ruecker",
-          "Ruecker LLC"
+          "Ortiz and Sons",
+          "Gerlach Group"
         ],
         "legalAddress": {
           "type": "LEIaddress",
-          "language": "fa",
+          "language": "vi",
           "addressLines": [
-            "Weimann LLC",
-            "85034 Lubowitz Falls"
+            "Davis and Sons",
+            "9317 Fay Fall"
           ],
-          "addressNumber": "497",
-          "addressNumberWithinBuilding": "3",
-          "mailRouting": "041 Auer Camp, 01988-8439",
-          "city": "West Kenyamouth",
-          "region": "Cambridgeshire",
-          "country": "Tonga",
-          "postalCode": "14623"
+          "addressNumber": "306",
+          "addressNumberWithinBuilding": "10",
+          "mailRouting": "1175 Fay Crossing, 24628",
+          "city": "North Aracely",
+          "region": "Buckinghamshire",
+          "country": "Guyana",
+          "postalCode": "67437-9441"
         },
         "headquartersAddress": {
           "type": "LEIaddress",
-          "language": "en_IE",
+          "language": "ru",
           "addressLines": [
-            "Koelpin, Cormier and Collier",
-            "08094 Bednar Meadow"
+            "Kulas Group",
+            "65176 Ziemann Village"
           ],
-          "addressNumber": "224",
-          "addressNumberWithinBuilding": "6",
-          "mailRouting": "7372 O'Keefe Station, 19217",
-          "city": "Port Esther",
-          "region": "Bedfordshire",
-          "country": "Bolivia",
-          "postalCode": "08277"
+          "addressNumber": "98",
+          "addressNumberWithinBuilding": "9",
+          "mailRouting": "5107 Aufderhar Corner, 99454-6148",
+          "city": "East Fernside",
+          "region": "Berkshire",
+          "country": "Jamaica",
+          "postalCode": "48832"
         },
         "registrationAuthority": {
           "type": "LEIauthority",
           "validationAuthorityID": "RA000002",
-          "otherValidationAuthorityID": "HG755JBR",
-          "validationAuthorityEntityID": "XMNFB4VZ2DX5SEXTWO8Y"
+          "otherValidationAuthorityID": "MB8CX616",
+          "validationAuthorityEntityID": "JKR16OA4EFSA1WPKPYDO"
         },
-        "legalJurisdiction": "Berkshire",
+        "legalJurisdiction": "Avon",
         "entityCategory": "Jewelery",
         "legalForm": "CORPORATION",
         "associatedEntity": {
           "type": "Organization",
-          "leiCode": "8NFPENS4PGVYGKEVORMN",
-          "name": "Tillman Inc"
+          "leiCode": "GSYQTZS1SWUT6CNODC3E",
+          "name": "Leuschke - Terry"
         },
-        "status": "CONFIRMED",
-        "expirationDate": "2021-6-5",
-        "expirationReason": "optimize 24/7 initiatives",
+        "status": "REJECTED",
+        "expirationDate": "2021-11-6",
+        "expirationReason": "target cutting-edge partnerships",
         "successorEntity": {
           "type": "Organization",
-          "leiCode": "RUUJVDV5A409LHE9K9RG",
-          "name": "Senger LLC"
+          "leiCode": "IWW1O9J8GSYGIXCSBX07",
+          "name": "Considine, Parisian and Wyman"
         },
         "otherAddresses": []
       },
@@ -179,289 +179,199 @@
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIregistration",
-        "initialRegistrationDate": "2020-3-3",
-        "lastUpdateDate": "2020-3-3",
-        "status": "REQUESTED",
-        "nextRenewalDate": "2022-0-1",
-        "managingLou": "GLNXCGITNACMCBJQCEPW",
+        "initialRegistrationDate": "2020-7-4",
+        "lastUpdateDate": "2020-7-4",
+        "status": "IN PROGRESS",
+        "nextRenewalDate": "2021-8-4",
+        "managingLou": "TCQBTCJOLUNHUIIGSYJN",
+        "validationSources": "FULLY_CORROBORATED",
+        "validationAuthority": [
+          {
+            "type": "LEIauthority",
+            "validationAuthorityID": "RA000001",
+            "otherValidationAuthorityID": "3T1CJE18",
+            "validationAuthorityEntityID": "GQVP2EPMZD25KO2DW5EG"
+          }
+        ]
+      },
+      "bic": [
+        "VQQWRODOHZ"
+      ]
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "LEIevidenceDocument",
+      "lei": "JZKUEE5OE6OKTVXSCDB4",
+      "entity": {
+        "@context": [
+          "https://w3id.org/traceability/v1"
+        ],
+        "type": "LEIentity",
+        "legalName": "Armstrong LLC",
+        "legalNameLanguage": "de_CH",
+        "otherNames": [
+          "Nikolaus, Auer and Denesik",
+          "Satterfield and Sons"
+        ],
+        "transliteratedOtherNames": [
+          "Nikolaus, Auer and Denesik",
+          "Satterfield and Sons"
+        ],
+        "legalAddress": {
+          "type": "LEIaddress",
+          "language": "hy",
+          "addressLines": [
+            "Frami - Rodriguez",
+            "0037 Dante Plain"
+          ],
+          "addressNumber": "7",
+          "addressNumberWithinBuilding": "3",
+          "mailRouting": "570 Branson Squares, 82908-9963",
+          "city": "South Dameonhaven",
+          "region": "Cambridgeshire",
+          "country": "Denmark",
+          "postalCode": "28987"
+        },
+        "headquartersAddress": {
+          "type": "LEIaddress",
+          "language": "en_CA",
+          "addressLines": [
+            "Morar, Cremin and Conroy",
+            "0441 Brendon Common"
+          ],
+          "addressNumber": "6",
+          "addressNumberWithinBuilding": "3",
+          "mailRouting": "12500 Hessel Ramp, 32300",
+          "city": "Boganberg",
+          "region": "Avon",
+          "country": "Moldova",
+          "postalCode": "62889"
+        },
+        "registrationAuthority": {
+          "type": "LEIauthority",
+          "validationAuthorityID": "RA000661",
+          "otherValidationAuthorityID": "6WA9D3Q0",
+          "validationAuthorityEntityID": "7XPVYT96O4AW25HOHI0V"
+        },
+        "legalJurisdiction": "Buckinghamshire",
+        "entityCategory": "Jewelery",
+        "legalForm": "CORPORATION",
+        "associatedEntity": {
+          "type": "Organization",
+          "leiCode": "4RAWI296U1SIVZME7F6I",
+          "name": "Feeney - Mayer"
+        },
+        "status": "IN PROGRESS",
+        "expirationDate": "2021-7-0",
+        "expirationReason": "transition real-time bandwidth",
+        "successorEntity": {
+          "type": "Organization",
+          "leiCode": "AETCSIVLGMZPD0Y4WFRA",
+          "name": "Hackett LLC"
+        },
+        "otherAddresses": []
+      },
+      "registration": {
+        "@context": [
+          "https://w3id.org/traceability/v1"
+        ],
+        "type": "LEIregistration",
+        "initialRegistrationDate": "2020-10-1",
+        "lastUpdateDate": "2020-10-1",
+        "status": "CONFIRMED",
+        "nextRenewalDate": "2021-8-2",
+        "managingLou": "CSJZSOWAWFQLAIKMJZEK",
         "validationSources": "FULLY_CORROBORATED",
         "validationAuthority": [
           {
             "type": "LEIauthority",
             "validationAuthorityID": "RA000661",
-            "otherValidationAuthorityID": "JLHXIVP1",
-            "validationAuthorityEntityID": "J777TH13PMJLRM7K4HUZ"
+            "otherValidationAuthorityID": "4K3H8628",
+            "validationAuthorityEntityID": "KDT1AB4TR26OCRZJ82LX"
           }
         ]
       },
       "bic": [
-        "ISRIMOQJCK"
-      ]
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "LEIevidenceDocument",
-      "lei": "6YMZBPJ8VA3NBY7RPRK7",
-      "entity": {
-        "@context": [
-          "https://w3id.org/traceability/v1"
-        ],
-        "type": "LEIentity",
-        "legalName": "Streich and Sons",
-        "legalNameLanguage": "en_IND",
-        "otherNames": [
-          "Satterfield LLC",
-          "Kihn - Kunde"
-        ],
-        "transliteratedOtherNames": [
-          "Satterfield LLC",
-          "Kihn - Kunde"
-        ],
-        "legalAddress": {
-          "type": "LEIaddress",
-          "language": "pt_PT",
-          "addressLines": [
-            "Fahey - Goyette",
-            "6194 Jacobs Curve"
-          ],
-          "addressNumber": "67",
-          "addressNumberWithinBuilding": "5",
-          "mailRouting": "41903 Brakus Isle, 14258-6732",
-          "city": "Delfinaberg",
-          "region": "Berkshire",
-          "country": "United States of America",
-          "postalCode": "17732"
-        },
-        "headquartersAddress": {
-          "type": "LEIaddress",
-          "language": "ne",
-          "addressLines": [
-            "Bailey LLC",
-            "42746 August Fields"
-          ],
-          "addressNumber": "226",
-          "addressNumberWithinBuilding": "6",
-          "mailRouting": "406 Clotilde Mill, 65807",
-          "city": "Port Brooks",
-          "region": "Buckinghamshire",
-          "country": "Sweden",
-          "postalCode": "89742"
-        },
-        "registrationAuthority": {
-          "type": "LEIauthority",
-          "validationAuthorityID": "RA000002",
-          "otherValidationAuthorityID": "FSAHEN3B",
-          "validationAuthorityEntityID": "U81J7YDIES56L25SO8JJ"
-        },
-        "legalJurisdiction": "Berkshire",
-        "entityCategory": "Grocery",
-        "legalForm": "LLC",
-        "associatedEntity": {
-          "type": "Organization",
-          "leiCode": "AJS4CX9EYAJQCVH8DGKQ",
-          "name": "Quitzon, Kuvalis and Roob"
-        },
-        "status": "CONFIRMED",
-        "expirationDate": "2022-0-5",
-        "expirationReason": "strategize scalable infrastructures",
-        "successorEntity": {
-          "type": "Organization",
-          "leiCode": "20R6SME8CC00LY9JBB6T",
-          "name": "Ebert Inc"
-        },
-        "otherAddresses": []
-      },
-      "registration": {
-        "@context": [
-          "https://w3id.org/traceability/v1"
-        ],
-        "type": "LEIregistration",
-        "initialRegistrationDate": "2020-7-2",
-        "lastUpdateDate": "2020-7-2",
-        "status": "REQUESTED",
-        "nextRenewalDate": "2021-8-2",
-        "managingLou": "ATQVVLUODMYRHVJFHGUH",
-        "validationSources": "NOT_CORROBORATED",
-        "validationAuthority": [
-          {
-            "type": "LEIauthority",
-            "validationAuthorityID": "RA000001",
-            "otherValidationAuthorityID": "SFASV8CG",
-            "validationAuthorityEntityID": "AWKS3OLB1WVN2YEGTV4R"
-          }
-        ]
-      },
-      "bic": [
-        "NQOFGUQYHH"
+        "OTXOMTVCKI"
       ]
     }
   ],
   "bad": [
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "entity": {
-        "@context": [
-          "https://w3id.org/traceability/v1"
-        ],
-        "type": "LEIentity",
-        "legalName": "Labadie, Feil and Hilll",
-        "legalNameLanguage": "en",
-        "otherNames": [
-          "Nolan - Weissnat",
-          "Champlin and Sons"
-        ],
-        "transliteratedOtherNames": [
-          "Nolan - Weissnat",
-          "Champlin and Sons"
-        ],
-        "legalAddress": {
-          "type": "LEIaddress",
-          "language": "en_CA",
-          "addressLines": [
-            "Dicki, Hansen and Kihn",
-            "066 Baumbach Haven"
-          ],
-          "addressNumber": "367",
-          "addressNumberWithinBuilding": "10",
-          "mailRouting": "1414 Stefanie Cliff, 83038-3954",
-          "city": "Port Noebury",
-          "region": "Borders",
-          "country": "Dominican Republic",
-          "postalCode": "22157"
-        },
-        "headquartersAddress": {
-          "type": "LEIaddress",
-          "language": "ar",
-          "addressLines": [
-            "Walter - Klein",
-            "00344 Leuschke Mount"
-          ],
-          "addressNumber": "48",
-          "addressNumberWithinBuilding": "7",
-          "mailRouting": "7992 Bruen Radial, 48600-1628",
-          "city": "West Coreneberg",
-          "region": "Borders",
-          "country": "Saint Vincent and the Grenadines",
-          "postalCode": "57256-2890"
-        },
-        "registrationAuthority": {
-          "type": "LEIauthority",
-          "validationAuthorityID": "RA000005",
-          "otherValidationAuthorityID": "UUPKPQ9G",
-          "validationAuthorityEntityID": "66CD56V4WDISKIPTFDM1"
-        },
-        "legalJurisdiction": "Avon",
-        "entityCategory": "Grocery",
-        "legalForm": "LLC",
-        "associatedEntity": {
-          "type": "Organization",
-          "leiCode": "RN1KC7VNRVM1AHSYW8C1",
-          "name": "Orn, Kuhlman and Hirthe"
-        },
-        "status": "REQUESTED",
-        "expirationDate": "2021-4-2",
-        "expirationReason": "innovate bleeding-edge metrics",
-        "successorEntity": {
-          "type": "Organization",
-          "leiCode": "VEANPBLXZJ4ZOLLFYM17",
-          "name": "Wuckert - Jast"
-        },
-        "otherAddresses": []
-      },
-      "registration": {
-        "@context": [
-          "https://w3id.org/traceability/v1"
-        ],
-        "type": "LEIregistration",
-        "initialRegistrationDate": "2020-10-3",
-        "lastUpdateDate": "2020-10-3",
-        "status": "CONFIRMED",
-        "nextRenewalDate": "2021-5-2",
-        "managingLou": "ITKTLMVDAMJXKUQVQSYI",
-        "validationSources": "PARTIALLY_CORROBORATED",
-        "validationAuthority": [
-          {
-            "type": "LEIauthority",
-            "validationAuthorityID": "RA000661",
-            "otherValidationAuthorityID": "YIWFE5F4",
-            "validationAuthorityEntityID": "LY2GWOT79YVLCROBLN9J"
-          }
-        ]
-      },
-      "card": "input"
+      "circuit": "compress",
+      "program": "navigate",
+      "feed": "hack",
+      "protocol": "parse"
     },
     {
-      "lei": "AKBZNDGMK4E3TES941VA",
       "entity": {
         "@context": [
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIentity",
-        "legalName": "Adams - Hyatt",
-        "legalNameLanguage": "ko",
+        "legalName": "Goldner, Rau and Bahringer",
+        "legalNameLanguage": "nl_BE",
         "otherNames": [
-          "Kihn - Ruecker",
-          "Ruecker LLC"
+          "Ortiz and Sons",
+          "Gerlach Group"
         ],
         "transliteratedOtherNames": [
-          "Kihn - Ruecker",
-          "Ruecker LLC"
+          "Ortiz and Sons",
+          "Gerlach Group"
         ],
         "legalAddress": {
           "type": "LEIaddress",
-          "language": "fa",
+          "language": "vi",
           "addressLines": [
-            "Weimann LLC",
-            "85034 Lubowitz Falls"
+            "Davis and Sons",
+            "9317 Fay Fall"
           ],
-          "addressNumber": "497",
-          "addressNumberWithinBuilding": "3",
-          "mailRouting": "041 Auer Camp, 01988-8439",
-          "city": "West Kenyamouth",
-          "region": "Cambridgeshire",
-          "country": "Tonga",
-          "postalCode": "14623"
+          "addressNumber": "306",
+          "addressNumberWithinBuilding": "10",
+          "mailRouting": "1175 Fay Crossing, 24628",
+          "city": "North Aracely",
+          "region": "Buckinghamshire",
+          "country": "Guyana",
+          "postalCode": "67437-9441"
         },
         "headquartersAddress": {
           "type": "LEIaddress",
-          "language": "en_IE",
+          "language": "ru",
           "addressLines": [
-            "Koelpin, Cormier and Collier",
-            "08094 Bednar Meadow"
+            "Kulas Group",
+            "65176 Ziemann Village"
           ],
-          "addressNumber": "224",
-          "addressNumberWithinBuilding": "6",
-          "mailRouting": "7372 O'Keefe Station, 19217",
-          "city": "Port Esther",
-          "region": "Bedfordshire",
-          "country": "Bolivia",
-          "postalCode": "08277"
+          "addressNumber": "98",
+          "addressNumberWithinBuilding": "9",
+          "mailRouting": "5107 Aufderhar Corner, 99454-6148",
+          "city": "East Fernside",
+          "region": "Berkshire",
+          "country": "Jamaica",
+          "postalCode": "48832"
         },
         "registrationAuthority": {
           "type": "LEIauthority",
           "validationAuthorityID": "RA000002",
-          "otherValidationAuthorityID": "HG755JBR",
-          "validationAuthorityEntityID": "XMNFB4VZ2DX5SEXTWO8Y"
+          "otherValidationAuthorityID": "MB8CX616",
+          "validationAuthorityEntityID": "JKR16OA4EFSA1WPKPYDO"
         },
-        "legalJurisdiction": "Berkshire",
+        "legalJurisdiction": "Avon",
         "entityCategory": "Jewelery",
         "legalForm": "CORPORATION",
         "associatedEntity": {
           "type": "Organization",
-          "leiCode": "8NFPENS4PGVYGKEVORMN",
-          "name": "Tillman Inc"
+          "leiCode": "GSYQTZS1SWUT6CNODC3E",
+          "name": "Leuschke - Terry"
         },
-        "status": "CONFIRMED",
-        "expirationDate": "2021-6-5",
-        "expirationReason": "optimize 24/7 initiatives",
+        "status": "REJECTED",
+        "expirationDate": "2021-11-6",
+        "expirationReason": "target cutting-edge partnerships",
         "successorEntity": {
           "type": "Organization",
-          "leiCode": "RUUJVDV5A409LHE9K9RG",
-          "name": "Senger LLC"
+          "leiCode": "IWW1O9J8GSYGIXCSBX07",
+          "name": "Considine, Parisian and Wyman"
         },
         "otherAddresses": []
       },
@@ -470,95 +380,96 @@
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIregistration",
-        "initialRegistrationDate": "2020-3-3",
-        "lastUpdateDate": "2020-3-3",
-        "status": "REQUESTED",
-        "nextRenewalDate": "2022-0-1",
-        "managingLou": "GLNXCGITNACMCBJQCEPW",
+        "initialRegistrationDate": "2020-7-4",
+        "lastUpdateDate": "2020-7-4",
+        "status": "IN PROGRESS",
+        "nextRenewalDate": "2021-8-4",
+        "managingLou": "TCQBTCJOLUNHUIIGSYJN",
         "validationSources": "FULLY_CORROBORATED",
         "validationAuthority": [
           {
             "type": "LEIauthority",
-            "validationAuthorityID": "RA000661",
-            "otherValidationAuthorityID": "JLHXIVP1",
-            "validationAuthorityEntityID": "J777TH13PMJLRM7K4HUZ"
+            "validationAuthorityID": "RA000001",
+            "otherValidationAuthorityID": "3T1CJE18",
+            "validationAuthorityEntityID": "GQVP2EPMZD25KO2DW5EG"
           }
         ]
       },
-      "capacitor": "parse"
+      "matrix": "input",
+      "firewall": "transmit",
+      "system": "connect"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIevidenceDocument",
-      "lei": "6YMZBPJ8VA3NBY7RPRK7",
       "entity": {
         "@context": [
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIentity",
-        "legalName": "Streich and Sons",
-        "legalNameLanguage": "en_IND",
+        "legalName": "Armstrong LLC",
+        "legalNameLanguage": "de_CH",
         "otherNames": [
-          "Satterfield LLC",
-          "Kihn - Kunde"
+          "Nikolaus, Auer and Denesik",
+          "Satterfield and Sons"
         ],
         "transliteratedOtherNames": [
-          "Satterfield LLC",
-          "Kihn - Kunde"
+          "Nikolaus, Auer and Denesik",
+          "Satterfield and Sons"
         ],
         "legalAddress": {
           "type": "LEIaddress",
-          "language": "pt_PT",
+          "language": "hy",
           "addressLines": [
-            "Fahey - Goyette",
-            "6194 Jacobs Curve"
+            "Frami - Rodriguez",
+            "0037 Dante Plain"
           ],
-          "addressNumber": "67",
-          "addressNumberWithinBuilding": "5",
-          "mailRouting": "41903 Brakus Isle, 14258-6732",
-          "city": "Delfinaberg",
-          "region": "Berkshire",
-          "country": "United States of America",
-          "postalCode": "17732"
+          "addressNumber": "7",
+          "addressNumberWithinBuilding": "3",
+          "mailRouting": "570 Branson Squares, 82908-9963",
+          "city": "South Dameonhaven",
+          "region": "Cambridgeshire",
+          "country": "Denmark",
+          "postalCode": "28987"
         },
         "headquartersAddress": {
           "type": "LEIaddress",
-          "language": "ne",
+          "language": "en_CA",
           "addressLines": [
-            "Bailey LLC",
-            "42746 August Fields"
+            "Morar, Cremin and Conroy",
+            "0441 Brendon Common"
           ],
-          "addressNumber": "226",
-          "addressNumberWithinBuilding": "6",
-          "mailRouting": "406 Clotilde Mill, 65807",
-          "city": "Port Brooks",
-          "region": "Buckinghamshire",
-          "country": "Sweden",
-          "postalCode": "89742"
+          "addressNumber": "6",
+          "addressNumberWithinBuilding": "3",
+          "mailRouting": "12500 Hessel Ramp, 32300",
+          "city": "Boganberg",
+          "region": "Avon",
+          "country": "Moldova",
+          "postalCode": "62889"
         },
         "registrationAuthority": {
           "type": "LEIauthority",
-          "validationAuthorityID": "RA000002",
-          "otherValidationAuthorityID": "FSAHEN3B",
-          "validationAuthorityEntityID": "U81J7YDIES56L25SO8JJ"
+          "validationAuthorityID": "RA000661",
+          "otherValidationAuthorityID": "6WA9D3Q0",
+          "validationAuthorityEntityID": "7XPVYT96O4AW25HOHI0V"
         },
-        "legalJurisdiction": "Berkshire",
-        "entityCategory": "Grocery",
-        "legalForm": "LLC",
+        "legalJurisdiction": "Buckinghamshire",
+        "entityCategory": "Jewelery",
+        "legalForm": "CORPORATION",
         "associatedEntity": {
           "type": "Organization",
-          "leiCode": "AJS4CX9EYAJQCVH8DGKQ",
-          "name": "Quitzon, Kuvalis and Roob"
+          "leiCode": "4RAWI296U1SIVZME7F6I",
+          "name": "Feeney - Mayer"
         },
-        "status": "CONFIRMED",
-        "expirationDate": "2022-0-5",
-        "expirationReason": "strategize scalable infrastructures",
+        "status": "IN PROGRESS",
+        "expirationDate": "2021-7-0",
+        "expirationReason": "transition real-time bandwidth",
         "successorEntity": {
           "type": "Organization",
-          "leiCode": "20R6SME8CC00LY9JBB6T",
-          "name": "Ebert Inc"
+          "leiCode": "AETCSIVLGMZPD0Y4WFRA",
+          "name": "Hackett LLC"
         },
         "otherAddresses": []
       },
@@ -567,23 +478,24 @@
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIregistration",
-        "initialRegistrationDate": "2020-7-2",
-        "lastUpdateDate": "2020-7-2",
-        "status": "REQUESTED",
+        "initialRegistrationDate": "2020-10-1",
+        "lastUpdateDate": "2020-10-1",
+        "status": "CONFIRMED",
         "nextRenewalDate": "2021-8-2",
-        "managingLou": "ATQVVLUODMYRHVJFHGUH",
-        "validationSources": "NOT_CORROBORATED",
+        "managingLou": "CSJZSOWAWFQLAIKMJZEK",
+        "validationSources": "FULLY_CORROBORATED",
         "validationAuthority": [
           {
             "type": "LEIauthority",
-            "validationAuthorityID": "RA000001",
-            "otherValidationAuthorityID": "SFASV8CG",
-            "validationAuthorityEntityID": "AWKS3OLB1WVN2YEGTV4R"
+            "validationAuthorityID": "RA000661",
+            "otherValidationAuthorityID": "4K3H8628",
+            "validationAuthorityEntityID": "KDT1AB4TR26OCRZJ82LX"
           }
         ]
       },
-      "driver": "navigate",
-      "protocol": "back up"
+      "array": "index",
+      "sensor": "bypass",
+      "card": "calculate"
     }
   ]
 }

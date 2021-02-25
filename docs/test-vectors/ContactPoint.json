@@ -5,82 +5,77 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "ContactPoint",
-      "name": "Wolff - Abbott",
+      "name": "Veum and Sons",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "3239 Cordie Road",
-        "addressLocality": "Hicklemouth",
-        "addressRegion": "Illinois",
-        "postalCode": "11648",
-        "addressCountry": "Namibia"
+        "streetAddress": "1838 Brett Throughway",
+        "addressLocality": "Travonhaven",
+        "addressRegion": "Oregon",
+        "postalCode": "18990-3031",
+        "addressCountry": "USA"
       },
-      "email": "Cortez91@example.org",
-      "phoneNumber": "555-422-7243"
+      "email": "Fred.Jaskolski@example.com",
+      "phoneNumber": "555-396-2000"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "ContactPoint",
-      "name": "Hettinger - Donnelly",
+      "name": "Bogan - Stracke",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "316 Osborne Village",
-        "addressLocality": "Bergstromberg",
-        "addressRegion": "Hawaii",
-        "postalCode": "00542-3692",
-        "addressCountry": "Mauritius"
+        "streetAddress": "505 Gusikowski Stream",
+        "addressLocality": "East Riley",
+        "addressRegion": "Arkansas",
+        "postalCode": "57512-6789",
+        "addressCountry": "USA"
       },
-      "email": "Jessyca.Balistreri93@example.org",
-      "phoneNumber": "555-540-7695"
+      "email": "Eddie76@example.net",
+      "phoneNumber": "555-914-7828"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "ContactPoint",
-      "name": "Skiles, Mohr and Yost",
+      "name": "Nienow Group",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "4514 Walker Mission",
-        "addressLocality": "New Jordane",
-        "addressRegion": "Tennessee",
-        "postalCode": "96026",
-        "addressCountry": "Poland"
+        "streetAddress": "63465 Kunze Loaf",
+        "addressLocality": "South Jaqueline",
+        "addressRegion": "Delaware",
+        "postalCode": "00455-6485",
+        "addressCountry": "USA"
       },
-      "email": "Adelle4@example.com",
-      "phoneNumber": "555-445-5690"
+      "email": "Treva.Rohan@example.net",
+      "phoneNumber": "555-429-2341"
     }
   ],
   "bad": [
     {
+      "pixel": "bypass",
+      "system": "parse",
+      "port": "reboot"
+    },
+    {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
+      "type": "ContactPoint",
+      "card": "copy",
       "firewall": "bypass",
-      "transmitter": "program",
-      "program": "reboot",
-      "feed": "parse"
+      "capacitor": "reboot",
+      "sensor": "bypass"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "name": "Hettinger - Donnelly",
-      "phoneNumber": "555-540-7695",
-      "feed": "synthesize",
-      "array": "quantify"
-    },
-    {
-      "address": {
-        "type": "PostalAddress",
-        "streetAddress": "4514 Walker Mission",
-        "addressLocality": "New Jordane",
-        "addressRegion": "Tennessee",
-        "postalCode": "96026",
-        "addressCountry": "Poland"
-      },
-      "port": "bypass"
+      "type": "ContactPoint",
+      "name": "Nienow Group",
+      "email": "Treva.Rohan@example.net",
+      "application": "bypass"
     }
   ]
 }

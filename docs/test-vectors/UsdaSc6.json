@@ -1,0 +1,517 @@
+{
+  "good": [
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "UsdaSc6",
+      "facility": {
+        "type": "Place",
+        "globalLocationNumber": "1864581266014",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "-33.7707",
+          "longitude": "77.0855"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Lehner LLC",
+          "streetAddress": "3910 Becker Courts",
+          "addressLocality": "Wiegandhaven",
+          "addressRegion": "Wisconsin",
+          "postalCode": "01132",
+          "addressCountry": "USA"
+        }
+      },
+      "inspector": {
+        "type": "Inspector",
+        "person": {
+          "type": "Person",
+          "firstName": "Alva",
+          "lastName": "Swaniawski",
+          "email": "Anika27@example.net",
+          "phoneNumber": "555-929-9771",
+          "worksFor": {
+            "type": "Organization",
+            "name": "Ondricka Group",
+            "description": "Function-based needs-based contingency",
+            "address": {
+              "type": "PostalAddress",
+              "streetAddress": "7886 Nader Greens",
+              "addressLocality": "Fritschstad",
+              "addressRegion": "West Virginia",
+              "postalCode": "00416",
+              "addressCountry": "USA"
+            },
+            "email": "Carissa.Rippin95@example.org",
+            "phoneNumber": "555-585-8574",
+            "faxNumber": "555-372-7632"
+          },
+          "jobTitle": "Future Branding Orchestrator"
+        },
+        "qualification": [
+          {
+            "type": "Qualification",
+            "qualificationCategory": "Global Identity Executive",
+            "qualificationValue": "Planner"
+          }
+        ]
+      },
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Hagenes - Yundt",
+          "streetAddress": "82582 Ledner Turnpike",
+          "addressLocality": "Nadertown",
+          "addressRegion": "Georgia",
+          "postalCode": "92347",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Heller - Emard",
+          "streetAddress": "535 Pagac Flat",
+          "addressLocality": "New Francesco",
+          "addressRegion": "Kansas",
+          "postalCode": "63945-0604",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Rail freight transport",
+        "trackingNumber": "109705943432"
+      },
+      "applicant": {
+        "type": "Organization",
+        "name": "Spencer, MacGyver and Hauck",
+        "description": "Public-key needs-based local area network",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "2017 Kelley Lights",
+          "addressLocality": "New Chandler",
+          "addressRegion": "Montana",
+          "postalCode": "43354",
+          "addressCountry": "USA"
+        },
+        "email": "Marvin14@example.net",
+        "phoneNumber": "555-874-9391",
+        "faxNumber": "555-920-6505"
+      },
+      "inspectionDate": "2020-03-15",
+      "serialNumber": "869497419823",
+      "customsEntryNumber": "96596347233",
+      "tariffCodeNumber": "925172252314",
+      "lotId": "288648680693",
+      "foreignPortExport": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "West Barryside",
+          "addressCountry": "USA"
+        }
+      },
+      "carrierId": "19188222700",
+      "dateOfEntry": "2021-02-14",
+      "portOfEntry": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "Port Willystad",
+          "addressRegion": "Rhode Island"
+        }
+      },
+      "signatureDate": "2021-02-16",
+      "importerSignatureDate": "2021-02-15",
+      "intendedUse": "Processing",
+      "intendedUseCert": "Processing"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "UsdaSc6",
+      "facility": {
+        "type": "Place",
+        "globalLocationNumber": "3087250911833",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "57.3078",
+          "longitude": "-164.8301"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Rutherford Inc",
+          "streetAddress": "4778 Hirthe Cliffs",
+          "addressLocality": "Boscohaven",
+          "addressRegion": "Hawaii",
+          "postalCode": "02583-4888",
+          "addressCountry": "USA"
+        }
+      },
+      "inspector": {
+        "type": "Inspector",
+        "person": {
+          "type": "Person",
+          "firstName": "Cynthia",
+          "lastName": "Wolf",
+          "email": "Coty91@example.org",
+          "phoneNumber": "555-355-2690",
+          "worksFor": {
+            "type": "Organization",
+            "name": "Ullrich, Kuvalis and Yost",
+            "description": "Public-key modular artificial intelligence",
+            "address": {
+              "type": "PostalAddress",
+              "streetAddress": "2517 Ruth Manor",
+              "addressLocality": "Kuhlmanstad",
+              "addressRegion": "Alaska",
+              "postalCode": "03611-8483",
+              "addressCountry": "USA"
+            },
+            "email": "Maritza.Stehr85@example.org",
+            "phoneNumber": "555-393-8728",
+            "faxNumber": "555-840-1845"
+          },
+          "jobTitle": "Dynamic Usability Officer"
+        },
+        "qualification": [
+          {
+            "type": "Qualification",
+            "qualificationCategory": "Direct Security Executive",
+            "qualificationValue": "Assistant"
+          },
+          {
+            "type": "Qualification",
+            "qualificationCategory": "Senior Creative Strategist",
+            "qualificationValue": "Strategist"
+          },
+          {
+            "type": "Qualification",
+            "qualificationCategory": "Human Accounts Analyst",
+            "qualificationValue": "Planner"
+          }
+        ]
+      },
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Beier, Wehner and Kirlin",
+          "streetAddress": "59424 Walsh Lodge",
+          "addressLocality": "Lornamouth",
+          "addressRegion": "South Dakota",
+          "postalCode": "86934-3711",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Romaguera, Herman and Schultz",
+          "streetAddress": "65875 Erna Courts",
+          "addressLocality": "New Felixberg",
+          "addressRegion": "New Hampshire",
+          "postalCode": "71583",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Truck transport",
+        "trackingNumber": "452063537884"
+      },
+      "applicant": {
+        "type": "Organization",
+        "name": "Lockman - Hand",
+        "description": "Cloned mobile ability",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "223 Stamm Divide",
+          "addressLocality": "Port Ceceliaview",
+          "addressRegion": "Ohio",
+          "postalCode": "21555-9656",
+          "addressCountry": "USA"
+        },
+        "email": "Kacie_Weimann@example.com",
+        "phoneNumber": "555-384-2079",
+        "faxNumber": "555-701-7811"
+      },
+      "inspectionDate": "2020-03-15",
+      "serialNumber": "368422991665",
+      "customsEntryNumber": "677126314364",
+      "tariffCodeNumber": "747175463670",
+      "lotId": "531847495864",
+      "foreignPortExport": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "Winifredberg",
+          "addressCountry": "USA"
+        }
+      },
+      "carrierId": "509321093957",
+      "dateOfEntry": "2021-02-14",
+      "portOfEntry": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "New Conradfurt",
+          "addressRegion": "Wisconsin"
+        }
+      },
+      "signatureDate": "2021-02-16",
+      "importerSignatureDate": "2021-02-15",
+      "intendedUse": "Processing",
+      "intendedUseCert": "Processing"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "UsdaSc6",
+      "facility": {
+        "type": "Place",
+        "globalLocationNumber": "9592052970123",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "19.7506",
+          "longitude": "-113.2918"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Kerluke Group",
+          "streetAddress": "589 DuBuque Points",
+          "addressLocality": "South Alenafort",
+          "addressRegion": "Wisconsin",
+          "postalCode": "16665-9527",
+          "addressCountry": "USA"
+        }
+      },
+      "inspector": {
+        "type": "Inspector",
+        "person": {
+          "type": "Person",
+          "firstName": "Brady",
+          "lastName": "Kshlerin",
+          "email": "Dagmar_Von@example.net",
+          "phoneNumber": "555-813-1850",
+          "worksFor": {
+            "type": "Organization",
+            "name": "Goyette - O'Reilly",
+            "description": "Balanced responsive encoding",
+            "address": {
+              "type": "PostalAddress",
+              "streetAddress": "5540 Legros Rue",
+              "addressLocality": "Jerdeshire",
+              "addressRegion": "New Hampshire",
+              "postalCode": "63192",
+              "addressCountry": "USA"
+            },
+            "email": "Trycia93@example.org",
+            "phoneNumber": "555-350-2589",
+            "faxNumber": "555-452-6921"
+          },
+          "jobTitle": "International Paradigm Engineer"
+        },
+        "qualification": [
+          {
+            "type": "Qualification",
+            "qualificationCategory": "District Research Manager",
+            "qualificationValue": "Strategist"
+          }
+        ]
+      },
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Braun - Nader",
+          "streetAddress": "56590 Spencer Turnpike",
+          "addressLocality": "Josueshire",
+          "addressRegion": "Florida",
+          "postalCode": "52411-5231",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Vandervort Inc",
+          "streetAddress": "209 Schowalter Ford",
+          "addressLocality": "Kesslerstad",
+          "addressRegion": "Wisconsin",
+          "postalCode": "42007-8076",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Truck transport",
+        "trackingNumber": "713938457978"
+      },
+      "applicant": {
+        "type": "Person",
+        "firstName": "Colleen",
+        "lastName": "Langworth",
+        "email": "Loyce.Jerde12@example.org",
+        "phoneNumber": "555-771-1228",
+        "worksFor": {
+          "type": "Organization",
+          "name": "Jenkins - Hauck",
+          "description": "Progressive hybrid collaboration",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "2701 Elsie Pike",
+            "addressLocality": "Travonhaven",
+            "addressRegion": "Missouri",
+            "postalCode": "53276-3643",
+            "addressCountry": "USA"
+          },
+          "email": "Theodora74@example.org",
+          "phoneNumber": "555-209-5655",
+          "faxNumber": "555-159-1435"
+        },
+        "jobTitle": "Dynamic Communications Specialist"
+      },
+      "inspectionDate": "2020-03-15",
+      "serialNumber": "112520172342",
+      "customsEntryNumber": "790736729483",
+      "tariffCodeNumber": "4103296637",
+      "lotId": "394139252784",
+      "foreignPortExport": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "Port Oswaldo",
+          "addressCountry": "USA"
+        }
+      },
+      "carrierId": "906803993223",
+      "dateOfEntry": "2021-02-14",
+      "portOfEntry": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "New Lilla",
+          "addressRegion": "Delaware"
+        }
+      },
+      "signatureDate": "2021-02-16",
+      "importerSignatureDate": "2021-02-15",
+      "intendedUse": "Processing",
+      "intendedUseCert": "Processing"
+    }
+  ],
+  "bad": [
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "facility": {
+        "type": "Place",
+        "globalLocationNumber": "1864581266014",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "-33.7707",
+          "longitude": "77.0855"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Lehner LLC",
+          "streetAddress": "3910 Becker Courts",
+          "addressLocality": "Wiegandhaven",
+          "addressRegion": "Wisconsin",
+          "postalCode": "01132",
+          "addressCountry": "USA"
+        }
+      },
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Hagenes - Yundt",
+          "streetAddress": "82582 Ledner Turnpike",
+          "addressLocality": "Nadertown",
+          "addressRegion": "Georgia",
+          "postalCode": "92347",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Heller - Emard",
+          "streetAddress": "535 Pagac Flat",
+          "addressLocality": "New Francesco",
+          "addressRegion": "Kansas",
+          "postalCode": "63945-0604",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Rail freight transport",
+        "trackingNumber": "109705943432"
+      },
+      "inspectionDate": "2020-03-15",
+      "customsEntryNumber": "96596347233",
+      "foreignPortExport": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "West Barryside",
+          "addressCountry": "USA"
+        }
+      },
+      "carrierId": "19188222700",
+      "portOfEntry": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "Port Willystad",
+          "addressRegion": "Rhode Island"
+        }
+      },
+      "signatureDate": "2021-02-16",
+      "intendedUseCert": "Processing",
+      "capacitor": "generate",
+      "alarm": "parse",
+      "monitor": "override"
+    },
+    {
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Beier, Wehner and Kirlin",
+          "streetAddress": "59424 Walsh Lodge",
+          "addressLocality": "Lornamouth",
+          "addressRegion": "South Dakota",
+          "postalCode": "86934-3711",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Romaguera, Herman and Schultz",
+          "streetAddress": "65875 Erna Courts",
+          "addressLocality": "New Felixberg",
+          "addressRegion": "New Hampshire",
+          "postalCode": "71583",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Truck transport",
+        "trackingNumber": "452063537884"
+      },
+      "lotId": "531847495864",
+      "signatureDate": "2021-02-16",
+      "intendedUse": "Processing",
+      "intendedUseCert": "Processing",
+      "alarm": "hack",
+      "array": "copy",
+      "system": "bypass"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "inspectionDate": "2020-03-15",
+      "tariffCodeNumber": "4103296637",
+      "lotId": "394139252784",
+      "carrierId": "906803993223",
+      "portOfEntry": {
+        "type": "Place",
+        "address": {
+          "type": "PostalAddress",
+          "addressLocality": "New Lilla",
+          "addressRegion": "Delaware"
+        }
+      },
+      "protocol": "copy",
+      "microchip": "back up"
+    }
+  ]
+}

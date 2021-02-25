@@ -4,120 +4,105 @@
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "type": "Person",
-      "firstName": "Mallie",
-      "lastName": "Wilkinson",
-      "email": "Zoey33@example.org",
-      "phoneNumber": "555-892-7107",
-      "worksFor": {
-        "type": "Organization",
-        "name": "Shanahan LLC",
-        "description": "Versatile empowering parallelism",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "3264 Collins Branch",
-          "addressLocality": "Weberbury",
-          "addressRegion": "Arkansas",
-          "postalCode": "19626-0248",
-          "addressCountry": "Guinea-Bissau"
-        },
-        "email": "Harvey34@example.com",
-        "phoneNumber": "555-546-4101"
+      "type": "Organization",
+      "name": "Murray - Kris",
+      "description": "Inverse 24 hour system engine",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "7557 Alvera Villages",
+        "addressLocality": "New Jewell",
+        "addressRegion": "Iowa",
+        "postalCode": "15603",
+        "addressCountry": "USA"
       },
-      "jobTitle": "Direct Metrics Facilitator"
+      "email": "Melyna20@example.net",
+      "phoneNumber": "555-620-7131",
+      "faxNumber": "555-113-6804"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "type": "Person",
-      "firstName": "Cheyanne",
-      "lastName": "Mills",
-      "email": "Devin19@example.com",
-      "phoneNumber": "555-846-2966",
-      "worksFor": {
-        "type": "Organization",
-        "name": "Olson and Sons",
-        "description": "Multi-lateral attitude-oriented hub",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "021 Adolphus Drives",
-          "addressLocality": "Lilaview",
-          "addressRegion": "Arkansas",
-          "postalCode": "02683",
-          "addressCountry": "Iraq"
-        },
-        "email": "Angie_Leffler@example.org",
-        "phoneNumber": "555-514-3951"
+      "type": "Organization",
+      "name": "Heidenreich, Rowe and Romaguera",
+      "description": "Front-line local array",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "133 Dudley Manor",
+        "addressLocality": "Ilaburgh",
+        "addressRegion": "Tennessee",
+        "postalCode": "79413-7208",
+        "addressCountry": "USA"
       },
-      "jobTitle": "Corporate Configuration Specialist"
+      "email": "Christiana17@example.org",
+      "phoneNumber": "555-346-6325",
+      "faxNumber": "555-344-8781"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "type": "Person",
-      "firstName": "Karley",
-      "lastName": "Konopelski",
-      "email": "Aglae80@example.org",
-      "phoneNumber": "555-670-1539",
-      "worksFor": {
-        "type": "Organization",
-        "name": "Kuhlman Group",
-        "description": "Business-focused responsive pricing structure",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "20700 Virginie Keys",
-          "addressLocality": "East Tristonfurt",
-          "addressRegion": "Mississippi",
-          "postalCode": "56693-8873",
-          "addressCountry": "Svalbard & Jan Mayen Islands"
-        },
-        "email": "Aileen41@example.org",
-        "phoneNumber": "555-817-7071"
+      "type": "Organization",
+      "name": "Bergnaum and Sons",
+      "description": "Fundamental leading edge challenge",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "34106 Marcelle Shores",
+        "addressLocality": "Randallland",
+        "addressRegion": "Massachusetts",
+        "postalCode": "37516",
+        "addressCountry": "USA"
       },
-      "jobTitle": "Forward Tactics Consultant"
+      "email": "Dennis.Koepp@example.net",
+      "phoneNumber": "555-793-4724",
+      "faxNumber": "555-755-3263"
     }
   ],
   "bad": [
     {
-      "email": "Zoey33@example.org",
-      "alarm": "program"
-    },
-    {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "type": "Person",
-      "firstName": "Cheyanne",
-      "lastName": "Mills",
-      "pixel": "bypass",
-      "feed": "index"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "lastName": "Konopelski",
-      "email": "Aglae80@example.org",
-      "worksFor": {
-        "type": "Organization",
-        "name": "Kuhlman Group",
-        "description": "Business-focused responsive pricing structure",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "20700 Virginie Keys",
-          "addressLocality": "East Tristonfurt",
-          "addressRegion": "Mississippi",
-          "postalCode": "56693-8873",
-          "addressCountry": "Svalbard & Jan Mayen Islands"
-        },
-        "email": "Aileen41@example.org",
-        "phoneNumber": "555-817-7071"
+      "type": "Organization",
+      "name": "Murray - Kris",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "7557 Alvera Villages",
+        "addressLocality": "New Jewell",
+        "addressRegion": "Iowa",
+        "postalCode": "15603",
+        "addressCountry": "USA"
       },
-      "alarm": "copy",
-      "monitor": "program",
-      "panel": "input"
+      "phoneNumber": "555-620-7131",
+      "faxNumber": "555-113-6804",
+      "application": "copy",
+      "circuit": "synthesize",
+      "panel": "back up"
+    },
+    {
+      "type": "Organization",
+      "name": "Heidenreich, Rowe and Romaguera",
+      "description": "Front-line local array",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "133 Dudley Manor",
+        "addressLocality": "Ilaburgh",
+        "addressRegion": "Tennessee",
+        "postalCode": "79413-7208",
+        "addressCountry": "USA"
+      },
+      "email": "Christiana17@example.org",
+      "phoneNumber": "555-346-6325",
+      "faxNumber": "555-344-8781",
+      "microchip": "copy",
+      "hard drive": "copy",
+      "transmitter": "input"
+    },
+    {
+      "array": "connect",
+      "capacitor": "synthesize",
+      "alarm": "navigate",
+      "feed": "bypass"
     }
   ]
 }

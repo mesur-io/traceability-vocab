@@ -7,14 +7,14 @@
       "type": "Observation",
       "property": {
         "type": "ChemicalProperty",
-        "name": "Promethium",
-        "formula": "Pm",
-        "inchi": "InChI=1S/Pm",
-        "inchikey": "VQMWBBYLQSCNPO-UHFFFAOYSA-N"
+        "name": "Cadmium",
+        "formula": "Cd",
+        "inchi": "InChI=1S/Cd",
+        "inchikey": "BDOSMKKIYDKNTQ-UHFFFAOYSA-N"
       },
       "measurement": {
         "type": "MeasuredValue",
-        "value": "26.849",
+        "value": "4.115",
         "unitCode": "P1"
       }
     },
@@ -24,16 +24,15 @@
       ],
       "type": "Observation",
       "property": {
-        "type": "ChemicalProperty",
-        "name": "Mendelevium",
-        "formula": "Md",
-        "inchi": "InChI=1S/Md",
-        "inchikey": "MQVSLOYRCXQRPM-UHFFFAOYSA-N"
+        "type": "MechanicalProperty",
+        "identifier": "ISO 1352",
+        "name": "Torque-controlled fatigue testing",
+        "description": "ISO 1352:2011 specifies the conditions for performing torsional, constant-amplitude, nominally elastic stress fatigue tests on metallic specimens without deliberately introducing stress concentrations. The tests are carried out at ambient temperature (ideally at between 10 °C and 35 °C) in air by applying a pure couple to the specimen about its longitudinal axis."
       },
       "measurement": {
         "type": "MeasuredValue",
-        "value": "20.491",
-        "unitCode": "P1"
+        "value": "00.00",
+        "unitCode": "UNKNOWN"
       }
     },
     {
@@ -43,54 +42,37 @@
       "type": "Observation",
       "property": {
         "type": "ChemicalProperty",
-        "name": "Lutetium",
-        "formula": "Lu",
-        "inchi": "InChI=1S/Lu",
-        "inchikey": "OHSVLFRHMCKCQY-UHFFFAOYSA-N"
+        "name": "Platinum",
+        "formula": "Pt",
+        "inchi": "InChI=1S/Pt",
+        "inchikey": "BASFCYQUMIYNBI-UHFFFAOYSA-N"
       },
       "measurement": {
         "type": "MeasuredValue",
-        "value": "64.949",
+        "value": "95.839",
         "unitCode": "P1"
       }
     }
   ],
   "bad": [
     {
-      "property": {
-        "type": "ChemicalProperty",
-        "name": "Promethium",
-        "formula": "Pm",
-        "inchi": "InChI=1S/Pm",
-        "inchikey": "VQMWBBYLQSCNPO-UHFFFAOYSA-N"
-      },
-      "measurement": {
-        "type": "MeasuredValue",
-        "value": "26.849",
-        "unitCode": "P1"
-      },
-      "feed": "transmit",
-      "sensor": "connect",
-      "monitor": "parse"
-    },
-    {
-      "pixel": "generate"
-    },
-    {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "type": "Observation",
-      "property": {
-        "type": "ChemicalProperty",
-        "name": "Lutetium",
-        "formula": "Lu",
-        "inchi": "InChI=1S/Lu",
-        "inchikey": "OHSVLFRHMCKCQY-UHFFFAOYSA-N"
+      "measurement": {
+        "type": "MeasuredValue",
+        "value": "4.115",
+        "unitCode": "P1"
       },
-      "firewall": "override",
-      "protocol": "transmit",
-      "bandwidth": "navigate"
+      "monitor": "copy"
+    },
+    {
+      "bus": "override",
+      "circuit": "back up"
+    },
+    {
+      "program": "transmit",
+      "pixel": "calculate"
     }
   ]
 }

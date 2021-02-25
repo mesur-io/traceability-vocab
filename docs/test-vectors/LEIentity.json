@@ -5,67 +5,67 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIentity",
-      "legalName": "Kuphal, Dicki and Jones",
-      "legalNameLanguage": "en_ZA",
+      "legalName": "Mills Group",
+      "legalNameLanguage": "en_IE",
       "otherNames": [
-        "Schmeler - Prosacco",
-        "Jones - Waelchi"
+        "Ledner, Towne and Kertzmann",
+        "Cruickshank - Kassulke"
       ],
       "transliteratedOtherNames": [
-        "Schmeler - Prosacco",
-        "Jones - Waelchi"
+        "Ledner, Towne and Kertzmann",
+        "Cruickshank - Kassulke"
       ],
       "legalAddress": {
         "type": "LEIaddress",
-        "language": "de_AT",
+        "language": "fr",
         "addressLines": [
-          "Wiza Inc",
-          "34831 Baumbach Lakes"
+          "Pacocha, Schroeder and Ernser",
+          "7635 Lubowitz Port"
         ],
-        "addressNumber": "47",
-        "addressNumberWithinBuilding": "4",
-        "mailRouting": "88379 Nader Mills, 82378",
-        "city": "Port Wilbertport",
-        "region": "Buckinghamshire",
-        "country": "Argentina",
-        "postalCode": "97790-5160"
+        "addressNumber": "436",
+        "addressNumberWithinBuilding": "6",
+        "mailRouting": "337 Herbert Keys, 81043",
+        "city": "Jastfort",
+        "region": "Cambridgeshire",
+        "country": "Equatorial Guinea",
+        "postalCode": "86793-4178"
       },
       "headquartersAddress": {
         "type": "LEIaddress",
-        "language": "en_IND",
+        "language": "en_ZA",
         "addressLines": [
-          "Crooks and Sons",
-          "738 Schmidt Tunnel"
+          "Hintz - Hermann",
+          "630 MacGyver Keys"
         ],
-        "addressNumber": "168",
-        "addressNumberWithinBuilding": "5",
-        "mailRouting": "4712 Ludwig Branch, 71744",
-        "city": "Guadalupeshire",
-        "region": "Avon",
-        "country": "Ghana",
-        "postalCode": "68807-4482"
+        "addressNumber": "89",
+        "addressNumberWithinBuilding": "4",
+        "mailRouting": "96346 Jenkins Park, 83721",
+        "city": "Port Edmundbury",
+        "region": "Cambridgeshire",
+        "country": "Costa Rica",
+        "postalCode": "64646"
       },
       "registrationAuthority": {
         "type": "LEIauthority",
         "validationAuthorityID": "RA000661",
-        "otherValidationAuthorityID": "0OAQ0BDI",
-        "validationAuthorityEntityID": "ZV0NUKK8XXJRS8AE7NXL"
+        "otherValidationAuthorityID": "S4PGVYGK",
+        "validationAuthorityEntityID": "EVORMNMDFR0RKE0EDEBX"
       },
-      "legalJurisdiction": "Buckinghamshire",
-      "entityCategory": "Grocery",
+      "legalJurisdiction": "Avon",
+      "entityCategory": "Finance",
       "legalForm": "LLC",
       "associatedEntity": {
         "type": "Organization",
-        "leiCode": "VTUQPFE5L61E503M326V",
-        "name": "Ritchie Inc"
+        "leiCode": "PBLXZJ4ZOLLFYM17NZE9",
+        "name": "Gusikowski, Gaylord and Stiedemann"
       },
       "status": "REJECTED",
-      "expirationDate": "2021-4-6",
-      "expirationReason": "cultivate best-of-breed networks",
+      "expirationDate": "2021-9-6",
+      "expirationReason": "evolve viral vortals",
       "successorEntity": {
         "type": "Organization",
-        "leiCode": "HAO733Y8W58S473UJBX3",
-        "name": "Hills, Mayer and Robel"
+        "leiCode": "77JT3F5170L16YVUWEBY",
+        "name": "Heller LLC"
       },
       "otherAddresses": []
     },
@@ -74,208 +74,222 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIentity",
-      "legalName": "Lubowitz Group",
-      "legalNameLanguage": "en_AU",
+      "legalName": "Kozey - DuBuque",
+      "legalNameLanguage": "vi",
       "otherNames": [
-        "Hermann, Funk and Farrell",
-        "Mills - Streich"
+        "Gusikowski - Bauch",
+        "Fadel, Satterfield and Robel"
       ],
       "transliteratedOtherNames": [
-        "Hermann, Funk and Farrell",
-        "Mills - Streich"
+        "Gusikowski - Bauch",
+        "Fadel, Satterfield and Robel"
       ],
       "legalAddress": {
         "type": "LEIaddress",
-        "language": "ne",
+        "language": "en_AU",
         "addressLines": [
-          "Ullrich, Mosciski and Conroy",
-          "43660 Maggio Loop"
+          "Haley - Rosenbaum",
+          "18903 Schmidt Views"
         ],
-        "addressNumber": "301",
-        "addressNumberWithinBuilding": "3",
-        "mailRouting": "6157 Bednar Station, 67567",
-        "city": "Dustyside",
-        "region": "Cambridgeshire",
-        "country": "Ghana",
-        "postalCode": "00613-7526"
-      },
-      "headquartersAddress": {
-        "type": "LEIaddress",
-        "language": "ne",
-        "addressLines": [
-          "Murphy LLC",
-          "745 Niko Flats"
-        ],
-        "addressNumber": "155",
-        "addressNumberWithinBuilding": "7",
-        "mailRouting": "39813 Lynch Ways, 81612",
-        "city": "Clarafurt",
+        "addressNumber": "322",
+        "addressNumberWithinBuilding": "5",
+        "mailRouting": "9886 Elinore Forge, 41812-0217",
+        "city": "Sporermouth",
         "region": "Borders",
-        "country": "Hungary",
-        "postalCode": "57140"
-      },
-      "registrationAuthority": {
-        "type": "LEIauthority",
-        "validationAuthorityID": "RA000002",
-        "otherValidationAuthorityID": "DTKB8PBB",
-        "validationAuthorityEntityID": "7AXKPJ8BH469RY4UC5OL"
-      },
-      "legalJurisdiction": "Berkshire",
-      "entityCategory": "Jewelery",
-      "legalForm": "CORPORATION",
-      "associatedEntity": {
-        "type": "Organization",
-        "leiCode": "Z3Z97IFV1XLMD19DTKQF",
-        "name": "Hoeger, Kuhic and Kutch"
-      },
-      "status": "IN PROGRESS",
-      "expirationDate": "2021-7-0",
-      "expirationReason": "monetize scalable e-commerce",
-      "successorEntity": {
-        "type": "Organization",
-        "leiCode": "6VK4MZHDC9XE77TU16ES",
-        "name": "Brakus, Johnston and Hagenes"
-      },
-      "otherAddresses": []
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "LEIentity",
-      "legalName": "Dicki - Paucek",
-      "legalNameLanguage": "ar",
-      "otherNames": [
-        "Schumm, McCullough and Bins",
-        "Herzog LLC"
-      ],
-      "transliteratedOtherNames": [
-        "Schumm, McCullough and Bins",
-        "Herzog LLC"
-      ],
-      "legalAddress": {
-        "type": "LEIaddress",
-        "language": "ja",
-        "addressLines": [
-          "Wiegand LLC",
-          "16368 Birdie Islands"
-        ],
-        "addressNumber": "450",
-        "addressNumberWithinBuilding": "3",
-        "mailRouting": "25763 Kuhic Ferry, 37341-3438",
-        "city": "Hermanfort",
-        "region": "Buckinghamshire",
-        "country": "Georgia",
-        "postalCode": "07976"
+        "country": "Turkmenistan",
+        "postalCode": "38121-0254"
       },
       "headquartersAddress": {
         "type": "LEIaddress",
-        "language": "vi",
+        "language": "fa",
         "addressLines": [
-          "Fisher, Williamson and Feest",
-          "0904 Jeramie Groves"
+          "Marks and Sons",
+          "8955 Jordane Manors"
         ],
-        "addressNumber": "170",
-        "addressNumberWithinBuilding": "7",
-        "mailRouting": "39722 Ryan Flat, 55348-2412",
-        "city": "Lake Adelle",
-        "region": "Cambridgeshire",
-        "country": "Panama",
-        "postalCode": "64650"
+        "addressNumber": "111",
+        "addressNumberWithinBuilding": "9",
+        "mailRouting": "705 DuBuque Extension, 40166-5676",
+        "city": "New Brennaport",
+        "region": "Berkshire",
+        "country": "Saint Martin",
+        "postalCode": "96124-5802"
       },
       "registrationAuthority": {
         "type": "LEIauthority",
         "validationAuthorityID": "RA000005",
-        "otherValidationAuthorityID": "L53TSWZW",
-        "validationAuthorityEntityID": "JVPJR0JM1IOY5S6TKX4N"
+        "otherValidationAuthorityID": "BRI13G22",
+        "validationAuthorityEntityID": "DN35KV8BPNCLF0W45XZM"
       },
-      "legalJurisdiction": "Buckinghamshire",
-      "entityCategory": "Jewelery",
+      "legalJurisdiction": "Avon",
+      "entityCategory": "Industrial",
       "legalForm": "CORPORATION",
       "associatedEntity": {
         "type": "Organization",
-        "leiCode": "0MALK5NSVKB07HZ3BP4W",
-        "name": "Kreiger and Sons"
+        "leiCode": "ZEHH1HRBS8T8NA5Y85Q9",
+        "name": "Willms LLC"
       },
-      "status": "CONFIRMED",
-      "expirationDate": "2021-1-2",
-      "expirationReason": "revolutionize frictionless solutions",
+      "status": "IN PROGRESS",
+      "expirationDate": "2021-2-1",
+      "expirationReason": "envisioneer cross-media architectures",
       "successorEntity": {
         "type": "Organization",
-        "leiCode": "37X3JP6NSD7SSPZJ00DA",
-        "name": "Hoeger LLC"
+        "leiCode": "8VA3NBY7RPRK7VAJS4CX",
+        "name": "Jenkins Group"
+      },
+      "otherAddresses": []
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "LEIentity",
+      "legalName": "Turner Inc",
+      "legalNameLanguage": "uk",
+      "otherNames": [
+        "Corkery - Botsford",
+        "Dibbert - Kertzmann"
+      ],
+      "transliteratedOtherNames": [
+        "Corkery - Botsford",
+        "Dibbert - Kertzmann"
+      ],
+      "legalAddress": {
+        "type": "LEIaddress",
+        "language": "es_MX",
+        "addressLines": [
+          "Brakus Group",
+          "673 Delfina Forges"
+        ],
+        "addressNumber": "129",
+        "addressNumberWithinBuilding": "6",
+        "mailRouting": "11773 Bryce Flats, 78745",
+        "city": "South Darionmouth",
+        "region": "Berkshire",
+        "country": "China",
+        "postalCode": "62509"
+      },
+      "headquartersAddress": {
+        "type": "LEIaddress",
+        "language": "fr_CH",
+        "addressLines": [
+          "O'Hara and Sons",
+          "8072 Gibson Village"
+        ],
+        "addressNumber": "109",
+        "addressNumberWithinBuilding": "7",
+        "mailRouting": "974 Schamberger Forge, 44603",
+        "city": "Friesentown",
+        "region": "Bedfordshire",
+        "country": "Reunion",
+        "postalCode": "19354-7115"
+      },
+      "registrationAuthority": {
+        "type": "LEIauthority",
+        "validationAuthorityID": "RA000001",
+        "otherValidationAuthorityID": "25SO8JJA",
+        "validationAuthorityEntityID": "6YTPIR9F3420R6SME8CC"
+      },
+      "legalJurisdiction": "Berkshire",
+      "entityCategory": "Grocery",
+      "legalForm": "LLC",
+      "associatedEntity": {
+        "type": "Organization",
+        "leiCode": "SLJFH8VGESK8AXC4FNO5",
+        "name": "Funk, Lehner and Hand"
+      },
+      "status": "CONFIRMED",
+      "expirationDate": "2021-2-4",
+      "expirationReason": "leverage transparent solutions",
+      "successorEntity": {
+        "type": "Organization",
+        "leiCode": "72IJSFASV8CGAWKS3OLB",
+        "name": "Turner Group"
       },
       "otherAddresses": []
     }
   ],
   "bad": [
     {
+      "legalJurisdiction": "Avon",
+      "status": "REJECTED",
+      "otherAddresses": [],
+      "protocol": "reboot"
+    },
+    {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIentity",
-      "legalName": "Kuphal, Dicki and Jones",
-      "legalNameLanguage": "en_ZA",
+      "legalNameLanguage": "vi",
       "otherNames": [
-        "Schmeler - Prosacco",
-        "Jones - Waelchi"
+        "Gusikowski - Bauch",
+        "Fadel, Satterfield and Robel"
       ],
-      "headquartersAddress": {
+      "legalAddress": {
         "type": "LEIaddress",
-        "language": "en_IND",
+        "language": "en_AU",
         "addressLines": [
-          "Crooks and Sons",
-          "738 Schmidt Tunnel"
+          "Haley - Rosenbaum",
+          "18903 Schmidt Views"
         ],
-        "addressNumber": "168",
+        "addressNumber": "322",
         "addressNumberWithinBuilding": "5",
-        "mailRouting": "4712 Ludwig Branch, 71744",
-        "city": "Guadalupeshire",
-        "region": "Avon",
-        "country": "Ghana",
-        "postalCode": "68807-4482"
+        "mailRouting": "9886 Elinore Forge, 41812-0217",
+        "city": "Sporermouth",
+        "region": "Borders",
+        "country": "Turkmenistan",
+        "postalCode": "38121-0254"
       },
-      "entityCategory": "Grocery",
-      "expirationDate": "2021-4-6",
-      "expirationReason": "cultivate best-of-breed networks",
-      "successorEntity": {
-        "type": "Organization",
-        "leiCode": "HAO733Y8W58S473UJBX3",
-        "name": "Hills, Mayer and Robel"
-      },
-      "otherAddresses": [],
-      "card": "compress",
-      "driver": "calculate",
-      "protocol": "copy"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "interface": "hack",
-      "circuit": "connect",
-      "pixel": "parse"
-    },
-    {
-      "legalNameLanguage": "ar",
-      "otherNames": [
-        "Schumm, McCullough and Bins",
-        "Herzog LLC"
-      ],
       "registrationAuthority": {
         "type": "LEIauthority",
         "validationAuthorityID": "RA000005",
-        "otherValidationAuthorityID": "L53TSWZW",
-        "validationAuthorityEntityID": "JVPJR0JM1IOY5S6TKX4N"
+        "otherValidationAuthorityID": "BRI13G22",
+        "validationAuthorityEntityID": "DN35KV8BPNCLF0W45XZM"
       },
-      "status": "CONFIRMED",
-      "expirationReason": "revolutionize frictionless solutions",
+      "entityCategory": "Industrial",
+      "legalForm": "CORPORATION",
+      "associatedEntity": {
+        "type": "Organization",
+        "leiCode": "ZEHH1HRBS8T8NA5Y85Q9",
+        "name": "Willms LLC"
+      },
+      "expirationDate": "2021-2-1",
+      "expirationReason": "envisioneer cross-media architectures",
+      "otherAddresses": [],
+      "sensor": "quantify",
+      "monitor": "copy"
+    },
+    {
+      "transliteratedOtherNames": [
+        "Corkery - Botsford",
+        "Dibbert - Kertzmann"
+      ],
+      "legalAddress": {
+        "type": "LEIaddress",
+        "language": "es_MX",
+        "addressLines": [
+          "Brakus Group",
+          "673 Delfina Forges"
+        ],
+        "addressNumber": "129",
+        "addressNumberWithinBuilding": "6",
+        "mailRouting": "11773 Bryce Flats, 78745",
+        "city": "South Darionmouth",
+        "region": "Berkshire",
+        "country": "China",
+        "postalCode": "62509"
+      },
+      "legalJurisdiction": "Berkshire",
+      "entityCategory": "Grocery",
+      "legalForm": "LLC",
       "successorEntity": {
         "type": "Organization",
-        "leiCode": "37X3JP6NSD7SSPZJ00DA",
-        "name": "Hoeger LLC"
+        "leiCode": "72IJSFASV8CGAWKS3OLB",
+        "name": "Turner Group"
       },
-      "system": "override"
+      "transmitter": "transmit",
+      "system": "transmit",
+      "hard drive": "hack"
     }
   ]
 }

@@ -5,45 +5,45 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "GeoCoordinates",
-      "latitude": "74.4711",
-      "longitude": "-99.4836"
+      "latitude": "65.4609",
+      "longitude": "-76.5883"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "GeoCoordinates",
-      "latitude": "-27.3607",
-      "longitude": "-144.5710"
+      "latitude": "-32.6189",
+      "longitude": "-130.8137"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "GeoCoordinates",
-      "latitude": "-17.9212",
-      "longitude": "-114.5511"
+      "latitude": "-14.8290",
+      "longitude": "43.8388"
     }
   ],
   "bad": [
     {
-      "latitude": "74.4711",
-      "longitude": "-99.4836",
-      "transmitter": "copy",
-      "protocol": "program",
-      "panel": "parse"
+      "type": "GeoCoordinates",
+      "capacitor": "synthesize",
+      "bus": "synthesize",
+      "feed": "copy"
     },
     {
-      "latitude": "-27.3607",
-      "longitude": "-144.5710",
-      "driver": "generate"
+      "type": "GeoCoordinates",
+      "latitude": "-32.6189",
+      "longitude": "-130.8137",
+      "monitor": "quantify",
+      "feed": "transmit"
     },
     {
-      "longitude": "-114.5511",
-      "sensor": "override",
-      "transmitter": "compress",
-      "program": "copy",
-      "circuit": "input"
+      "longitude": "43.8388",
+      "pixel": "hack",
+      "matrix": "navigate",
+      "circuit": "program"
     }
   ]
 }

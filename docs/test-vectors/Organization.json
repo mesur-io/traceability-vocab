@@ -5,85 +5,78 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Organization",
-      "name": "Davis LLC",
-      "description": "Organized radical alliance",
+      "name": "Lemke - Moore",
+      "description": "Self-enabling clear-thinking model",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "454 Koepp Port",
-        "addressLocality": "Buckridgeland",
-        "addressRegion": "Louisiana",
-        "postalCode": "14883-2632",
-        "addressCountry": "Greenland"
-      },
-      "email": "Marta39@example.org",
-      "phoneNumber": "555-942-2702"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "Organization",
-      "name": "Weimann Inc",
-      "description": "Progressive zero defect instruction set",
-      "address": {
-        "type": "PostalAddress",
-        "streetAddress": "548 Tamara Course",
-        "addressLocality": "Batzfurt",
+        "streetAddress": "20978 Buddy Path",
+        "addressLocality": "Greenburgh",
         "addressRegion": "Illinois",
-        "postalCode": "24794-5937",
-        "addressCountry": "Georgia"
+        "postalCode": "22673-9787",
+        "addressCountry": "USA"
       },
-      "email": "Astrid33@example.com",
-      "phoneNumber": "555-929-1006"
+      "email": "Jennifer3@example.org",
+      "phoneNumber": "555-532-4833",
+      "faxNumber": "555-278-1569"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Organization",
-      "name": "Halvorson, Hauck and Gibson",
-      "description": "Realigned value-added forecast",
+      "name": "Reilly Group",
+      "description": "Exclusive national definition",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "6038 Konopelski Crossroad",
-        "addressLocality": "Port Norvalton",
-        "addressRegion": "New York",
-        "postalCode": "71354",
-        "addressCountry": "San Marino"
+        "streetAddress": "049 Jordane Harbors",
+        "addressLocality": "South Garnett",
+        "addressRegion": "Maine",
+        "postalCode": "91315",
+        "addressCountry": "USA"
       },
-      "email": "Chadrick_Schuster@example.com",
-      "phoneNumber": "555-576-3589"
+      "email": "Aracely.Friesen@example.net",
+      "phoneNumber": "555-228-4354",
+      "faxNumber": "555-170-6114"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "Organization",
+      "name": "Grant LLC",
+      "description": "Focused even-keeled collaboration",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "66936 Gladyce Corner",
+        "addressLocality": "West Sheridan",
+        "addressRegion": "Wyoming",
+        "postalCode": "70750-7066",
+        "addressCountry": "USA"
+      },
+      "email": "Yessenia84@example.com",
+      "phoneNumber": "555-357-9606",
+      "faxNumber": "555-412-5785"
     }
   ],
   "bad": [
     {
-      "name": "Davis LLC",
-      "description": "Organized radical alliance",
-      "address": {
-        "type": "PostalAddress",
-        "streetAddress": "454 Koepp Port",
-        "addressLocality": "Buckridgeland",
-        "addressRegion": "Louisiana",
-        "postalCode": "14883-2632",
-        "addressCountry": "Greenland"
-      },
-      "phoneNumber": "555-942-2702",
-      "feed": "parse",
-      "array": "synthesize",
-      "microchip": "synthesize"
+      "name": "Lemke - Moore",
+      "system": "back up",
+      "protocol": "navigate",
+      "capacitor": "transmit"
     },
     {
-      "type": "Organization",
-      "email": "Astrid33@example.com",
-      "phoneNumber": "555-929-1006",
-      "bus": "synthesize",
-      "protocol": "index",
-      "monitor": "calculate"
+      "driver": "quantify",
+      "program": "index",
+      "alarm": "hack",
+      "panel": "connect"
     },
     {
-      "application": "index",
-      "sensor": "transmit",
-      "bandwidth": "index"
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "email": "Yessenia84@example.com",
+      "application": "bypass"
     }
   ]
 }

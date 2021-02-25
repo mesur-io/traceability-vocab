@@ -20,39 +20,50 @@
           "addressLocality": "Welchport",
           "addressRegion": "Texas",
           "postalCode": "01515-9467",
-          "addressCountry": "Uzbekistan"
+          "addressCountry": "USA"
         }
       },
       "inspector": {
         "type": "Inspector",
         "person": {
           "type": "Person",
-          "firstName": "Elliott",
-          "lastName": "Johnston",
-          "email": "Henry.Ward@example.net",
-          "phoneNumber": "555-341-9663",
+          "firstName": "Garfield",
+          "lastName": "Weber",
+          "email": "Keyshawn8@example.com",
+          "phoneNumber": "555-516-1185",
           "worksFor": {
             "type": "Organization",
-            "name": "Shanahan LLC",
-            "description": "Intuitive full-range hierarchy",
+            "name": "Schamberger - Ziemann",
+            "description": "Up-sized client-driven data-warehouse",
             "address": {
               "type": "PostalAddress",
-              "streetAddress": "37644 Lois Fall",
-              "addressLocality": "East Mozell",
-              "addressRegion": "Arizona",
-              "postalCode": "13830-9269",
-              "addressCountry": "United States Minor Outlying Islands"
+              "streetAddress": "621 Prosacco Row",
+              "addressLocality": "West Sammieborough",
+              "addressRegion": "Alaska",
+              "postalCode": "26991-7185",
+              "addressCountry": "USA"
             },
-            "email": "Gregoria_Schamberger17@example.com",
-            "phoneNumber": "555-255-7907"
+            "email": "Elliott.Johnston92@example.net",
+            "phoneNumber": "555-465-4795",
+            "faxNumber": "555-506-6474"
           },
-          "jobTitle": "Regional Factors Architect"
+          "jobTitle": "Future Mobility Assistant"
         },
         "qualification": [
           {
             "type": "Qualification",
-            "qualificationCategory": "Central Accounts Planner",
-            "qualificationValue": "Supervisor"
+            "qualificationCategory": "Corporate Division Consultant",
+            "qualificationValue": "Planner"
+          },
+          {
+            "type": "Qualification",
+            "qualificationCategory": "Lead Data Liaison",
+            "qualificationValue": "Representative"
+          },
+          {
+            "type": "Qualification",
+            "qualificationCategory": "Direct Integration Specialist",
+            "qualificationValue": "Developer"
           }
         ]
       },
@@ -60,39 +71,40 @@
         "type": "ParcelDelivery",
         "deliveryAddress": {
           "type": "PostalAddress",
-          "organizationName": "Barton - Cremin",
-          "streetAddress": "27867 Gusikowski Burg",
-          "addressLocality": "East Keshaun",
+          "organizationName": "Reinger - Barrows",
+          "streetAddress": "34250 Quinn Mill",
+          "addressLocality": "West Alysson",
           "addressRegion": "Arizona",
-          "postalCode": "58440-0558",
-          "addressCountry": "Eritrea"
+          "postalCode": "58216-2965",
+          "addressCountry": "USA"
         },
         "originAddress": {
           "type": "PostalAddress",
-          "organizationName": "Gottlieb, Vandervort and Nitzsche",
-          "streetAddress": "4655 Tremblay Lodge",
-          "addressLocality": "Leliafurt",
-          "addressRegion": "New Mexico",
-          "postalCode": "40458",
-          "addressCountry": "Marshall Islands"
+          "organizationName": "Lakin - McClure",
+          "streetAddress": "3856 Darrel Port",
+          "addressLocality": "North Jayce",
+          "addressRegion": "New Jersey",
+          "postalCode": "52897-0355",
+          "addressCountry": "USA"
         },
-        "deliveryMethod": "Rail freight transport",
-        "trackingNumber": "208508400862"
+        "deliveryMethod": "Air transport",
+        "trackingNumber": "31160757351"
       },
       "applicant": {
         "type": "Organization",
-        "name": "Hammes LLC",
-        "description": "Focused analyzing time-frame",
+        "name": "Turcotte, Stiedemann and Glover",
+        "description": "Public-key asynchronous ability",
         "address": {
           "type": "PostalAddress",
-          "streetAddress": "5096 Aida Crescent",
-          "addressLocality": "Maggioside",
-          "addressRegion": "Louisiana",
-          "postalCode": "66294",
-          "addressCountry": "Nepal"
+          "streetAddress": "85934 Earnest Port",
+          "addressLocality": "Kautzerstad",
+          "addressRegion": "Maine",
+          "postalCode": "13620",
+          "addressCountry": "USA"
         },
-        "email": "Gussie_Klocko85@example.com",
-        "phoneNumber": "555-441-3903"
+        "email": "Stella.Pfeffer0@example.net",
+        "phoneNumber": "555-961-4256",
+        "faxNumber": "555-465-5092"
       },
       "inspectionDate": "2020-03-15",
       "inspectionType": "Food Safety",
@@ -135,52 +147,53 @@
       "type": "AgInspectionReport",
       "facility": {
         "type": "Place",
-        "globalLocationNumber": "9202906487652",
+        "globalLocationNumber": "2819389705219",
         "geo": {
           "type": "GeoCoordinates",
-          "latitude": "-54.9586",
-          "longitude": "-32.6404"
+          "latitude": "-14.5773",
+          "longitude": "-128.4549"
         },
         "address": {
           "type": "PostalAddress",
-          "organizationName": "Schaden and Sons",
-          "streetAddress": "42802 Conroy Ramp",
-          "addressLocality": "Arnoport",
-          "addressRegion": "North Dakota",
-          "postalCode": "77610",
-          "addressCountry": "Colombia"
+          "organizationName": "Bode - Langworth",
+          "streetAddress": "377 Becker Pines",
+          "addressLocality": "East Griffinmouth",
+          "addressRegion": "South Carolina",
+          "postalCode": "21159",
+          "addressCountry": "USA"
         }
       },
       "inspector": {
         "type": "Inspector",
         "person": {
           "type": "Person",
-          "firstName": "Royal",
-          "lastName": "Dach",
-          "email": "Emile91@example.com",
-          "phoneNumber": "555-322-9215",
+          "firstName": "Gus",
+          "lastName": "Nitzsche",
+          "email": "Jaunita_Nolan50@example.net",
+          "phoneNumber": "555-589-6335",
           "worksFor": {
             "type": "Organization",
-            "name": "Altenwerth LLC",
-            "description": "Persistent empowering architecture",
+            "name": "Friesen, Veum and Stehr",
+            "description": "De-engineered local extranet",
             "address": {
               "type": "PostalAddress",
-              "streetAddress": "9110 Efrain Place",
-              "addressLocality": "New Johannfurt",
-              "addressRegion": "Georgia",
-              "postalCode": "53831",
-              "addressCountry": "China"
+              "streetAddress": "6105 Esther Inlet",
+              "addressLocality": "East Elzatown",
+              "addressRegion": "California",
+              "postalCode": "65309",
+              "addressCountry": "USA"
             },
-            "email": "Emery.MacGyver87@example.net",
-            "phoneNumber": "555-382-1072"
+            "email": "Deangelo_Veum@example.com",
+            "phoneNumber": "555-384-6060",
+            "faxNumber": "555-971-4721"
           },
-          "jobTitle": "Central Communications Designer"
+          "jobTitle": "Corporate Solutions Producer"
         },
         "qualification": [
           {
             "type": "Qualification",
-            "qualificationCategory": "Regional Mobility Consultant",
-            "qualificationValue": "Administrator"
+            "qualificationCategory": "Direct Brand Orchestrator",
+            "qualificationValue": "Representative"
           }
         ]
       },
@@ -188,66 +201,221 @@
         "type": "ParcelDelivery",
         "deliveryAddress": {
           "type": "PostalAddress",
-          "organizationName": "Jakubowski - Nitzsche",
-          "streetAddress": "468 Callie Prairie",
-          "addressLocality": "Lake Alethafurt",
-          "addressRegion": "Virginia",
-          "postalCode": "13299",
-          "addressCountry": "Guadeloupe"
+          "organizationName": "Nitzsche Group",
+          "streetAddress": "13299 Everett Hollow",
+          "addressLocality": "Leslyview",
+          "addressRegion": "New Mexico",
+          "postalCode": "09567-1927",
+          "addressCountry": "USA"
         },
         "originAddress": {
           "type": "PostalAddress",
-          "organizationName": "Parisian - Morar",
-          "streetAddress": "6909 Orion Parkways",
-          "addressLocality": "Port Devonchester",
+          "organizationName": "Ledner Inc",
+          "streetAddress": "48620 Haag Mission",
+          "addressLocality": "North Walter",
           "addressRegion": "California",
-          "postalCode": "52148",
-          "addressCountry": "New Caledonia"
+          "postalCode": "07659-1093",
+          "addressCountry": "USA"
         },
-        "deliveryMethod": "Truck transport",
-        "trackingNumber": "224265174449"
+        "deliveryMethod": "Rail freight transport",
+        "trackingNumber": "921826735034"
       },
       "applicant": {
         "type": "Person",
-        "firstName": "Wayne",
-        "lastName": "Gerlach",
-        "email": "Loyce.Lockman52@example.net",
-        "phoneNumber": "555-240-7986",
+        "firstName": "Clifford",
+        "lastName": "Wunsch",
+        "email": "Bruce8@example.com",
+        "phoneNumber": "555-781-8106",
         "worksFor": {
           "type": "Organization",
-          "name": "Runolfsdottir Group",
-          "description": "Decentralized maximized encryption",
+          "name": "Lebsack and Sons",
+          "description": "Managed transitional internet solution",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "09090 Joseph Shoal",
-            "addressLocality": "Cruickshanktown",
-            "addressRegion": "West Virginia",
-            "postalCode": "92810",
-            "addressCountry": "United Arab Emirates"
+            "streetAddress": "017 McKenzie Underpass",
+            "addressLocality": "Port Eugenia",
+            "addressRegion": "Michigan",
+            "postalCode": "61792",
+            "addressCountry": "USA"
           },
-          "email": "Eugenia_Keebler@example.net",
-          "phoneNumber": "555-797-1463"
+          "email": "Tyshawn_Hettinger67@example.org",
+          "phoneNumber": "555-912-6750",
+          "faxNumber": "555-591-8441"
         },
-        "jobTitle": "Regional Group Agent"
+        "jobTitle": "Legacy Optimization Orchestrator"
       },
       "inspectionDate": "2020-03-15",
-      "inspectionType": "Phytosanitary",
+      "inspectionType": "Food Safety",
       "observation": [
         {
           "type": "Observation",
           "property": {
-            "type": "ChemicalProperty",
-            "name": "Argon",
-            "formula": "Ar",
-            "inchi": "InChI=1S/Ar",
-            "inchikey": "XKRFYHLGVUSROY-UHFFFAOYSA-N"
+            "type": "MechanicalProperty",
+            "identifier": "ISO 3738",
+            "name": "Rockwell Hardness Test (Scale A)",
+            "description": "The Rockwell hardness test is an empirical indentation hardness test that can provide useful information about metallic materials."
           },
           "measurement": {
             "type": "MeasuredValue",
-            "value": "88.488",
+            "value": "00.00",
+            "unitCode": "UNKNOWN"
+          }
+        },
+        {
+          "type": "Observation",
+          "property": {
+            "type": "MechanicalProperty",
+            "identifier": "ISO 180",
+            "name": "Izod Impact Strength Test",
+            "description": "ISO 180 defines the method used for pendulums to determine the impact resistance of a plastic specimen when supported in a cantilever configuration. Test results are used to evaluate the resilience of materials, typically plastics."
+          },
+          "measurement": {
+            "type": "MeasuredValue",
+            "value": "19.409",
+            "unitCode": "B13"
+          }
+        },
+        {
+          "type": "Observation",
+          "property": {
+            "type": "ChemicalProperty",
+            "name": "Plutonium",
+            "formula": "Pu",
+            "inchi": "InChI=1S/Pu",
+            "inchikey": "OYEHPCDNVJXUIW-UHFFFAOYSA-N"
+          },
+          "measurement": {
+            "type": "MeasuredValue",
+            "value": "30.012",
             "unitCode": "P1"
           }
         },
+        {
+          "type": "Observation",
+          "property": {
+            "type": "ChemicalProperty",
+            "name": "Gold",
+            "formula": "Au",
+            "inchi": "InChI=1S/Au",
+            "inchikey": "PCHJSUWPFVWCPO-UHFFFAOYSA-N"
+          },
+          "measurement": {
+            "type": "MeasuredValue",
+            "value": "69.988",
+            "unitCode": "P1"
+          }
+        }
+      ]
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "AgInspectionReport",
+      "facility": {
+        "type": "Place",
+        "globalLocationNumber": "2743641338610",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "39.6542",
+          "longitude": "-37.0682"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Langworth, Harris and Heathcote",
+          "streetAddress": "5762 Emard Greens",
+          "addressLocality": "Schaefermouth",
+          "addressRegion": "Rhode Island",
+          "postalCode": "02671-9562",
+          "addressCountry": "USA"
+        }
+      },
+      "inspector": {
+        "type": "Inspector",
+        "person": {
+          "type": "Person",
+          "firstName": "Dominique",
+          "lastName": "Farrell",
+          "email": "Bryon_Brown12@example.net",
+          "phoneNumber": "555-422-2997",
+          "worksFor": {
+            "type": "Organization",
+            "name": "Larson - Morar",
+            "description": "Future-proofed bandwidth-monitored framework",
+            "address": {
+              "type": "PostalAddress",
+              "streetAddress": "3633 Christy Course",
+              "addressLocality": "South Ronnyland",
+              "addressRegion": "Massachusetts",
+              "postalCode": "19639",
+              "addressCountry": "USA"
+            },
+            "email": "Meagan.Kozey@example.com",
+            "phoneNumber": "555-262-3821",
+            "faxNumber": "555-824-6123"
+          },
+          "jobTitle": "Legacy Paradigm Liaison"
+        },
+        "qualification": [
+          {
+            "type": "Qualification",
+            "qualificationCategory": "Internal Directives Executive",
+            "qualificationValue": "Officer"
+          },
+          {
+            "type": "Qualification",
+            "qualificationCategory": "Human Communications Director",
+            "qualificationValue": "Officer"
+          },
+          {
+            "type": "Qualification",
+            "qualificationCategory": "Direct Infrastructure Architect",
+            "qualificationValue": "Developer"
+          }
+        ]
+      },
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Kemmer - Bashirian",
+          "streetAddress": "17187 Reichel Cliffs",
+          "addressLocality": "Kaleighborough",
+          "addressRegion": "West Virginia",
+          "postalCode": "06727-4165",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Mohr, O'Reilly and Batz",
+          "streetAddress": "96851 Franecki Squares",
+          "addressLocality": "Bodeview",
+          "addressRegion": "Michigan",
+          "postalCode": "37513",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Ocean transport",
+        "trackingNumber": "863753185098"
+      },
+      "applicant": {
+        "type": "Organization",
+        "name": "Stokes - Smith",
+        "description": "Multi-channelled uniform extranet",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "39245 Boyer Radial",
+          "addressLocality": "Katarinamouth",
+          "addressRegion": "Utah",
+          "postalCode": "12613-5524",
+          "addressCountry": "USA"
+        },
+        "email": "Ova_McCullough47@example.net",
+        "phoneNumber": "555-510-6671",
+        "faxNumber": "555-204-9242"
+      },
+      "inspectionDate": "2020-03-15",
+      "inspectionType": "Food Safety",
+      "observation": [
         {
           "type": "Observation",
           "property": {
@@ -258,23 +426,22 @@
           },
           "measurement": {
             "type": "MeasuredValue",
-            "value": "60.132",
+            "value": "78.712",
             "unitCode": "B13"
           }
         },
         {
           "type": "Observation",
           "property": {
-            "type": "ChemicalProperty",
-            "name": "Niobium",
-            "formula": "Nb",
-            "inchi": "InChI=1S/Nb",
-            "inchikey": "GUCVJGMIXFAOAE-UHFFFAOYSA-N"
+            "type": "MechanicalProperty",
+            "identifier": "ISO 1352",
+            "name": "Torque-controlled fatigue testing",
+            "description": "ISO 1352:2011 specifies the conditions for performing torsional, constant-amplitude, nominally elastic stress fatigue tests on metallic specimens without deliberately introducing stress concentrations. The tests are carried out at ambient temperature (ideally at between 10 °C and 35 °C) in air by applying a pure couple to the specimen about its longitudinal axis."
           },
           "measurement": {
             "type": "MeasuredValue",
-            "value": "11.512",
-            "unitCode": "P1"
+            "value": "00.00",
+            "unitCode": "UNKNOWN"
           }
         },
         {
@@ -292,65 +459,55 @@
           }
         }
       ]
-    },
+    }
+  ],
+  "bad": [
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "AgInspectionReport",
-      "facility": {
-        "type": "Place",
-        "globalLocationNumber": "4686469189287",
-        "geo": {
-          "type": "GeoCoordinates",
-          "latitude": "-28.1236",
-          "longitude": "7.8850"
-        },
-        "address": {
-          "type": "PostalAddress",
-          "organizationName": "Lang LLC",
-          "streetAddress": "82512 Candido Passage",
-          "addressLocality": "Rathmouth",
-          "addressRegion": "Texas",
-          "postalCode": "61273-8533",
-          "addressCountry": "Latvia"
-        }
-      },
       "inspector": {
         "type": "Inspector",
         "person": {
           "type": "Person",
-          "firstName": "Tommie",
-          "lastName": "Mraz",
-          "email": "Zion80@example.com",
-          "phoneNumber": "555-535-2250",
+          "firstName": "Garfield",
+          "lastName": "Weber",
+          "email": "Keyshawn8@example.com",
+          "phoneNumber": "555-516-1185",
           "worksFor": {
             "type": "Organization",
-            "name": "Hartmann - Heaney",
-            "description": "Configurable interactive collaboration",
+            "name": "Schamberger - Ziemann",
+            "description": "Up-sized client-driven data-warehouse",
             "address": {
               "type": "PostalAddress",
-              "streetAddress": "67195 Ortiz Ranch",
-              "addressLocality": "Dareton",
-              "addressRegion": "Florida",
-              "postalCode": "53115-4707",
-              "addressCountry": "Rwanda"
+              "streetAddress": "621 Prosacco Row",
+              "addressLocality": "West Sammieborough",
+              "addressRegion": "Alaska",
+              "postalCode": "26991-7185",
+              "addressCountry": "USA"
             },
-            "email": "Josiah41@example.org",
-            "phoneNumber": "555-595-4273"
+            "email": "Elliott.Johnston92@example.net",
+            "phoneNumber": "555-465-4795",
+            "faxNumber": "555-506-6474"
           },
-          "jobTitle": "Customer Branding Analyst"
+          "jobTitle": "Future Mobility Assistant"
         },
         "qualification": [
           {
             "type": "Qualification",
-            "qualificationCategory": "International Quality Specialist",
-            "qualificationValue": "Specialist"
+            "qualificationCategory": "Corporate Division Consultant",
+            "qualificationValue": "Planner"
           },
           {
             "type": "Qualification",
-            "qualificationCategory": "Central Implementation Consultant",
-            "qualificationValue": "Consultant"
+            "qualificationCategory": "Lead Data Liaison",
+            "qualificationValue": "Representative"
+          },
+          {
+            "type": "Qualification",
+            "qualificationCategory": "Direct Integration Specialist",
+            "qualificationValue": "Developer"
           }
         ]
       },
@@ -358,154 +515,138 @@
         "type": "ParcelDelivery",
         "deliveryAddress": {
           "type": "PostalAddress",
-          "organizationName": "Heidenreich - Casper",
-          "streetAddress": "3744 Ernser Isle",
-          "addressLocality": "East Xander",
-          "addressRegion": "Delaware",
-          "postalCode": "75173",
-          "addressCountry": "Cambodia"
+          "organizationName": "Reinger - Barrows",
+          "streetAddress": "34250 Quinn Mill",
+          "addressLocality": "West Alysson",
+          "addressRegion": "Arizona",
+          "postalCode": "58216-2965",
+          "addressCountry": "USA"
         },
         "originAddress": {
           "type": "PostalAddress",
-          "organizationName": "Bashirian - Goldner",
-          "streetAddress": "71870 Ned Fords",
-          "addressLocality": "Fannieshire",
-          "addressRegion": "North Dakota",
-          "postalCode": "67274",
-          "addressCountry": "Chile"
+          "organizationName": "Lakin - McClure",
+          "streetAddress": "3856 Darrel Port",
+          "addressLocality": "North Jayce",
+          "addressRegion": "New Jersey",
+          "postalCode": "52897-0355",
+          "addressCountry": "USA"
         },
         "deliveryMethod": "Air transport",
-        "trackingNumber": "676546746480"
-      },
-      "applicant": {
-        "type": "Organization",
-        "name": "Mraz, Ankunding and Dibbert",
-        "description": "Centralized contextually-based function",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "0196 Chaya Tunnel",
-          "addressLocality": "Howellberg",
-          "addressRegion": "Virginia",
-          "postalCode": "44437",
-          "addressCountry": "Martinique"
-        },
-        "email": "Delphia_Kuhn@example.net",
-        "phoneNumber": "555-244-4354"
+        "trackingNumber": "31160757351"
       },
       "inspectionDate": "2020-03-15",
-      "inspectionType": "Contamination",
+      "inspectionType": "Food Safety",
+      "pixel": "hack",
+      "card": "generate"
+    },
+    {
+      "type": "AgInspectionReport",
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Nitzsche Group",
+          "streetAddress": "13299 Everett Hollow",
+          "addressLocality": "Leslyview",
+          "addressRegion": "New Mexico",
+          "postalCode": "09567-1927",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Ledner Inc",
+          "streetAddress": "48620 Haag Mission",
+          "addressLocality": "North Walter",
+          "addressRegion": "California",
+          "postalCode": "07659-1093",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Rail freight transport",
+        "trackingNumber": "921826735034"
+      },
+      "inspectionDate": "2020-03-15",
+      "inspectionType": "Food Safety",
       "observation": [
         {
           "type": "Observation",
           "property": {
-            "type": "ChemicalProperty",
-            "name": "Lutetium",
-            "formula": "Lu",
-            "inchi": "InChI=1S/Lu",
-            "inchikey": "OHSVLFRHMCKCQY-UHFFFAOYSA-N"
+            "type": "MechanicalProperty",
+            "identifier": "ISO 3738",
+            "name": "Rockwell Hardness Test (Scale A)",
+            "description": "The Rockwell hardness test is an empirical indentation hardness test that can provide useful information about metallic materials."
           },
           "measurement": {
             "type": "MeasuredValue",
-            "value": "100.00",
+            "value": "00.00",
+            "unitCode": "UNKNOWN"
+          }
+        },
+        {
+          "type": "Observation",
+          "property": {
+            "type": "MechanicalProperty",
+            "identifier": "ISO 180",
+            "name": "Izod Impact Strength Test",
+            "description": "ISO 180 defines the method used for pendulums to determine the impact resistance of a plastic specimen when supported in a cantilever configuration. Test results are used to evaluate the resilience of materials, typically plastics."
+          },
+          "measurement": {
+            "type": "MeasuredValue",
+            "value": "19.409",
+            "unitCode": "B13"
+          }
+        },
+        {
+          "type": "Observation",
+          "property": {
+            "type": "ChemicalProperty",
+            "name": "Plutonium",
+            "formula": "Pu",
+            "inchi": "InChI=1S/Pu",
+            "inchikey": "OYEHPCDNVJXUIW-UHFFFAOYSA-N"
+          },
+          "measurement": {
+            "type": "MeasuredValue",
+            "value": "30.012",
+            "unitCode": "P1"
+          }
+        },
+        {
+          "type": "Observation",
+          "property": {
+            "type": "ChemicalProperty",
+            "name": "Gold",
+            "formula": "Au",
+            "inchi": "InChI=1S/Au",
+            "inchikey": "PCHJSUWPFVWCPO-UHFFFAOYSA-N"
+          },
+          "measurement": {
+            "type": "MeasuredValue",
+            "value": "69.988",
             "unitCode": "P1"
           }
         }
-      ]
-    }
-  ],
-  "bad": [
+      ],
+      "feed": "copy",
+      "bus": "compress",
+      "hard drive": "override"
+    },
     {
-      "facility": {
-        "type": "Place",
-        "globalLocationNumber": "1131174415433",
-        "geo": {
-          "type": "GeoCoordinates",
-          "latitude": "75.3745",
-          "longitude": "-167.7729"
-        },
-        "address": {
-          "type": "PostalAddress",
-          "organizationName": "Grimes, Bartoletti and Boehm",
-          "streetAddress": "713 Lempi Gateway",
-          "addressLocality": "Welchport",
-          "addressRegion": "Texas",
-          "postalCode": "01515-9467",
-          "addressCountry": "Uzbekistan"
-        }
-      },
-      "inspector": {
-        "type": "Inspector",
-        "person": {
-          "type": "Person",
-          "firstName": "Elliott",
-          "lastName": "Johnston",
-          "email": "Henry.Ward@example.net",
-          "phoneNumber": "555-341-9663",
-          "worksFor": {
-            "type": "Organization",
-            "name": "Shanahan LLC",
-            "description": "Intuitive full-range hierarchy",
-            "address": {
-              "type": "PostalAddress",
-              "streetAddress": "37644 Lois Fall",
-              "addressLocality": "East Mozell",
-              "addressRegion": "Arizona",
-              "postalCode": "13830-9269",
-              "addressCountry": "United States Minor Outlying Islands"
-            },
-            "email": "Gregoria_Schamberger17@example.com",
-            "phoneNumber": "555-255-7907"
-          },
-          "jobTitle": "Regional Factors Architect"
-        },
-        "qualification": [
-          {
-            "type": "Qualification",
-            "qualificationCategory": "Central Accounts Planner",
-            "qualificationValue": "Supervisor"
-          }
-        ]
-      },
-      "shipment": {
-        "type": "ParcelDelivery",
-        "deliveryAddress": {
-          "type": "PostalAddress",
-          "organizationName": "Barton - Cremin",
-          "streetAddress": "27867 Gusikowski Burg",
-          "addressLocality": "East Keshaun",
-          "addressRegion": "Arizona",
-          "postalCode": "58440-0558",
-          "addressCountry": "Eritrea"
-        },
-        "originAddress": {
-          "type": "PostalAddress",
-          "organizationName": "Gottlieb, Vandervort and Nitzsche",
-          "streetAddress": "4655 Tremblay Lodge",
-          "addressLocality": "Leliafurt",
-          "addressRegion": "New Mexico",
-          "postalCode": "40458",
-          "addressCountry": "Marshall Islands"
-        },
-        "deliveryMethod": "Rail freight transport",
-        "trackingNumber": "208508400862"
-      },
-      "applicant": {
-        "type": "Organization",
-        "name": "Hammes LLC",
-        "description": "Focused analyzing time-frame",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "5096 Aida Crescent",
-          "addressLocality": "Maggioside",
-          "addressRegion": "Louisiana",
-          "postalCode": "66294",
-          "addressCountry": "Nepal"
-        },
-        "email": "Gussie_Klocko85@example.com",
-        "phoneNumber": "555-441-3903"
-      },
       "inspectionType": "Food Safety",
       "observation": [
+        {
+          "type": "Observation",
+          "property": {
+            "type": "MechanicalProperty",
+            "identifier": "ISO 148",
+            "name": "Charpy Impact Strength Test",
+            "description": "ISO 148-1:2016 specifies the Charpy (V-notch and U-notch) pendulum impact test method for determining the energy absorbed in an impact test of metallic materials. This part of ISO 148 does not cover instrumented impact testing, which is specified in ISO 14556."
+          },
+          "measurement": {
+            "type": "MeasuredValue",
+            "value": "78.712",
+            "unitCode": "B13"
+          }
+        },
         {
           "type": "Observation",
           "property": {
@@ -523,173 +664,19 @@
         {
           "type": "Observation",
           "property": {
-            "type": "ChemicalProperty",
-            "name": "Mercury",
-            "formula": "Hg",
-            "inchi": "InChI=1S/Hg",
-            "inchikey": "QSHDDOUJBYECFT-UHFFFAOYSA-N"
+            "type": "MechanicalProperty",
+            "identifier": "ISO 3738",
+            "name": "Rockwell Hardness Test (Scale A)",
+            "description": "The Rockwell hardness test is an empirical indentation hardness test that can provide useful information about metallic materials."
           },
           "measurement": {
             "type": "MeasuredValue",
-            "value": "100.00",
-            "unitCode": "P1"
+            "value": "00.00",
+            "unitCode": "UNKNOWN"
           }
         }
       ],
-      "circuit": "synthesize",
-      "capacitor": "back up",
-      "driver": "copy"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "AgInspectionReport",
-      "applicant": {
-        "type": "Person",
-        "firstName": "Wayne",
-        "lastName": "Gerlach",
-        "email": "Loyce.Lockman52@example.net",
-        "phoneNumber": "555-240-7986",
-        "worksFor": {
-          "type": "Organization",
-          "name": "Runolfsdottir Group",
-          "description": "Decentralized maximized encryption",
-          "address": {
-            "type": "PostalAddress",
-            "streetAddress": "09090 Joseph Shoal",
-            "addressLocality": "Cruickshanktown",
-            "addressRegion": "West Virginia",
-            "postalCode": "92810",
-            "addressCountry": "United Arab Emirates"
-          },
-          "email": "Eugenia_Keebler@example.net",
-          "phoneNumber": "555-797-1463"
-        },
-        "jobTitle": "Regional Group Agent"
-      },
-      "inspectionDate": "2020-03-15",
-      "application": "transmit",
-      "microchip": "parse",
-      "system": "hack"
-    },
-    {
-      "type": "AgInspectionReport",
-      "facility": {
-        "type": "Place",
-        "globalLocationNumber": "4686469189287",
-        "geo": {
-          "type": "GeoCoordinates",
-          "latitude": "-28.1236",
-          "longitude": "7.8850"
-        },
-        "address": {
-          "type": "PostalAddress",
-          "organizationName": "Lang LLC",
-          "streetAddress": "82512 Candido Passage",
-          "addressLocality": "Rathmouth",
-          "addressRegion": "Texas",
-          "postalCode": "61273-8533",
-          "addressCountry": "Latvia"
-        }
-      },
-      "inspector": {
-        "type": "Inspector",
-        "person": {
-          "type": "Person",
-          "firstName": "Tommie",
-          "lastName": "Mraz",
-          "email": "Zion80@example.com",
-          "phoneNumber": "555-535-2250",
-          "worksFor": {
-            "type": "Organization",
-            "name": "Hartmann - Heaney",
-            "description": "Configurable interactive collaboration",
-            "address": {
-              "type": "PostalAddress",
-              "streetAddress": "67195 Ortiz Ranch",
-              "addressLocality": "Dareton",
-              "addressRegion": "Florida",
-              "postalCode": "53115-4707",
-              "addressCountry": "Rwanda"
-            },
-            "email": "Josiah41@example.org",
-            "phoneNumber": "555-595-4273"
-          },
-          "jobTitle": "Customer Branding Analyst"
-        },
-        "qualification": [
-          {
-            "type": "Qualification",
-            "qualificationCategory": "International Quality Specialist",
-            "qualificationValue": "Specialist"
-          },
-          {
-            "type": "Qualification",
-            "qualificationCategory": "Central Implementation Consultant",
-            "qualificationValue": "Consultant"
-          }
-        ]
-      },
-      "shipment": {
-        "type": "ParcelDelivery",
-        "deliveryAddress": {
-          "type": "PostalAddress",
-          "organizationName": "Heidenreich - Casper",
-          "streetAddress": "3744 Ernser Isle",
-          "addressLocality": "East Xander",
-          "addressRegion": "Delaware",
-          "postalCode": "75173",
-          "addressCountry": "Cambodia"
-        },
-        "originAddress": {
-          "type": "PostalAddress",
-          "organizationName": "Bashirian - Goldner",
-          "streetAddress": "71870 Ned Fords",
-          "addressLocality": "Fannieshire",
-          "addressRegion": "North Dakota",
-          "postalCode": "67274",
-          "addressCountry": "Chile"
-        },
-        "deliveryMethod": "Air transport",
-        "trackingNumber": "676546746480"
-      },
-      "applicant": {
-        "type": "Organization",
-        "name": "Mraz, Ankunding and Dibbert",
-        "description": "Centralized contextually-based function",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "0196 Chaya Tunnel",
-          "addressLocality": "Howellberg",
-          "addressRegion": "Virginia",
-          "postalCode": "44437",
-          "addressCountry": "Martinique"
-        },
-        "email": "Delphia_Kuhn@example.net",
-        "phoneNumber": "555-244-4354"
-      },
-      "inspectionType": "Contamination",
-      "observation": [
-        {
-          "type": "Observation",
-          "property": {
-            "type": "ChemicalProperty",
-            "name": "Lutetium",
-            "formula": "Lu",
-            "inchi": "InChI=1S/Lu",
-            "inchikey": "OHSVLFRHMCKCQY-UHFFFAOYSA-N"
-          },
-          "measurement": {
-            "type": "MeasuredValue",
-            "value": "100.00",
-            "unitCode": "P1"
-          }
-        }
-      ],
-      "firewall": "program",
-      "transmitter": "bypass",
-      "port": "synthesize"
+      "panel": "quantify"
     }
   ]
 }

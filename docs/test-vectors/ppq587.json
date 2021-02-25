@@ -1,0 +1,338 @@
+{
+  "good": [
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "ppq587",
+      "facility": {
+        "type": "Place",
+        "globalLocationNumber": "8926448945630",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "72.7615",
+          "longitude": "169.2714"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Abshire, Rogahn and Jast",
+          "streetAddress": "97135 Legros Hill",
+          "addressLocality": "South Helen",
+          "addressRegion": "Vermont",
+          "postalCode": "04797-5781",
+          "addressCountry": "USA"
+        }
+      },
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Bergnaum, Tillman and Hilpert",
+          "streetAddress": "768 Melvina Center",
+          "addressLocality": "Stevieside",
+          "addressRegion": "Wyoming",
+          "postalCode": "63637-8183",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Nader - Fisher",
+          "streetAddress": "346 Darion Isle",
+          "addressLocality": "West Xanderborough",
+          "addressRegion": "Missouri",
+          "postalCode": "93000",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Ocean transport",
+        "trackingNumber": "909286088117"
+      },
+      "applicant": {
+        "type": "Organization",
+        "name": "Stanton, Glover and Fahey",
+        "description": "Object-based holistic website",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "476 Barton Plain",
+          "addressLocality": "Augustineborough",
+          "addressRegion": "Wyoming",
+          "postalCode": "88999",
+          "addressCountry": "USA"
+        },
+        "email": "Adonis_Anderson@example.net",
+        "phoneNumber": "555-770-6833",
+        "faxNumber": "555-402-1957"
+      },
+      "signatureDate": "2021-02-16",
+      "intendedUse": "Fruits and Vegetables"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "ppq587",
+      "facility": {
+        "type": "Place",
+        "globalLocationNumber": "1001991264289",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "46.0385",
+          "longitude": "27.6187"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Homenick, Dibbert and Kuhlman",
+          "streetAddress": "507 Kenyatta Harbors",
+          "addressLocality": "Deangelomouth",
+          "addressRegion": "Kansas",
+          "postalCode": "53431",
+          "addressCountry": "USA"
+        }
+      },
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Strosin - Stehr",
+          "streetAddress": "353 Stracke Groves",
+          "addressLocality": "Brendafurt",
+          "addressRegion": "Minnesota",
+          "postalCode": "58722-5756",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Kuhn, Dickinson and Olson",
+          "streetAddress": "20632 Charlene Course",
+          "addressLocality": "Leslyport",
+          "addressRegion": "Louisiana",
+          "postalCode": "83537",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Truck transport",
+        "trackingNumber": "84205118120"
+      },
+      "applicant": {
+        "type": "Organization",
+        "name": "Ward - Moore",
+        "description": "Self-enabling bandwidth-monitored info-mediaries",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "240 Monahan Village",
+          "addressLocality": "East Alizaside",
+          "addressRegion": "Hawaii",
+          "postalCode": "82054",
+          "addressCountry": "USA"
+        },
+        "email": "Floy91@example.com",
+        "phoneNumber": "555-423-1398",
+        "faxNumber": "555-715-4152"
+      },
+      "signatureDate": "2021-02-16",
+      "intendedUse": "Fruits and Vegetables"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "ppq587",
+      "facility": {
+        "type": "Place",
+        "globalLocationNumber": "8838547918760",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "-29.7444",
+          "longitude": "-32.9733"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Casper - Block",
+          "streetAddress": "903 Dion Dam",
+          "addressLocality": "Port Gennaro",
+          "addressRegion": "Maryland",
+          "postalCode": "79044-5672",
+          "addressCountry": "USA"
+        }
+      },
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Stracke - Okuneva",
+          "streetAddress": "20035 Emmerich Freeway",
+          "addressLocality": "Lake Ramonashire",
+          "addressRegion": "West Virginia",
+          "postalCode": "75310",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Hilpert - Dickens",
+          "streetAddress": "083 Logan Mountain",
+          "addressLocality": "Port Courtneyside",
+          "addressRegion": "Wyoming",
+          "postalCode": "74247",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Truck transport",
+        "trackingNumber": "422930444636"
+      },
+      "applicant": {
+        "type": "Person",
+        "firstName": "Diana",
+        "lastName": "Labadie",
+        "email": "Isabella.Considine6@example.com",
+        "phoneNumber": "555-517-9440",
+        "worksFor": {
+          "type": "Organization",
+          "name": "Rippin Group",
+          "description": "Re-engineered web-enabled functionalities",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "17225 Gennaro Dale",
+            "addressLocality": "Brownland",
+            "addressRegion": "Arkansas",
+            "postalCode": "45698",
+            "addressCountry": "USA"
+          },
+          "email": "Nolan_Jones@example.org",
+          "phoneNumber": "555-781-6328",
+          "faxNumber": "555-850-1424"
+        },
+        "jobTitle": "National Accounts Developer"
+      },
+      "signatureDate": "2021-02-16",
+      "intendedUse": "Fruits and Vegetables"
+    }
+  ],
+  "bad": [
+    {
+      "facility": {
+        "type": "Place",
+        "globalLocationNumber": "8926448945630",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "72.7615",
+          "longitude": "169.2714"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Abshire, Rogahn and Jast",
+          "streetAddress": "97135 Legros Hill",
+          "addressLocality": "South Helen",
+          "addressRegion": "Vermont",
+          "postalCode": "04797-5781",
+          "addressCountry": "USA"
+        }
+      },
+      "pixel": "back up",
+      "application": "navigate",
+      "circuit": "synthesize"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "facility": {
+        "type": "Place",
+        "globalLocationNumber": "1001991264289",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "46.0385",
+          "longitude": "27.6187"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Homenick, Dibbert and Kuhlman",
+          "streetAddress": "507 Kenyatta Harbors",
+          "addressLocality": "Deangelomouth",
+          "addressRegion": "Kansas",
+          "postalCode": "53431",
+          "addressCountry": "USA"
+        }
+      },
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Strosin - Stehr",
+          "streetAddress": "353 Stracke Groves",
+          "addressLocality": "Brendafurt",
+          "addressRegion": "Minnesota",
+          "postalCode": "58722-5756",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Kuhn, Dickinson and Olson",
+          "streetAddress": "20632 Charlene Course",
+          "addressLocality": "Leslyport",
+          "addressRegion": "Louisiana",
+          "postalCode": "83537",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Truck transport",
+        "trackingNumber": "84205118120"
+      },
+      "firewall": "reboot",
+      "protocol": "connect",
+      "system": "bypass",
+      "hard drive": "override"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "shipment": {
+        "type": "ParcelDelivery",
+        "deliveryAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Stracke - Okuneva",
+          "streetAddress": "20035 Emmerich Freeway",
+          "addressLocality": "Lake Ramonashire",
+          "addressRegion": "West Virginia",
+          "postalCode": "75310",
+          "addressCountry": "USA"
+        },
+        "originAddress": {
+          "type": "PostalAddress",
+          "organizationName": "Hilpert - Dickens",
+          "streetAddress": "083 Logan Mountain",
+          "addressLocality": "Port Courtneyside",
+          "addressRegion": "Wyoming",
+          "postalCode": "74247",
+          "addressCountry": "USA"
+        },
+        "deliveryMethod": "Truck transport",
+        "trackingNumber": "422930444636"
+      },
+      "applicant": {
+        "type": "Person",
+        "firstName": "Diana",
+        "lastName": "Labadie",
+        "email": "Isabella.Considine6@example.com",
+        "phoneNumber": "555-517-9440",
+        "worksFor": {
+          "type": "Organization",
+          "name": "Rippin Group",
+          "description": "Re-engineered web-enabled functionalities",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "17225 Gennaro Dale",
+            "addressLocality": "Brownland",
+            "addressRegion": "Arkansas",
+            "postalCode": "45698",
+            "addressCountry": "USA"
+          },
+          "email": "Nolan_Jones@example.org",
+          "phoneNumber": "555-781-6328",
+          "faxNumber": "555-850-1424"
+        },
+        "jobTitle": "National Accounts Developer"
+      },
+      "program": "parse",
+      "card": "quantify",
+      "bandwidth": "parse",
+      "matrix": "navigate"
+    }
+  ]
+}

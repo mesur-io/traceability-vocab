@@ -9,26 +9,27 @@
       ],
       "customer": {
         "type": "Person",
-        "firstName": "Rodger",
-        "lastName": "Pfeffer",
-        "email": "Bernhard.Von@example.net",
-        "phoneNumber": "555-546-7346",
+        "firstName": "Lessie",
+        "lastName": "Skiles",
+        "email": "Clint49@example.net",
+        "phoneNumber": "555-381-2780",
         "worksFor": {
           "type": "Organization",
-          "name": "Sporer - Connelly",
-          "description": "User-centric bottom-line data-warehouse",
+          "name": "Volkman LLC",
+          "description": "Compatible 6th generation local area network",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "64021 Orrin Unions",
-            "addressLocality": "Homenickchester",
-            "addressRegion": "Alaska",
-            "postalCode": "50166",
-            "addressCountry": "Mongolia"
+            "streetAddress": "07846 Oberbrunner Parks",
+            "addressLocality": "Isobelbury",
+            "addressRegion": "Iowa",
+            "postalCode": "15965",
+            "addressCountry": "USA"
           },
-          "email": "Talia58@example.net",
-          "phoneNumber": "555-799-4747"
+          "email": "Janick.Shields@example.net",
+          "phoneNumber": "555-503-9048",
+          "faxNumber": "555-515-2000"
         },
-        "jobTitle": "Direct Implementation Facilitator"
+        "jobTitle": "Direct Factors Manager"
       }
     },
     {
@@ -39,27 +40,20 @@
         "Purchase"
       ],
       "customer": {
-        "type": "Person",
-        "firstName": "Emerson",
-        "lastName": "Zieme",
-        "email": "Gerald.Collins@example.net",
-        "phoneNumber": "555-181-9199",
-        "worksFor": {
-          "type": "Organization",
-          "name": "Friesen Inc",
-          "description": "Mandatory holistic info-mediaries",
-          "address": {
-            "type": "PostalAddress",
-            "streetAddress": "8994 Leone Roads",
-            "addressLocality": "South Gersontown",
-            "addressRegion": "Montana",
-            "postalCode": "60861",
-            "addressCountry": "French Guiana"
-          },
-          "email": "Cordell.Gutmann97@example.com",
-          "phoneNumber": "555-641-4114"
+        "type": "Organization",
+        "name": "Parker - Fisher",
+        "description": "Multi-layered fault-tolerant conglomeration",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "13290 Mante Islands",
+          "addressLocality": "Lindton",
+          "addressRegion": "Kansas",
+          "postalCode": "00232",
+          "addressCountry": "USA"
         },
-        "jobTitle": "Dynamic Response Executive"
+        "email": "Jennifer_Heidenreich@example.org",
+        "phoneNumber": "555-288-9111",
+        "faxNumber": "555-275-9043"
       }
     },
     {
@@ -70,74 +64,58 @@
         "Purchase"
       ],
       "customer": {
-        "type": "Person",
-        "firstName": "Elliott",
-        "lastName": "Von",
-        "email": "Dortha53@example.com",
-        "phoneNumber": "555-603-1281",
-        "worksFor": {
-          "type": "Organization",
-          "name": "Kulas Inc",
-          "description": "Up-sized content-based synergy",
-          "address": {
-            "type": "PostalAddress",
-            "streetAddress": "548 Casper Lodge",
-            "addressLocality": "Luettgenton",
-            "addressRegion": "Arizona",
-            "postalCode": "94853-3168",
-            "addressCountry": "Singapore"
-          },
-          "email": "Dandre_Mitchell7@example.net",
-          "phoneNumber": "555-277-9167"
+        "type": "Organization",
+        "name": "Abbott Group",
+        "description": "Expanded national open system",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "116 Ritchie Crescent",
+          "addressLocality": "Walshfurt",
+          "addressRegion": "Rhode Island",
+          "postalCode": "24618",
+          "addressCountry": "USA"
         },
-        "jobTitle": "Principal Program Officer"
+        "email": "Glennie.Lynch85@example.com",
+        "phoneNumber": "555-699-9601",
+        "faxNumber": "555-384-4038"
       }
     }
   ],
   "bad": [
     {
-      "type": [
-        "Purchase"
-      ],
-      "sensor": "copy",
-      "firewall": "index"
+      "firewall": "bypass",
+      "hard drive": "compress",
+      "card": "reboot"
     },
     {
-      "panel": "calculate",
-      "pixel": "connect",
-      "interface": "copy"
+      "interface": "generate",
+      "pixel": "synthesize",
+      "matrix": "generate",
+      "card": "copy"
     },
     {
-      "type": [
-        "Purchase"
+      "@context": [
+        "https://w3id.org/traceability/v1"
       ],
       "customer": {
-        "type": "Person",
-        "firstName": "Elliott",
-        "lastName": "Von",
-        "email": "Dortha53@example.com",
-        "phoneNumber": "555-603-1281",
-        "worksFor": {
-          "type": "Organization",
-          "name": "Kulas Inc",
-          "description": "Up-sized content-based synergy",
-          "address": {
-            "type": "PostalAddress",
-            "streetAddress": "548 Casper Lodge",
-            "addressLocality": "Luettgenton",
-            "addressRegion": "Arizona",
-            "postalCode": "94853-3168",
-            "addressCountry": "Singapore"
-          },
-          "email": "Dandre_Mitchell7@example.net",
-          "phoneNumber": "555-277-9167"
+        "type": "Organization",
+        "name": "Abbott Group",
+        "description": "Expanded national open system",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "116 Ritchie Crescent",
+          "addressLocality": "Walshfurt",
+          "addressRegion": "Rhode Island",
+          "postalCode": "24618",
+          "addressCountry": "USA"
         },
-        "jobTitle": "Principal Program Officer"
+        "email": "Glennie.Lynch85@example.com",
+        "phoneNumber": "555-699-9601",
+        "faxNumber": "555-384-4038"
       },
-      "protocol": "navigate",
-      "panel": "quantify",
-      "transmitter": "generate",
-      "bandwidth": "copy"
+      "circuit": "compress",
+      "pixel": "override",
+      "protocol": "navigate"
     }
   ]
 }

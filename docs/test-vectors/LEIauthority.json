@@ -5,9 +5,18 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIauthority",
-      "validationAuthorityID": "RA000005",
-      "otherValidationAuthorityID": "QWDQ0R6X",
-      "validationAuthorityEntityID": "7LZ5RKARZVX30N5VY4Y6"
+      "validationAuthorityID": "RA000002",
+      "otherValidationAuthorityID": "JSC1EVDX",
+      "validationAuthorityEntityID": "JF8VRD5A97KS0KXGRJ3P"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "LEIauthority",
+      "validationAuthorityID": "RA000004",
+      "otherValidationAuthorityID": "JDRXX8O8",
+      "validationAuthorityEntityID": "4VEWM225N8S3C79WLQ9J"
     },
     {
       "@context": [
@@ -15,42 +24,30 @@
       ],
       "type": "LEIauthority",
       "validationAuthorityID": "RA000661",
-      "otherValidationAuthorityID": "9EVDCCPL",
-      "validationAuthorityEntityID": "ZW85WDGE81RFX7HJT9US"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "LEIauthority",
-      "validationAuthorityID": "RA000002",
-      "otherValidationAuthorityID": "5W2CETII",
-      "validationAuthorityEntityID": "C12HQRBNBG45OS8335VO"
+      "otherValidationAuthorityID": "PKPQ9G66",
+      "validationAuthorityEntityID": "CD56V4WDISKIPTFDM1X6"
     }
   ],
   "bad": [
     {
+      "type": "LEIauthority",
+      "validationAuthorityID": "RA000002",
+      "otherValidationAuthorityID": "JSC1EVDX",
+      "validationAuthorityEntityID": "JF8VRD5A97KS0KXGRJ3P",
+      "system": "index",
+      "firewall": "copy"
+    },
+    {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIauthority",
-      "validationAuthorityID": "RA000005",
-      "validationAuthorityEntityID": "7LZ5RKARZVX30N5VY4Y6",
-      "application": "compress",
-      "protocol": "hack"
+      "validationAuthorityID": "RA000004",
+      "bus": "program"
     },
     {
-      "validationAuthorityID": "RA000661",
-      "monitor": "generate",
-      "system": "back up",
-      "card": "generate",
-      "matrix": "generate"
-    },
-    {
-      "array": "program",
-      "firewall": "hack",
-      "application": "connect",
-      "interface": "calculate"
+      "bus": "program",
+      "interface": "copy"
     }
   ]
 }
