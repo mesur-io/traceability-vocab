@@ -25,10 +25,10 @@
         "title": "Inspector",
         "description": "Inspector performing the Agriculture Inspection.  The following link provides further insight: https://www.lawinsider.com/dictionary/food-inspector"
       },
-      "https://schema.org/ParcelDelivery": {
+      "https://schema.org/AgParcelDelivery": {
         "$comment": {
           "term": "shipment",
-          "@id": "https://schema.org/ParcelDelivery"
+          "@id": "https://schema.org/AgParcelDelivery"
         },
         "title": "Shipment",
         "description": "Details for a shipment of goods."
@@ -66,7 +66,468 @@
         "description": "List of observations as seen and specified in the Inspection Report schema https://w3id.org/traceability?#InspectionReport"
       }
     },
-    "examples": [],
+    "examples": [
+      {
+        "@context": [
+          "https://w3id.org/traceability/v1"
+        ],
+        "type": "AgInspectionReport",
+        "facility": {
+          "type": "Place",
+          "globalLocationNumber": "1131174415433",
+          "geo": {
+            "type": "GeoCoordinates",
+            "latitude": "75.3745",
+            "longitude": "-167.7729"
+          },
+          "address": {
+            "type": "PostalAddress",
+            "organizationName": "Grimes, Bartoletti and Boehm",
+            "streetAddress": "713 Lempi Gateway",
+            "addressLocality": "Welchport",
+            "addressRegion": "Texas",
+            "postalCode": "01515-9467",
+            "addressCountry": "USA"
+          }
+        },
+        "inspector": {
+          "type": "Inspector",
+          "person": {
+            "type": "Person",
+            "firstName": "Garfield",
+            "lastName": "Weber",
+            "email": "Keyshawn8@example.com",
+            "phoneNumber": "555-516-1185",
+            "worksFor": {
+              "type": "Organization",
+              "name": "Schamberger - Ziemann",
+              "description": "Up-sized client-driven data-warehouse",
+              "address": {
+                "type": "PostalAddress",
+                "streetAddress": "621 Prosacco Row",
+                "addressLocality": "West Sammieborough",
+                "addressRegion": "Alaska",
+                "postalCode": "26991-7185",
+                "addressCountry": "USA"
+              },
+              "email": "Elliott.Johnston92@example.net",
+              "phoneNumber": "555-465-4795",
+              "faxNumber": "555-506-6474"
+            },
+            "jobTitle": "Future Mobility Assistant"
+          },
+          "qualification": [
+            {
+              "type": "Qualification",
+              "qualificationCategory": "Corporate Division Consultant",
+              "qualificationValue": "Planner"
+            },
+            {
+              "type": "Qualification",
+              "qualificationCategory": "Lead Data Liaison",
+              "qualificationValue": "Representative"
+            },
+            {
+              "type": "Qualification",
+              "qualificationCategory": "Direct Integration Specialist",
+              "qualificationValue": "Developer"
+            }
+          ]
+        },
+        "shipment": {
+          "type": "ParcelDelivery",
+          "deliveryAddress": {
+            "type": "PostalAddress",
+            "organizationName": "Reinger - Barrows",
+            "streetAddress": "34250 Quinn Mill",
+            "addressLocality": "West Alysson",
+            "addressRegion": "Arizona",
+            "postalCode": "58216-2965",
+            "addressCountry": "USA"
+          },
+          "originAddress": {
+            "type": "PostalAddress",
+            "organizationName": "Lakin - McClure",
+            "streetAddress": "3856 Darrel Port",
+            "addressLocality": "North Jayce",
+            "addressRegion": "New Jersey",
+            "postalCode": "52897-0355",
+            "addressCountry": "USA"
+          },
+          "deliveryMethod": "Air transport",
+          "trackingNumber": "31160757351"
+        },
+        "applicant": {
+          "type": "Organization",
+          "name": "Turcotte, Stiedemann and Glover",
+          "description": "Public-key asynchronous ability",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "85934 Earnest Port",
+            "addressLocality": "Kautzerstad",
+            "addressRegion": "Maine",
+            "postalCode": "13620",
+            "addressCountry": "USA"
+          },
+          "email": "Stella.Pfeffer0@example.net",
+          "phoneNumber": "555-961-4256",
+          "faxNumber": "555-465-5092"
+        },
+        "inspectionDate": "2020-03-15",
+        "inspectionType": "Food Safety",
+        "observation": [
+          {
+            "type": "Observation",
+            "property": {
+              "type": "MechanicalProperty",
+              "identifier": "ISO 1352",
+              "name": "Torque-controlled fatigue testing",
+              "description": "ISO 1352:2011 specifies the conditions for performing torsional, constant-amplitude, nominally elastic stress fatigue tests on metallic specimens without deliberately introducing stress concentrations. The tests are carried out at ambient temperature (ideally at between 10 °C and 35 °C) in air by applying a pure couple to the specimen about its longitudinal axis."
+            },
+            "measurement": {
+              "type": "MeasuredValue",
+              "value": "00.00",
+              "unitCode": "UNKNOWN"
+            }
+          },
+          {
+            "type": "Observation",
+            "property": {
+              "type": "ChemicalProperty",
+              "name": "Mercury",
+              "formula": "Hg",
+              "inchi": "InChI=1S/Hg",
+              "inchikey": "QSHDDOUJBYECFT-UHFFFAOYSA-N"
+            },
+            "measurement": {
+              "type": "MeasuredValue",
+              "value": "100.00",
+              "unitCode": "P1"
+            }
+          }
+        ]
+      },
+      {
+        "@context": [
+          "https://w3id.org/traceability/v1"
+        ],
+        "type": "AgInspectionReport",
+        "facility": {
+          "type": "Place",
+          "globalLocationNumber": "2819389705219",
+          "geo": {
+            "type": "GeoCoordinates",
+            "latitude": "-14.5773",
+            "longitude": "-128.4549"
+          },
+          "address": {
+            "type": "PostalAddress",
+            "organizationName": "Bode - Langworth",
+            "streetAddress": "377 Becker Pines",
+            "addressLocality": "East Griffinmouth",
+            "addressRegion": "South Carolina",
+            "postalCode": "21159",
+            "addressCountry": "USA"
+          }
+        },
+        "inspector": {
+          "type": "Inspector",
+          "person": {
+            "type": "Person",
+            "firstName": "Gus",
+            "lastName": "Nitzsche",
+            "email": "Jaunita_Nolan50@example.net",
+            "phoneNumber": "555-589-6335",
+            "worksFor": {
+              "type": "Organization",
+              "name": "Friesen, Veum and Stehr",
+              "description": "De-engineered local extranet",
+              "address": {
+                "type": "PostalAddress",
+                "streetAddress": "6105 Esther Inlet",
+                "addressLocality": "East Elzatown",
+                "addressRegion": "California",
+                "postalCode": "65309",
+                "addressCountry": "USA"
+              },
+              "email": "Deangelo_Veum@example.com",
+              "phoneNumber": "555-384-6060",
+              "faxNumber": "555-971-4721"
+            },
+            "jobTitle": "Corporate Solutions Producer"
+          },
+          "qualification": [
+            {
+              "type": "Qualification",
+              "qualificationCategory": "Direct Brand Orchestrator",
+              "qualificationValue": "Representative"
+            }
+          ]
+        },
+        "shipment": {
+          "type": "ParcelDelivery",
+          "deliveryAddress": {
+            "type": "PostalAddress",
+            "organizationName": "Nitzsche Group",
+            "streetAddress": "13299 Everett Hollow",
+            "addressLocality": "Leslyview",
+            "addressRegion": "New Mexico",
+            "postalCode": "09567-1927",
+            "addressCountry": "USA"
+          },
+          "originAddress": {
+            "type": "PostalAddress",
+            "organizationName": "Ledner Inc",
+            "streetAddress": "48620 Haag Mission",
+            "addressLocality": "North Walter",
+            "addressRegion": "California",
+            "postalCode": "07659-1093",
+            "addressCountry": "USA"
+          },
+          "deliveryMethod": "Rail freight transport",
+          "trackingNumber": "921826735034"
+        },
+        "applicant": {
+          "type": "Person",
+          "firstName": "Clifford",
+          "lastName": "Wunsch",
+          "email": "Bruce8@example.com",
+          "phoneNumber": "555-781-8106",
+          "worksFor": {
+            "type": "Organization",
+            "name": "Lebsack and Sons",
+            "description": "Managed transitional internet solution",
+            "address": {
+              "type": "PostalAddress",
+              "streetAddress": "017 McKenzie Underpass",
+              "addressLocality": "Port Eugenia",
+              "addressRegion": "Michigan",
+              "postalCode": "61792",
+              "addressCountry": "USA"
+            },
+            "email": "Tyshawn_Hettinger67@example.org",
+            "phoneNumber": "555-912-6750",
+            "faxNumber": "555-591-8441"
+          },
+          "jobTitle": "Legacy Optimization Orchestrator"
+        },
+        "inspectionDate": "2020-03-15",
+        "inspectionType": "Food Safety",
+        "observation": [
+          {
+            "type": "Observation",
+            "property": {
+              "type": "MechanicalProperty",
+              "identifier": "ISO 3738",
+              "name": "Rockwell Hardness Test (Scale A)",
+              "description": "The Rockwell hardness test is an empirical indentation hardness test that can provide useful information about metallic materials."
+            },
+            "measurement": {
+              "type": "MeasuredValue",
+              "value": "00.00",
+              "unitCode": "UNKNOWN"
+            }
+          },
+          {
+            "type": "Observation",
+            "property": {
+              "type": "MechanicalProperty",
+              "identifier": "ISO 180",
+              "name": "Izod Impact Strength Test",
+              "description": "ISO 180 defines the method used for pendulums to determine the impact resistance of a plastic specimen when supported in a cantilever configuration. Test results are used to evaluate the resilience of materials, typically plastics."
+            },
+            "measurement": {
+              "type": "MeasuredValue",
+              "value": "19.409",
+              "unitCode": "B13"
+            }
+          },
+          {
+            "type": "Observation",
+            "property": {
+              "type": "ChemicalProperty",
+              "name": "Plutonium",
+              "formula": "Pu",
+              "inchi": "InChI=1S/Pu",
+              "inchikey": "OYEHPCDNVJXUIW-UHFFFAOYSA-N"
+            },
+            "measurement": {
+              "type": "MeasuredValue",
+              "value": "30.012",
+              "unitCode": "P1"
+            }
+          },
+          {
+            "type": "Observation",
+            "property": {
+              "type": "ChemicalProperty",
+              "name": "Gold",
+              "formula": "Au",
+              "inchi": "InChI=1S/Au",
+              "inchikey": "PCHJSUWPFVWCPO-UHFFFAOYSA-N"
+            },
+            "measurement": {
+              "type": "MeasuredValue",
+              "value": "69.988",
+              "unitCode": "P1"
+            }
+          }
+        ]
+      },
+      {
+        "@context": [
+          "https://w3id.org/traceability/v1"
+        ],
+        "type": "AgInspectionReport",
+        "facility": {
+          "type": "Place",
+          "globalLocationNumber": "2743641338610",
+          "geo": {
+            "type": "GeoCoordinates",
+            "latitude": "39.6542",
+            "longitude": "-37.0682"
+          },
+          "address": {
+            "type": "PostalAddress",
+            "organizationName": "Langworth, Harris and Heathcote",
+            "streetAddress": "5762 Emard Greens",
+            "addressLocality": "Schaefermouth",
+            "addressRegion": "Rhode Island",
+            "postalCode": "02671-9562",
+            "addressCountry": "USA"
+          }
+        },
+        "inspector": {
+          "type": "Inspector",
+          "person": {
+            "type": "Person",
+            "firstName": "Dominique",
+            "lastName": "Farrell",
+            "email": "Bryon_Brown12@example.net",
+            "phoneNumber": "555-422-2997",
+            "worksFor": {
+              "type": "Organization",
+              "name": "Larson - Morar",
+              "description": "Future-proofed bandwidth-monitored framework",
+              "address": {
+                "type": "PostalAddress",
+                "streetAddress": "3633 Christy Course",
+                "addressLocality": "South Ronnyland",
+                "addressRegion": "Massachusetts",
+                "postalCode": "19639",
+                "addressCountry": "USA"
+              },
+              "email": "Meagan.Kozey@example.com",
+              "phoneNumber": "555-262-3821",
+              "faxNumber": "555-824-6123"
+            },
+            "jobTitle": "Legacy Paradigm Liaison"
+          },
+          "qualification": [
+            {
+              "type": "Qualification",
+              "qualificationCategory": "Internal Directives Executive",
+              "qualificationValue": "Officer"
+            },
+            {
+              "type": "Qualification",
+              "qualificationCategory": "Human Communications Director",
+              "qualificationValue": "Officer"
+            },
+            {
+              "type": "Qualification",
+              "qualificationCategory": "Direct Infrastructure Architect",
+              "qualificationValue": "Developer"
+            }
+          ]
+        },
+        "shipment": {
+          "type": "ParcelDelivery",
+          "deliveryAddress": {
+            "type": "PostalAddress",
+            "organizationName": "Kemmer - Bashirian",
+            "streetAddress": "17187 Reichel Cliffs",
+            "addressLocality": "Kaleighborough",
+            "addressRegion": "West Virginia",
+            "postalCode": "06727-4165",
+            "addressCountry": "USA"
+          },
+          "originAddress": {
+            "type": "PostalAddress",
+            "organizationName": "Mohr, O'Reilly and Batz",
+            "streetAddress": "96851 Franecki Squares",
+            "addressLocality": "Bodeview",
+            "addressRegion": "Michigan",
+            "postalCode": "37513",
+            "addressCountry": "USA"
+          },
+          "deliveryMethod": "Ocean transport",
+          "trackingNumber": "863753185098"
+        },
+        "applicant": {
+          "type": "Organization",
+          "name": "Stokes - Smith",
+          "description": "Multi-channelled uniform extranet",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "39245 Boyer Radial",
+            "addressLocality": "Katarinamouth",
+            "addressRegion": "Utah",
+            "postalCode": "12613-5524",
+            "addressCountry": "USA"
+          },
+          "email": "Ova_McCullough47@example.net",
+          "phoneNumber": "555-510-6671",
+          "faxNumber": "555-204-9242"
+        },
+        "inspectionDate": "2020-03-15",
+        "inspectionType": "Food Safety",
+        "observation": [
+          {
+            "type": "Observation",
+            "property": {
+              "type": "MechanicalProperty",
+              "identifier": "ISO 148",
+              "name": "Charpy Impact Strength Test",
+              "description": "ISO 148-1:2016 specifies the Charpy (V-notch and U-notch) pendulum impact test method for determining the energy absorbed in an impact test of metallic materials. This part of ISO 148 does not cover instrumented impact testing, which is specified in ISO 14556."
+            },
+            "measurement": {
+              "type": "MeasuredValue",
+              "value": "78.712",
+              "unitCode": "B13"
+            }
+          },
+          {
+            "type": "Observation",
+            "property": {
+              "type": "MechanicalProperty",
+              "identifier": "ISO 1352",
+              "name": "Torque-controlled fatigue testing",
+              "description": "ISO 1352:2011 specifies the conditions for performing torsional, constant-amplitude, nominally elastic stress fatigue tests on metallic specimens without deliberately introducing stress concentrations. The tests are carried out at ambient temperature (ideally at between 10 °C and 35 °C) in air by applying a pure couple to the specimen about its longitudinal axis."
+            },
+            "measurement": {
+              "type": "MeasuredValue",
+              "value": "00.00",
+              "unitCode": "UNKNOWN"
+            }
+          },
+          {
+            "type": "Observation",
+            "property": {
+              "type": "MechanicalProperty",
+              "identifier": "ISO 3738",
+              "name": "Rockwell Hardness Test (Scale A)",
+              "description": "The Rockwell hardness test is an empirical indentation hardness test that can provide useful information about metallic materials."
+            },
+            "measurement": {
+              "type": "MeasuredValue",
+              "value": "00.00",
+              "unitCode": "UNKNOWN"
+            }
+          }
+        ]
+      }
+    ],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/AgInspectionReport.json",
       "$schema": "http://json-schema.org/draft-07/schema#",
@@ -101,10 +562,10 @@
           "$ref": "https://w3id.org/traceability/schemas/Inspector.json"
         },
         "shipment": {
-          "$comment": "{\"term\": \"shipment\", \"@id\": \"https://schema.org/ParcelDelivery\"}",
+          "$comment": "{\"term\": \"shipment\", \"@id\": \"https://schema.org/AgParcelDelivery\"}",
           "title": "Shipment",
           "description": "Details for a shipment of goods.",
-          "$ref": "https://w3id.org/traceability/schemas/ParcelDelivery.json"
+          "$ref": "https://w3id.org/traceability/schemas/AgParcelDelivery.json"
         },
         "applicant": {
           "$comment": "{\"term\": \"applicant\", \"@id\": \"https://w3id.org/traceability#dfn-entities\"}",

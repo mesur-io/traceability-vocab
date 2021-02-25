@@ -20,7 +20,7 @@
           "@id": "https://w3id.org/traceability?v1#Inspector"
         },
         "shipment": {
-          "@id": "https://schema.org/ParcelDelivery"
+          "@id": "https://schema.org/AgParcelDelivery"
         },
         "applicant": {
           "@id": "https://w3id.org/traceability#dfn-entities"
