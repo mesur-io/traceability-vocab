@@ -27,6 +27,16 @@
   ],
   "bad": [
     {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "logo": "http://placeimg.com/640/480",
+      "url": "https://brand.example.com",
+      "interface": "copy",
+      "card": "navigate",
+      "alarm": "index"
+    },
+    {
       "type": "Brand",
       "hard drive": "program"
     },
@@ -35,11 +45,6 @@
       "bus": "navigate",
       "protocol": "navigate",
       "driver": "bypass"
-    },
-    {
-      "url": "https://brand.example.com",
-      "alarm": "synthesize",
-      "driver": "reboot"
     }
   ]
 }

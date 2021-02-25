@@ -144,9 +144,6 @@
         "product": {
           "@id": "https://www.gs1.org/voc/Product"
         },
-        "scientificName": {
-          "@id": "https://w3id.org/traceability#scientificName"
-        },
         "labelImageUrl": {
           "@id": "https://schema.org/url"
         },

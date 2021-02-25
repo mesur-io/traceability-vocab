@@ -5,54 +5,50 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "ChemicalProperty",
-      "name": "Aluminium",
-      "formula": "Al",
-      "inchi": "InChI=1S/Al",
-      "inchikey": "XAGFODPZIPBFFR-UHFFFAOYSA-N"
+      "name": "Platinum",
+      "formula": "Pt",
+      "inchi": "InChI=1S/Pt",
+      "inchikey": "BASFCYQUMIYNBI-UHFFFAOYSA-N"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "ChemicalProperty",
-      "name": "Silicon",
-      "formula": "Si",
-      "inchi": "InChI=1S/Si",
-      "inchikey": "XUIMIQQOPSSXEZ-UHFFFAOYSA-N"
+      "name": "Holmium",
+      "formula": "Ho",
+      "inchi": "InChI=1S/Ho",
+      "inchikey": "KJZYNXUDTRRSPN-UHFFFAOYSA-N"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "ChemicalProperty",
-      "name": "Neon",
-      "formula": "Ne",
-      "inchi": "InChI=1S/Ne",
-      "inchikey": "GKAOGPIIYCISHV-UHFFFAOYSA-N"
+      "name": "Rubidium",
+      "formula": "Rb",
+      "inchi": "InChI=1S/Rb",
+      "inchikey": "IGLNJRXAVVLDKE-UHFFFAOYSA-N"
     }
   ],
   "bad": [
     {
-      "system": "quantify",
-      "sensor": "compress",
-      "card": "hack"
-    },
-    {
-      "inchi": "InChI=1S/Si",
-      "monitor": "transmit",
-      "matrix": "calculate",
-      "program": "calculate"
+      "name": "Platinum",
+      "capacitor": "compress"
     },
     {
       "type": "ChemicalProperty",
-      "name": "Neon",
-      "formula": "Ne",
-      "inchi": "InChI=1S/Ne",
-      "inchikey": "GKAOGPIIYCISHV-UHFFFAOYSA-N",
-      "panel": "navigate",
-      "card": "parse",
-      "application": "override",
-      "port": "copy"
+      "name": "Holmium",
+      "formula": "Ho",
+      "inchi": "InChI=1S/Ho",
+      "inchikey": "KJZYNXUDTRRSPN-UHFFFAOYSA-N",
+      "sensor": "back up",
+      "protocol": "quantify"
+    },
+    {
+      "inchi": "InChI=1S/Rb",
+      "inchikey": "IGLNJRXAVVLDKE-UHFFFAOYSA-N",
+      "application": "connect"
     }
   ]
 }

@@ -39,7 +39,6 @@
         },
         "sku": "871887772212"
       },
-      "scientificName": "Persea americana",
       "labelImageUrl": "https://img.example.org/033383401508/640/480/",
       "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
@@ -90,7 +89,6 @@
         },
         "sku": "599814857820"
       },
-      "scientificName": "Persea americana",
       "labelImageUrl": "https://img.example.org/033383401508/640/480/",
       "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
@@ -106,34 +104,33 @@
         "type": "Product",
         "manufacturer": {
           "type": "Organization",
-          "name": "Ebert, Buckridge and Schowalter",
-          "description": "Automated foreground help-desk",
+          "name": "Feeney - Braun",
+          "description": "Up-sized fresh-thinking pricing structure",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "223 Abby Brook",
-            "addressLocality": "Port Brian",
-            "addressRegion": "West Virginia",
-            "postalCode": "41162-1947",
-            "addressCountry": "Belgium"
+            "streetAddress": "22885 Wehner Curve",
+            "addressLocality": "East Giovannatown",
+            "addressRegion": "Pennsylvania",
+            "postalCode": "38195",
+            "addressCountry": "Iraq"
           },
-          "email": "Tania_Moore67@example.org",
-          "phoneNumber": "555-561-2512"
+          "email": "Jon.Cummings11@example.org",
+          "phoneNumber": "555-256-2082"
         },
         "name": "Avocados",
         "description": "Avocados, 4 pack boxes",
         "sizeOrAmount": {
           "type": "QuantitativeValue",
           "unitCode": "hg/ha",
-          "value": "3446"
+          "value": "463"
         },
         "weight": {
           "type": "QuantitativeValue",
           "unitCode": "hg/ha",
-          "value": "6402"
+          "value": "4411"
         },
-        "sku": "529834794728"
+        "sku": "946013985831"
       },
-      "scientificName": "Persea americana",
       "labelImageUrl": "https://img.example.org/033383401508/640/480/",
       "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
@@ -177,7 +174,6 @@
         },
         "sku": "871887772212"
       },
-      "scientificName": "Persea americana",
       "labelImageUrl": "https://img.example.org/033383401508/640/480/",
       "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "monitor": "index",
@@ -185,55 +181,42 @@
       "bus": "program"
     },
     {
-      "circuit": "transmit",
-      "firewall": "quantify",
-      "matrix": "bypass",
-      "program": "compress"
+      "circuit": "reboot"
     },
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "AgProduct",
-      "upc": "033383401508",
-      "plu": "94225",
       "product": {
         "type": "Product",
         "manufacturer": {
           "type": "Organization",
-          "name": "Ebert, Buckridge and Schowalter",
-          "description": "Automated foreground help-desk",
+          "name": "Feeney - Braun",
+          "description": "Up-sized fresh-thinking pricing structure",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "223 Abby Brook",
-            "addressLocality": "Port Brian",
-            "addressRegion": "West Virginia",
-            "postalCode": "41162-1947",
-            "addressCountry": "Belgium"
+            "streetAddress": "22885 Wehner Curve",
+            "addressLocality": "East Giovannatown",
+            "addressRegion": "Pennsylvania",
+            "postalCode": "38195",
+            "addressCountry": "Iraq"
           },
-          "email": "Tania_Moore67@example.org",
-          "phoneNumber": "555-561-2512"
+          "email": "Jon.Cummings11@example.org",
+          "phoneNumber": "555-256-2082"
         },
         "name": "Avocados",
         "description": "Avocados, 4 pack boxes",
         "sizeOrAmount": {
           "type": "QuantitativeValue",
           "unitCode": "hg/ha",
-          "value": "3446"
+          "value": "463"
         },
         "weight": {
           "type": "QuantitativeValue",
           "unitCode": "hg/ha",
-          "value": "6402"
+          "value": "4411"
         },
-        "sku": "529834794728"
+        "sku": "946013985831"
       },
-      "scientificName": "Persea americana",
-      "labelImageUrl": "https://img.example.org/033383401508/640/480/",
       "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "interface": "copy",
-      "card": "navigate",
-      "alarm": "index"
+      "sensor": "generate"
     }
   ]
 }

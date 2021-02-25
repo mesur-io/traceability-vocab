@@ -1193,7 +1193,6 @@
                 },
                 "sku": "161010388911"
               },
-              "scientificName": "Persea americana",
               "labelImageUrl": "https://img.example.org/033383401508/640/480/",
               "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             },
@@ -1233,7 +1232,6 @@
                 },
                 "sku": "539386139812"
               },
-              "scientificName": "Persea americana",
               "labelImageUrl": "https://img.example.org/033383401508/640/480/",
               "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             },
@@ -1281,7 +1279,6 @@
                 },
                 "sku": "438378512789"
               },
-              "scientificName": "Persea americana",
               "labelImageUrl": "https://img.example.org/033383401508/640/480/",
               "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             }
@@ -1326,11 +1323,6 @@
           "product": {
             "title": "Product",
             "description": "Product details as specified in the Product.json schema"
-          },
-          "scientificName": {
-            "title": "Scientific Name",
-            "description": "The scientific classification of the agricultural product.  Each plant has a scientific name comprised of a binomial which indicates the genus and specific identifier of the plant.",
-            "type": "string"
           },
           "labelImageUrl": {
             "title": "Label Image URL",
@@ -1383,7 +1375,6 @@
             },
             "sku": "871887772212"
           },
-          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
@@ -1840,10 +1831,10 @@
             "https://w3id.org/traceability/v1"
           ],
           "type": "ChemicalProperty",
-          "name": "Aluminium",
-          "formula": "Al",
-          "inchi": "InChI=1S/Al",
-          "inchikey": "XAGFODPZIPBFFR-UHFFFAOYSA-N"
+          "name": "Platinum",
+          "formula": "Pt",
+          "inchi": "InChI=1S/Pt",
+          "inchikey": "BASFCYQUMIYNBI-UHFFFAOYSA-N"
         }
       },
       "ContactPoint": {
@@ -1892,17 +1883,17 @@
             "https://w3id.org/traceability/v1"
           ],
           "type": "ContactPoint",
-          "name": "Daugherty LLC",
+          "name": "Kuhlman, Nitzsche and Little",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "846 Isaias Neck",
-            "addressLocality": "Dockport",
-            "addressRegion": "Nevada",
-            "postalCode": "72693",
-            "addressCountry": "Tokelau"
+            "streetAddress": "779 Gottlieb Port",
+            "addressLocality": "New Hilariotown",
+            "addressRegion": "Florida",
+            "postalCode": "13297-1232",
+            "addressCountry": "Hong Kong"
           },
-          "email": "Mollie.Adams76@example.net",
-          "phoneNumber": "555-475-9804"
+          "email": "Isaias49@example.net",
+          "phoneNumber": "555-997-8523"
         }
       },
       "EcommerceAdditionalProductCodeRegistrationCredential": {
@@ -1959,7 +1950,7 @@
           ],
           "type": "EcommerceAdditionalProductCodeRegistrationCredential",
           "productVCid": "https://vc.example.com/?queryID=AB06f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58597a",
-          "addProductCode": 52578724094200,
+          "addProductCode": 53867105592507,
           "addProductCodeType": "CO",
           "certificateName": "ACME Ecommerce Country of Origin Code Product Registration Certificate"
         }
@@ -2019,12 +2010,12 @@
             "https://w3id.org/traceability/v1"
           ],
           "type": "EcommerceInvoiceRegistrationCredential",
-          "invoiceID": "Invoice#109",
+          "invoiceID": "Invoice#902",
           "orderID": [],
           "productInOrder": [
-            "https://vc.example.com/?queryID=6206f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a",
             "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e",
-            "https://vc.example.com/?queryID=6206f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a"
+            "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e",
+            "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a"
           ],
           "certificateName": "ACME Ecommerce Invoice Registration Certificate"
         }
@@ -2449,81 +2440,49 @@
             "https://w3id.org/traceability/v1"
           ],
           "type": "EcommerceInvoiceRegistrationEvidenceDocument",
-          "identifier": "Invoice#184",
-          "description": "Invoice For Bryce Glover for Order#345",
-          "url": "http://ivy.com?queryid=Invoice#184",
+          "identifier": "Invoice#31",
+          "description": "Invoice For Kristy Kohler for Order#955",
+          "url": "http://gideon.info?queryid=Invoice#31",
           "broker": {
             "type": "Organization",
-            "name": "Kling - Mante",
-            "leiCode": "54321922627850435674"
+            "name": "Rogahn Inc",
+            "leiCode": "54321590397147461772"
           },
-          "accountId": "xxxx-xxxx-xxxx-3998",
+          "accountId": "xxxx-xxxx-xxxx-7112",
           "customer": {
             "type": "Person",
-            "name": "Bryce Glover",
+            "name": "Kristy Kohler",
             "address": {
               "type": "PostalAddress",
-              "streetAddress": "236 Diana Pass",
-              "addressLocality": "Gaylordberg",
+              "streetAddress": "2692 Monica Dale",
+              "addressLocality": "Sallyside",
               "addressRegion": "Idaho",
-              "postalCode": "01336-4045",
-              "addressCountry": "Brazil"
+              "postalCode": "65928",
+              "addressCountry": "El Salvador"
             },
-            "telephone": "555-431-2393",
-            "email": "Lorena63@example.net"
+            "telephone": "555-120-8187",
+            "email": "Elroy.Hand91@example.com"
           },
-          "paymentDueDate": "11-6-2021",
+          "paymentDueDate": "4-6-2021",
           "totalPaymentDue": {
             "type": "PriceSpecification",
-            "price": 4930.98,
+            "price": 64.95,
             "priceCurrency": "USD"
           },
-          "paymentStatus": "http://purl.org/goodrelations/v1#ByInvoice",
+          "paymentStatus": "http://purl.org/goodrelations/v1#CheckInAdvance",
           "provider": {
             "type": "Organization",
-            "name": "Heller, Bernier and Robel",
-            "leiCode": "23451316564996028319"
+            "name": "Schuppe, Cremin and Hayes",
+            "leiCode": "23451808854066999629"
           },
           "referencesOrder": [
             {
               "type": "Order",
-              "description": "New Order For Bryce Glover",
+              "description": "New Order For Kristy Kohler",
               "orderDate": "1-4-2021",
-              "orderNumber": "Order#345",
+              "orderNumber": "Order#955",
               "paymentMethod": "http://purl.org/goodrelations/v1#PayPal",
               "orderedItem": [
-                {
-                  "type": "Product",
-                  "name": "ACME Laptop 3000",
-                  "productID": "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e",
-                  "unitPriceSpecification": {
-                    "type": "UnitPriceSpecification",
-                    "price": 545,
-                    "priceCurrency": "USD"
-                  },
-                  "orderQuantity": 6,
-                  "priceSpecification": {
-                    "type": "PriceSpecification",
-                    "price": 3270,
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "type": "Product",
-                  "name": "ACME Laptop 3000",
-                  "productID": "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e",
-                  "unitPriceSpecification": {
-                    "type": "UnitPriceSpecification",
-                    "price": 545,
-                    "priceCurrency": "USD"
-                  },
-                  "orderQuantity": 3,
-                  "priceSpecification": {
-                    "type": "PriceSpecification",
-                    "price": 1635,
-                    "priceCurrency": "USD"
-                  }
-                },
                 {
                   "type": "Product",
                   "name": "ACME Bluetooth Computer Mouse 3000-1",
@@ -2533,18 +2492,18 @@
                     "price": 12.99,
                     "priceCurrency": "USD"
                   },
-                  "orderQuantity": 2,
+                  "orderQuantity": 5,
                   "priceSpecification": {
                     "type": "PriceSpecification",
-                    "price": 25.98,
+                    "price": 64.95,
                     "priceCurrency": "USD"
                   }
                 }
               ],
               "seller": {
                 "type": "Organization",
-                "name": "Heller, Bernier and Robel",
-                "leiCode": "23451316564996028319"
+                "name": "Schuppe, Cremin and Hayes",
+                "leiCode": "23451808854066999629"
               }
             }
           ]
@@ -2598,9 +2557,9 @@
             "https://w3id.org/traceability/v1"
           ],
           "type": "EcommerceOrderRegistrationCredential",
-          "orderID": "Order#223",
+          "orderID": "Order#995",
           "productInOrder": [
-            "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a"
+            "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e"
           ],
           "certificateName": "ACME Ecommerce Order Registration Certificate"
         }

@@ -5,51 +5,51 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "ContactPoint",
-      "name": "Daugherty LLC",
+      "name": "Kuhlman, Nitzsche and Little",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "846 Isaias Neck",
-        "addressLocality": "Dockport",
-        "addressRegion": "Nevada",
-        "postalCode": "72693",
-        "addressCountry": "Tokelau"
+        "streetAddress": "779 Gottlieb Port",
+        "addressLocality": "New Hilariotown",
+        "addressRegion": "Florida",
+        "postalCode": "13297-1232",
+        "addressCountry": "Hong Kong"
       },
-      "email": "Mollie.Adams76@example.net",
-      "phoneNumber": "555-475-9804"
+      "email": "Isaias49@example.net",
+      "phoneNumber": "555-997-8523"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "ContactPoint",
-      "name": "Jerde Group",
+      "name": "Bogisich - Gibson",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "191 Clint Turnpike",
-        "addressLocality": "Kautzerton",
-        "addressRegion": "Indiana",
-        "postalCode": "62765",
-        "addressCountry": "Iran"
+        "streetAddress": "823 Wehner Light",
+        "addressLocality": "New Coraliebury",
+        "addressRegion": "Tennessee",
+        "postalCode": "91918",
+        "addressCountry": "United Arab Emirates"
       },
-      "email": "Branson0@example.com",
-      "phoneNumber": "555-454-4533"
+      "email": "Matilda_Farrell57@example.com",
+      "phoneNumber": "555-277-9253"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "ContactPoint",
-      "name": "Macejkovic Inc",
+      "name": "Miller, Gleason and Ferry",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "23763 Kutch Spring",
-        "addressLocality": "Maiyaton",
-        "addressRegion": "South Dakota",
-        "postalCode": "86227",
-        "addressCountry": "Macedonia"
+        "streetAddress": "25490 Eloy Forks",
+        "addressLocality": "West Nova",
+        "addressRegion": "New York",
+        "postalCode": "73556",
+        "addressCountry": "Barbados"
       },
-      "email": "Cindy_Huel@example.org",
-      "phoneNumber": "555-612-5506"
+      "email": "Juanita.Marks@example.net",
+      "phoneNumber": "555-835-3227"
     }
   ],
   "bad": [
@@ -57,34 +57,40 @@
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "feed": "override"
-    },
-    {
-      "type": "ContactPoint",
-      "name": "Jerde Group",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "191 Clint Turnpike",
-        "addressLocality": "Kautzerton",
-        "addressRegion": "Indiana",
-        "postalCode": "62765",
-        "addressCountry": "Iran"
+        "streetAddress": "779 Gottlieb Port",
+        "addressLocality": "New Hilariotown",
+        "addressRegion": "Florida",
+        "postalCode": "13297-1232",
+        "addressCountry": "Hong Kong"
       },
-      "email": "Branson0@example.com",
-      "phoneNumber": "555-454-4533",
-      "hard drive": "index"
+      "card": "reboot",
+      "system": "parse",
+      "driver": "override",
+      "monitor": "input"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "type": "ContactPoint",
-      "name": "Macejkovic Inc",
-      "email": "Cindy_Huel@example.org",
-      "phoneNumber": "555-612-5506",
-      "sensor": "connect",
-      "driver": "connect",
-      "matrix": "index"
+      "email": "Matilda_Farrell57@example.com",
+      "phoneNumber": "555-277-9253",
+      "transmitter": "index",
+      "panel": "copy"
+    },
+    {
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "25490 Eloy Forks",
+        "addressLocality": "West Nova",
+        "addressRegion": "New York",
+        "postalCode": "73556",
+        "addressCountry": "Barbados"
+      },
+      "phoneNumber": "555-835-3227",
+      "monitor": "back up",
+      "alarm": "input"
     }
   ]
 }
