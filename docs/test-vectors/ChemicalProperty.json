@@ -5,58 +5,54 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "ChemicalProperty",
-      "name": "Lanthanum",
-      "formula": "La",
-      "inchi": "InChI=1S/La",
-      "inchikey": "FZLIPJUXYLNCLC-UHFFFAOYSA-N"
+      "name": "Aluminium",
+      "formula": "Al",
+      "inchi": "InChI=1S/Al",
+      "inchikey": "XAGFODPZIPBFFR-UHFFFAOYSA-N"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "ChemicalProperty",
-      "name": "Ruthenium",
-      "formula": "Ru",
-      "inchi": "InChI=1S/Ru",
-      "inchikey": "KJTLSVCANCCWHF-UHFFFAOYSA-N"
+      "name": "Silicon",
+      "formula": "Si",
+      "inchi": "InChI=1S/Si",
+      "inchikey": "XUIMIQQOPSSXEZ-UHFFFAOYSA-N"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "ChemicalProperty",
-      "name": "Oganesson",
-      "formula": "Og"
+      "name": "Neon",
+      "formula": "Ne",
+      "inchi": "InChI=1S/Ne",
+      "inchikey": "GKAOGPIIYCISHV-UHFFFAOYSA-N"
     }
   ],
   "bad": [
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "ChemicalProperty",
-      "name": "Lanthanum",
-      "formula": "La",
-      "inchikey": "FZLIPJUXYLNCLC-UHFFFAOYSA-N",
-      "application": "generate",
-      "microchip": "synthesize",
-      "monitor": "parse",
-      "card": "quantify"
+      "system": "quantify",
+      "sensor": "compress",
+      "card": "hack"
     },
     {
-      "name": "Ruthenium",
-      "inchi": "InChI=1S/Ru",
-      "driver": "reboot",
-      "matrix": "navigate",
-      "capacitor": "override"
+      "inchi": "InChI=1S/Si",
+      "monitor": "transmit",
+      "matrix": "calculate",
+      "program": "calculate"
     },
     {
       "type": "ChemicalProperty",
-      "name": "Oganesson",
-      "sensor": "hack",
-      "bus": "copy",
-      "circuit": "program",
-      "alarm": "hack"
+      "name": "Neon",
+      "formula": "Ne",
+      "inchi": "InChI=1S/Ne",
+      "inchikey": "GKAOGPIIYCISHV-UHFFFAOYSA-N",
+      "panel": "navigate",
+      "card": "parse",
+      "application": "override",
+      "port": "copy"
     }
   ]
 }

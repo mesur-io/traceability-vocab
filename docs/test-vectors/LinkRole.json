@@ -27,28 +27,28 @@
   ],
   "bad": [
     {
+      "linkRelationship": "alternate",
+      "matrix": "input",
+      "alarm": "calculate"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "LinkRole",
+      "linkRelationship": "alternate",
+      "driver": "compress",
+      "firewall": "reboot"
+    },
+    {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "target": "https://example.com/related/link/123",
       "linkRelationship": "alternate",
-      "application": "program",
-      "bandwidth": "compress",
-      "firewall": "quantify",
-      "alarm": "calculate"
-    },
-    {
-      "array": "input",
-      "hard drive": "index",
-      "circuit": "program",
-      "alarm": "override"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "array": "navigate",
-      "circuit": "override"
+      "bus": "compress",
+      "feed": "copy",
+      "panel": "back up"
     }
   ]
 }

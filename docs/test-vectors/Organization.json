@@ -5,92 +5,97 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Organization",
-      "name": "Hermiston Inc",
-      "description": "Mandatory zero tolerance help-desk",
+      "name": "McKenzie Group",
+      "description": "Customizable executive functionalities",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "60934 Willa Keys",
-        "addressLocality": "Mollieton",
-        "addressRegion": "Oklahoma",
-        "postalCode": "07066-2935",
-        "addressCountry": "Faroe Islands"
+        "streetAddress": "85367 Schuppe Street",
+        "addressLocality": "Ankundingland",
+        "addressRegion": "North Carolina",
+        "postalCode": "49849",
+        "addressCountry": "Saint Kitts and Nevis"
       },
-      "email": "Rosa.Rodriguez@example.org",
-      "phoneNumber": "555-357-5554"
+      "email": "Ellsworth14@example.com",
+      "phoneNumber": "555-359-2605"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Organization",
-      "name": "Mayer LLC",
-      "description": "Networked leading edge attitude",
+      "name": "Thompson, Bruen and Dietrich",
+      "description": "User-friendly clear-thinking core",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "2997 Roberts Freeway",
-        "addressLocality": "West Cordell",
-        "addressRegion": "Oklahoma",
-        "postalCode": "62304-5142",
-        "addressCountry": "Rwanda"
-      },
-      "email": "Naomi_Connelly52@example.com",
-      "phoneNumber": "555-631-9715"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "Organization",
-      "name": "Torp, Roberts and Greenholt",
-      "description": "Decentralized 4th generation service-desk",
-      "address": {
-        "type": "PostalAddress",
-        "streetAddress": "799 Hagenes Parks",
-        "addressLocality": "Volkmanbury",
+        "streetAddress": "746 Kautzer Flats",
+        "addressLocality": "Bergeberg",
         "addressRegion": "Iowa",
-        "postalCode": "44812-9214",
-        "addressCountry": "French Polynesia"
+        "postalCode": "77072-1276",
+        "addressCountry": "Djibouti"
       },
-      "email": "Adolphus_Kiehn52@example.org",
-      "phoneNumber": "555-747-2967"
+      "email": "Sylvester67@example.org",
+      "phoneNumber": "555-392-3918"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "Organization",
+      "name": "Batz, Russel and McDermott",
+      "description": "Phased 6th generation installation",
+      "address": {
+        "type": "PostalAddress",
+        "streetAddress": "94517 Andreanne Point",
+        "addressLocality": "West Lavonne",
+        "addressRegion": "South Dakota",
+        "postalCode": "61640",
+        "addressCountry": "Mayotte"
+      },
+      "email": "Elyse73@example.com",
+      "phoneNumber": "555-844-7125"
     }
   ],
   "bad": [
     {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "name": "McKenzie Group",
+      "description": "Customizable executive functionalities",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "60934 Willa Keys",
-        "addressLocality": "Mollieton",
-        "addressRegion": "Oklahoma",
-        "postalCode": "07066-2935",
-        "addressCountry": "Faroe Islands"
+        "streetAddress": "85367 Schuppe Street",
+        "addressLocality": "Ankundingland",
+        "addressRegion": "North Carolina",
+        "postalCode": "49849",
+        "addressCountry": "Saint Kitts and Nevis"
       },
-      "panel": "reboot",
-      "interface": "program",
-      "program": "calculate",
-      "transmitter": "input"
+      "email": "Ellsworth14@example.com",
+      "phoneNumber": "555-359-2605",
+      "interface": "transmit",
+      "monitor": "compress",
+      "program": "input"
     },
     {
-      "system": "reboot"
+      "name": "Thompson, Bruen and Dietrich",
+      "description": "User-friendly clear-thinking core",
+      "email": "Sylvester67@example.org",
+      "alarm": "copy",
+      "application": "input",
+      "array": "compress",
+      "feed": "reboot"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "description": "Decentralized 4th generation service-desk",
-      "address": {
-        "type": "PostalAddress",
-        "streetAddress": "799 Hagenes Parks",
-        "addressLocality": "Volkmanbury",
-        "addressRegion": "Iowa",
-        "postalCode": "44812-9214",
-        "addressCountry": "French Polynesia"
-      },
-      "phoneNumber": "555-747-2967",
-      "interface": "connect",
-      "capacitor": "transmit",
-      "feed": "calculate",
-      "card": "index"
+      "name": "Batz, Russel and McDermott",
+      "description": "Phased 6th generation installation",
+      "email": "Elyse73@example.com",
+      "system": "hack",
+      "driver": "navigate",
+      "bus": "reboot",
+      "application": "synthesize"
     }
   ]
 }

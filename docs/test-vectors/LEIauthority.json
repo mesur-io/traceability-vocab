@@ -5,9 +5,9 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIauthority",
-      "validationAuthorityID": "RA000003",
-      "otherValidationAuthorityID": "VEANPBLX",
-      "validationAuthorityEntityID": "ZJ4ZOLLFYM17NZE9AYIW"
+      "validationAuthorityID": "RA000004",
+      "otherValidationAuthorityID": "H4T2M6Y5",
+      "validationAuthorityEntityID": "0I3Z97ZZPQZE9H1KHVZM"
     },
     {
       "@context": [
@@ -15,43 +15,46 @@
       ],
       "type": "LEIauthority",
       "validationAuthorityID": "RA000661",
-      "otherValidationAuthorityID": "79YVLCRO",
-      "validationAuthorityEntityID": "BLN9JSCCRERFGU40HDVE"
+      "otherValidationAuthorityID": "2TWM102D",
+      "validationAuthorityEntityID": "1NY9LCNQFJSFFRAYAA7W"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIauthority",
-      "validationAuthorityID": "RA000002",
-      "otherValidationAuthorityID": "CIDC7W6B",
-      "validationAuthorityEntityID": "QNC3EAKBZNDGMK4E3TES"
+      "validationAuthorityID": "RA000005",
+      "otherValidationAuthorityID": "DBL7W2VS",
+      "validationAuthorityEntityID": "CWPP3RNBG1Q7MG2ZD8BB"
     }
   ],
   "bad": [
     {
-      "otherValidationAuthorityID": "VEANPBLX",
-      "validationAuthorityEntityID": "ZJ4ZOLLFYM17NZE9AYIW",
-      "capacitor": "bypass",
-      "system": "reboot",
-      "feed": "transmit"
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "LEIauthority",
+      "otherValidationAuthorityID": "H4T2M6Y5",
+      "validationAuthorityEntityID": "0I3Z97ZZPQZE9H1KHVZM",
+      "bus": "compress",
+      "feed": "parse",
+      "hard drive": "copy"
+    },
+    {
+      "type": "LEIauthority",
+      "program": "connect"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "system": "hack",
-      "monitor": "program"
-    },
-    {
       "type": "LEIauthority",
-      "validationAuthorityID": "RA000002",
-      "otherValidationAuthorityID": "CIDC7W6B",
-      "validationAuthorityEntityID": "QNC3EAKBZNDGMK4E3TES",
-      "port": "navigate",
-      "program": "calculate",
-      "system": "synthesize",
-      "interface": "calculate"
+      "validationAuthorityID": "RA000005",
+      "otherValidationAuthorityID": "DBL7W2VS",
+      "port": "override",
+      "array": "synthesize",
+      "panel": "back up",
+      "matrix": "hack"
     }
   ]
 }

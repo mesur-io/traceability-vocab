@@ -1,0 +1,772 @@
+{
+  "good": [
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "AgParcelDelivery",
+      "deliveryAddress": {
+        "type": "PostalAddress",
+        "organizationName": "Beer - Rogahn",
+        "streetAddress": "90224 Lou Knolls",
+        "addressLocality": "Josianeville",
+        "addressRegion": "Minnesota",
+        "postalCode": "01195",
+        "addressCountry": "Serbia"
+      },
+      "originAddress": {
+        "type": "PostalAddress",
+        "organizationName": "Monahan, Yundt and Abernathy",
+        "streetAddress": "9741 Torphy Track",
+        "addressLocality": "Murazikland",
+        "addressRegion": "North Carolina",
+        "postalCode": "87618-9903",
+        "addressCountry": "Bahamas"
+      },
+      "foreignPortExport": {
+        "type": "Place",
+        "globalLocationNumber": "9047997259951",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "23.0444",
+          "longitude": "24.6541"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Blick - Murray",
+          "streetAddress": "4694 Schaden Fort",
+          "addressLocality": "Lesleychester",
+          "addressRegion": "Nebraska",
+          "postalCode": "46082",
+          "addressCountry": "Palestinian Territory"
+        }
+      },
+      "portOfEntry": {
+        "type": "Place",
+        "globalLocationNumber": "2981728556773",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "-25.4702",
+          "longitude": "128.9744"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Leannon - Kunze",
+          "streetAddress": "274 Schroeder Lodge",
+          "addressLocality": "Shaunchester",
+          "addressRegion": "Utah",
+          "postalCode": "36276-0608",
+          "addressCountry": "Lithuania"
+        }
+      },
+      "deliveryMethod": "Rail freight transport",
+      "trackingNumber": "324860833887",
+      "expectedArrival": "2021-03-14",
+      "specialInstructions": "The package is top-heavy so handle with appropriate caution.",
+      "consignee": {
+        "type": "Organization",
+        "name": "Flatley, Pacocha and Kautzer",
+        "description": "Expanded secondary conglomeration",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "9148 Kuhn Stream",
+          "addressLocality": "Grahamtown",
+          "addressRegion": "Vermont",
+          "postalCode": "54538-8930",
+          "addressCountry": "Zimbabwe"
+        },
+        "email": "Clotilde41@example.com",
+        "phoneNumber": "555-538-9100"
+      },
+      "AgPackage": {
+        "type": "AgPackage",
+        "packageName": "Avocados, Bulk",
+        "grade": "AA",
+        "responsibleParty": {
+          "type": "Person",
+          "firstName": "Deja",
+          "lastName": "McLaughlin",
+          "email": "Regan.Kuvalis49@example.org",
+          "phoneNumber": "555-826-6756",
+          "worksFor": {
+            "type": "Organization",
+            "name": "Johnston, Casper and Monahan",
+            "description": "Upgradable systematic help-desk",
+            "address": {
+              "type": "PostalAddress",
+              "streetAddress": "2058 Schroeder Key",
+              "addressLocality": "West Rigobertomouth",
+              "addressRegion": "Connecticut",
+              "postalCode": "01782",
+              "addressCountry": "Hong Kong"
+            },
+            "email": "Dameon_Lesch14@example.com",
+            "phoneNumber": "555-538-5259"
+          },
+          "jobTitle": "Lead Mobility Producer"
+        },
+        "voicePickCode": "4642",
+        "date": "2021-03-14",
+        "labelImageUrl": "https://img.example.org/640/480/",
+        "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "agProduct": [
+          {
+            "type": "AgProduct",
+            "upc": "033383401508",
+            "plu": "94225",
+            "gtin": "033383401508",
+            "product": {
+              "type": "Product",
+              "manufacturer": {
+                "type": "Person",
+                "firstName": "Jettie",
+                "lastName": "Dietrich",
+                "email": "Nelle59@example.net",
+                "phoneNumber": "555-979-8038",
+                "worksFor": {
+                  "type": "Organization",
+                  "name": "Flatley, Reinger and White",
+                  "description": "Extended tangible algorithm",
+                  "address": {
+                    "type": "PostalAddress",
+                    "streetAddress": "349 Chance Plaza",
+                    "addressLocality": "Kihnhaven",
+                    "addressRegion": "Utah",
+                    "postalCode": "36466",
+                    "addressCountry": "United States of America"
+                  },
+                  "email": "Glennie69@example.org",
+                  "phoneNumber": "555-184-6240"
+                },
+                "jobTitle": "Regional Infrastructure Associate"
+              },
+              "name": "Avocados",
+              "description": "Avocados, 4 pack boxes",
+              "sizeOrAmount": {
+                "type": "QuantitativeValue",
+                "unitCode": "hg/ha",
+                "value": "3569"
+              },
+              "weight": {
+                "type": "QuantitativeValue",
+                "unitCode": "hg/ha",
+                "value": "7393"
+              },
+              "sku": "942906965769"
+            },
+            "scientificName": "Persea americana",
+            "labelImageUrl": "https://img.example.org/033383401508/640/480/",
+            "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "AgParcelDelivery",
+      "deliveryAddress": {
+        "type": "PostalAddress",
+        "organizationName": "Hickle - Jaskolski",
+        "streetAddress": "2975 Brannon Bridge",
+        "addressLocality": "Paucekstad",
+        "addressRegion": "Colorado",
+        "postalCode": "92918",
+        "addressCountry": "Cuba"
+      },
+      "originAddress": {
+        "type": "PostalAddress",
+        "organizationName": "Boyle, Hane and Corkery",
+        "streetAddress": "987 Cameron Valley",
+        "addressLocality": "New Electaburgh",
+        "addressRegion": "Nevada",
+        "postalCode": "48332-0620",
+        "addressCountry": "Gibraltar"
+      },
+      "foreignPortExport": {
+        "type": "Place",
+        "globalLocationNumber": "8956223562219",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "-80.6287",
+          "longitude": "4.3381"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Deckow, Gusikowski and Howell",
+          "streetAddress": "80857 Flatley Mountain",
+          "addressLocality": "Penelopehaven",
+          "addressRegion": "Virginia",
+          "postalCode": "74087-2937",
+          "addressCountry": "Marshall Islands"
+        }
+      },
+      "portOfEntry": {
+        "type": "Place",
+        "globalLocationNumber": "9897952888128",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "87.7855",
+          "longitude": "103.3724"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Hane, Haley and Lehner",
+          "streetAddress": "99401 Ebert Parks",
+          "addressLocality": "Fernport",
+          "addressRegion": "New Mexico",
+          "postalCode": "43435-4180",
+          "addressCountry": "Austria"
+        }
+      },
+      "deliveryMethod": "Air transport",
+      "trackingNumber": "251747775010",
+      "expectedArrival": "2021-03-14",
+      "specialInstructions": "The package is top-heavy so handle with appropriate caution.",
+      "consignee": {
+        "type": "Organization",
+        "name": "Gleason, Reichel and Hills",
+        "description": "Managed leading edge firmware",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "485 Cummings Islands",
+          "addressLocality": "Nigelshire",
+          "addressRegion": "Washington",
+          "postalCode": "61269-1708",
+          "addressCountry": "Moldova"
+        },
+        "email": "Etha_DuBuque@example.net",
+        "phoneNumber": "555-546-6215"
+      },
+      "AgPackage": {
+        "type": "AgPackage",
+        "packageName": "Avocados, Bulk",
+        "grade": "AA",
+        "responsibleParty": {
+          "type": "Organization",
+          "name": "Kreiger - Pollich",
+          "description": "Customer-focused multi-tasking alliance",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "066 Rahul Squares",
+            "addressLocality": "D'Amorefurt",
+            "addressRegion": "Delaware",
+            "postalCode": "16365-8130",
+            "addressCountry": "Croatia"
+          },
+          "email": "Jermey.Gibson@example.org",
+          "phoneNumber": "555-827-2288"
+        },
+        "voicePickCode": "4642",
+        "date": "2021-03-14",
+        "labelImageUrl": "https://img.example.org/640/480/",
+        "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "agProduct": [
+          {
+            "type": "AgProduct",
+            "upc": "033383401508",
+            "plu": "94225",
+            "gtin": "033383401508",
+            "product": {
+              "type": "Product",
+              "manufacturer": {
+                "type": "Person",
+                "firstName": "Russ",
+                "lastName": "Hilll",
+                "email": "Kendra_Mann@example.org",
+                "phoneNumber": "555-702-7236",
+                "worksFor": {
+                  "type": "Organization",
+                  "name": "Nitzsche - Johns",
+                  "description": "Decentralized stable product",
+                  "address": {
+                    "type": "PostalAddress",
+                    "streetAddress": "48027 Norris Knoll",
+                    "addressLocality": "Grantmouth",
+                    "addressRegion": "Iowa",
+                    "postalCode": "47744",
+                    "addressCountry": "Russian Federation"
+                  },
+                  "email": "Mya93@example.org",
+                  "phoneNumber": "555-222-2391"
+                },
+                "jobTitle": "Human Metrics Administrator"
+              },
+              "name": "Avocados",
+              "description": "Avocados, 4 pack boxes",
+              "sizeOrAmount": {
+                "type": "QuantitativeValue",
+                "unitCode": "hg/ha",
+                "value": "8935"
+              },
+              "weight": {
+                "type": "QuantitativeValue",
+                "unitCode": "hg/ha",
+                "value": "4850"
+              },
+              "sku": "600534746207"
+            },
+            "scientificName": "Persea americana",
+            "labelImageUrl": "https://img.example.org/033383401508/640/480/",
+            "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "AgParcelDelivery",
+      "deliveryAddress": {
+        "type": "PostalAddress",
+        "organizationName": "Ferry - Goodwin",
+        "streetAddress": "04532 Moen Shores",
+        "addressLocality": "Brockborough",
+        "addressRegion": "Vermont",
+        "postalCode": "88261",
+        "addressCountry": "Holy See (Vatican City State)"
+      },
+      "originAddress": {
+        "type": "PostalAddress",
+        "organizationName": "Durgan, Effertz and Hudson",
+        "streetAddress": "89760 Alycia Causeway",
+        "addressLocality": "New Lamar",
+        "addressRegion": "Louisiana",
+        "postalCode": "39261-8509",
+        "addressCountry": "Suriname"
+      },
+      "foreignPortExport": {
+        "type": "Place",
+        "globalLocationNumber": "3390000565935",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "9.0040",
+          "longitude": "-133.4601"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Schiller, Kiehn and Gottlieb",
+          "streetAddress": "08162 Hagenes Pine",
+          "addressLocality": "Muellerton",
+          "addressRegion": "Montana",
+          "postalCode": "77278",
+          "addressCountry": "New Caledonia"
+        }
+      },
+      "portOfEntry": {
+        "type": "Place",
+        "globalLocationNumber": "5507463737870",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "-29.0531",
+          "longitude": "66.5212"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Stracke LLC",
+          "streetAddress": "6373 Towne Freeway",
+          "addressLocality": "Lake Derek",
+          "addressRegion": "Colorado",
+          "postalCode": "55804",
+          "addressCountry": "Gabon"
+        }
+      },
+      "deliveryMethod": "Rail freight transport",
+      "trackingNumber": "110084973262",
+      "expectedArrival": "2021-03-14",
+      "specialInstructions": "The package is top-heavy so handle with appropriate caution.",
+      "consignee": {
+        "type": "Organization",
+        "name": "Buckridge, Mosciski and Flatley",
+        "description": "Synergistic regional matrix",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "316 Wilkinson Station",
+          "addressLocality": "West Hortense",
+          "addressRegion": "Georgia",
+          "postalCode": "44159-6673",
+          "addressCountry": "Cuba"
+        },
+        "email": "Jaiden.Gusikowski18@example.com",
+        "phoneNumber": "555-789-5438"
+      },
+      "AgPackage": {
+        "type": "AgPackage",
+        "packageName": "Avocados, Bulk",
+        "grade": "AA",
+        "responsibleParty": {
+          "type": "Person",
+          "firstName": "Vena",
+          "lastName": "Ritchie",
+          "email": "Pete.Tillman@example.net",
+          "phoneNumber": "555-913-7043",
+          "worksFor": {
+            "type": "Organization",
+            "name": "Kulas - Veum",
+            "description": "Team-oriented coherent hub",
+            "address": {
+              "type": "PostalAddress",
+              "streetAddress": "008 Krajcik Fall",
+              "addressLocality": "Hintzland",
+              "addressRegion": "Kansas",
+              "postalCode": "70640",
+              "addressCountry": "Lesotho"
+            },
+            "email": "Ada_Stehr@example.org",
+            "phoneNumber": "555-410-5984"
+          },
+          "jobTitle": "Global Infrastructure Specialist"
+        },
+        "voicePickCode": "4642",
+        "date": "2021-03-14",
+        "labelImageUrl": "https://img.example.org/640/480/",
+        "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "agProduct": [
+          {
+            "type": "AgProduct",
+            "upc": "033383401508",
+            "plu": "94225",
+            "gtin": "033383401508",
+            "product": {
+              "type": "Product",
+              "manufacturer": {
+                "type": "Organization",
+                "name": "Haley Group",
+                "description": "Grass-roots impactful secured line",
+                "address": {
+                  "type": "PostalAddress",
+                  "streetAddress": "864 Douglas Key",
+                  "addressLocality": "North Jacynthe",
+                  "addressRegion": "Georgia",
+                  "postalCode": "01547-0949",
+                  "addressCountry": "Honduras"
+                },
+                "email": "Demario_Mohr97@example.com",
+                "phoneNumber": "555-634-4438"
+              },
+              "name": "Avocados",
+              "description": "Avocados, 4 pack boxes",
+              "sizeOrAmount": {
+                "type": "QuantitativeValue",
+                "unitCode": "hg/ha",
+                "value": "6744"
+              },
+              "weight": {
+                "type": "QuantitativeValue",
+                "unitCode": "hg/ha",
+                "value": "9372"
+              },
+              "sku": "899327783585"
+            },
+            "scientificName": "Persea americana",
+            "labelImageUrl": "https://img.example.org/033383401508/640/480/",
+            "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    }
+  ],
+  "bad": [
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "deliveryAddress": {
+        "type": "PostalAddress",
+        "organizationName": "Beer - Rogahn",
+        "streetAddress": "90224 Lou Knolls",
+        "addressLocality": "Josianeville",
+        "addressRegion": "Minnesota",
+        "postalCode": "01195",
+        "addressCountry": "Serbia"
+      },
+      "foreignPortExport": {
+        "type": "Place",
+        "globalLocationNumber": "9047997259951",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "23.0444",
+          "longitude": "24.6541"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Blick - Murray",
+          "streetAddress": "4694 Schaden Fort",
+          "addressLocality": "Lesleychester",
+          "addressRegion": "Nebraska",
+          "postalCode": "46082",
+          "addressCountry": "Palestinian Territory"
+        }
+      },
+      "portOfEntry": {
+        "type": "Place",
+        "globalLocationNumber": "2981728556773",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "-25.4702",
+          "longitude": "128.9744"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Leannon - Kunze",
+          "streetAddress": "274 Schroeder Lodge",
+          "addressLocality": "Shaunchester",
+          "addressRegion": "Utah",
+          "postalCode": "36276-0608",
+          "addressCountry": "Lithuania"
+        }
+      },
+      "deliveryMethod": "Rail freight transport",
+      "trackingNumber": "324860833887",
+      "expectedArrival": "2021-03-14",
+      "specialInstructions": "The package is top-heavy so handle with appropriate caution.",
+      "consignee": {
+        "type": "Organization",
+        "name": "Flatley, Pacocha and Kautzer",
+        "description": "Expanded secondary conglomeration",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "9148 Kuhn Stream",
+          "addressLocality": "Grahamtown",
+          "addressRegion": "Vermont",
+          "postalCode": "54538-8930",
+          "addressCountry": "Zimbabwe"
+        },
+        "email": "Clotilde41@example.com",
+        "phoneNumber": "555-538-9100"
+      },
+      "AgPackage": {
+        "type": "AgPackage",
+        "packageName": "Avocados, Bulk",
+        "grade": "AA",
+        "responsibleParty": {
+          "type": "Person",
+          "firstName": "Deja",
+          "lastName": "McLaughlin",
+          "email": "Regan.Kuvalis49@example.org",
+          "phoneNumber": "555-826-6756",
+          "worksFor": {
+            "type": "Organization",
+            "name": "Johnston, Casper and Monahan",
+            "description": "Upgradable systematic help-desk",
+            "address": {
+              "type": "PostalAddress",
+              "streetAddress": "2058 Schroeder Key",
+              "addressLocality": "West Rigobertomouth",
+              "addressRegion": "Connecticut",
+              "postalCode": "01782",
+              "addressCountry": "Hong Kong"
+            },
+            "email": "Dameon_Lesch14@example.com",
+            "phoneNumber": "555-538-5259"
+          },
+          "jobTitle": "Lead Mobility Producer"
+        },
+        "voicePickCode": "4642",
+        "date": "2021-03-14",
+        "labelImageUrl": "https://img.example.org/640/480/",
+        "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "agProduct": [
+          {
+            "type": "AgProduct",
+            "upc": "033383401508",
+            "plu": "94225",
+            "gtin": "033383401508",
+            "product": {
+              "type": "Product",
+              "manufacturer": {
+                "type": "Person",
+                "firstName": "Jettie",
+                "lastName": "Dietrich",
+                "email": "Nelle59@example.net",
+                "phoneNumber": "555-979-8038",
+                "worksFor": {
+                  "type": "Organization",
+                  "name": "Flatley, Reinger and White",
+                  "description": "Extended tangible algorithm",
+                  "address": {
+                    "type": "PostalAddress",
+                    "streetAddress": "349 Chance Plaza",
+                    "addressLocality": "Kihnhaven",
+                    "addressRegion": "Utah",
+                    "postalCode": "36466",
+                    "addressCountry": "United States of America"
+                  },
+                  "email": "Glennie69@example.org",
+                  "phoneNumber": "555-184-6240"
+                },
+                "jobTitle": "Regional Infrastructure Associate"
+              },
+              "name": "Avocados",
+              "description": "Avocados, 4 pack boxes",
+              "sizeOrAmount": {
+                "type": "QuantitativeValue",
+                "unitCode": "hg/ha",
+                "value": "3569"
+              },
+              "weight": {
+                "type": "QuantitativeValue",
+                "unitCode": "hg/ha",
+                "value": "7393"
+              },
+              "sku": "942906965769"
+            },
+            "scientificName": "Persea americana",
+            "labelImageUrl": "https://img.example.org/033383401508/640/480/",
+            "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      },
+      "circuit": "compress"
+    },
+    {
+      "system": "back up",
+      "card": "connect"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "AgParcelDelivery",
+      "originAddress": {
+        "type": "PostalAddress",
+        "organizationName": "Durgan, Effertz and Hudson",
+        "streetAddress": "89760 Alycia Causeway",
+        "addressLocality": "New Lamar",
+        "addressRegion": "Louisiana",
+        "postalCode": "39261-8509",
+        "addressCountry": "Suriname"
+      },
+      "foreignPortExport": {
+        "type": "Place",
+        "globalLocationNumber": "3390000565935",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "9.0040",
+          "longitude": "-133.4601"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Schiller, Kiehn and Gottlieb",
+          "streetAddress": "08162 Hagenes Pine",
+          "addressLocality": "Muellerton",
+          "addressRegion": "Montana",
+          "postalCode": "77278",
+          "addressCountry": "New Caledonia"
+        }
+      },
+      "portOfEntry": {
+        "type": "Place",
+        "globalLocationNumber": "5507463737870",
+        "geo": {
+          "type": "GeoCoordinates",
+          "latitude": "-29.0531",
+          "longitude": "66.5212"
+        },
+        "address": {
+          "type": "PostalAddress",
+          "organizationName": "Stracke LLC",
+          "streetAddress": "6373 Towne Freeway",
+          "addressLocality": "Lake Derek",
+          "addressRegion": "Colorado",
+          "postalCode": "55804",
+          "addressCountry": "Gabon"
+        }
+      },
+      "trackingNumber": "110084973262",
+      "specialInstructions": "The package is top-heavy so handle with appropriate caution.",
+      "consignee": {
+        "type": "Organization",
+        "name": "Buckridge, Mosciski and Flatley",
+        "description": "Synergistic regional matrix",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "316 Wilkinson Station",
+          "addressLocality": "West Hortense",
+          "addressRegion": "Georgia",
+          "postalCode": "44159-6673",
+          "addressCountry": "Cuba"
+        },
+        "email": "Jaiden.Gusikowski18@example.com",
+        "phoneNumber": "555-789-5438"
+      },
+      "AgPackage": {
+        "type": "AgPackage",
+        "packageName": "Avocados, Bulk",
+        "grade": "AA",
+        "responsibleParty": {
+          "type": "Person",
+          "firstName": "Vena",
+          "lastName": "Ritchie",
+          "email": "Pete.Tillman@example.net",
+          "phoneNumber": "555-913-7043",
+          "worksFor": {
+            "type": "Organization",
+            "name": "Kulas - Veum",
+            "description": "Team-oriented coherent hub",
+            "address": {
+              "type": "PostalAddress",
+              "streetAddress": "008 Krajcik Fall",
+              "addressLocality": "Hintzland",
+              "addressRegion": "Kansas",
+              "postalCode": "70640",
+              "addressCountry": "Lesotho"
+            },
+            "email": "Ada_Stehr@example.org",
+            "phoneNumber": "555-410-5984"
+          },
+          "jobTitle": "Global Infrastructure Specialist"
+        },
+        "voicePickCode": "4642",
+        "date": "2021-03-14",
+        "labelImageUrl": "https://img.example.org/640/480/",
+        "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "agProduct": [
+          {
+            "type": "AgProduct",
+            "upc": "033383401508",
+            "plu": "94225",
+            "gtin": "033383401508",
+            "product": {
+              "type": "Product",
+              "manufacturer": {
+                "type": "Organization",
+                "name": "Haley Group",
+                "description": "Grass-roots impactful secured line",
+                "address": {
+                  "type": "PostalAddress",
+                  "streetAddress": "864 Douglas Key",
+                  "addressLocality": "North Jacynthe",
+                  "addressRegion": "Georgia",
+                  "postalCode": "01547-0949",
+                  "addressCountry": "Honduras"
+                },
+                "email": "Demario_Mohr97@example.com",
+                "phoneNumber": "555-634-4438"
+              },
+              "name": "Avocados",
+              "description": "Avocados, 4 pack boxes",
+              "sizeOrAmount": {
+                "type": "QuantitativeValue",
+                "unitCode": "hg/ha",
+                "value": "6744"
+              },
+              "weight": {
+                "type": "QuantitativeValue",
+                "unitCode": "hg/ha",
+                "value": "9372"
+              },
+              "sku": "899327783585"
+            },
+            "scientificName": "Persea americana",
+            "labelImageUrl": "https://img.example.org/033383401508/640/480/",
+            "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      },
+      "matrix": "navigate"
+    }
+  ]
+}

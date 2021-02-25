@@ -118,6 +118,7 @@
             },
             "sku": "919865673356"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
@@ -165,6 +166,7 @@
             },
             "sku": "154440564537"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
@@ -293,6 +295,7 @@
             },
             "sku": "796257801760"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
@@ -340,6 +343,7 @@
             },
             "sku": "378391518524"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
@@ -387,6 +391,7 @@
             },
             "sku": "433298806630"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
@@ -531,6 +536,7 @@
             },
             "sku": "860364346151"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
@@ -578,6 +584,7 @@
             },
             "sku": "938751256475"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
@@ -755,6 +762,7 @@
             },
             "sku": "796257801760"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
@@ -802,6 +810,7 @@
             },
             "sku": "378391518524"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
@@ -849,6 +858,7 @@
             },
             "sku": "433298806630"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
@@ -992,6 +1002,7 @@
             },
             "sku": "860364346151"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
@@ -1039,6 +1050,7 @@
             },
             "sku": "938751256475"
           },
+          "scientificName": "Persea americana",
           "labelImageUrl": "https://img.example.org/033383401508/640/480/",
           "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }

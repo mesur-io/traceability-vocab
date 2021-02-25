@@ -5,95 +5,86 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "ContactPoint",
-      "name": "Walker Group",
+      "name": "Daugherty LLC",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "618 Abel Unions",
-        "addressLocality": "North Era",
-        "addressRegion": "Connecticut",
-        "postalCode": "12925",
-        "addressCountry": "Guinea"
+        "streetAddress": "846 Isaias Neck",
+        "addressLocality": "Dockport",
+        "addressRegion": "Nevada",
+        "postalCode": "72693",
+        "addressCountry": "Tokelau"
       },
-      "email": "Adrianna92@example.com",
-      "phoneNumber": "555-466-5345"
+      "email": "Mollie.Adams76@example.net",
+      "phoneNumber": "555-475-9804"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "ContactPoint",
-      "name": "Schaefer, Treutel and Hane",
+      "name": "Jerde Group",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "80857 Flatley Mountain",
-        "addressLocality": "Penelopehaven",
-        "addressRegion": "Virginia",
-        "postalCode": "74087-2937",
-        "addressCountry": "Marshall Islands"
+        "streetAddress": "191 Clint Turnpike",
+        "addressLocality": "Kautzerton",
+        "addressRegion": "Indiana",
+        "postalCode": "62765",
+        "addressCountry": "Iran"
       },
-      "email": "June_Boyle47@example.org",
-      "phoneNumber": "555-989-8881"
+      "email": "Branson0@example.com",
+      "phoneNumber": "555-454-4533"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "ContactPoint",
-      "name": "Rohan, Mitchell and Cronin",
+      "name": "Macejkovic Inc",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "3541 Beer Throughway",
-        "addressLocality": "South Kaley",
-        "addressRegion": "Ohio",
-        "postalCode": "85311",
-        "addressCountry": "New Zealand"
+        "streetAddress": "23763 Kutch Spring",
+        "addressLocality": "Maiyaton",
+        "addressRegion": "South Dakota",
+        "postalCode": "86227",
+        "addressCountry": "Macedonia"
       },
-      "email": "Madeline77@example.org",
-      "phoneNumber": "555-780-9971"
+      "email": "Cindy_Huel@example.org",
+      "phoneNumber": "555-612-5506"
     }
   ],
   "bad": [
     {
-      "email": "Adrianna92@example.com",
-      "panel": "program",
-      "program": "program",
-      "firewall": "transmit"
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "feed": "override"
     },
     {
       "type": "ContactPoint",
-      "name": "Schaefer, Treutel and Hane",
+      "name": "Jerde Group",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "80857 Flatley Mountain",
-        "addressLocality": "Penelopehaven",
-        "addressRegion": "Virginia",
-        "postalCode": "74087-2937",
-        "addressCountry": "Marshall Islands"
+        "streetAddress": "191 Clint Turnpike",
+        "addressLocality": "Kautzerton",
+        "addressRegion": "Indiana",
+        "postalCode": "62765",
+        "addressCountry": "Iran"
       },
-      "email": "June_Boyle47@example.org",
-      "phoneNumber": "555-989-8881",
-      "panel": "override",
-      "alarm": "navigate",
-      "sensor": "quantify"
+      "email": "Branson0@example.com",
+      "phoneNumber": "555-454-4533",
+      "hard drive": "index"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "ContactPoint",
-      "name": "Rohan, Mitchell and Cronin",
-      "address": {
-        "type": "PostalAddress",
-        "streetAddress": "3541 Beer Throughway",
-        "addressLocality": "South Kaley",
-        "addressRegion": "Ohio",
-        "postalCode": "85311",
-        "addressCountry": "New Zealand"
-      },
-      "email": "Madeline77@example.org",
-      "sensor": "quantify",
-      "transmitter": "compress",
-      "monitor": "navigate"
+      "name": "Macejkovic Inc",
+      "email": "Cindy_Huel@example.org",
+      "phoneNumber": "555-612-5506",
+      "sensor": "connect",
+      "driver": "connect",
+      "matrix": "index"
     }
   ]
 }

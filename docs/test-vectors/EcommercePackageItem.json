@@ -5,10 +5,12 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "EcommercePackageItem",
-      "productReceiptID": "https://vc.example.com/?queryID=0x2aACa0Fbe2ab3fC8dE6aDaF830Dec5481AA10DE925df6BBE601f3cFeFD93f9fD",
-      "packingListID": "https://vc.example.com/?queryID=0x1AC2967bfCDEEDaC3DBe5c9EC37B4A0c65d3F71A6a9cE2Bfdbb64D2153F0502e",
+      "productReceiptID": "https://vc.example.com/?queryID=0x38DfD49C4A2FD0C54cFeB636a7fc79dD3D07BF3B3448C738C36aE6ce2B09bAdC",
+      "packingListID": "https://vc.example.com/?queryID=0x57a64EC165B1eea768d058aCd08CbBDb756E261bf8DE7b3E48d52e53CFAcF7d0",
       "orderID": "https://vc.example.com/?queryID=AB06f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58597a",
       "productInOrder": [
+        "https://vc.example.com/?queryID=6206f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a",
+        "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e",
         "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a",
         "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e"
       ]
@@ -18,12 +20,11 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "EcommercePackageItem",
-      "productReceiptID": "https://vc.example.com/?queryID=0x4E8335Fdc5dF63DAcCE58dcF5D555F0388e90ab2aB7429277DDcD4bf0D418e3a",
-      "packingListID": "https://vc.example.com/?queryID=0xEEAd6F02b07BA9cBAe21825651dBc10D7c76C7E64824B043D376bC8240BE1BbF",
+      "productReceiptID": "https://vc.example.com/?queryID=0xEC556C09e1beC84af9aBBbA5a7d74468C36A8be3E7345eacA9295fa4AeE26ac3",
+      "packingListID": "https://vc.example.com/?queryID=0xC8E98cC32Ee6b070A51a9F7B0EfEedE0ae2A71ed272dD7C72D77fd298eB8EA43",
       "orderID": "https://vc.example.com/?queryID=AB06f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58597a",
       "productInOrder": [
-        "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e",
-        "https://vc.example.com/?queryID=6206f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a"
+        "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e"
       ]
     },
     {
@@ -31,46 +32,41 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "EcommercePackageItem",
-      "productReceiptID": "https://vc.example.com/?queryID=0xBCDCF0d2cDEA6F639627f433CbAD6A0E4ed2C2CcF8CcbEC800AF14405d50Ba17",
-      "packingListID": "https://vc.example.com/?queryID=0x83dc6FcFF0Bb90EF3DD47EF5771Ff4401B9974FcDf94A8bAF1Bb7caAdC39cD22",
+      "productReceiptID": "https://vc.example.com/?queryID=0xa0ACF065Be31aE9a6DEdbC31BbA66f2C18525E88CC2A5967cd0c2c12b3dc3BA0",
+      "packingListID": "https://vc.example.com/?queryID=0xd1dE1b823536ae56Cf6e15f78e0EefBD12a5fB4745C84ec3d2C308fd7Bf01fd9",
       "orderID": "https://vc.example.com/?queryID=AB06f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58597a",
       "productInOrder": [
         "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e",
         "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e",
-        "https://vc.example.com/?queryID=6206f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a",
-        "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a"
+        "https://vc.example.com/?queryID=6206f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a"
       ]
     }
   ],
   "bad": [
     {
-      "productReceiptID": "https://vc.example.com/?queryID=0x2aACa0Fbe2ab3fC8dE6aDaF830Dec5481AA10DE925df6BBE601f3cFeFD93f9fD",
-      "productInOrder": [
-        "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a",
-        "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e"
-      ],
-      "port": "reboot",
-      "driver": "transmit",
-      "pixel": "connect"
+      "circuit": "generate",
+      "bandwidth": "reboot",
+      "array": "back up"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "program": "bypass",
-      "application": "back up"
+      "productReceiptID": "https://vc.example.com/?queryID=0xEC556C09e1beC84af9aBBbA5a7d74468C36A8be3E7345eacA9295fa4AeE26ac3",
+      "packingListID": "https://vc.example.com/?queryID=0xC8E98cC32Ee6b070A51a9F7B0EfEedE0ae2A71ed272dD7C72D77fd298eB8EA43",
+      "orderID": "https://vc.example.com/?queryID=AB06f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58597a",
+      "firewall": "connect",
+      "interface": "hack",
+      "feed": "input",
+      "alarm": "copy"
     },
     {
+      "productReceiptID": "https://vc.example.com/?queryID=0xa0ACF065Be31aE9a6DEdbC31BbA66f2C18525E88CC2A5967cd0c2c12b3dc3BA0",
       "orderID": "https://vc.example.com/?queryID=AB06f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58597a",
-      "productInOrder": [
-        "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e",
-        "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58599e",
-        "https://vc.example.com/?queryID=6206f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a",
-        "https://vc.example.com/?queryID=7306f1f744a781480c521902a1a1dbf5f1d01e7ea21daf483e7668817e58598a"
-      ],
-      "pixel": "override",
-      "application": "compress",
-      "program": "navigate"
+      "system": "compress",
+      "array": "calculate",
+      "feed": "index",
+      "driver": "bypass"
     }
   ]
 }

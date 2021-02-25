@@ -5,78 +5,109 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Organization",
-      "name": "Hayes LLC",
-      "description": "Expanded 24/7 strategy",
+      "name": "Conn, Ullrich and Bauch",
+      "description": "Up-sized secondary leverage",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "06708 Brandyn Freeway",
-        "addressLocality": "West Jasper",
-        "addressRegion": "New York",
-        "postalCode": "54285",
-        "addressCountry": "Poland"
+        "streetAddress": "318 Verner Meadow",
+        "addressLocality": "North Letitiaburgh",
+        "addressRegion": "New Mexico",
+        "postalCode": "16785-3024",
+        "addressCountry": "Western Sahara"
       },
-      "email": "Laney_Goldner34@example.org",
-      "phoneNumber": "555-996-4688"
+      "email": "Brielle.Herzog@example.org",
+      "phoneNumber": "555-180-3921"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Person",
-      "firstName": "Kelsi",
-      "lastName": "Botsford",
-      "email": "Alexandria.Swift50@example.net",
-      "phoneNumber": "555-327-5163",
+      "firstName": "Dayne",
+      "lastName": "Williamson",
+      "email": "Martin_Von@example.org",
+      "phoneNumber": "555-960-7056",
       "worksFor": {
         "type": "Organization",
-        "name": "Russel, Jerde and Rempel",
-        "description": "Exclusive didactic application",
+        "name": "Hagenes - Shanahan",
+        "description": "Seamless even-keeled project",
         "address": {
           "type": "PostalAddress",
-          "streetAddress": "777 Dayne Tunnel",
-          "addressLocality": "South Clovis",
-          "addressRegion": "Alaska",
-          "postalCode": "76668-1413",
-          "addressCountry": "Saint Vincent and the Grenadines"
+          "streetAddress": "68351 Lehner Fall",
+          "addressLocality": "Murrayborough",
+          "addressRegion": "Hawaii",
+          "postalCode": "48373",
+          "addressCountry": "Republic of Korea"
         },
-        "email": "Ethyl99@example.com",
-        "phoneNumber": "555-617-2562"
+        "email": "Allison_Schmeler61@example.org",
+        "phoneNumber": "555-201-4115"
       },
-      "jobTitle": "Dynamic Communications Director"
+      "jobTitle": "Global Security Representative"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Organization",
-      "name": "Volkman - Swaniawski",
-      "description": "Monitored transitional infrastructure",
+      "name": "Yundt, Treutel and Lesch",
+      "description": "Synergized next generation knowledge user",
       "address": {
         "type": "PostalAddress",
-        "streetAddress": "9687 Hamill River",
-        "addressLocality": "North Bellbury",
-        "addressRegion": "Pennsylvania",
-        "postalCode": "67466-6036",
-        "addressCountry": "Morocco"
+        "streetAddress": "75553 Danika Knoll",
+        "addressLocality": "North Eliezer",
+        "addressRegion": "Michigan",
+        "postalCode": "02646-5051",
+        "addressCountry": "Belize"
       },
-      "email": "Jamarcus.Barton40@example.org",
-      "phoneNumber": "555-218-9994"
+      "email": "Alek.Lockman@example.net",
+      "phoneNumber": "555-830-8133"
     }
   ],
   "bad": [
     {
-      "phoneNumber": "555-996-4688",
-      "bandwidth": "back up",
-      "monitor": "override"
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "Organization",
+      "name": "Conn, Ullrich and Bauch",
+      "description": "Up-sized secondary leverage",
+      "phoneNumber": "555-180-3921",
+      "driver": "parse",
+      "alarm": "copy",
+      "feed": "reboot"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "bus": "copy"
+      "type": "Person",
+      "firstName": "Dayne",
+      "email": "Martin_Von@example.org",
+      "phoneNumber": "555-960-7056",
+      "worksFor": {
+        "type": "Organization",
+        "name": "Hagenes - Shanahan",
+        "description": "Seamless even-keeled project",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "68351 Lehner Fall",
+          "addressLocality": "Murrayborough",
+          "addressRegion": "Hawaii",
+          "postalCode": "48373",
+          "addressCountry": "Republic of Korea"
+        },
+        "email": "Allison_Schmeler61@example.org",
+        "phoneNumber": "555-201-4115"
+      },
+      "jobTitle": "Global Security Representative",
+      "bus": "connect",
+      "bandwidth": "navigate"
     },
     {
-      "monitor": "program"
+      "type": "Organization",
+      "name": "Yundt, Treutel and Lesch",
+      "description": "Synergized next generation knowledge user",
+      "transmitter": "quantify"
     }
   ]
 }

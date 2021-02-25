@@ -5,44 +5,46 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "GeoCoordinates",
-      "latitude": "49.8178",
-      "longitude": "118.4565"
+      "latitude": "75.0559",
+      "longitude": "-131.2850"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "GeoCoordinates",
-      "latitude": "63.0460",
-      "longitude": "-178.7250"
+      "latitude": "-26.8712",
+      "longitude": "118.2303"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "GeoCoordinates",
-      "latitude": "-78.8289",
-      "longitude": "87.7207"
+      "latitude": "6.0411",
+      "longitude": "76.4162"
     }
   ],
   "bad": [
     {
+      "type": "GeoCoordinates",
+      "sensor": "navigate"
+    },
+    {
+      "latitude": "-26.8712",
+      "longitude": "118.2303",
+      "capacitor": "bypass"
+    },
+    {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "latitude": "49.8178",
-      "interface": "copy",
-      "card": "bypass"
-    },
-    {
-      "panel": "connect"
-    },
-    {
       "type": "GeoCoordinates",
-      "latitude": "-78.8289",
-      "pixel": "program",
-      "protocol": "hack",
-      "matrix": "program"
+      "longitude": "76.4162",
+      "array": "override",
+      "transmitter": "transmit",
+      "monitor": "parse",
+      "hard drive": "back up"
     }
   ]
 }

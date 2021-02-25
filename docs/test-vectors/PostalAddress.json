@@ -5,36 +5,36 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "PostalAddress",
-      "organizationName": "Huels, Haag and Kiehn",
-      "streetAddress": "85382 Haley Expressway",
-      "addressLocality": "Port Franzberg",
-      "addressRegion": "Florida",
-      "postalCode": "83497",
-      "addressCountry": "Romania"
+      "organizationName": "Schinner LLC",
+      "streetAddress": "0797 Ebert Island",
+      "addressLocality": "O'Connerville",
+      "addressRegion": "New Jersey",
+      "postalCode": "46060",
+      "addressCountry": "Ghana"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "PostalAddress",
-      "organizationName": "Lind LLC",
-      "streetAddress": "0167 Keeling River",
-      "addressLocality": "North Marques",
-      "addressRegion": "Missouri",
-      "postalCode": "63971-2719",
-      "addressCountry": "Netherlands"
+      "organizationName": "Kuhic Inc",
+      "streetAddress": "8335 Julianne Lakes",
+      "addressLocality": "Floridatown",
+      "addressRegion": "North Carolina",
+      "postalCode": "74857-8478",
+      "addressCountry": "Kenya"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "PostalAddress",
-      "organizationName": "Stroman Group",
-      "streetAddress": "44916 Swaniawski Vista",
-      "addressLocality": "Carrollland",
-      "addressRegion": "Oregon",
-      "postalCode": "05160",
-      "addressCountry": "Panama"
+      "organizationName": "Schuppe LLC",
+      "streetAddress": "491 Ullrich Greens",
+      "addressLocality": "Lindgrenton",
+      "addressRegion": "Kentucky",
+      "postalCode": "65696",
+      "addressCountry": "Singapore"
     }
   ],
   "bad": [
@@ -43,36 +43,26 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "PostalAddress",
-      "addressLocality": "Port Franzberg",
-      "addressRegion": "Florida",
-      "postalCode": "83497",
-      "addressCountry": "Romania",
-      "panel": "synthesize",
-      "circuit": "hack",
-      "hard drive": "index",
-      "microchip": "quantify"
+      "organizationName": "Schinner LLC",
+      "addressLocality": "O'Connerville",
+      "postalCode": "46060",
+      "microchip": "input",
+      "capacitor": "bypass",
+      "card": "generate"
     },
     {
-      "type": "PostalAddress",
-      "organizationName": "Lind LLC",
-      "streetAddress": "0167 Keeling River",
-      "addressLocality": "North Marques",
-      "addressRegion": "Missouri",
-      "postalCode": "63971-2719",
-      "addressCountry": "Netherlands",
-      "application": "parse",
-      "sensor": "synthesize",
-      "interface": "quantify",
-      "panel": "compress"
+      "organizationName": "Kuhic Inc",
+      "streetAddress": "8335 Julianne Lakes",
+      "addressLocality": "Floridatown",
+      "addressRegion": "North Carolina",
+      "postalCode": "74857-8478",
+      "circuit": "input"
     },
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "PostalAddress",
-      "addressRegion": "Oregon",
-      "transmitter": "copy",
-      "interface": "connect"
+      "streetAddress": "491 Ullrich Greens",
+      "feed": "compress",
+      "application": "calculate",
+      "capacitor": "calculate"
     }
   ]
 }

@@ -7,42 +7,32 @@
       "type": "Inspector",
       "person": {
         "type": "Person",
-        "firstName": "Kasandra",
-        "lastName": "Crooks",
-        "email": "Aniyah_Hayes@example.net",
-        "phoneNumber": "555-575-9922",
+        "firstName": "Kian",
+        "lastName": "Ratke",
+        "email": "Donny17@example.net",
+        "phoneNumber": "555-854-7414",
         "worksFor": {
           "type": "Organization",
-          "name": "Orn, Pouros and Flatley",
-          "description": "Customizable real-time utilisation",
+          "name": "Turner LLC",
+          "description": "Reduced didactic intranet",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "821 Koch Turnpike",
-            "addressLocality": "East Allie",
-            "addressRegion": "Rhode Island",
-            "postalCode": "91458",
-            "addressCountry": "Ethiopia"
+            "streetAddress": "7992 Bruen Radial",
+            "addressLocality": "Jacobsside",
+            "addressRegion": "New York",
+            "postalCode": "01628",
+            "addressCountry": "Bolivia"
           },
-          "email": "Joel31@example.net",
-          "phoneNumber": "555-863-8092"
+          "email": "Earnestine.Schmitt84@example.com",
+          "phoneNumber": "555-409-2881"
         },
-        "jobTitle": "Global Optimization Director"
+        "jobTitle": "National Identity Liaison"
       },
       "qualification": [
         {
           "type": "Qualification",
-          "qualificationCategory": "Senior Communications Director",
-          "qualificationValue": "Consultant"
-        },
-        {
-          "type": "Qualification",
-          "qualificationCategory": "Dynamic Program Liaison",
-          "qualificationValue": "Engineer"
-        },
-        {
-          "type": "Qualification",
-          "qualificationCategory": "Regional Accountability Coordinator",
-          "qualificationValue": "Director"
+          "qualificationCategory": "Lead Tactics Administrator",
+          "qualificationValue": "Administrator"
         }
       ]
     },
@@ -53,32 +43,37 @@
       "type": "Inspector",
       "person": {
         "type": "Person",
-        "firstName": "Selena",
-        "lastName": "Heathcote",
-        "email": "Pietro.Prosacco@example.com",
-        "phoneNumber": "555-162-2547",
+        "firstName": "Joy",
+        "lastName": "Towne",
+        "email": "Hanna.Cruickshank@example.com",
+        "phoneNumber": "555-351-9519",
         "worksFor": {
           "type": "Organization",
-          "name": "Connelly - Moen",
-          "description": "Devolved 3rd generation Graphic Interface",
+          "name": "Orn, Medhurst and McKenzie",
+          "description": "Managed well-modulated middleware",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "86299 Malika Unions",
-            "addressLocality": "Runteborough",
-            "addressRegion": "Texas",
-            "postalCode": "17436-2888",
-            "addressCountry": "Romania"
+            "streetAddress": "864 Reinger Isle",
+            "addressLocality": "Port Sedrick",
+            "addressRegion": "Maryland",
+            "postalCode": "67359",
+            "addressCountry": "Western Sahara"
           },
-          "email": "Alayna.Bosco@example.org",
-          "phoneNumber": "555-735-4817"
+          "email": "Conner.Nikolaus25@example.org",
+          "phoneNumber": "555-598-2108"
         },
-        "jobTitle": "Chief Factors Analyst"
+        "jobTitle": "Investor Usability Associate"
       },
       "qualification": [
         {
           "type": "Qualification",
-          "qualificationCategory": "District Research Officer",
+          "qualificationCategory": "Forward Infrastructure Analyst",
           "qualificationValue": "Developer"
+        },
+        {
+          "type": "Qualification",
+          "qualificationCategory": "Internal Group Coordinator",
+          "qualificationValue": "Orchestrator"
         }
       ]
     },
@@ -89,130 +84,103 @@
       "type": "Inspector",
       "person": {
         "type": "Person",
-        "firstName": "Estelle",
-        "lastName": "Koss",
-        "email": "Neil_Heller49@example.net",
-        "phoneNumber": "555-392-1880",
+        "firstName": "Yesenia",
+        "lastName": "O'Hara",
+        "email": "Jacquelyn.Murray@example.com",
+        "phoneNumber": "555-605-3854",
         "worksFor": {
           "type": "Organization",
-          "name": "Rutherford, West and Beahan",
-          "description": "Persistent background moratorium",
+          "name": "Durgan - Turner",
+          "description": "Devolved eco-centric portal",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "38837 Jackie Village",
-            "addressLocality": "Hayliehaven",
-            "addressRegion": "Hawaii",
-            "postalCode": "78099",
-            "addressCountry": "Macedonia"
+            "streetAddress": "7448 Kuhic Cove",
+            "addressLocality": "Port Halie",
+            "addressRegion": "South Carolina",
+            "postalCode": "86793-4178",
+            "addressCountry": "Greenland"
           },
-          "email": "Edgardo38@example.org",
-          "phoneNumber": "555-633-9512"
+          "email": "Finn.Bogisich@example.com",
+          "phoneNumber": "555-550-4350"
         },
-        "jobTitle": "Forward Applications Analyst"
+        "jobTitle": "District Security Assistant"
       },
       "qualification": [
         {
           "type": "Qualification",
-          "qualificationCategory": "Regional Group Assistant",
-          "qualificationValue": "Coordinator"
+          "qualificationCategory": "Customer Web Engineer",
+          "qualificationValue": "Designer"
         }
       ]
     }
   ],
   "bad": [
     {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
       "type": "Inspector",
       "person": {
         "type": "Person",
-        "firstName": "Kasandra",
-        "lastName": "Crooks",
-        "email": "Aniyah_Hayes@example.net",
-        "phoneNumber": "555-575-9922",
+        "firstName": "Kian",
+        "lastName": "Ratke",
+        "email": "Donny17@example.net",
+        "phoneNumber": "555-854-7414",
         "worksFor": {
           "type": "Organization",
-          "name": "Orn, Pouros and Flatley",
-          "description": "Customizable real-time utilisation",
+          "name": "Turner LLC",
+          "description": "Reduced didactic intranet",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "821 Koch Turnpike",
-            "addressLocality": "East Allie",
-            "addressRegion": "Rhode Island",
-            "postalCode": "91458",
-            "addressCountry": "Ethiopia"
+            "streetAddress": "7992 Bruen Radial",
+            "addressLocality": "Jacobsside",
+            "addressRegion": "New York",
+            "postalCode": "01628",
+            "addressCountry": "Bolivia"
           },
-          "email": "Joel31@example.net",
-          "phoneNumber": "555-863-8092"
+          "email": "Earnestine.Schmitt84@example.com",
+          "phoneNumber": "555-409-2881"
         },
-        "jobTitle": "Global Optimization Director"
+        "jobTitle": "National Identity Liaison"
       },
-      "qualification": [
-        {
-          "type": "Qualification",
-          "qualificationCategory": "Senior Communications Director",
-          "qualificationValue": "Consultant"
-        },
-        {
-          "type": "Qualification",
-          "qualificationCategory": "Dynamic Program Liaison",
-          "qualificationValue": "Engineer"
-        },
-        {
-          "type": "Qualification",
-          "qualificationCategory": "Regional Accountability Coordinator",
-          "qualificationValue": "Director"
-        }
-      ],
-      "monitor": "input",
-      "card": "calculate"
+      "circuit": "navigate"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "person": {
-        "type": "Person",
-        "firstName": "Selena",
-        "lastName": "Heathcote",
-        "email": "Pietro.Prosacco@example.com",
-        "phoneNumber": "555-162-2547",
-        "worksFor": {
-          "type": "Organization",
-          "name": "Connelly - Moen",
-          "description": "Devolved 3rd generation Graphic Interface",
-          "address": {
-            "type": "PostalAddress",
-            "streetAddress": "86299 Malika Unions",
-            "addressLocality": "Runteborough",
-            "addressRegion": "Texas",
-            "postalCode": "17436-2888",
-            "addressCountry": "Romania"
-          },
-          "email": "Alayna.Bosco@example.org",
-          "phoneNumber": "555-735-4817"
-        },
-        "jobTitle": "Chief Factors Analyst"
-      },
-      "qualification": [
-        {
-          "type": "Qualification",
-          "qualificationCategory": "District Research Officer",
-          "qualificationValue": "Developer"
-        }
-      ],
-      "bandwidth": "copy",
-      "matrix": "bypass",
-      "driver": "transmit"
+      "type": "Inspector",
+      "program": "compress",
+      "capacitor": "program",
+      "pixel": "navigate",
+      "application": "synthesize"
     },
     {
-      "qualification": [
-        {
-          "type": "Qualification",
-          "qualificationCategory": "Regional Group Assistant",
-          "qualificationValue": "Coordinator"
-        }
-      ],
-      "alarm": "connect",
-      "monitor": "index"
+      "type": "Inspector",
+      "person": {
+        "type": "Person",
+        "firstName": "Yesenia",
+        "lastName": "O'Hara",
+        "email": "Jacquelyn.Murray@example.com",
+        "phoneNumber": "555-605-3854",
+        "worksFor": {
+          "type": "Organization",
+          "name": "Durgan - Turner",
+          "description": "Devolved eco-centric portal",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "7448 Kuhic Cove",
+            "addressLocality": "Port Halie",
+            "addressRegion": "South Carolina",
+            "postalCode": "86793-4178",
+            "addressCountry": "Greenland"
+          },
+          "email": "Finn.Bogisich@example.com",
+          "phoneNumber": "555-550-4350"
+        },
+        "jobTitle": "District Security Assistant"
+      },
+      "driver": "program"
     }
   ]
 }

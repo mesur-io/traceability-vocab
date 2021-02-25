@@ -11,42 +11,86 @@
       "product": {
         "type": "Product",
         "manufacturer": {
+          "type": "Organization",
+          "name": "Considine Inc",
+          "description": "Right-sized well-modulated neural-net",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "36395 Violette Estate",
+            "addressLocality": "Earlinehaven",
+            "addressRegion": "North Dakota",
+            "postalCode": "83844-9893",
+            "addressCountry": "Sierra Leone"
+          },
+          "email": "Bernie_Metz82@example.com",
+          "phoneNumber": "555-511-5493"
+        },
+        "name": "Avocados",
+        "description": "Avocados, 4 pack boxes",
+        "sizeOrAmount": {
+          "type": "QuantitativeValue",
+          "unitCode": "hg/ha",
+          "value": "1750"
+        },
+        "weight": {
+          "type": "QuantitativeValue",
+          "unitCode": "hg/ha",
+          "value": "9753"
+        },
+        "sku": "871887772212"
+      },
+      "scientificName": "Persea americana",
+      "labelImageUrl": "https://img.example.org/033383401508/640/480/",
+      "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "AgProduct",
+      "upc": "033383401508",
+      "plu": "94225",
+      "gtin": "033383401508",
+      "product": {
+        "type": "Product",
+        "manufacturer": {
           "type": "Person",
-          "firstName": "Maxie",
-          "lastName": "Moore",
-          "email": "Julian_Bruen@example.net",
-          "phoneNumber": "555-351-8067",
+          "firstName": "Dandre",
+          "lastName": "Bogisich",
+          "email": "Kayla.Treutel50@example.com",
+          "phoneNumber": "555-244-8390",
           "worksFor": {
             "type": "Organization",
-            "name": "Murphy LLC",
-            "description": "Managed analyzing migration",
+            "name": "Collins, Simonis and Walker",
+            "description": "Multi-lateral even-keeled standardization",
             "address": {
               "type": "PostalAddress",
-              "streetAddress": "022 Luettgen Locks",
-              "addressLocality": "Kallieport",
-              "addressRegion": "Florida",
-              "postalCode": "10119",
-              "addressCountry": "Montenegro"
+              "streetAddress": "43589 Cordell Center",
+              "addressLocality": "East Herthafurt",
+              "addressRegion": "New York",
+              "postalCode": "04738",
+              "addressCountry": "French Guiana"
             },
-            "email": "Jeffrey.OConnell26@example.com",
-            "phoneNumber": "555-815-9047"
+            "email": "Lisandro.Friesen20@example.com",
+            "phoneNumber": "555-467-5219"
           },
-          "jobTitle": "Lead Data Engineer"
+          "jobTitle": "Senior Branding Executive"
         },
         "name": "Avocados",
         "description": "Avocados, 4 pack boxes",
         "sizeOrAmount": {
           "type": "QuantitativeValue",
           "unitCode": "hg/ha",
-          "value": "2209"
+          "value": "5770"
         },
         "weight": {
           "type": "QuantitativeValue",
           "unitCode": "hg/ha",
-          "value": "3591"
+          "value": "5628"
         },
-        "sku": "984072670126"
+        "sku": "599814857820"
       },
+      "scientificName": "Persea americana",
       "labelImageUrl": "https://img.example.org/033383401508/640/480/",
       "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
@@ -62,75 +106,34 @@
         "type": "Product",
         "manufacturer": {
           "type": "Organization",
-          "name": "Willms, Larkin and Kshlerin",
-          "description": "Object-based encompassing secured line",
+          "name": "Ebert, Buckridge and Schowalter",
+          "description": "Automated foreground help-desk",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "76060 Jesse Tunnel",
-            "addressLocality": "Trantowport",
-            "addressRegion": "Wyoming",
-            "postalCode": "48804",
-            "addressCountry": "Monaco"
+            "streetAddress": "223 Abby Brook",
+            "addressLocality": "Port Brian",
+            "addressRegion": "West Virginia",
+            "postalCode": "41162-1947",
+            "addressCountry": "Belgium"
           },
-          "email": "Zelda99@example.net",
-          "phoneNumber": "555-458-1239"
+          "email": "Tania_Moore67@example.org",
+          "phoneNumber": "555-561-2512"
         },
         "name": "Avocados",
         "description": "Avocados, 4 pack boxes",
         "sizeOrAmount": {
           "type": "QuantitativeValue",
           "unitCode": "hg/ha",
-          "value": "9002"
+          "value": "3446"
         },
         "weight": {
           "type": "QuantitativeValue",
           "unitCode": "hg/ha",
-          "value": "2423"
+          "value": "6402"
         },
-        "sku": "216097840265"
+        "sku": "529834794728"
       },
-      "labelImageUrl": "https://img.example.org/033383401508/640/480/",
-      "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "AgProduct",
-      "upc": "033383401508",
-      "plu": "94225",
-      "gtin": "033383401508",
-      "product": {
-        "type": "Product",
-        "manufacturer": {
-          "type": "Organization",
-          "name": "Monahan Group",
-          "description": "Synergistic grid-enabled middleware",
-          "address": {
-            "type": "PostalAddress",
-            "streetAddress": "318 Sipes Cape",
-            "addressLocality": "Bradenport",
-            "addressRegion": "California",
-            "postalCode": "78234",
-            "addressCountry": "Kuwait"
-          },
-          "email": "Kaci.Schamberger80@example.org",
-          "phoneNumber": "555-803-4773"
-        },
-        "name": "Avocados",
-        "description": "Avocados, 4 pack boxes",
-        "sizeOrAmount": {
-          "type": "QuantitativeValue",
-          "unitCode": "hg/ha",
-          "value": "2453"
-        },
-        "weight": {
-          "type": "QuantitativeValue",
-          "unitCode": "hg/ha",
-          "value": "2211"
-        },
-        "sku": "492350274605"
-      },
+      "scientificName": "Persea americana",
       "labelImageUrl": "https://img.example.org/033383401508/640/480/",
       "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
@@ -141,19 +144,51 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "AgProduct",
-      "gtin": "033383401508",
+      "upc": "033383401508",
+      "plu": "94225",
+      "product": {
+        "type": "Product",
+        "manufacturer": {
+          "type": "Organization",
+          "name": "Considine Inc",
+          "description": "Right-sized well-modulated neural-net",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "36395 Violette Estate",
+            "addressLocality": "Earlinehaven",
+            "addressRegion": "North Dakota",
+            "postalCode": "83844-9893",
+            "addressCountry": "Sierra Leone"
+          },
+          "email": "Bernie_Metz82@example.com",
+          "phoneNumber": "555-511-5493"
+        },
+        "name": "Avocados",
+        "description": "Avocados, 4 pack boxes",
+        "sizeOrAmount": {
+          "type": "QuantitativeValue",
+          "unitCode": "hg/ha",
+          "value": "1750"
+        },
+        "weight": {
+          "type": "QuantitativeValue",
+          "unitCode": "hg/ha",
+          "value": "9753"
+        },
+        "sku": "871887772212"
+      },
+      "scientificName": "Persea americana",
       "labelImageUrl": "https://img.example.org/033383401508/640/480/",
       "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "transmitter": "input",
-      "circuit": "input"
+      "monitor": "index",
+      "port": "navigate",
+      "bus": "program"
     },
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "labelImageUrl": "https://img.example.org/033383401508/640/480/",
-      "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "system": "program"
+      "circuit": "transmit",
+      "firewall": "quantify",
+      "matrix": "bypass",
+      "program": "compress"
     },
     {
       "@context": [
@@ -162,11 +197,43 @@
       "type": "AgProduct",
       "upc": "033383401508",
       "plu": "94225",
-      "gtin": "033383401508",
+      "product": {
+        "type": "Product",
+        "manufacturer": {
+          "type": "Organization",
+          "name": "Ebert, Buckridge and Schowalter",
+          "description": "Automated foreground help-desk",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "223 Abby Brook",
+            "addressLocality": "Port Brian",
+            "addressRegion": "West Virginia",
+            "postalCode": "41162-1947",
+            "addressCountry": "Belgium"
+          },
+          "email": "Tania_Moore67@example.org",
+          "phoneNumber": "555-561-2512"
+        },
+        "name": "Avocados",
+        "description": "Avocados, 4 pack boxes",
+        "sizeOrAmount": {
+          "type": "QuantitativeValue",
+          "unitCode": "hg/ha",
+          "value": "3446"
+        },
+        "weight": {
+          "type": "QuantitativeValue",
+          "unitCode": "hg/ha",
+          "value": "6402"
+        },
+        "sku": "529834794728"
+      },
+      "scientificName": "Persea americana",
       "labelImageUrl": "https://img.example.org/033383401508/640/480/",
       "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "system": "index",
-      "panel": "generate"
+      "interface": "copy",
+      "card": "navigate",
+      "alarm": "index"
     }
   ]
 }

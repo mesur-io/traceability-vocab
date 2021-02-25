@@ -5,24 +5,24 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Qualification",
-      "qualificationCategory": "Principal Assurance Specialist",
-      "qualificationValue": "Specialist"
+      "qualificationCategory": "Customer Interactions Supervisor",
+      "qualificationValue": "Agent"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Qualification",
-      "qualificationCategory": "Chief Paradigm Architect",
-      "qualificationValue": "Representative"
+      "qualificationCategory": "Dynamic Security Analyst",
+      "qualificationValue": "Manager"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Qualification",
-      "qualificationCategory": "Global Integration Producer",
-      "qualificationValue": "Planner"
+      "qualificationCategory": "Lead Metrics Manager",
+      "qualificationValue": "Officer"
     }
   ],
   "bad": [
@@ -30,22 +30,21 @@
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
-      "bandwidth": "compress",
-      "system": "input"
+      "qualificationCategory": "Customer Interactions Supervisor",
+      "matrix": "override",
+      "feed": "generate",
+      "program": "index"
     },
     {
-      "matrix": "calculate",
-      "interface": "generate",
-      "capacitor": "hack",
-      "microchip": "calculate"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
       "type": "Qualification",
-      "qualificationValue": "Planner",
-      "protocol": "index"
+      "qualificationCategory": "Dynamic Security Analyst",
+      "circuit": "compress",
+      "bus": "copy"
+    },
+    {
+      "interface": "compress",
+      "driver": "input",
+      "monitor": "reboot"
     }
   ]
 }

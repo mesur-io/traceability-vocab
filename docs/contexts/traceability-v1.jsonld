@@ -63,7 +63,7 @@
       }
     },
     "AgPackage": {
-      "@id": "https://w3id.org/traceability#grade",
+      "@id": "https://w3id.org/traceability#AgPackage",
       "@context": {
         "packageName": {
           "@id": "https://schema.org/name"
@@ -91,6 +91,44 @@
         }
       }
     },
+    "AgParcelDelivery": {
+      "@id": "https://schema.org/ParcelDelivery",
+      "@context": {
+        "deliveryAddress": {
+          "@id": "https://schema.org/deliveryAddress"
+        },
+        "originAddress": {
+          "@id": "https://schema.org/originAddress"
+        },
+        "foreignPortExport": {
+          "@id": "https://w3id.org/traceability#foreignPortExport"
+        },
+        "portOfEntry": {
+          "@id": "https://w3id.org/traceability#portOfEntry"
+        },
+        "deliveryMethod": {
+          "@id": "https://schema.org/DeliveryMethod"
+        },
+        "trackingNumber": {
+          "@id": "https://schema.org/trackingNumber"
+        },
+        "expectedArrival": {
+          "@id": "https://schema.org/expectedArrivalFrom"
+        },
+        "specialInstructions": {
+          "@id": "https://schema.org/comment"
+        },
+        "consignee": {
+          "@id": "https://schema.org/Organization"
+        },
+        "AgPackage": {
+          "@id": "https://w3id.org/traceability#AgPackage"
+        },
+        "item": {
+          "@id": "https://schema.org/itemShipped"
+        }
+      }
+    },
     "AgProduct": {
       "@id": "https://w3id.org/traceability#AgProduct",
       "@context": {
@@ -105,6 +143,9 @@
         },
         "product": {
           "@id": "https://www.gs1.org/voc/Product"
+        },
+        "scientificName": {
+          "@id": "https://w3id.org/traceability#scientificName"
         },
         "labelImageUrl": {
           "@id": "https://schema.org/url"
@@ -800,35 +841,6 @@
         },
         "contactPoint": {
           "@id": "https://schema.org/ContactPoint"
-        }
-      }
-    },
-    "ParcelDelivery": {
-      "@id": "https://schema.org/ParcelDelivery",
-      "@context": {
-        "deliveryAddress": {
-          "@id": "https://schema.org/deliveryAddress"
-        },
-        "originAddress": {
-          "@id": "https://schema.org/originAddress"
-        },
-        "deliveryMethod": {
-          "@id": "https://schema.org/DeliveryMethod"
-        },
-        "trackingNumber": {
-          "@id": "https://schema.org/trackingNumber"
-        },
-        "expectedArrival": {
-          "@id": "https://schema.org/expectedArrivalFrom"
-        },
-        "specialInstructions": {
-          "@id": "https://schema.org/comment"
-        },
-        "consignee": {
-          "@id": "https://schema.org/Organization"
-        },
-        "item": {
-          "@id": "https://schema.org/itemShipped"
         }
       }
     },

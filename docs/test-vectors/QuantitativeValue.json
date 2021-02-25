@@ -6,7 +6,7 @@
       ],
       "type": "QuantitativeValue",
       "unitCode": "hg/ha",
-      "value": "7962"
+      "value": "7142"
     },
     {
       "@context": [
@@ -14,7 +14,7 @@
       ],
       "type": "QuantitativeValue",
       "unitCode": "hg/ha",
-      "value": "4856"
+      "value": "7310"
     },
     {
       "@context": [
@@ -22,27 +22,34 @@
       ],
       "type": "QuantitativeValue",
       "unitCode": "hg/ha",
-      "value": "1905"
+      "value": "5823"
     }
   ],
   "bad": [
     {
-      "unitCode": "hg/ha",
-      "feed": "navigate",
-      "bandwidth": "override",
-      "application": "calculate",
-      "microchip": "quantify"
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "QuantitativeValue",
+      "value": "7142",
+      "sensor": "index"
     },
     {
-      "value": "4856",
-      "array": "calculate",
-      "circuit": "generate"
+      "type": "QuantitativeValue",
+      "unitCode": "hg/ha",
+      "value": "7310",
+      "application": "copy",
+      "monitor": "reboot",
+      "circuit": "connect"
     },
     {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
       "unitCode": "hg/ha",
-      "microchip": "connect",
-      "panel": "calculate",
-      "circuit": "navigate"
+      "array": "synthesize",
+      "system": "navigate",
+      "bandwidth": "generate"
     }
   ]
 }

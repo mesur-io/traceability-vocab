@@ -5,73 +5,73 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIevidenceDocument",
-      "lei": "V6LMTPOPNAK7W0Y8MYI9",
+      "lei": "9LR6ZY0X40C3CT7H7MQU",
       "entity": {
         "@context": [
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIentity",
-        "legalName": "Reichel, Rodriguez and Wyman",
-        "legalNameLanguage": "en_AU",
+        "legalName": "Satterfield and Sons",
+        "legalNameLanguage": "vi",
         "otherNames": [
-          "Ledner Inc",
-          "Gleichner, Doyle and Wuckert"
+          "Glover - Koepp",
+          "Bernier, Heathcote and Balistreri"
         ],
         "transliteratedOtherNames": [
-          "Ledner Inc",
-          "Gleichner, Doyle and Wuckert"
+          "Glover - Koepp",
+          "Bernier, Heathcote and Balistreri"
         ],
         "legalAddress": {
           "type": "LEIaddress",
-          "language": "en_GB",
+          "language": "zh_CN",
           "addressLines": [
-            "Bayer - Marks",
-            "1458 Wilton Garden"
+            "Fay - Anderson",
+            "5610 Megane Knolls"
           ],
-          "addressNumber": "494",
-          "addressNumberWithinBuilding": "7",
-          "mailRouting": "3089 Aufderhar Plains, 30692",
-          "city": "Flaviofurt",
-          "region": "Cambridgeshire",
-          "country": "Lao People's Democratic Republic",
-          "postalCode": "45844-7393"
+          "addressNumber": "418",
+          "addressNumberWithinBuilding": "5",
+          "mailRouting": "537 Carter Centers, 83560-9084",
+          "city": "Chelseyside",
+          "region": "Buckinghamshire",
+          "country": "Northern Mariana Islands",
+          "postalCode": "93106-1652"
         },
         "headquartersAddress": {
           "type": "LEIaddress",
-          "language": "en_IND",
+          "language": "nb_NO",
           "addressLines": [
-            "Von Group",
-            "0243 Corene Harbors"
+            "Balistreri Group",
+            "6160 Kaitlin Row"
           ],
-          "addressNumber": "181",
-          "addressNumberWithinBuilding": "4",
-          "mailRouting": "087 Mavis Hollow, 07634-0726",
-          "city": "North Wilson",
+          "addressNumber": "247",
+          "addressNumberWithinBuilding": "7",
+          "mailRouting": "2337 Benton Inlet, 58270",
+          "city": "Gleichnermouth",
           "region": "Avon",
-          "country": "Paraguay",
-          "postalCode": "23391"
+          "country": "Burkina Faso",
+          "postalCode": "28308"
         },
         "registrationAuthority": {
           "type": "LEIauthority",
-          "validationAuthorityID": "RA000001",
-          "otherValidationAuthorityID": "VW97CO51",
-          "validationAuthorityEntityID": "Z5KAZ213NAKZCTYM6UCP"
+          "validationAuthorityID": "RA000661",
+          "otherValidationAuthorityID": "PB303EWA",
+          "validationAuthorityEntityID": "M5CWOFZHDEQQV07H7RRL"
         },
-        "legalJurisdiction": "Berkshire",
-        "entityCategory": "Grocery",
+        "legalJurisdiction": "Cambridgeshire",
+        "entityCategory": "Industrial",
         "legalForm": "LLC",
         "associatedEntity": {
           "type": "Organization",
-          "leiCode": "MHN6YONCKQNUJH4T2M6Y",
-          "name": "Connelly, Ryan and Kirlin"
+          "leiCode": "7DMNH1FF096JRT5EZEXC",
+          "name": "Torp, Marvin and Douglas"
         },
-        "status": "IN PROGRESS",
-        "expirationDate": "2021-4-4",
-        "expirationReason": "productize out-of-the-box applications",
+        "status": "CONFIRMED",
+        "expirationDate": "2021-9-4",
+        "expirationReason": "exploit sexy blockchains",
         "successorEntity": {
           "type": "Organization",
-          "leiCode": "ZS1SWUT6CNODC3EQ2OG7",
-          "name": "Rowe Group"
+          "leiCode": "AV4IQ2BHQIBFECCQMZAK",
+          "name": "Volkman - Prosacco"
         },
         "otherAddresses": []
       },
@@ -80,23 +80,122 @@
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIregistration",
-        "initialRegistrationDate": "2020-10-2",
-        "lastUpdateDate": "2020-10-2",
+        "initialRegistrationDate": "2020-6-3",
+        "lastUpdateDate": "2020-6-3",
+        "status": "REQUESTED",
+        "nextRenewalDate": "2021-3-2",
+        "managingLou": "NVIMMWZMORALBQIYEBGH",
+        "validationSources": "NOT_CORROBORATED",
+        "validationAuthority": [
+          {
+            "type": "LEIauthority",
+            "validationAuthorityID": "RA000005",
+            "otherValidationAuthorityID": "9TW4D6JP",
+            "validationAuthorityEntityID": "EN7PJAIB5I3HW0QX19HW"
+          }
+        ]
+      },
+      "bic": [
+        "IJEOKHYEZI"
+      ]
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "LEIevidenceDocument",
+      "lei": "ELL8XRFWGTS9IHRFSS2K",
+      "entity": {
+        "@context": [
+          "https://w3id.org/traceability/v1"
+        ],
+        "type": "LEIentity",
+        "legalName": "Bednar - Herman",
+        "legalNameLanguage": "en_IND",
+        "otherNames": [
+          "Veum, Kunze and Feil",
+          "Kessler - Ullrich"
+        ],
+        "transliteratedOtherNames": [
+          "Veum, Kunze and Feil",
+          "Kessler - Ullrich"
+        ],
+        "legalAddress": {
+          "type": "LEIaddress",
+          "language": "fi",
+          "addressLines": [
+            "Osinski - Doyle",
+            "780 Lauryn Ford"
+          ],
+          "addressNumber": "68",
+          "addressNumberWithinBuilding": "5",
+          "mailRouting": "6985 Tatyana Greens, 75498",
+          "city": "Charitystad",
+          "region": "Bedfordshire",
+          "country": "Saint Lucia",
+          "postalCode": "69233-8123"
+        },
+        "headquartersAddress": {
+          "type": "LEIaddress",
+          "language": "ko",
+          "addressLines": [
+            "Blanda LLC",
+            "799 Bartell Locks"
+          ],
+          "addressNumber": "95",
+          "addressNumberWithinBuilding": "8",
+          "mailRouting": "14662 Mills Shoals, 89887-6808",
+          "city": "Lake Crystalberg",
+          "region": "Avon",
+          "country": "Tuvalu",
+          "postalCode": "98834-5922"
+        },
+        "registrationAuthority": {
+          "type": "LEIauthority",
+          "validationAuthorityID": "RA000661",
+          "otherValidationAuthorityID": "TMN6XK77",
+          "validationAuthorityEntityID": "2XPTLM5YAA9Q99PRCZPU"
+        },
+        "legalJurisdiction": "Avon",
+        "entityCategory": "Industrial",
+        "legalForm": "CORPORATION",
+        "associatedEntity": {
+          "type": "Organization",
+          "leiCode": "SPRLLDA37TG3257PST0R",
+          "name": "Berge and Sons"
+        },
         "status": "REJECTED",
-        "nextRenewalDate": "2021-10-6",
-        "managingLou": "GWLDBZSUMHSYMMDVFMWL",
+        "expirationDate": "2021-8-1",
+        "expirationReason": "maximize wireless initiatives",
+        "successorEntity": {
+          "type": "Organization",
+          "leiCode": "N9HV41RIRQL94TMF12DX",
+          "name": "Koepp, Borer and Kreiger"
+        },
+        "otherAddresses": []
+      },
+      "registration": {
+        "@context": [
+          "https://w3id.org/traceability/v1"
+        ],
+        "type": "LEIregistration",
+        "initialRegistrationDate": "2020-3-0",
+        "lastUpdateDate": "2020-3-0",
+        "status": "CONFIRMED",
+        "nextRenewalDate": "2021-2-1",
+        "managingLou": "YNYFNDVHCWAPFKRDEMCJ",
         "validationSources": "PARTIALLY_CORROBORATED",
         "validationAuthority": [
           {
             "type": "LEIauthority",
             "validationAuthorityID": "RA000003",
-            "otherValidationAuthorityID": "02Y46GDP",
-            "validationAuthorityEntityID": "LXGWA6R798M43QL5G8BA"
+            "otherValidationAuthorityID": "HYBXIDID",
+            "validationAuthorityEntityID": "DFZ4A6I5D2KAQR9O9X28"
           }
         ]
       },
       "bic": [
-        "FXFPLSRYZD"
+        "BPQZFRKZDT"
       ]
     },
     {
@@ -104,172 +203,73 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "LEIevidenceDocument",
-      "lei": "YEKEN6GU45CX4GTVC8MB",
+      "lei": "P1OMAYCJ9AIAC6FZFAUQ",
       "entity": {
         "@context": [
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIentity",
-        "legalName": "Leuschke - Terry",
-        "legalNameLanguage": "id_ID",
+        "legalName": "Green - Durgan",
+        "legalNameLanguage": "fi",
         "otherNames": [
-          "Will, Hills and Parisian",
-          "Ortiz and Sons"
+          "Yundt Group",
+          "Gleichner, Funk and Roberts"
         ],
         "transliteratedOtherNames": [
-          "Will, Hills and Parisian",
-          "Ortiz and Sons"
+          "Yundt Group",
+          "Gleichner, Funk and Roberts"
         ],
         "legalAddress": {
           "type": "LEIaddress",
-          "language": "fr_CH",
+          "language": "sv",
           "addressLines": [
-            "Braun, Langworth and Vandervort",
-            "2479 Thalia Locks"
+            "Gorczany - Hilll",
+            "2759 Lucas Drives"
           ],
-          "addressNumber": "342",
-          "addressNumberWithinBuilding": "3",
-          "mailRouting": "7390 Burdette Ferry, 95508-0354",
-          "city": "East Jamisonchester",
-          "region": "Avon",
-          "country": "Tunisia",
-          "postalCode": "60476-9301"
-        },
-        "headquartersAddress": {
-          "type": "LEIaddress",
-          "language": "id_ID",
-          "addressLines": [
-            "Blick, Howell and Tremblay",
-            "706 Bell Canyon"
-          ],
-          "addressNumber": "234",
+          "addressNumber": "285",
           "addressNumberWithinBuilding": "2",
-          "mailRouting": "5475 Emie Glen, 27935",
-          "city": "Lake Lolitastad",
+          "mailRouting": "5137 Quentin Crossing, 88883-3951",
+          "city": "Port Celestino",
           "region": "Berkshire",
-          "country": "Cambodia",
-          "postalCode": "76202-7797"
-        },
-        "registrationAuthority": {
-          "type": "LEIauthority",
-          "validationAuthorityID": "RA000004",
-          "otherValidationAuthorityID": "JSFHT3EB",
-          "validationAuthorityEntityID": "JZKUEE5OE6OKTVXSCDB4"
-        },
-        "legalJurisdiction": "Borders",
-        "entityCategory": "Grocery",
-        "legalForm": "LLC",
-        "associatedEntity": {
-          "type": "Organization",
-          "leiCode": "CX616JKR16OA4EFSA1WP",
-          "name": "Upton LLC"
-        },
-        "status": "REQUESTED",
-        "expirationDate": "2021-4-1",
-        "expirationReason": "incentivize mission-critical metrics",
-        "successorEntity": {
-          "type": "Organization",
-          "leiCode": "1SIVZME7F6I4XM064SHA",
-          "name": "Morar Group"
-        },
-        "otherAddresses": []
-      },
-      "registration": {
-        "@context": [
-          "https://w3id.org/traceability/v1"
-        ],
-        "type": "LEIregistration",
-        "initialRegistrationDate": "2020-7-4",
-        "lastUpdateDate": "2020-7-4",
-        "status": "REJECTED",
-        "nextRenewalDate": "2021-6-3",
-        "managingLou": "KCLFWKFVYUSFXPDDPCAH",
-        "validationSources": "PARTIALLY_CORROBORATED",
-        "validationAuthority": [
-          {
-            "type": "LEIauthority",
-            "validationAuthorityID": "RA000005",
-            "otherValidationAuthorityID": "8Q8W08I2",
-            "validationAuthorityEntityID": "1BPLX8QIQ2SL4OVAW0UZ"
-          }
-        ]
-      },
-      "bic": [
-        "BMMEBHJASX"
-      ]
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "LEIevidenceDocument",
-      "lei": "9B12W39EL7VTW6WA9D3Q",
-      "entity": {
-        "@context": [
-          "https://w3id.org/traceability/v1"
-        ],
-        "type": "LEIentity",
-        "legalName": "Lockman, Ondricka and Grant",
-        "legalNameLanguage": "ro",
-        "otherNames": [
-          "Hackett - Okuneva",
-          "Mayer Group"
-        ],
-        "transliteratedOtherNames": [
-          "Hackett - Okuneva",
-          "Mayer Group"
-        ],
-        "legalAddress": {
-          "type": "LEIaddress",
-          "language": "ro",
-          "addressLines": [
-            "Schmidt - Labadie",
-            "730 Ullrich Village"
-          ],
-          "addressNumber": "236",
-          "addressNumberWithinBuilding": "7",
-          "mailRouting": "7213 Lueilwitz Park, 50421",
-          "city": "East Kelsieborough",
-          "region": "Borders",
-          "country": "Taiwan",
-          "postalCode": "02318-7016"
+          "country": "Argentina",
+          "postalCode": "28799-5337"
         },
         "headquartersAddress": {
           "type": "LEIaddress",
-          "language": "es",
+          "language": "uk",
           "addressLines": [
-            "Wuckert, Little and Fadel",
-            "17397 Adolfo Oval"
+            "Gusikowski - Ziemann",
+            "92143 Towne Roads"
           ],
-          "addressNumber": "467",
-          "addressNumberWithinBuilding": "8",
-          "mailRouting": "264 Jones Brook, 39130",
-          "city": "Noahside",
-          "region": "Borders",
-          "country": "Belarus",
-          "postalCode": "63486-3440"
+          "addressNumber": "440",
+          "addressNumberWithinBuilding": "2",
+          "mailRouting": "721 Albert Burg, 49554",
+          "city": "Klockobury",
+          "region": "Berkshire",
+          "country": "Kenya",
+          "postalCode": "34986-6348"
         },
         "registrationAuthority": {
           "type": "LEIauthority",
-          "validationAuthorityID": "RA000001",
-          "otherValidationAuthorityID": "ANHYK3XQ",
-          "validationAuthorityEntityID": "KNVYZ5XJ73FDKRCM5S4O"
+          "validationAuthorityID": "RA000002",
+          "otherValidationAuthorityID": "YGM9KZVM",
+          "validationAuthorityEntityID": "XG10IUHLI1PFLSOF0JKB"
         },
-        "legalJurisdiction": "Berkshire",
-        "entityCategory": "Grocery",
+        "legalJurisdiction": "Buckinghamshire",
+        "entityCategory": "Jewelery",
         "legalForm": "CORPORATION",
         "associatedEntity": {
           "type": "Organization",
-          "leiCode": "7XPVYT96O4AW25HOHI0V",
-          "name": "Cole Group"
+          "leiCode": "BTXKF3R3R5WEV7NSRJA2",
+          "name": "Cormier and Sons"
         },
-        "status": "IN PROGRESS",
-        "expirationDate": "2021-1-6",
-        "expirationReason": "brand compelling e-tailers",
+        "status": "REJECTED",
+        "expirationDate": "2021-6-6",
+        "expirationReason": "recontextualize B2B applications",
         "successorEntity": {
           "type": "Organization",
-          "leiCode": "BAOIHB3B4VUW6S91H76D",
-          "name": "Dibbert, Zboncak and Hammes"
+          "leiCode": "J3K8QH3P4ZSFAFI8N386",
+          "name": "Gibson, Lueilwitz and Kunze"
         },
         "otherAddresses": []
       },
@@ -278,40 +278,56 @@
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIregistration",
-        "initialRegistrationDate": "2020-10-3",
-        "lastUpdateDate": "2020-10-3",
-        "status": "REQUESTED",
-        "nextRenewalDate": "2021-9-0",
-        "managingLou": "NTVEKZKYIYNHMRBIABUL",
+        "initialRegistrationDate": "2020-6-0",
+        "lastUpdateDate": "2020-6-0",
+        "status": "REJECTED",
+        "nextRenewalDate": "2021-2-1",
+        "managingLou": "NHVZNXFVVYPKOWICGAGS",
         "validationSources": "NOT_CORROBORATED",
         "validationAuthority": [
           {
             "type": "LEIauthority",
-            "validationAuthorityID": "RA000002",
-            "otherValidationAuthorityID": "R6ZY0X40",
-            "validationAuthorityEntityID": "C3CT7H7MQUN7DMNH1FF0"
+            "validationAuthorityID": "RA000005",
+            "otherValidationAuthorityID": "GT9Z046F",
+            "validationAuthorityEntityID": "TSNNHM8AIJ8I7OKDYCNC"
           }
         ]
       },
       "bic": [
-        "ZKFANIAJGJ"
+        "QXYGNUBSPC"
       ]
     }
   ],
   "bad": [
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
+      "firewall": "hack",
+      "monitor": "compress",
+      "matrix": "index"
+    },
+    {
       "type": "LEIevidenceDocument",
-      "lei": "V6LMTPOPNAK7W0Y8MYI9",
-      "bic": [
-        "FXFPLSRYZD"
-      ],
-      "program": "parse",
-      "alarm": "generate",
-      "microchip": "back up",
-      "application": "bypass"
+      "registration": {
+        "@context": [
+          "https://w3id.org/traceability/v1"
+        ],
+        "type": "LEIregistration",
+        "initialRegistrationDate": "2020-3-0",
+        "lastUpdateDate": "2020-3-0",
+        "status": "CONFIRMED",
+        "nextRenewalDate": "2021-2-1",
+        "managingLou": "YNYFNDVHCWAPFKRDEMCJ",
+        "validationSources": "PARTIALLY_CORROBORATED",
+        "validationAuthority": [
+          {
+            "type": "LEIauthority",
+            "validationAuthorityID": "RA000003",
+            "otherValidationAuthorityID": "HYBXIDID",
+            "validationAuthorityEntityID": "DFZ4A6I5D2KAQR9O9X28"
+          }
+        ]
+      },
+      "circuit": "parse",
+      "hard drive": "input"
     },
     {
       "registration": {
@@ -319,28 +335,24 @@
           "https://w3id.org/traceability/v1"
         ],
         "type": "LEIregistration",
-        "initialRegistrationDate": "2020-7-4",
-        "lastUpdateDate": "2020-7-4",
+        "initialRegistrationDate": "2020-6-0",
+        "lastUpdateDate": "2020-6-0",
         "status": "REJECTED",
-        "nextRenewalDate": "2021-6-3",
-        "managingLou": "KCLFWKFVYUSFXPDDPCAH",
-        "validationSources": "PARTIALLY_CORROBORATED",
+        "nextRenewalDate": "2021-2-1",
+        "managingLou": "NHVZNXFVVYPKOWICGAGS",
+        "validationSources": "NOT_CORROBORATED",
         "validationAuthority": [
           {
             "type": "LEIauthority",
             "validationAuthorityID": "RA000005",
-            "otherValidationAuthorityID": "8Q8W08I2",
-            "validationAuthorityEntityID": "1BPLX8QIQ2SL4OVAW0UZ"
+            "otherValidationAuthorityID": "GT9Z046F",
+            "validationAuthorityEntityID": "TSNNHM8AIJ8I7OKDYCNC"
           }
         ]
       },
-      "protocol": "synthesize"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "protocol": "index"
+      "driver": "reboot",
+      "bus": "quantify",
+      "array": "calculate"
     }
   ]
 }

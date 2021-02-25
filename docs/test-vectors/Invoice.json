@@ -5,39 +5,38 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Invoice",
-      "identifier": "IN-97873"
+      "identifier": "IN-35422"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Invoice",
-      "identifier": "IN-75833"
+      "identifier": "IN-90352"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Invoice",
-      "identifier": "IN-57400"
+      "identifier": "IN-76069"
     }
   ],
   "bad": [
     {
-      "identifier": "IN-97873",
-      "driver": "navigate",
-      "alarm": "hack",
-      "system": "override"
+      "type": "Invoice",
+      "transmitter": "bypass",
+      "feed": "quantify",
+      "card": "back up"
     },
     {
-      "circuit": "connect",
-      "sensor": "compress"
+      "sensor": "transmit",
+      "circuit": "hack"
     },
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "firewall": "bypass"
+      "type": "Invoice",
+      "identifier": "IN-76069",
+      "application": "calculate"
     }
   ]
 }

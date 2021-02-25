@@ -5,119 +5,122 @@
         "https://w3id.org/traceability/v1"
       ],
       "type": "Person",
-      "firstName": "Antwan",
-      "lastName": "Zboncak",
-      "email": "Katelin.McDermott@example.net",
-      "phoneNumber": "555-594-2570",
+      "firstName": "Jakob",
+      "lastName": "Torphy",
+      "email": "Darren8@example.com",
+      "phoneNumber": "555-735-8718",
       "worksFor": {
         "type": "Organization",
-        "name": "Conroy, Ritchie and Hahn",
-        "description": "Multi-layered zero defect challenge",
+        "name": "Wilderman - Hauck",
+        "description": "Managed maximized software",
         "address": {
           "type": "PostalAddress",
-          "streetAddress": "649 Noemy Ports",
-          "addressLocality": "Arjunmouth",
-          "addressRegion": "New York",
-          "postalCode": "03510-9661",
-          "addressCountry": "El Salvador"
-        },
-        "email": "Tomas.Auer86@example.com",
-        "phoneNumber": "555-598-6750"
-      },
-      "jobTitle": "Future Mobility Representative"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "Person",
-      "firstName": "Charlotte",
-      "lastName": "Treutel",
-      "email": "Clinton.Murazik@example.org",
-      "phoneNumber": "555-138-1663",
-      "worksFor": {
-        "type": "Organization",
-        "name": "Beahan - Bernhard",
-        "description": "Mandatory motivating monitoring",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "4515 Ron Mountain",
-          "addressLocality": "Runtemouth",
+          "streetAddress": "309 Walsh Isle",
+          "addressLocality": "Denesikfort",
           "addressRegion": "Montana",
-          "postalCode": "61771",
-          "addressCountry": "Solomon Islands"
+          "postalCode": "55756-1699",
+          "addressCountry": "Slovakia (Slovak Republic)"
         },
-        "email": "Jadyn50@example.net",
-        "phoneNumber": "555-185-4784"
+        "email": "Janiya.Denesik43@example.com",
+        "phoneNumber": "555-346-2031"
       },
-      "jobTitle": "National Communications Technician"
+      "jobTitle": "Senior Response Supervisor"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Person",
-      "firstName": "Deangelo",
-      "lastName": "Hagenes",
-      "email": "Eda.Weber@example.com",
-      "phoneNumber": "555-259-2858",
+      "firstName": "Rebecca",
+      "lastName": "Hahn",
+      "email": "Heaven_Schroeder@example.org",
+      "phoneNumber": "555-884-6443",
       "worksFor": {
         "type": "Organization",
-        "name": "Toy, Dibbert and Halvorson",
-        "description": "Synergized client-server success",
+        "name": "Shanahan, Rutherford and Sporer",
+        "description": "Public-key heuristic help-desk",
         "address": {
           "type": "PostalAddress",
-          "streetAddress": "17757 Koss Keys",
-          "addressLocality": "East Sarai",
-          "addressRegion": "Illinois",
-          "postalCode": "03703-1768",
-          "addressCountry": "Mali"
+          "streetAddress": "242 Perry Stravenue",
+          "addressLocality": "Franzchester",
+          "addressRegion": "Tennessee",
+          "postalCode": "58831-7952",
+          "addressCountry": "Papua New Guinea"
         },
-        "email": "Gertrude_Crist@example.com",
-        "phoneNumber": "555-449-3354"
+        "email": "Alena41@example.com",
+        "phoneNumber": "555-759-9678"
       },
-      "jobTitle": "Internal Solutions Strategist"
+      "jobTitle": "Human Configuration Engineer"
+    },
+    {
+      "@context": [
+        "https://w3id.org/traceability/v1"
+      ],
+      "type": "Person",
+      "firstName": "Rhea",
+      "lastName": "Sanford",
+      "email": "Alejandrin38@example.com",
+      "phoneNumber": "555-559-6428",
+      "worksFor": {
+        "type": "Organization",
+        "name": "Cormier - Murazik",
+        "description": "Object-based intangible moratorium",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "41302 Magdalena Avenue",
+          "addressLocality": "West Candice",
+          "addressRegion": "Louisiana",
+          "postalCode": "54993-1820",
+          "addressCountry": "Poland"
+        },
+        "email": "Retha_Blick90@example.org",
+        "phoneNumber": "555-814-7962"
+      },
+      "jobTitle": "District Tactics Facilitator"
     }
   ],
   "bad": [
     {
-      "circuit": "compress",
-      "sensor": "index",
-      "bus": "back up"
+      "lastName": "Torphy",
+      "email": "Darren8@example.com",
+      "worksFor": {
+        "type": "Organization",
+        "name": "Wilderman - Hauck",
+        "description": "Managed maximized software",
+        "address": {
+          "type": "PostalAddress",
+          "streetAddress": "309 Walsh Isle",
+          "addressLocality": "Denesikfort",
+          "addressRegion": "Montana",
+          "postalCode": "55756-1699",
+          "addressCountry": "Slovakia (Slovak Republic)"
+        },
+        "email": "Janiya.Denesik43@example.com",
+        "phoneNumber": "555-346-2031"
+      },
+      "alarm": "synthesize",
+      "microchip": "parse",
+      "feed": "navigate",
+      "system": "reboot"
     },
     {
       "@context": [
         "https://w3id.org/traceability/v1"
       ],
       "type": "Person",
-      "lastName": "Treutel",
-      "jobTitle": "National Communications Technician",
-      "transmitter": "index"
+      "firstName": "Rebecca",
+      "lastName": "Hahn",
+      "email": "Heaven_Schroeder@example.org",
+      "phoneNumber": "555-884-6443",
+      "pixel": "quantify",
+      "sensor": "hack",
+      "firewall": "reboot",
+      "protocol": "copy"
     },
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "firstName": "Deangelo",
-      "lastName": "Hagenes",
-      "email": "Eda.Weber@example.com",
-      "worksFor": {
-        "type": "Organization",
-        "name": "Toy, Dibbert and Halvorson",
-        "description": "Synergized client-server success",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "17757 Koss Keys",
-          "addressLocality": "East Sarai",
-          "addressRegion": "Illinois",
-          "postalCode": "03703-1768",
-          "addressCountry": "Mali"
-        },
-        "email": "Gertrude_Crist@example.com",
-        "phoneNumber": "555-449-3354"
-      },
-      "jobTitle": "Internal Solutions Strategist",
-      "protocol": "quantify"
+      "phoneNumber": "555-559-6428",
+      "program": "bypass",
+      "feed": "calculate"
     }
   ]
 }

@@ -27,22 +27,19 @@
   ],
   "bad": [
     {
-      "microchip": "program",
-      "system": "program",
-      "bus": "index"
-    },
-    {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "url": "https://brand.example.com",
-      "alarm": "reboot",
-      "bandwidth": "quantify",
-      "capacitor": "compress"
-    },
-    {
       "type": "Brand",
-      "protocol": "index"
+      "hard drive": "program"
+    },
+    {
+      "alarm": "navigate",
+      "bus": "navigate",
+      "protocol": "navigate",
+      "driver": "bypass"
+    },
+    {
+      "url": "https://brand.example.com",
+      "alarm": "synthesize",
+      "driver": "reboot"
     }
   ]
 }

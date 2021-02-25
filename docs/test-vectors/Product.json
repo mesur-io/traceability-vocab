@@ -7,40 +7,40 @@
       "type": "Product",
       "manufacturer": {
         "type": "Person",
-        "firstName": "Vito",
-        "lastName": "Marquardt",
-        "email": "Jaylen15@example.org",
-        "phoneNumber": "555-865-4459",
+        "firstName": "Seamus",
+        "lastName": "Wolf",
+        "email": "Arlie34@example.org",
+        "phoneNumber": "555-871-9556",
         "worksFor": {
           "type": "Organization",
-          "name": "Kuhn LLC",
-          "description": "Team-oriented transitional workforce",
+          "name": "Lehner LLC",
+          "description": "Future-proofed exuding workforce",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "961 Carolyne Meadow",
-            "addressLocality": "North Estefaniabury",
-            "addressRegion": "New Hampshire",
-            "postalCode": "30290-0804",
-            "addressCountry": "Bermuda"
+            "streetAddress": "072 Orin Harbors",
+            "addressLocality": "Jesustown",
+            "addressRegion": "Maryland",
+            "postalCode": "72150",
+            "addressCountry": "Cocos (Keeling) Islands"
           },
-          "email": "Ashlee_Rempel51@example.com",
-          "phoneNumber": "555-802-4847"
+          "email": "Ayana5@example.org",
+          "phoneNumber": "555-381-7427"
         },
-        "jobTitle": "Product Division Supervisor"
+        "jobTitle": "Dynamic Security Designer"
       },
-      "name": "Intelligent Fresh Shoes",
-      "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+      "name": "Small Metal Soap",
+      "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
       "sizeOrAmount": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "5619"
+        "value": "885"
       },
       "weight": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "5024"
+        "value": "846"
       },
-      "sku": "488755621946"
+      "sku": "853153112132"
     },
     {
       "@context": [
@@ -49,32 +49,32 @@
       "type": "Product",
       "manufacturer": {
         "type": "Organization",
-        "name": "Kassulke - Murray",
-        "description": "Cross-group bottom-line protocol",
+        "name": "Hagenes - Yundt",
+        "description": "Cloned systematic database",
         "address": {
           "type": "PostalAddress",
-          "streetAddress": "24061 Bennie Ports",
-          "addressLocality": "Reinashire",
-          "addressRegion": "Iowa",
-          "postalCode": "03315-9991",
-          "addressCountry": "Anguilla"
+          "streetAddress": "267 Dandre Haven",
+          "addressLocality": "East Myrlside",
+          "addressRegion": "Kentucky",
+          "postalCode": "99086-0022",
+          "addressCountry": "Czech Republic"
         },
-        "email": "Maribel_Hermann@example.net",
-        "phoneNumber": "555-322-5787"
+        "email": "Rowan.Glover52@example.com",
+        "phoneNumber": "555-685-6626"
       },
-      "name": "Generic Soft Chips",
-      "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+      "name": "Intelligent Frozen Mouse",
+      "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
       "sizeOrAmount": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "9604"
+        "value": "6330"
       },
       "weight": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "6257"
+        "value": "1831"
       },
-      "sku": "995014151358"
+      "sku": "409879730717"
     },
     {
       "@context": [
@@ -83,90 +83,93 @@
       "type": "Product",
       "manufacturer": {
         "type": "Person",
-        "firstName": "Vida",
-        "lastName": "Ernser",
-        "email": "Bethel_Kertzmann3@example.org",
-        "phoneNumber": "555-184-7402",
+        "firstName": "Keith",
+        "lastName": "Hauck",
+        "email": "Marley_Mayer5@example.net",
+        "phoneNumber": "555-816-8562",
         "worksFor": {
           "type": "Organization",
-          "name": "Schuppe, Wyman and Friesen",
-          "description": "Visionary directional budgetary management",
+          "name": "Daniel, Kuvalis and Kuhic",
+          "description": "Intuitive dynamic frame",
           "address": {
             "type": "PostalAddress",
-            "streetAddress": "9467 Daphne Grove",
-            "addressLocality": "Lake Jazmynfurt",
-            "addressRegion": "Hawaii",
-            "postalCode": "95149",
-            "addressCountry": "Barbados"
+            "streetAddress": "639 Amparo Lodge",
+            "addressLocality": "Ansleyview",
+            "addressRegion": "Colorado",
+            "postalCode": "28742-0174",
+            "addressCountry": "Morocco"
           },
-          "email": "Deborah_Kub24@example.net",
-          "phoneNumber": "555-735-9099"
+          "email": "Jacinto_Stoltenberg61@example.com",
+          "phoneNumber": "555-605-3445"
         },
-        "jobTitle": "Dynamic Response Administrator"
+        "jobTitle": "Lead Marketing Facilitator"
       },
-      "name": "Unbranded Frozen Towels",
-      "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "name": "Handmade Cotton Car",
+      "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
       "sizeOrAmount": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "5526"
+        "value": "9253"
       },
       "weight": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "7695"
+        "value": "201"
       },
-      "sku": "238950943838"
+      "sku": "931581505709"
     }
   ],
   "bad": [
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
-      "type": "Product",
-      "name": "Intelligent Fresh Shoes",
-      "sensor": "override",
-      "circuit": "copy"
+      "protocol": "back up",
+      "sensor": "hack"
     },
     {
-      "@context": [
-        "https://w3id.org/traceability/v1"
-      ],
+      "type": "Product",
+      "weight": {
+        "type": "QuantitativeValue",
+        "unitCode": "hg/ha",
+        "value": "1831"
+      },
+      "firewall": "compress",
+      "driver": "synthesize"
+    },
+    {
       "type": "Product",
       "manufacturer": {
-        "type": "Organization",
-        "name": "Kassulke - Murray",
-        "description": "Cross-group bottom-line protocol",
-        "address": {
-          "type": "PostalAddress",
-          "streetAddress": "24061 Bennie Ports",
-          "addressLocality": "Reinashire",
-          "addressRegion": "Iowa",
-          "postalCode": "03315-9991",
-          "addressCountry": "Anguilla"
+        "type": "Person",
+        "firstName": "Keith",
+        "lastName": "Hauck",
+        "email": "Marley_Mayer5@example.net",
+        "phoneNumber": "555-816-8562",
+        "worksFor": {
+          "type": "Organization",
+          "name": "Daniel, Kuvalis and Kuhic",
+          "description": "Intuitive dynamic frame",
+          "address": {
+            "type": "PostalAddress",
+            "streetAddress": "639 Amparo Lodge",
+            "addressLocality": "Ansleyview",
+            "addressRegion": "Colorado",
+            "postalCode": "28742-0174",
+            "addressCountry": "Morocco"
+          },
+          "email": "Jacinto_Stoltenberg61@example.com",
+          "phoneNumber": "555-605-3445"
         },
-        "email": "Maribel_Hermann@example.net",
-        "phoneNumber": "555-322-5787"
+        "jobTitle": "Lead Marketing Facilitator"
       },
-      "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
       "sizeOrAmount": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "9604"
+        "value": "9253"
       },
       "weight": {
         "type": "QuantitativeValue",
         "unitCode": "hg/ha",
-        "value": "6257"
+        "value": "201"
       },
-      "sku": "995014151358",
-      "driver": "calculate"
-    },
-    {
-      "type": "Product",
-      "sku": "238950943838",
-      "matrix": "input"
+      "firewall": "calculate"
     }
   ]
 }
