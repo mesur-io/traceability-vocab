@@ -4,13 +4,13 @@ faker.seed(42);
 const _ = require('lodash');
 const { getAgProduct } = require('./AgProduct');
 const { getObservation } = require('./Observation');
-const { getEntity } = require('./Entity');
+const { getOrganization } = require('./Organization');
 const { getPerson } = require('./Person');
 const { getPlace } = require('./Place');
 
 const getAgActivity = () => {
   // Get Entity
-  const farm = getEntity();
+  const farm = getOrganization();
   delete farm['@context'];
   farm.name = "Jimbo's Awesome Farm";
   farm.description = 'Sustainable growth, healthy products';
@@ -69,12 +69,12 @@ const getAgActivity = () => {
     '@context': ['https://w3id.org/traceability/v1'],
     type: 'AgActivity',
     farm,
-    actor: farmer,
+    actor: [farmer],
     field,
     activityDate: '2020-02-15',
     activityType: 'spray',
     agProduct,
-    observation,
+    observation: [observation],
   };
   return example;
 };
