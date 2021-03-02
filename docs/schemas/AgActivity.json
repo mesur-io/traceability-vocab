@@ -70,5 +70,7 @@
                 "$ref": "https://w3id.org/traceability/schemas/Observation.json"
             }
         }
-    }
+    },
+    "additionalProperties": false,
+    "examples": []
 }
