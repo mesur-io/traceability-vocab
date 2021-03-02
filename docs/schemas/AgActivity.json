@@ -20,10 +20,10 @@
             ]
         },
         "farm": {
-            "$comment": "{\"term\": \"farm\", \"@id\": \"https://w3id.org/traceability#dfn-entities\"}",
+            "$comment": "{\"term\": \"farm\", \"@id\": \"https://w3id.org/traceability#Organization\"}",
             "title": "Farm",
             "description": "The Farm or business entity performing the activity.",
-            "$ref": "https://w3id.org/traceability/schemas/Entity.json"
+            "$ref": "https://w3id.org/traceability/schemas/Organization.json"
         },
         "actor": {
             "$comment": "{\"term\": \"actor\", \"@id\": \"https://w3id.org/traceability#Person\"}",
