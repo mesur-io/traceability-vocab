@@ -24,8 +24,8 @@ const getAgParcelDelivery = () => {
   delete consignee['@context'];
 
   // Get AgPackage
-  const AgPackage = getAgPackage();
-  delete AgPackage['@context'];
+  const agPackage = getAgPackage();
+  delete agPackage['@context'];
 
   // Include test data for delivery methods.
   const randomType = Object.keys(deliveryTypes)[
@@ -48,7 +48,7 @@ const getAgParcelDelivery = () => {
     expectedArrival: '2021-03-14',
     specialInstructions: 'The package is top-heavy so handle with appropriate caution.',
     consignee,
-    AgPackage,
+    AgPackage: [agPackage],
   };
   return example;
 };
