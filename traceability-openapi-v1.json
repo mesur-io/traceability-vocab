@@ -152,6 +152,29 @@
         }
       }
     },
+    "/BillOfLadingCertificate": {
+      "get": {
+        "description": "BillOfLadingCertificate",
+        "responses": {
+          "200": {
+            "description": "A list of all BillOfLadingCertificate objects from the system that the user has access to",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BillOfLadingCertificate"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server error"
+          }
+        }
+      }
+    },
     "/Brand": {
       "get": {
         "description": "Brand",
@@ -164,29 +187,6 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/Brand"
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server error"
-          }
-        }
-      }
-    },
-    "/CertifiedMillTestReport": {
-      "get": {
-        "description": "CertifiedMillTestReport",
-        "responses": {
-          "200": {
-            "description": "A list of all CertifiedMillTestReport objects from the system that the user has access to",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/CertifiedMillTestReport"
                   }
                 }
               }
@@ -244,18 +244,41 @@
         }
       }
     },
-    "/CommercialInvoiceCredential": {
+    "/CommercialInvoice": {
       "get": {
-        "description": "CommercialInvoiceCredential",
+        "description": "CommercialInvoice",
         "responses": {
           "200": {
-            "description": "A list of all CommercialInvoiceCredential objects from the system that the user has access to",
+            "description": "A list of all CommercialInvoice objects from the system that the user has access to",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CommercialInvoiceCredential"
+                    "$ref": "#/components/schemas/CommercialInvoice"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server error"
+          }
+        }
+      }
+    },
+    "/CommercialInvoiceCertificate": {
+      "get": {
+        "description": "CommercialInvoiceCertificate",
+        "responses": {
+          "200": {
+            "description": "A list of all CommercialInvoiceCertificate objects from the system that the user has access to",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CommercialInvoiceCertificate"
                   }
                 }
               }
@@ -819,6 +842,29 @@
         }
       }
     },
+    "/Inbond": {
+      "get": {
+        "description": "Inbond",
+        "responses": {
+          "200": {
+            "description": "A list of all Inbond objects from the system that the user has access to",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Inbond"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server error"
+          }
+        }
+      }
+    },
     "/InspectionReport": {
       "get": {
         "description": "InspectionReport",
@@ -1187,6 +1233,98 @@
         }
       }
     },
+    "/MillTestReport": {
+      "get": {
+        "description": "MillTestReport",
+        "responses": {
+          "200": {
+            "description": "A list of all MillTestReport objects from the system that the user has access to",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MillTestReport"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server error"
+          }
+        }
+      }
+    },
+    "/MillTestReportCertificate": {
+      "get": {
+        "description": "MillTestReportCertificate",
+        "responses": {
+          "200": {
+            "description": "A list of all MillTestReportCertificate objects from the system that the user has access to",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MillTestReportCertificate"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server error"
+          }
+        }
+      }
+    },
+    "/NaturalGasProduct": {
+      "get": {
+        "description": "NaturalGasProduct",
+        "responses": {
+          "200": {
+            "description": "A list of all NaturalGasProduct objects from the system that the user has access to",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NaturalGasProduct"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server error"
+          }
+        }
+      }
+    },
+    "/OGBillOfLading": {
+      "get": {
+        "description": "OGBillOfLading",
+        "responses": {
+          "200": {
+            "description": "A list of all OGBillOfLading objects from the system that the user has access to",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OGBillOfLading"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server error"
+          }
+        }
+      }
+    },
     "/Observation": {
       "get": {
         "description": "Observation",
@@ -1475,29 +1613,6 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/Purchase"
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server error"
-          }
-        }
-      }
-    },
-    "/QPInbond": {
-      "get": {
-        "description": "QPInbond",
-        "responses": {
-          "200": {
-            "description": "A list of all QPInbond objects from the system that the user has access to",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/QPInbond"
                   }
                 }
               }
@@ -2070,6 +2185,62 @@
         },
         "additionalProperties": false
       },
+      "BillOfLadingCertificate": {
+        "title": "Bill of Lading Certificate",
+        "description": "Certifications made about an BOL",
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "array",
+            "enum": [
+              [
+                "https://www.w3.org/2018/credentials/v1",
+                "https://w3id.org/traceability/v1"
+              ]
+            ],
+            "items": {}
+          },
+          "type": {
+            "type": "array",
+            "enum": [
+              [
+                "VerifiableCredential",
+                "BillOfLadingCertificate"
+              ]
+            ],
+            "items": {}
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "issuanceDate": {
+            "type": "string"
+          },
+          "issuer": {
+            "type": "object"
+          },
+          "credentialSubject": {
+            "type": "object"
+          },
+          "proof": {
+            "type": "object"
+          },
+          "relatedLink": {
+            "title": "Related Link",
+            "description": "Links related to this verifiable credential",
+            "type": "array",
+            "items": {}
+          }
+        },
+        "additionalProperties": false,
+        "required": []
+      },
       "Brand": {
         "title": "Brand",
         "description": "Brand information for entities.",
@@ -2101,945 +2272,6 @@
             "type": "string"
           }
         },
-        "additionalProperties": false
-      },
-      "CertifiedMillTestReport": {
-        "title": "Certified Mill Test Report",
-        "description": "Certifications made by a manufacturer of a metal product.",
-        "type": "object",
-        "properties": {
-          "@context": {
-            "type": "array",
-            "items": {}
-          },
-          "type": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "array",
-                "items": {}
-              }
-            ]
-          },
-          "heatNumber": {
-            "type": "string"
-          },
-          "category": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "specification": {
-            "type": "string"
-          },
-          "grade": {
-            "type": "string"
-          },
-          "size": {
-            "type": "string"
-          },
-          "originalCountryOfMeltAndPour": {
-            "type": "string"
-          },
-          "manufacturer": {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string"
-              },
-              "globalLocationNumber": {
-                "type": "string"
-              },
-              "geo": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "type": "string"
-                  },
-                  "latitude": {
-                    "type": "string"
-                  },
-                  "longitude": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "type",
-                  "latitude",
-                  "longitude"
-                ]
-              },
-              "address": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "type": "string"
-                  },
-                  "organizationName": {
-                    "type": "string"
-                  },
-                  "streetAddress": {
-                    "type": "string"
-                  },
-                  "addressLocality": {
-                    "type": "string"
-                  },
-                  "addressRegion": {
-                    "type": "string"
-                  },
-                  "postalCode": {
-                    "type": "string"
-                  },
-                  "addressCountry": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "type",
-                  "organizationName",
-                  "streetAddress",
-                  "addressLocality",
-                  "addressRegion",
-                  "postalCode",
-                  "addressCountry"
-                ]
-              }
-            },
-            "required": [
-              "type",
-              "globalLocationNumber",
-              "geo",
-              "address"
-            ]
-          },
-          "purchase": {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string"
-              },
-              "purchaseOrder": {
-                "type": "string"
-              },
-              "invoice": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "type": "string"
-                  },
-                  "identifier": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "type",
-                  "identifier"
-                ]
-              },
-              "customer": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "type": "string"
-                  },
-                  "globalLocationNumber": {
-                    "type": "string"
-                  },
-                  "contactPoint": {
-                    "type": "array",
-                    "items": [
-                      {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "jobTitle": {
-                            "type": "string"
-                          },
-                          "email": {
-                            "type": "string"
-                          },
-                          "phoneNumber": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "name",
-                          "jobTitle",
-                          "email",
-                          "phoneNumber"
-                        ]
-                      },
-                      {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "address": {
-                            "type": "object",
-                            "properties": {
-                              "type": {
-                                "type": "string"
-                              },
-                              "streetAddress": {
-                                "type": "string"
-                              },
-                              "addressLocality": {
-                                "type": "string"
-                              },
-                              "addressRegion": {
-                                "type": "string"
-                              },
-                              "postalCode": {
-                                "type": "string"
-                              },
-                              "addressCountry": {
-                                "type": "string"
-                              }
-                            },
-                            "required": [
-                              "type",
-                              "streetAddress",
-                              "addressLocality",
-                              "addressRegion",
-                              "postalCode",
-                              "addressCountry"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "address"
-                        ]
-                      }
-                    ]
-                  }
-                },
-                "required": [
-                  "type",
-                  "globalLocationNumber",
-                  "contactPoint"
-                ]
-              }
-            },
-            "required": [
-              "type",
-              "purchaseOrder",
-              "invoice",
-              "customer"
-            ]
-          },
-          "shipment": {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string"
-              },
-              "deliveryMethod": {
-                "type": "string"
-              },
-              "trackingNumber": {
-                "type": "string"
-              },
-              "originAddress": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "type": "string"
-                  },
-                  "organizationName": {
-                    "type": "string"
-                  },
-                  "streetAddress": {
-                    "type": "string"
-                  },
-                  "addressLocality": {
-                    "type": "string"
-                  },
-                  "addressRegion": {
-                    "type": "string"
-                  },
-                  "postalCode": {
-                    "type": "string"
-                  },
-                  "addressCountry": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "type",
-                  "organizationName",
-                  "streetAddress",
-                  "addressLocality",
-                  "addressRegion",
-                  "postalCode",
-                  "addressCountry"
-                ]
-              },
-              "deliveryAddress": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "type": "string"
-                  },
-                  "organizationName": {
-                    "type": "string"
-                  },
-                  "streetAddress": {
-                    "type": "string"
-                  },
-                  "addressLocality": {
-                    "type": "string"
-                  },
-                  "addressRegion": {
-                    "type": "string"
-                  },
-                  "postalCode": {
-                    "type": "string"
-                  },
-                  "addressCountry": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "type",
-                  "organizationName",
-                  "streetAddress",
-                  "addressLocality",
-                  "addressRegion",
-                  "postalCode",
-                  "addressCountry"
-                ]
-              }
-            },
-            "required": [
-              "type",
-              "deliveryMethod",
-              "trackingNumber",
-              "originAddress",
-              "deliveryAddress"
-            ]
-          },
-          "inspection": {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string"
-              },
-              "comment": {
-                "type": "string"
-              },
-              "observation": {
-                "type": "array",
-                "items": [
-                  {
-                    "type": "object",
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "property": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "formula": {
-                            "type": "string"
-                          },
-                          "inchi": {
-                            "type": "string"
-                          },
-                          "inchikey": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "name",
-                          "formula",
-                          "inchi",
-                          "inchikey"
-                        ]
-                      },
-                      "measurement": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "unitCode": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "value",
-                          "unitCode"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "property",
-                      "measurement"
-                    ]
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "property": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "identifier": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "description": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "identifier",
-                          "name",
-                          "description"
-                        ]
-                      },
-                      "measurement": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "unitCode": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "value",
-                          "unitCode"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "property",
-                      "measurement"
-                    ]
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "property": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "formula": {
-                            "type": "string"
-                          },
-                          "inchi": {
-                            "type": "string"
-                          },
-                          "inchikey": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "name",
-                          "formula",
-                          "inchi",
-                          "inchikey"
-                        ]
-                      },
-                      "measurement": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "unitCode": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "value",
-                          "unitCode"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "property",
-                      "measurement"
-                    ]
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "property": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "formula": {
-                            "type": "string"
-                          },
-                          "inchi": {
-                            "type": "string"
-                          },
-                          "inchikey": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "name",
-                          "formula",
-                          "inchi",
-                          "inchikey"
-                        ]
-                      },
-                      "measurement": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "unitCode": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "value",
-                          "unitCode"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "property",
-                      "measurement"
-                    ]
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "property": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "identifier": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "description": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "identifier",
-                          "name",
-                          "description"
-                        ]
-                      },
-                      "measurement": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "unitCode": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "value",
-                          "unitCode"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "property",
-                      "measurement"
-                    ]
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "property": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "formula": {
-                            "type": "string"
-                          },
-                          "inchi": {
-                            "type": "string"
-                          },
-                          "inchikey": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "name",
-                          "formula",
-                          "inchi",
-                          "inchikey"
-                        ]
-                      },
-                      "measurement": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "unitCode": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "value",
-                          "unitCode"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "property",
-                      "measurement"
-                    ]
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "property": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "identifier": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "description": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "identifier",
-                          "name",
-                          "description"
-                        ]
-                      },
-                      "measurement": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "unitCode": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "value",
-                          "unitCode"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "property",
-                      "measurement"
-                    ]
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "property": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "formula": {
-                            "type": "string"
-                          },
-                          "inchi": {
-                            "type": "string"
-                          },
-                          "inchikey": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "name",
-                          "formula",
-                          "inchi",
-                          "inchikey"
-                        ]
-                      },
-                      "measurement": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "unitCode": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "value",
-                          "unitCode"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "property",
-                      "measurement"
-                    ]
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "property": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "formula": {
-                            "type": "string"
-                          },
-                          "inchi": {
-                            "type": "string"
-                          },
-                          "inchikey": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "name",
-                          "formula",
-                          "inchi",
-                          "inchikey"
-                        ]
-                      },
-                      "measurement": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "unitCode": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "value",
-                          "unitCode"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "property",
-                      "measurement"
-                    ]
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "property": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "identifier": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "description": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "identifier",
-                          "name",
-                          "description"
-                        ]
-                      },
-                      "measurement": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "unitCode": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "value",
-                          "unitCode"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "property",
-                      "measurement"
-                    ]
-                  }
-                ]
-              }
-            },
-            "required": [
-              "type",
-              "comment",
-              "observation"
-            ]
-          }
-        },
-        "required": [
-          "@context",
-          "type",
-          "heatNumber",
-          "category",
-          "description",
-          "specification",
-          "grade",
-          "size",
-          "originalCountryOfMeltAndPour",
-          "manufacturer",
-          "purchase",
-          "shipment",
-          "inspection"
-        ],
         "additionalProperties": false
       },
       "ChargeDeclaration": {
@@ -3141,9 +2373,9 @@
         },
         "additionalProperties": false
       },
-      "CommercialInvoiceCredential": {
-        "title": "Commercial Invoice Credential",
-        "description": "Commercial Invoice Credential",
+      "CommercialInvoice": {
+        "title": "Commercial Invoice",
+        "description": "A statement of the money due for goods or services; a bill.",
         "type": "object",
         "properties": {
           "@context": {
@@ -3160,6 +2392,71 @@
                 "items": {}
               }
             ]
+          },
+          "identifier": {
+            "title": "Property Identifier",
+            "description": "Identifiers for a property.",
+            "type": "string"
+          },
+          "portOfEntry": {
+            "title": "Port Of Entry",
+            "description": "Port where the purchased goods will enter first."
+          },
+          "purchaseDate": {
+            "title": "Purchase Date",
+            "description": "The date that payment is made.",
+            "type": "string"
+          },
+          "totalPaymentDue": {
+            "title": "Total Payment Due",
+            "description": "The total amount due."
+          },
+          "destinationCountry": {
+            "title": "Destination Country",
+            "description": "Country to which the purchased product will be delivered",
+            "type": "string"
+          },
+          "merchandise": {
+            "title": "Merchandise",
+            "description": "Identifiers for a property.",
+            "type": "array",
+            "items": {}
+          },
+          "customer": {
+            "title": "Customer",
+            "description": "Party placing the order or paying the invoice."
+          },
+          "provider": {
+            "title": "Provider",
+            "description": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller."
+          }
+        },
+        "additionalProperties": false
+      },
+      "CommercialInvoiceCertificate": {
+        "title": "Commercial Invoice Certificate",
+        "description": "Certifications made about an invoice",
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "array",
+            "enum": [
+              [
+                "https://www.w3.org/2018/credentials/v1",
+                "https://w3id.org/traceability/v1"
+              ]
+            ],
+            "items": {}
+          },
+          "type": {
+            "type": "array",
+            "enum": [
+              [
+                "VerifiableCredential",
+                "CommercialInvoiceCertificate"
+              ]
+            ],
+            "items": {}
           },
           "id": {
             "type": "string"
@@ -3190,9 +2487,7 @@
           }
         },
         "additionalProperties": false,
-        "required": [
-          "proof"
-        ]
+        "required": []
       },
       "ContactPoint": {
         "title": "Contact Point",
@@ -3571,7 +2866,7 @@
             "title": "Url or the order",
             "type": "string",
             "default": "",
-            "example": "http://acme.com/invoice.pdf"
+            "example": "https://acme.com/invoice.pdf"
           },
           "broker": {
             "title": "Broker"
@@ -3721,7 +3016,7 @@
             "title": "Url or the order",
             "type": "string",
             "default": "",
-            "example": "http://acme.com/order.pdf"
+            "example": "https://acme.com/order.pdf"
           },
           "seller": {
             "title": "Seller"
@@ -3742,7 +3037,7 @@
             "title": "Paymentmethod",
             "type": "string",
             "default": "",
-            "example": "http://purl.org/goodrelations/v1#PayPal"
+            "example": "https://purl.org/goodrelations/v1#PayPal"
           },
           "orderedItem": {
             "title": "Ordered Item",
@@ -3894,7 +3189,7 @@
             "title": "Method of Parcel Delivery",
             "type": "string",
             "default": "",
-            "example": "http://purl.org/goodrelations/v1#FederalExpress"
+            "example": "https://purl.org/goodrelations/v1#FederalExpress"
           },
           "deliveryAddress": {
             "title": "Address of the Shipper/Carrier/Importer to which the provider delivers product for final shipment"
@@ -4041,7 +3336,7 @@
             "title": "Method of Parcel Delivery",
             "type": "string",
             "default": "",
-            "example": "http://purl.org/goodrelations/v1#FederalExpress"
+            "example": "https://purl.org/goodrelations/v1#FederalExpress"
           },
           "deliveryAddress": {
             "title": "Address of the Shipper/Carrier/Importer to which the provider delivers product for final shipment"
@@ -4492,6 +3787,121 @@
           "latitude",
           "longitude"
         ],
+        "additionalProperties": false
+      },
+      "Inbond": {
+        "title": "Inbond",
+        "description": "",
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "array",
+            "items": {}
+          },
+          "id": {
+            "type": "string"
+          },
+          "issuanceDate": {
+            "type": "string"
+          },
+          "credentialSubject": {
+            "type": "object"
+          },
+          "issuer": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object"
+              }
+            ]
+          },
+          "type": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {}
+              }
+            ]
+          },
+          "product": {
+            "title": "Product",
+            "description": "Product details as outlined in the Product.json schema"
+          },
+          "shipment": {
+            "title": "Shipment",
+            "description": "Details for a shipment of goods."
+          },
+          "inBondNumber": {
+            "title": "InBond Number",
+            "description": "Identifier for the individual InBond",
+            "type": "string"
+          },
+          "entryId": {
+            "title": "Entry ID",
+            "description": "ACE entry summary unique identifier",
+            "type": "string"
+          },
+          "ftzNo": {
+            "title": "FTZ Number",
+            "description": "ACE admission no. into an FTZ zone",
+            "type": "string"
+          },
+          "inBondType": {
+            "title": "InBond Type",
+            "description": "Type of InBond",
+            "type": "string"
+          },
+          "portOfEntry": {
+            "title": "Port of Entry",
+            "description": "Port of Entry declared in US"
+          },
+          "portOfDestination": {
+            "title": "Port of final destination",
+            "description": "Port of Final destination in the US"
+          },
+          "portOfArrival": {
+            "title": "Port of Entry",
+            "description": "Port of Arrival into US"
+          },
+          "carrier": {
+            "title": "Carrier",
+            "description": "Entity responsible for transporting product"
+          },
+          "irsNumber": {
+            "title": "IRS Number",
+            "description": "Number for identification with IRS",
+            "type": "string"
+          },
+          "recipient": {
+            "title": "Recipient",
+            "description": "Entity that will recieve product"
+          },
+          "billOfLadingNumber": {
+            "title": "BOL",
+            "description": "Identifier for the individual BOL",
+            "type": "string"
+          },
+          "expectedDeliveryDate": {
+            "title": "Expected Delivery Date",
+            "description": "Date when the product is expected to arrive",
+            "type": "string"
+          },
+          "valuePerItem": {
+            "title": "Value Per Item",
+            "description": "Total Value Per Item",
+            "type": "string"
+          },
+          "totalOrderValue": {
+            "title": "totalOrderValue",
+            "description": "Total Value Per Item",
+            "type": "string"
+          }
+        },
         "additionalProperties": false
       },
       "InspectionReport": {
@@ -5257,7 +4667,7 @@
           },
           "unitCode": {
             "title": "Measurement Unit",
-            "description": "A string value indicating a Measurement Unit from UN/ECE Recommendation 20, Units of Measure used in International Trade, e.g., GRM = gram - see <a href=\"http://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf\">rec20_rev3</a>",
+            "description": "A string value indicating a Measurement Unit from UN/ECE Recommendation 20, Units of Measure used in International Trade, e.g., GRM = gram - see <a href=\"https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf\">rec20_rev3</a>",
             "type": "string"
           }
         },
@@ -5297,6 +4707,251 @@
             "title": "Property Description",
             "description": "The description of the item.",
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MillTestReport": {
+        "title": "Mill Test Report",
+        "description": "Test results made by a manufacturer of a metal product.",
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "array",
+            "items": {}
+          },
+          "type": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {}
+              }
+            ]
+          },
+          "manufacturer": {
+            "title": "Manufacturer",
+            "description": "The manufacturer"
+          },
+          "product": {
+            "title": "Product",
+            "description": "Product details"
+          },
+          "purchase": {
+            "title": "Purchase",
+            "description": "Purchase details"
+          },
+          "shipment": {
+            "title": "Shipment",
+            "description": "Shipment details"
+          }
+        },
+        "required": [
+          "@context",
+          "type",
+          "manufacturer",
+          "product",
+          "purchase",
+          "shipment"
+        ],
+        "additionalProperties": false
+      },
+      "MillTestReportCertificate": {
+        "title": "Mill Test Report Certificate",
+        "description": "Certifications made by a manufacturer of a metal product.",
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "array",
+            "enum": [
+              [
+                "https://www.w3.org/2018/credentials/v1",
+                "https://w3id.org/traceability/v1"
+              ]
+            ],
+            "items": {}
+          },
+          "type": {
+            "type": "array",
+            "enum": [
+              [
+                "VerifiableCredential",
+                "MillTestReportCertificate"
+              ]
+            ],
+            "items": {}
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "issuanceDate": {
+            "type": "string"
+          },
+          "issuer": {
+            "type": "object"
+          },
+          "credentialSubject": {
+            "type": "object"
+          },
+          "proof": {
+            "type": "object"
+          },
+          "relatedLink": {
+            "title": "Related Link",
+            "description": "Links related to this verifiable credential",
+            "type": "array",
+            "items": {}
+          }
+        },
+        "additionalProperties": false,
+        "required": []
+      },
+      "NaturalGasProduct": {
+        "title": "Natural Gas Product",
+        "description": "Tombstone information regarding a natural gas product",
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "array",
+            "items": {}
+          },
+          "id": {
+            "type": "string"
+          },
+          "issuanceDate": {
+            "type": "string"
+          },
+          "credentialSubject": {
+            "type": "object"
+          },
+          "issuer": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object"
+              }
+            ]
+          },
+          "type": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {}
+              }
+            ]
+          },
+          "product": {
+            "title": "Product",
+            "description": "Product details as outlined in the Product.json schema"
+          },
+          "facility": {
+            "title": "Manufacture Facility",
+            "description": "Information on the manufacture facility."
+          },
+          "UWI": {
+            "title": "Unique Well Identifier",
+            "description": "Unique Well Identifier used for individual well identification.",
+            "type": "string"
+          },
+          "HSCode": {
+            "title": "HSCode",
+            "description": "Defines the Harmonized System Code for the Commodity",
+            "type": "string"
+          },
+          "productionDate": {
+            "title": "Production Date",
+            "description": "Date when the product was created",
+            "type": "string"
+          },
+          "observation": {
+            "title": "Observation List",
+            "description": "List of observations as seen and specified in the Inspection Report schema https://w3id.org/traceability?#InspectionReport",
+            "type": "array",
+            "items": {}
+          }
+        },
+        "additionalProperties": false
+      },
+      "OGBillOfLading": {
+        "title": "Bill of Lading for an Oil and Gas Product",
+        "description": "Information on the Inspection and the observations made",
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "array",
+            "items": {}
+          },
+          "type": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {}
+              }
+            ]
+          },
+          "billOfLading": {
+            "title": "Bill Of Lading",
+            "description": "Bill Of Lading"
+          },
+          "shippingDate": {
+            "title": "Shipping Date",
+            "description": "Date of shipping",
+            "type": "string"
+          },
+          "arrivalDate": {
+            "title": "Arrival Date",
+            "description": "Date of arrival.",
+            "type": "string"
+          },
+          "valuePerItem": {
+            "title": "Value Per Item",
+            "description": "Value Per Item",
+            "type": "string"
+          },
+          "totalOrderValue": {
+            "title": "Total Order Value",
+            "description": "Total value of the order",
+            "type": "string"
+          },
+          "freightChargeTerms": {
+            "title": "freight Charge Terms",
+            "description": "Terms of the freight charge",
+            "type": "string"
+          },
+          "batchNumber": {
+            "title": "Unique Well Identifier",
+            "description": "Unique Well Identifier used for individual well identification.",
+            "type": "string"
+          },
+          "openingVolume": {
+            "title": "Opening Volume",
+            "description": "Volume at injection"
+          },
+          "closingVolume": {
+            "title": "closingVolume",
+            "description": "Volume at closing"
+          },
+          "observation": {
+            "title": "Observation List",
+            "description": "List of observations as seen and specified in the Inspection Report schema https://w3id.org/traceability?#InspectionReport",
+            "type": "array",
+            "items": {}
           }
         },
         "additionalProperties": false
@@ -6168,103 +5823,6 @@
           "purchaseOrder": {
             "title": "Purchase Order",
             "description": "The purchase order associated with a purchase",
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      },
-      "QPInbond": {
-        "title": "QPInbond",
-        "description": "",
-        "type": "object",
-        "properties": {
-          "@context": {
-            "type": "array",
-            "items": {}
-          },
-          "id": {
-            "type": "string"
-          },
-          "issuanceDate": {
-            "type": "string"
-          },
-          "credentialSubject": {
-            "type": "object"
-          },
-          "issuer": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "object"
-              }
-            ]
-          },
-          "type": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "array",
-                "items": {}
-              }
-            ]
-          },
-          "product": {
-            "title": "Product",
-            "description": "Product details as outlined in the Product.json schema"
-          },
-          "shipment": {
-            "title": "Shipment",
-            "description": "Details for a shipment of goods."
-          },
-          "inBondNumber": {
-            "title": "InBond Number",
-            "description": "Identifier for the individual InBond",
-            "type": "string"
-          },
-          "inBondType": {
-            "title": "InBond Type",
-            "description": "Type of InBond",
-            "type": "string"
-          },
-          "portOfEntry": {
-            "title": "Port of Entry",
-            "description": "Port of Entry into US"
-          },
-          "carrier": {
-            "title": "Carrier",
-            "description": "Entity responsible for transporting product"
-          },
-          "irsNumber": {
-            "title": "IRS Number",
-            "description": "Number for identification with IRS",
-            "type": "string"
-          },
-          "recipient": {
-            "title": "Recipient",
-            "description": "Entity that will recieve product"
-          },
-          "billOfLadingNumber": {
-            "title": "BOL",
-            "description": "Identifier for the individual BOL",
-            "type": "string"
-          },
-          "expectedDeliveryDate": {
-            "title": "Expected Delivery Date",
-            "description": "Date when the product is expected to arrive",
-            "type": "string"
-          },
-          "valuePerItem": {
-            "title": "Value Per Item",
-            "description": "Total Value Per Item",
-            "type": "string"
-          },
-          "totalOrderValue": {
-            "title": "totalOrderValue",
-            "description": "Total Value Per Item",
             "type": "string"
           }
         },

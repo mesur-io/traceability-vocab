@@ -1,7 +1,7 @@
 {
   "https://w3id.org/traceability#AgActivity": {
     "$id": "https://w3id.org/traceability/schemas/AgActivity.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "AgActivity",
       "@id": "https://w3id.org/traceability#AgActivity"
@@ -69,10 +69,9 @@
         "description": "List of observations or notes related to the activity, such as spray mix, etc"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/AgActivity.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"AgActivity\", \"@id\": \"https://w3id.org/traceability#AgActivity\"}",
       "title": "Agricultural Activity",
       "description": "An activity that takes place on the farm that needs to be recorded, such as planting, harvesting, applying fertilizer, etc.",
@@ -149,7 +148,7 @@
   },
   "https://w3id.org/traceability#AgInspectionReport": {
     "$id": "https://w3id.org/traceability/schemas/AgInspectionReport.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "AgInspectionReport",
       "@id": "https://w3id.org/traceability#AgInspectionReport"
@@ -173,10 +172,10 @@
         "title": "Inspector",
         "description": "Inspector performing the Agriculture Inspection.  The following link provides further insight: https://www.lawinsider.com/dictionary/food-inspector"
       },
-      "https://schema.org/AgParcelDelivery": {
+      "https://schema.org/ParcelDelivery": {
         "$comment": {
           "term": "shipment",
-          "@id": "https://schema.org/AgParcelDelivery"
+          "@id": "https://schema.org/ParcelDelivery"
         },
         "title": "Shipment",
         "description": "Details for a shipment of goods."
@@ -214,10 +213,9 @@
         "description": "List of observations as seen and specified in the Inspection Report schema https://w3id.org/traceability?#InspectionReport"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/AgInspectionReport.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"AgInspectionReport\", \"@id\": \"https://w3id.org/traceability#AgInspectionReport\"}",
       "title": "Agriculture Inspection Report",
       "description": "Information on the Inspection and the observations made",
@@ -249,7 +247,7 @@
           "$ref": "https://w3id.org/traceability/schemas/Inspector.json"
         },
         "shipment": {
-          "$comment": "{\"term\": \"shipment\", \"@id\": \"https://schema.org/AgParcelDelivery\"}",
+          "$comment": "{\"term\": \"shipment\", \"@id\": \"https://schema.org/ParcelDelivery\"}",
           "title": "Shipment",
           "description": "Details for a shipment of goods.",
           "$ref": "https://w3id.org/traceability/schemas/AgParcelDelivery.json"
@@ -288,7 +286,7 @@
   },
   "https://w3id.org/traceability#AgPackage": {
     "$id": "https://w3id.org/traceability/schemas/AgPackage.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "AgPackage",
       "@id": "https://w3id.org/traceability#AgPackage"
@@ -362,10 +360,9 @@
         "description": "List of agricultural products contained within this package."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/AgPackage.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"AgPackage\", \"@id\": \"https://w3id.org/traceability#AgPackage\"}",
       "title": "AgPackage",
       "description": "A package (container, crate, etc.) which holds agricultural products. The contents or the package itself should meet the requirements as specified here: https://www.producetraceability.org/documents/FINAL_PTI_Harmonized_Traceabilty_Case_Label_April_2020_(003).pdf",
@@ -442,7 +439,7 @@
   },
   "https://w3id.org/traceability#AgParcelDelivery": {
     "$id": "https://w3id.org/traceability/schemas/AgParcelDelivery.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "AgParcelDelivery",
       "@id": "https://w3id.org/traceability#AgParcelDelivery"
@@ -531,10 +528,9 @@
         "description": "Item(s) being shipped."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/AgParcelDelivery.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"AgParcelDelivery\", \"@id\": \"https://w3id.org/traceability#AgParcelDelivery\"}",
       "title": "Ag Parcel Delivery",
       "description": "Details on a shipment or delivery.",
@@ -623,7 +619,7 @@
   },
   "https://w3id.org/traceability#AgProduct": {
     "$id": "https://w3id.org/traceability/schemas/AgProduct.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "AgProduct",
       "@id": "https://w3id.org/traceability#AgProduct"
@@ -688,10 +684,9 @@
         "description": "Hash value for securely identifying the label image.  More information can be found at the following link: https://cybersecurityglossary.com/hashing"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/AgProduct.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"AgProduct\", \"@id\": \"https://w3id.org/traceability#AgProduct\"}",
       "title": "AgProduct",
       "description": "An agricultural product, extending the Product.json schema.  This schema accounts for the FDA lebeling data requirements at the crate level as specified here: https://www.producetraceability.org/documents/FINAL_PTI_Harmonized_Traceabilty_Case_Label_April_2020_(003).pdf",
@@ -759,7 +754,7 @@
   },
   "https://w3id.org/traceability#BillOfLading": {
     "$id": "https://w3id.org/traceability/schemas/BillOfLading.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "BillOfLading",
       "@id": "https://w3id.org/traceability#BillOfLading"
@@ -808,10 +803,9 @@
         "description": "The Department of Transportation (DOT) hazard code associated with the shipment."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/BillOfLading.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"BillOfLading\", \"@id\": \"https://w3id.org/traceability#BillOfLading\"}",
       "title": "Bill Of Lading",
       "description": "Bill Of Lading",
@@ -868,9 +862,86 @@
       "examples": []
     }
   },
+  "https://w3id.org/traceability#BillOfLadingCertificate": {
+    "$id": "https://w3id.org/traceability/schemas/BillOfLadingCertificate.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$comment": {
+      "term": "BillOfLadingCertificate",
+      "@id": "https://w3id.org/traceability#BillOfLadingCertificate"
+    },
+    "title": "Bill of Lading Certificate",
+    "description": "Certifications made about an BOL",
+    "classProperties": {
+      "https://w3id.org/traceability#LinkRole": {
+        "$comment": {
+          "term": "relatedLink",
+          "@id": "https://w3id.org/traceability#LinkRole"
+        },
+        "title": "Related Link",
+        "description": "Links related to this verifiable credential"
+      }
+    },
+    "schema": {
+      "$id": "https://w3id.org/traceability/schemas/BillOfLadingCertificate.json",
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$comment": "{\"term\": \"BillOfLadingCertificate\", \"@id\": \"https://w3id.org/traceability#BillOfLadingCertificate\"}",
+      "title": "Bill of Lading Certificate",
+      "description": "Certifications made about an BOL",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "type": "array",
+          "const": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/traceability/v1"
+          ]
+        },
+        "type": {
+          "type": "array",
+          "const": [
+            "VerifiableCredential",
+            "BillOfLadingCertificate"
+          ]
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "issuanceDate": {
+          "type": "string"
+        },
+        "issuer": {
+          "type": "object"
+        },
+        "credentialSubject": {
+          "type": "object"
+        },
+        "proof": {
+          "type": "object"
+        },
+        "relatedLink": {
+          "$comment": "{\"term\": \"relatedLink\", \"@id\": \"https://w3id.org/traceability#LinkRole\"}",
+          "title": "Related Link",
+          "description": "Links related to this verifiable credential",
+          "type": "array",
+          "items": {
+            "$ref": "https://w3id.org/traceability/schemas/LinkRole.json"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [],
+      "examples": []
+    }
+  },
   "https://schema.org/Brand": {
     "$id": "https://w3id.org/traceability/schemas/Brand.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Brand",
       "@id": "https://schema.org/Brand"
@@ -895,10 +966,9 @@
         "description": "URL of the entity."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Brand.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Brand\", \"@id\": \"https://schema.org/Brand\"}",
       "title": "Brand",
       "description": "Brand information for entities.",
@@ -934,962 +1004,9 @@
       "examples": []
     }
   },
-  "https://w3id.org/traceability#CertifiedMillTestReport": {
-    "$id": "https://w3id.org/traceability/schemas/CertifiedMillTestReport.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$comment": {
-      "term": "CertifiedMillTestReport",
-      "@id": "https://w3id.org/traceability#CertifiedMillTestReport"
-    },
-    "title": "Certified Mill Test Report",
-    "description": "Certifications made by a manufacturer of a metal product.",
-    "classProperties": {},
-    "examples": [],
-    "schema": {
-      "$id": "https://w3id.org/traceability/schemas/CertifiedMillTestReport.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
-      "$comment": "{\"term\": \"CertifiedMillTestReport\", \"@id\": \"https://w3id.org/traceability#CertifiedMillTestReport\"}",
-      "title": "Certified Mill Test Report",
-      "description": "Certifications made by a manufacturer of a metal product.",
-      "type": "object",
-      "properties": {
-        "@context": {
-          "type": "array"
-        },
-        "type": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "array"
-            }
-          ]
-        },
-        "heatNumber": {
-          "type": "string"
-        },
-        "category": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "specification": {
-          "type": "string"
-        },
-        "grade": {
-          "type": "string"
-        },
-        "size": {
-          "type": "string"
-        },
-        "originalCountryOfMeltAndPour": {
-          "type": "string"
-        },
-        "manufacturer": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "type": "string"
-            },
-            "globalLocationNumber": {
-              "type": "string"
-            },
-            "geo": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string"
-                },
-                "latitude": {
-                  "type": "string"
-                },
-                "longitude": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "type",
-                "latitude",
-                "longitude"
-              ]
-            },
-            "address": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string"
-                },
-                "organizationName": {
-                  "type": "string"
-                },
-                "streetAddress": {
-                  "type": "string"
-                },
-                "addressLocality": {
-                  "type": "string"
-                },
-                "addressRegion": {
-                  "type": "string"
-                },
-                "postalCode": {
-                  "type": "string"
-                },
-                "addressCountry": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "type",
-                "organizationName",
-                "streetAddress",
-                "addressLocality",
-                "addressRegion",
-                "postalCode",
-                "addressCountry"
-              ]
-            }
-          },
-          "required": [
-            "type",
-            "globalLocationNumber",
-            "geo",
-            "address"
-          ]
-        },
-        "purchase": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "type": "string"
-            },
-            "purchaseOrder": {
-              "type": "string"
-            },
-            "invoice": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string"
-                },
-                "identifier": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "type",
-                "identifier"
-              ]
-            },
-            "customer": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string"
-                },
-                "globalLocationNumber": {
-                  "type": "string"
-                },
-                "contactPoint": {
-                  "type": "array",
-                  "items": [
-                    {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "jobTitle": {
-                          "type": "string"
-                        },
-                        "email": {
-                          "type": "string"
-                        },
-                        "phoneNumber": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "name",
-                        "jobTitle",
-                        "email",
-                        "phoneNumber"
-                      ]
-                    },
-                    {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "address": {
-                          "type": "object",
-                          "properties": {
-                            "type": {
-                              "type": "string"
-                            },
-                            "streetAddress": {
-                              "type": "string"
-                            },
-                            "addressLocality": {
-                              "type": "string"
-                            },
-                            "addressRegion": {
-                              "type": "string"
-                            },
-                            "postalCode": {
-                              "type": "string"
-                            },
-                            "addressCountry": {
-                              "type": "string"
-                            }
-                          },
-                          "required": [
-                            "type",
-                            "streetAddress",
-                            "addressLocality",
-                            "addressRegion",
-                            "postalCode",
-                            "addressCountry"
-                          ]
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "address"
-                      ]
-                    }
-                  ]
-                }
-              },
-              "required": [
-                "type",
-                "globalLocationNumber",
-                "contactPoint"
-              ]
-            }
-          },
-          "required": [
-            "type",
-            "purchaseOrder",
-            "invoice",
-            "customer"
-          ]
-        },
-        "shipment": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "type": "string"
-            },
-            "deliveryMethod": {
-              "type": "string"
-            },
-            "trackingNumber": {
-              "type": "string"
-            },
-            "originAddress": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string"
-                },
-                "organizationName": {
-                  "type": "string"
-                },
-                "streetAddress": {
-                  "type": "string"
-                },
-                "addressLocality": {
-                  "type": "string"
-                },
-                "addressRegion": {
-                  "type": "string"
-                },
-                "postalCode": {
-                  "type": "string"
-                },
-                "addressCountry": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "type",
-                "organizationName",
-                "streetAddress",
-                "addressLocality",
-                "addressRegion",
-                "postalCode",
-                "addressCountry"
-              ]
-            },
-            "deliveryAddress": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string"
-                },
-                "organizationName": {
-                  "type": "string"
-                },
-                "streetAddress": {
-                  "type": "string"
-                },
-                "addressLocality": {
-                  "type": "string"
-                },
-                "addressRegion": {
-                  "type": "string"
-                },
-                "postalCode": {
-                  "type": "string"
-                },
-                "addressCountry": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "type",
-                "organizationName",
-                "streetAddress",
-                "addressLocality",
-                "addressRegion",
-                "postalCode",
-                "addressCountry"
-              ]
-            }
-          },
-          "required": [
-            "type",
-            "deliveryMethod",
-            "trackingNumber",
-            "originAddress",
-            "deliveryAddress"
-          ]
-        },
-        "inspection": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "type": "string"
-            },
-            "comment": {
-              "type": "string"
-            },
-            "observation": {
-              "type": "array",
-              "items": [
-                {
-                  "type": "object",
-                  "properties": {
-                    "type": {
-                      "type": "string"
-                    },
-                    "property": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "formula": {
-                          "type": "string"
-                        },
-                        "inchi": {
-                          "type": "string"
-                        },
-                        "inchikey": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "name",
-                        "formula",
-                        "inchi",
-                        "inchikey"
-                      ]
-                    },
-                    "measurement": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "value": {
-                          "type": "string"
-                        },
-                        "unitCode": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "value",
-                        "unitCode"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "property",
-                    "measurement"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "properties": {
-                    "type": {
-                      "type": "string"
-                    },
-                    "property": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "identifier": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "description": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "identifier",
-                        "name",
-                        "description"
-                      ]
-                    },
-                    "measurement": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "value": {
-                          "type": "string"
-                        },
-                        "unitCode": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "value",
-                        "unitCode"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "property",
-                    "measurement"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "properties": {
-                    "type": {
-                      "type": "string"
-                    },
-                    "property": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "formula": {
-                          "type": "string"
-                        },
-                        "inchi": {
-                          "type": "string"
-                        },
-                        "inchikey": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "name",
-                        "formula",
-                        "inchi",
-                        "inchikey"
-                      ]
-                    },
-                    "measurement": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "value": {
-                          "type": "string"
-                        },
-                        "unitCode": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "value",
-                        "unitCode"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "property",
-                    "measurement"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "properties": {
-                    "type": {
-                      "type": "string"
-                    },
-                    "property": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "formula": {
-                          "type": "string"
-                        },
-                        "inchi": {
-                          "type": "string"
-                        },
-                        "inchikey": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "name",
-                        "formula",
-                        "inchi",
-                        "inchikey"
-                      ]
-                    },
-                    "measurement": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "value": {
-                          "type": "string"
-                        },
-                        "unitCode": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "value",
-                        "unitCode"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "property",
-                    "measurement"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "properties": {
-                    "type": {
-                      "type": "string"
-                    },
-                    "property": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "identifier": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "description": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "identifier",
-                        "name",
-                        "description"
-                      ]
-                    },
-                    "measurement": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "value": {
-                          "type": "string"
-                        },
-                        "unitCode": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "value",
-                        "unitCode"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "property",
-                    "measurement"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "properties": {
-                    "type": {
-                      "type": "string"
-                    },
-                    "property": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "formula": {
-                          "type": "string"
-                        },
-                        "inchi": {
-                          "type": "string"
-                        },
-                        "inchikey": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "name",
-                        "formula",
-                        "inchi",
-                        "inchikey"
-                      ]
-                    },
-                    "measurement": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "value": {
-                          "type": "string"
-                        },
-                        "unitCode": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "value",
-                        "unitCode"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "property",
-                    "measurement"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "properties": {
-                    "type": {
-                      "type": "string"
-                    },
-                    "property": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "identifier": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "description": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "identifier",
-                        "name",
-                        "description"
-                      ]
-                    },
-                    "measurement": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "value": {
-                          "type": "string"
-                        },
-                        "unitCode": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "value",
-                        "unitCode"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "property",
-                    "measurement"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "properties": {
-                    "type": {
-                      "type": "string"
-                    },
-                    "property": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "formula": {
-                          "type": "string"
-                        },
-                        "inchi": {
-                          "type": "string"
-                        },
-                        "inchikey": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "name",
-                        "formula",
-                        "inchi",
-                        "inchikey"
-                      ]
-                    },
-                    "measurement": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "value": {
-                          "type": "string"
-                        },
-                        "unitCode": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "value",
-                        "unitCode"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "property",
-                    "measurement"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "properties": {
-                    "type": {
-                      "type": "string"
-                    },
-                    "property": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "formula": {
-                          "type": "string"
-                        },
-                        "inchi": {
-                          "type": "string"
-                        },
-                        "inchikey": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "name",
-                        "formula",
-                        "inchi",
-                        "inchikey"
-                      ]
-                    },
-                    "measurement": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "value": {
-                          "type": "string"
-                        },
-                        "unitCode": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "value",
-                        "unitCode"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "property",
-                    "measurement"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "properties": {
-                    "type": {
-                      "type": "string"
-                    },
-                    "property": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "identifier": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "description": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "identifier",
-                        "name",
-                        "description"
-                      ]
-                    },
-                    "measurement": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "value": {
-                          "type": "string"
-                        },
-                        "unitCode": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "value",
-                        "unitCode"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "property",
-                    "measurement"
-                  ]
-                }
-              ]
-            }
-          },
-          "required": [
-            "type",
-            "comment",
-            "observation"
-          ]
-        }
-      },
-      "required": [
-        "@context",
-        "type",
-        "heatNumber",
-        "category",
-        "description",
-        "specification",
-        "grade",
-        "size",
-        "originalCountryOfMeltAndPour",
-        "manufacturer",
-        "purchase",
-        "shipment",
-        "inspection"
-      ],
-      "additionalProperties": false,
-      "examples": []
-    }
-  },
   "https://w3id.org/traceability#ChargeDeclaration": {
     "$id": "https://w3id.org/traceability/schemas/ChargeDeclaration.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "ChargeDeclaration",
       "@id": "https://w3id.org/traceability#ChargeDeclaration"
@@ -1935,7 +1052,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/ChargeDeclaration.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"ChargeDeclaration\", \"@id\": \"https://w3id.org/traceability#ChargeDeclaration\"}",
       "title": "ChargeDeclaration",
       "description": "Charge Declaration definition based on IATA electronic Air Way Bill https://blanker.org/files/air-waybill-2.xls",
@@ -1993,7 +1110,7 @@
   },
   "https://w3id.org/traceability#ChemicalProperty": {
     "$id": "https://w3id.org/traceability/schemas/ChemicalProperty.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "ChemicalProperty",
       "@id": "https://w3id.org/traceability#ChemicalProperty"
@@ -2025,35 +1142,34 @@
         "title": "Property Description",
         "description": "The description of the item."
       },
-      "http://purl.obolibrary.org/obo/chebi/formula": {
+      "https://purl.obolibrary.org/obo/chebi/formula": {
         "$comment": {
           "term": "formula",
-          "@id": "http://purl.obolibrary.org/obo/chebi/formula"
+          "@id": "https://purl.obolibrary.org/obo/chebi/formula"
         },
         "title": "Formula",
         "description": "A <a href=\"https://en.wikipedia.org/wiki/Chemical_formula\">chemical formula</a> is a way of presenting information about the chemical proportions of atoms that constitute a particular chemical compound or molecule, using chemical element symbols, numbers, and sometimes also other symbols, such as parentheses, dashes, brackets, commas and plus and minus signs."
       },
-      "http://purl.obolibrary.org/obo/chebi/inchi": {
+      "https://purl.obolibrary.org/obo/chebi/inchi": {
         "$comment": {
           "term": "inchi",
-          "@id": "http://purl.obolibrary.org/obo/chebi/inchi"
+          "@id": "https://purl.obolibrary.org/obo/chebi/inchi"
         },
         "title": "InChI",
         "description": "The IUPAC International Chemical Identifier (<a href=\"https://en.wikipedia.org/wiki/International_Chemical_Identifier\">InChI</a>) is a textual identifier for chemical substances, designed to provide a standard way to encode molecular information and to facilitate the search for such information in databases and on the web. "
       },
-      "http://purl.obolibrary.org/obo/chebi/inchikey": {
+      "https://purl.obolibrary.org/obo/chebi/inchikey": {
         "$comment": {
           "term": "inchikey",
-          "@id": "http://purl.obolibrary.org/obo/chebi/inchikey"
+          "@id": "https://purl.obolibrary.org/obo/chebi/inchikey"
         },
         "title": "InChIKey",
         "description": "The condensed, 27 character <a href=\"https://en.wikipedia.org/wiki/International_Chemical_Identifier#InChIKey\">InChIKey</a> is a hashed version of the full InChI (using the SHA-256 algorithm), designed to allow for easy web searches of chemical compounds."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/ChemicalProperty.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"ChemicalProperty\", \"@id\": \"https://w3id.org/traceability#ChemicalProperty\"}",
       "title": "Chemical Property",
       "description": "A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property.",
@@ -2091,19 +1207,19 @@
           "type": "string"
         },
         "formula": {
-          "$comment": "{\"term\": \"formula\", \"@id\": \"http://purl.obolibrary.org/obo/chebi/formula\"}",
+          "$comment": "{\"term\": \"formula\", \"@id\": \"https://purl.obolibrary.org/obo/chebi/formula\"}",
           "title": "Formula",
           "description": "A <a href=\"https://en.wikipedia.org/wiki/Chemical_formula\">chemical formula</a> is a way of presenting information about the chemical proportions of atoms that constitute a particular chemical compound or molecule, using chemical element symbols, numbers, and sometimes also other symbols, such as parentheses, dashes, brackets, commas and plus and minus signs.",
           "type": "string"
         },
         "inchi": {
-          "$comment": "{\"term\": \"inchi\", \"@id\": \"http://purl.obolibrary.org/obo/chebi/inchi\"}",
+          "$comment": "{\"term\": \"inchi\", \"@id\": \"https://purl.obolibrary.org/obo/chebi/inchi\"}",
           "title": "InChI",
           "description": "The IUPAC International Chemical Identifier (<a href=\"https://en.wikipedia.org/wiki/International_Chemical_Identifier\">InChI</a>) is a textual identifier for chemical substances, designed to provide a standard way to encode molecular information and to facilitate the search for such information in databases and on the web. ",
           "type": "string"
         },
         "inchikey": {
-          "$comment": "{\"term\": \"inchikey\", \"@id\": \"http://purl.obolibrary.org/obo/chebi/inchikey\"}",
+          "$comment": "{\"term\": \"inchikey\", \"@id\": \"https://purl.obolibrary.org/obo/chebi/inchikey\"}",
           "title": "InChIKey",
           "description": "The condensed, 27 character <a href=\"https://en.wikipedia.org/wiki/International_Chemical_Identifier#InChIKey\">InChIKey</a> is a hashed version of the full InChI (using the SHA-256 algorithm), designed to allow for easy web searches of chemical compounds.",
           "type": "string"
@@ -2114,31 +1230,86 @@
     }
   },
   "https://w3id.org/traceability#CommercialInvoiceCredential": {
-    "$id": "https://w3id.org/traceability/schemas/CommercialInvoiceCredential.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://w3id.org/traceability/schemas/CommercialInvoice.json",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
-      "term": "CommercialInvoiceCredential",
+      "term": "CommercialInvoice",
       "@id": "https://w3id.org/traceability#CommercialInvoiceCredential"
     },
-    "title": "Commercial Invoice Credential",
-    "description": "Commercial Invoice Credential",
+    "title": "Commercial Invoice",
+    "description": "A statement of the money due for goods or services; a bill.",
     "classProperties": {
-      "https://schema.org/relatedLink": {
+      "https://schema.org/identifier": {
         "$comment": {
-          "term": "relatedLink",
-          "@id": "https://schema.org/relatedLink"
+          "term": "identifier",
+          "@id": "https://schema.org/identifier"
         },
-        "title": "Related Link",
-        "description": "Links related to this verifiable credential"
+        "title": "Property Identifier",
+        "description": "Identifiers for a property."
+      },
+      "https://schema.org/address": {
+        "$comment": {
+          "term": "portOfEntry",
+          "@id": "https://schema.org/address"
+        },
+        "title": "Port Of Entry",
+        "description": "Port where the purchased goods will enter first."
+      },
+      "https://schema.org/paymentDueDate": {
+        "$comment": {
+          "term": "purchaseDate",
+          "@id": "https://schema.org/paymentDueDate"
+        },
+        "title": "Purchase Date",
+        "description": "The date that payment is made."
+      },
+      "https://schema.org/totalPaymentDue": {
+        "$comment": {
+          "term": "totalPaymentDue",
+          "@id": "https://schema.org/totalPaymentDue"
+        },
+        "title": "Total Payment Due",
+        "description": "The total amount due."
+      },
+      "https://schema.org/addressCountry": {
+        "$comment": {
+          "term": "destinationCountry",
+          "@id": "https://schema.org/addressCountry"
+        },
+        "title": "Destination Country",
+        "description": "Country to which the purchased product will be delivered"
+      },
+      "https://schema.org/itemShipped": {
+        "$comment": {
+          "term": "merchandise",
+          "@id": "https://schema.org/itemShipped"
+        },
+        "title": "Merchandise",
+        "description": "Identifiers for a property."
+      },
+      "https://schema.org/customer": {
+        "$comment": {
+          "term": "customer",
+          "@id": "https://schema.org/customer"
+        },
+        "title": "Customer",
+        "description": "Party placing the order or paying the invoice."
+      },
+      "https://schema.org/provider": {
+        "$comment": {
+          "term": "provider",
+          "@id": "https://schema.org/provider"
+        },
+        "title": "Provider",
+        "description": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller."
       }
     },
-    "examples": [],
     "schema": {
-      "$id": "https://w3id.org/traceability/schemas/CommercialInvoiceCredential.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
-      "$comment": "{\"term\": \"CommercialInvoiceCredential\", \"@id\": \"https://w3id.org/traceability#CommercialInvoiceCredential\"}",
-      "title": "Commercial Invoice Credential",
-      "description": "Commercial Invoice Credential",
+      "$id": "https://w3id.org/traceability/schemas/CommercialInvoice.json",
+      "$schema": "https://json-schema.org/draft-07/schema#",
+      "$comment": "{\"term\": \"CommercialInvoice\", \"@id\": \"https://w3id.org/traceability#CommercialInvoiceCredential\"}",
+      "title": "Commercial Invoice",
+      "description": "A statement of the money due for goods or services; a bill.",
       "type": "object",
       "properties": {
         "@context": {
@@ -2152,6 +1323,103 @@
             {
               "type": "array"
             }
+          ]
+        },
+        "identifier": {
+          "$comment": "{\"term\": \"identifier\", \"@id\": \"https://schema.org/identifier\"}",
+          "title": "Property Identifier",
+          "description": "Identifiers for a property.",
+          "type": "string"
+        },
+        "portOfEntry": {
+          "$comment": "{\"term\": \"portOfEntry\", \"@id\": \"https://schema.org/address\"}",
+          "title": "Port Of Entry",
+          "description": "Port where the purchased goods will enter first.",
+          "$ref": "https://w3id.org/traceability/schemas/PostalAddress.json"
+        },
+        "purchaseDate": {
+          "$comment": "{\"term\": \"purchaseDate\", \"@id\": \"https://schema.org/paymentDueDate\"}",
+          "title": "Purchase Date",
+          "description": "The date that payment is made.",
+          "type": "string"
+        },
+        "totalPaymentDue": {
+          "$comment": "{\"term\": \"totalPaymentDue\", \"@id\": \"https://schema.org/totalPaymentDue\"}",
+          "title": "Total Payment Due",
+          "description": "The total amount due.",
+          "$ref": "https://w3id.org/traceability/schemas/PriceSpecification.json"
+        },
+        "destinationCountry": {
+          "$comment": "{\"term\": \"destinationCountry\", \"@id\": \"https://schema.org/addressCountry\"}",
+          "title": "Destination Country",
+          "description": "Country to which the purchased product will be delivered",
+          "type": "string"
+        },
+        "merchandise": {
+          "$comment": "{\"term\": \"merchandise\", \"@id\": \"https://schema.org/itemShipped\"}",
+          "title": "Merchandise",
+          "description": "Identifiers for a property.",
+          "type": "array",
+          "items": {
+            "$ref": "https://w3id.org/traceability/schemas/Product.json"
+          }
+        },
+        "customer": {
+          "$comment": "{\"term\": \"customer\", \"@id\": \"https://schema.org/customer\"}",
+          "title": "Customer",
+          "description": "Party placing the order or paying the invoice.",
+          "$ref": "https://w3id.org/traceability/schemas/Organization.json"
+        },
+        "provider": {
+          "$comment": "{\"term\": \"provider\", \"@id\": \"https://schema.org/provider\"}",
+          "title": "Provider",
+          "description": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
+          "$ref": "https://w3id.org/traceability/schemas/Organization.json"
+        }
+      },
+      "additionalProperties": false,
+      "examples": []
+    }
+  },
+  "https://w3id.org/traceability#CommercialInvoiceCertificate": {
+    "$id": "https://w3id.org/traceability/schemas/CommercialInvoiceCertificate.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$comment": {
+      "term": "CommercialInvoiceCertificate",
+      "@id": "https://w3id.org/traceability#CommercialInvoiceCertificate"
+    },
+    "title": "Commercial Invoice Certificate",
+    "description": "Certifications made about an invoice",
+    "classProperties": {
+      "https://w3id.org/traceability#LinkRole": {
+        "$comment": {
+          "term": "relatedLink",
+          "@id": "https://w3id.org/traceability#LinkRole"
+        },
+        "title": "Related Link",
+        "description": "Links related to this verifiable credential"
+      }
+    },
+    "schema": {
+      "$id": "https://w3id.org/traceability/schemas/CommercialInvoiceCertificate.json",
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$comment": "{\"term\": \"CommercialInvoiceCertificate\", \"@id\": \"https://w3id.org/traceability#CommercialInvoiceCertificate\"}",
+      "title": "Commercial Invoice Certificate",
+      "description": "Certifications made about an invoice",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "type": "array",
+          "const": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/traceability/v1"
+          ]
+        },
+        "type": {
+          "type": "array",
+          "const": [
+            "VerifiableCredential",
+            "CommercialInvoiceCertificate"
           ]
         },
         "id": {
@@ -2176,7 +1444,7 @@
           "type": "object"
         },
         "relatedLink": {
-          "$comment": "{\"term\": \"relatedLink\", \"@id\": \"https://schema.org/relatedLink\"}",
+          "$comment": "{\"term\": \"relatedLink\", \"@id\": \"https://w3id.org/traceability#LinkRole\"}",
           "title": "Related Link",
           "description": "Links related to this verifiable credential",
           "type": "array",
@@ -2186,15 +1454,13 @@
         }
       },
       "additionalProperties": false,
-      "required": [
-        "proof"
-      ],
+      "required": [],
       "examples": []
     }
   },
   "https://schema.org/ContactPoint": {
     "$id": "https://w3id.org/traceability/schemas/ContactPoint.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "ContactPoint",
       "@id": "https://schema.org/ContactPoint"
@@ -2235,10 +1501,9 @@
         "description": "Contact phone number."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/ContactPoint.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"ContactPoint\", \"@id\": \"https://schema.org/ContactPoint\"}",
       "title": "Contact Point",
       "description": "Contact information for entities.",
@@ -2288,7 +1553,7 @@
   },
   "https://w3id.org/traceability#CrudeOilProduct": {
     "$id": "https://w3id.org/traceability/schemas/CrudeOilProduct.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "CrudeOilProduct",
       "@id": "https://w3id.org/traceability#CrudeOilProduct"
@@ -2312,18 +1577,18 @@
         "title": "Manufacture Facility",
         "description": "Information on the manufacture facility."
       },
-      "https://schema.org/identifier": {
+      "https://schema.org/identifier?1": {
         "$comment": {
           "term": "UWI",
-          "@id": "https://schema.org/identifier"
+          "@id": "https://schema.org/identifier?1"
         },
         "title": "Unique Well Identifier",
         "description": "Unique Well Identifier used for individual well identification."
       },
-      "https://w3id.org/identifier": {
+      "https://w3id.org/identifier?2": {
         "$comment": {
           "term": "HSCode",
-          "@id": "https://w3id.org/identifier"
+          "@id": "https://w3id.org/identifier?2"
         },
         "title": "HSCode",
         "description": "Defines the Harmonized System Code for the Commodity"
@@ -2345,10 +1610,9 @@
         "description": "List of observations as seen and specified in the Inspection Report schema https://w3id.org/traceability?#InspectionReport"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/CrudeOilProduct.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"CrudeOilProduct\", \"@id\": \"https://w3id.org/traceability#CrudeOilProduct\"}",
       "title": "Crude Oil Product",
       "description": "Tombstone information regarding a crude oil product",
@@ -2399,13 +1663,13 @@
           "$ref": "https://w3id.org/traceability/schemas/Place.json"
         },
         "UWI": {
-          "$comment": "{\"term\": \"UWI\", \"@id\": \"https://schema.org/identifier\"}",
+          "$comment": "{\"term\": \"UWI\", \"@id\": \"https://schema.org/identifier?1\"}",
           "title": "Unique Well Identifier",
           "description": "Unique Well Identifier used for individual well identification.",
           "type": "string"
         },
         "HSCode": {
-          "$comment": "{\"term\": \"HSCode\", \"@id\": \"https://w3id.org/identifier\"}",
+          "$comment": "{\"term\": \"HSCode\", \"@id\": \"https://w3id.org/identifier?2\"}",
           "title": "HSCode",
           "description": "Defines the Harmonized System Code for the Commodity",
           "type": "string"
@@ -2432,7 +1696,7 @@
   },
   "https://w3id.org/traceability#Customer": {
     "$id": "https://w3id.org/traceability/schemas/Customer.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Customer",
       "@id": "https://w3id.org/traceability#Customer"
@@ -2471,7 +1735,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Customer.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Customer\", \"@id\": \"https://w3id.org/traceability#Customer\"}",
       "title": "Customer",
       "description": "Customer record based on Customer from schema.org",
@@ -2535,7 +1799,7 @@
   },
   "https://w3id.org/traceability#EcommerceAdditionalProductCodeRegistrationCredential": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceAdditionalProductCodeRegistrationCredential.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceAdditionalProductCodeRegistrationCredential",
       "@id": "https://w3id.org/traceability#EcommerceAdditionalProductCodeRegistrationCredential"
@@ -2576,10 +1840,9 @@
         "description": "Specific name of issued additional product code registration certificate"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceAdditionalProductCodeRegistrationCredential.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceAdditionalProductCodeRegistrationCredential\", \"@id\": \"https://w3id.org/traceability#EcommerceAdditionalProductCodeRegistrationCredential\"}",
       "title": "EcommerceAdditionalProductCodeRegistrationCredential",
       "description": "Ecommerce Additional Product Code Registration Credential",
@@ -2635,7 +1898,7 @@
   },
   "https://w3id.org/traceability#EcommerceBindingDataRegistrationCredential": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceBindingDataRegistrationCredential.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceBindingDataRegistrationCredential",
       "@id": "https://w3id.org/traceability#EcommerceBindingDataRegistrationCredential"
@@ -2694,10 +1957,9 @@
         "description": "Specific name of issued package registration certificate"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceBindingDataRegistrationCredential.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceBindingDataRegistrationCredential\", \"@id\": \"https://w3id.org/traceability#EcommerceBindingDataRegistrationCredential\"}",
       "title": "EcommerceBindingDataRegistrationCredential",
       "description": "Ecommerce Binding Data Registration Credential",
@@ -2770,7 +2032,7 @@
   },
   "https://w3id.org/traceability#EcommerceInvoiceRegistrationCredential": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceInvoiceRegistrationCredential.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceInvoiceRegistrationCredential",
       "@id": "https://w3id.org/traceability#EcommerceInvoiceRegistrationCredential"
@@ -2811,10 +2073,9 @@
         "description": "Specific name of issued invoice registration certificate"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceInvoiceRegistrationCredential.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceInvoiceRegistrationCredential\", \"@id\": \"https://w3id.org/traceability#EcommerceInvoiceRegistrationCredential\"}",
       "title": "EcommerceInvoiceRegistrationCredential",
       "description": "Ecommerce Invoice Registration Credential",
@@ -2870,7 +2131,7 @@
   },
   "https://w3id.org/traceability#EcommerceInvoiceRegistrationEvidenceDocument": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceInvoiceRegistrationEvidenceDocument.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceInvoiceRegistrationEvidenceDocument",
       "@id": "https://w3id.org/traceability#EcommerceInvoiceRegistrationEvidenceDocument"
@@ -2965,7 +2226,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceInvoiceRegistrationEvidenceDocument.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceInvoiceRegistrationEvidenceDocument\", \"@id\": \"https://w3id.org/traceability#EcommerceInvoiceRegistrationEvidenceDocument\"}",
       "title": "Invoice Registration Evidence Document",
       "description": "Evidence data for a registered eCommerce Invoice",
@@ -3022,7 +2283,7 @@
           "type": "string",
           "default": "",
           "examples": [
-            "http://acme.com/invoice.pdf"
+            "https://acme.com/invoice.pdf"
           ]
         },
         "broker": {
@@ -3090,7 +2351,7 @@
   },
   "https://w3id.org/traceability#EcommerceOrderRegistrationCredential": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceOrderRegistrationCredential.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceOrderRegistrationCredential",
       "@id": "https://w3id.org/traceability#EcommerceOrderRegistrationCredential"
@@ -3123,10 +2384,9 @@
         "description": "Specific name of issued order registration certificate"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceOrderRegistrationCredential.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceOrderRegistrationCredential\", \"@id\": \"https://w3id.org/traceability#EcommerceOrderRegistrationCredential\"}",
       "title": "EcommerceOrderRegistrationCredential",
       "description": "Ecommerce Order Registration Credential",
@@ -3175,7 +2435,7 @@
   },
   "https://w3id.org/traceability#EcommerceOrderRegistrationEvidenceDocument": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceOrderRegistrationEvidenceDocument.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceOrderRegistrationEvidenceDocument",
       "@id": "https://w3id.org/traceability#EcommerceOrderRegistrationEvidenceDocument"
@@ -3263,7 +2523,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceOrderRegistrationEvidenceDocument.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceOrderRegistrationEvidenceDocument\", \"@id\": \"https://w3id.org/traceability#EcommerceOrderRegistrationEvidenceDocument\"}",
       "title": "Order Registration Evidence Document",
       "description": "Evidence data for a registered eCommerce Order",
@@ -3338,7 +2598,7 @@
           "type": "string",
           "default": "",
           "examples": [
-            "http://acme.com/order.pdf"
+            "https://acme.com/order.pdf"
           ]
         },
         "seller": {
@@ -3371,7 +2631,7 @@
           "type": "string",
           "default": "",
           "examples": [
-            "http://purl.org/goodrelations/v1#PayPal"
+            "https://purl.org/goodrelations/v1#PayPal"
           ]
         },
         "orderedItem": {
@@ -3388,7 +2648,7 @@
   },
   "https://w3id.org/traceability#EcommercePackageItem": {
     "$id": "https://w3id.org/traceability/schemas/EcommercePackageItem.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommercePackageItem",
       "@id": "https://w3id.org/traceability#EcommercePackageItem"
@@ -3429,10 +2689,9 @@
         "description": "Product VC IDs included in the order"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommercePackageItem.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommercePackageItem\", \"@id\": \"https://w3id.org/traceability#EcommercePackageItem\"}",
       "title": "EcommercePackageItem",
       "description": "Ecommerce Package Item",
@@ -3488,7 +2747,7 @@
   },
   "https://w3id.org/traceability#EcommercePackageRegistrationCredential": {
     "$id": "https://w3id.org/traceability/schemas/EcommercePackageRegistrationCredential.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommercePackageRegistrationCredential",
       "@id": "https://w3id.org/traceability#EcommercePackageRegistrationCredential"
@@ -3519,10 +2778,9 @@
         "description": "Specific name of issued package registration certificate"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommercePackageRegistrationCredential.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommercePackageRegistrationCredential\", \"@id\": \"https://w3id.org/traceability#EcommercePackageRegistrationCredential\"}",
       "title": "EcommercePackageRegistrationCredential",
       "description": "Ecommerce Package Registration Credential",
@@ -3577,7 +2835,7 @@
   },
   "https://w3id.org/traceability#EcommercePackageRegistrationEvidenceDocument": {
     "$id": "https://w3id.org/traceability/schemas/EcommercePackageRegistrationEvidenceDocument.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommercePackageRegistrationEvidenceDocument",
       "@id": "https://w3id.org/traceability#EcommercePackageRegistrationEvidenceDocument"
@@ -3644,7 +2902,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommercePackageRegistrationEvidenceDocument.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommercePackageRegistrationEvidenceDocument\", \"@id\": \"https://w3id.org/traceability#EcommercePackageRegistrationEvidenceDocument\"}",
       "title": "Package Registration Evidence Document",
       "description": "Evidence data for a registered eCommerce Package",
@@ -3698,7 +2956,7 @@
           "type": "string",
           "default": "",
           "examples": [
-            "http://purl.org/goodrelations/v1#FederalExpress"
+            "https://purl.org/goodrelations/v1#FederalExpress"
           ]
         },
         "deliveryAddress": {
@@ -3738,7 +2996,7 @@
   },
   "https://w3id.org/traceability#EcommercePackingListItem": {
     "$id": "https://w3id.org/traceability/schemas/EcommercePackingListItem.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommercePackingListItem",
       "@id": "https://w3id.org/traceability#EcommercePackingListItem"
@@ -3763,10 +3021,9 @@
         "description": "Product VC IDs included in the order"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommercePackingListItem.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommercePackingListItem\", \"@id\": \"https://w3id.org/traceability#EcommercePackingListItem\"}",
       "title": "EcommercePackingListItem",
       "description": "Ecommerce Packing List Item",
@@ -3808,7 +3065,7 @@
   },
   "https://w3id.org/traceability#EcommercePackingListRegistrationCredential": {
     "$id": "https://w3id.org/traceability/schemas/EcommercePackingListRegistrationCredential.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommercePackingListRegistrationCredential",
       "@id": "https://w3id.org/traceability#EcommercePackingListRegistrationCredential"
@@ -3832,10 +3089,9 @@
         "description": "Specific name of issued packing list registration certificate"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommercePackingListRegistrationCredential.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommercePackingListRegistrationCredential\", \"@id\": \"https://w3id.org/traceability#EcommercePackingListRegistrationCredential\"}",
       "title": "EcommercePackingListRegistrationCredential",
       "description": "Ecommerce Packing List Registration Credential",
@@ -3881,7 +3137,7 @@
   },
   "https://w3id.org/traceability#EcommercePackingListRegistrationEvidenceDocument": {
     "$id": "https://w3id.org/traceability/schemas/EcommercePackingListRegistrationEvidenceDocument.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommercePackingListRegistrationEvidenceDocument",
       "@id": "https://w3id.org/traceability#EcommercePackingListRegistrationEvidenceDocument"
@@ -3941,7 +3197,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommercePackingListRegistrationEvidenceDocument.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommercePackingListRegistrationEvidenceDocument\", \"@id\": \"https://w3id.org/traceability#EcommercePackingListRegistrationEvidenceDocument\"}",
       "title": "Packing List Registration Evidence Document",
       "description": "Evidence data for a registered eCommerce Packing List based on schema.org",
@@ -3994,7 +3250,7 @@
           "type": "string",
           "default": "",
           "examples": [
-            "http://purl.org/goodrelations/v1#FederalExpress"
+            "https://purl.org/goodrelations/v1#FederalExpress"
           ]
         },
         "deliveryAddress": {
@@ -4025,7 +3281,7 @@
   },
   "https://w3id.org/traceability#EcommerceProductReceiptRegistrationCredential": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceProductReceiptRegistrationCredential.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceProductReceiptRegistrationCredential",
       "@id": "https://w3id.org/traceability#EcommerceProductReceiptRegistrationCredential"
@@ -4074,10 +3330,9 @@
         "description": "Specific name of issued invoice registration certificate"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceProductReceiptRegistrationCredential.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceProductReceiptRegistrationCredential\", \"@id\": \"https://w3id.org/traceability#EcommerceProductReceiptRegistrationCredential\"}",
       "title": "EcommerceProductReceiptRegistrationCredential",
       "description": "Ecommerce Product Receipt Registration Credential",
@@ -4140,7 +3395,7 @@
   },
   "https://w3id.org/traceability#EcommerceProductRegistrationCredential": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceProductRegistrationCredential.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceProductRegistrationCredential",
       "@id": "https://w3id.org/traceability#EcommerceProductRegistrationCredential"
@@ -4173,10 +3428,9 @@
         "description": "Specific name of issued product registration certificate"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceProductRegistrationCredential.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceProductRegistrationCredential\", \"@id\": \"https://w3id.org/traceability#EcommerceProductRegistrationCredential\"}",
       "title": "EcommerceProductRegistrationCredential",
       "description": "Ecommerce Product Registration Credential",
@@ -4225,7 +3479,7 @@
   },
   "https://w3id.org/traceability#EcommerceWayBillCommodityContent": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceWayBillCommodityContent.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceWayBillCommodityContent",
       "@id": "https://w3id.org/traceability#EcommerceWayBillCommodityContent"
@@ -4249,7 +3503,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceWayBillCommodityContent.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceWayBillCommodityContent\", \"@id\": \"https://w3id.org/traceability#EcommerceWayBillCommodityContent\"}",
       "title": "EcommerceWayBillCommodityContent",
       "type": "object",
@@ -4291,7 +3545,7 @@
   },
   "https://w3id.org/traceability#EcommerceWayBillCommodityGroup": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceWayBillCommodityGroup.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceWayBillCommodityGroup",
       "@id": "https://w3id.org/traceability#EcommerceWayBillCommodityGroup"
@@ -4322,7 +3576,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceWayBillCommodityGroup.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceWayBillCommodityGroup\", \"@id\": \"https://w3id.org/traceability#EcommerceWayBillCommodityGroup\"}",
       "title": "EcommerceWayBillCommodityGroup",
       "type": "object",
@@ -4367,7 +3621,7 @@
   },
   "https://w3id.org/traceability#EcommerceWayBillRegistrationCredential": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceWayBillRegistrationCredential.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceWayBillRegistrationCredential",
       "@id": "https://w3id.org/traceability#EcommerceWayBillRegistrationCredential"
@@ -4433,10 +3687,9 @@
         "description": "Specific name of issued package registration certificate"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceWayBillRegistrationCredential.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceWayBillRegistrationCredential\", \"@id\": \"https://w3id.org/traceability#EcommerceWayBillRegistrationCredential\"}",
       "title": "EcommerceWayBillRegistrationCredential",
       "description": "Ecommerce Way Bill Registration Credential",
@@ -4518,7 +3771,7 @@
   },
   "https://w3id.org/traceability#EcommerceWayBillRegistrationEvidenceDocument": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceWayBillRegistrationEvidenceDocument.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceWayBillRegistrationEvidenceDocument",
       "@id": "https://w3id.org/traceability#EcommerceWayBillRegistrationEvidenceDocument"
@@ -4624,7 +3877,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceWayBillRegistrationEvidenceDocument.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceWayBillRegistrationEvidenceDocument\", \"@id\": \"https://w3id.org/traceability#EcommerceWayBillRegistrationEvidenceDocument\"}",
       "title": "Way Bill Registration Evidence Document",
       "description": "Evidence data for a registered eCommerce Way Bill based on IATA electronic Air Way Bill https://blanker.org/files/air-waybill-2.xls",
@@ -4750,7 +4003,7 @@
   },
   "https://w3id.org/traceability#EcommerceWayBillTotals": {
     "$id": "https://w3id.org/traceability/schemas/EcommerceWayBillTotals.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "EcommerceWayBillTotals",
       "@id": "https://w3id.org/traceability#EcommerceWayBillTotals"
@@ -4802,7 +4055,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/EcommerceWayBillTotals.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"EcommerceWayBillTotals\", \"@id\": \"https://w3id.org/traceability#EcommerceWayBillTotals\"}",
       "title": "EcommerceWayBillTotals",
       "type": "object",
@@ -4865,7 +4118,7 @@
   },
   "https://w3id.org/traceability#Entity": {
     "$id": "https://w3id.org/traceability/schemas/Entity.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Entity",
       "@id": "https://w3id.org/traceability#Entity"
@@ -4873,10 +4126,9 @@
     "title": "Entity",
     "description": "A person or organization.",
     "classProperties": {},
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Entity.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Entity\", \"@id\": \"https://w3id.org/traceability#Entity\"}",
       "title": "Entity",
       "description": "A person or organization.",
@@ -4893,7 +4145,7 @@
   },
   "https://schema.org/GeoCoordinates": {
     "$id": "https://w3id.org/traceability/schemas/GeoCoordinates.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "GeoCoordinates",
       "@id": "https://schema.org/GeoCoordinates"
@@ -4918,10 +4170,9 @@
         "description": "The arc or portion of the earth's equator intersected between the meridian of a given place and the prime meridian and expressed in degrees."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/GeoCoordinates.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"GeoCoordinates\", \"@id\": \"https://schema.org/GeoCoordinates\"}",
       "title": "Geographic Coordinates",
       "description": "The geographic coordinates of a place or event.",
@@ -4961,9 +4212,289 @@
       "examples": []
     }
   },
+  "https://w3id.org/traceability#Inbond": {
+    "$id": "https://w3id.org/traceability/schemas/Inbond.json",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$comment": {
+      "term": "Inbond",
+      "@id": "https://w3id.org/traceability#Inbond"
+    },
+    "title": "Inbond",
+    "description": "",
+    "classProperties": {
+      "https://www.gs1.org/voc/Product": {
+        "$comment": {
+          "term": "product",
+          "@id": "https://www.gs1.org/voc/Product"
+        },
+        "title": "Product",
+        "description": "Product details as outlined in the Product.json schema"
+      },
+      "https://schema.org/ParcelDelivery": {
+        "$comment": {
+          "term": "shipment",
+          "@id": "https://schema.org/ParcelDelivery"
+        },
+        "title": "Shipment",
+        "description": "Details for a shipment of goods."
+      },
+      "https://w3id.org/identifier?1": {
+        "$comment": {
+          "term": "inBondNumber",
+          "@id": "https://w3id.org/identifier?1"
+        },
+        "title": "InBond Number",
+        "description": "Identifier for the individual InBond"
+      },
+      "https://w3id.org/identifier?3": {
+        "$comment": {
+          "term": "entryId",
+          "@id": "https://w3id.org/identifier?3"
+        },
+        "title": "Entry ID",
+        "description": "ACE entry summary unique identifier"
+      },
+      "https://w3id.org/identifier?2": {
+        "$comment": {
+          "term": "ftzNo",
+          "@id": "https://w3id.org/identifier?2"
+        },
+        "title": "FTZ Number",
+        "description": "ACE admission no. into an FTZ zone"
+      },
+      "https://w3id.org/identifier?6": {
+        "$comment": {
+          "term": "inBondType",
+          "@id": "https://w3id.org/identifier?6"
+        },
+        "title": "InBond Type",
+        "description": "Type of InBond"
+      },
+      "https://www.gs1.org/voc/Place?3": {
+        "$comment": {
+          "term": "portOfEntry",
+          "@id": "https://www.gs1.org/voc/Place?3"
+        },
+        "title": "Port of Entry",
+        "description": "Port of Entry declared in US"
+      },
+      "https://www.gs1.org/voc/Place?4": {
+        "$comment": {
+          "term": "portOfDestination",
+          "@id": "https://www.gs1.org/voc/Place?4"
+        },
+        "title": "Port of final destination",
+        "description": "Port of Final destination in the US"
+      },
+      "https://www.gs1.org/voc/Place?5": {
+        "$comment": {
+          "term": "portOfArrival",
+          "@id": "https://www.gs1.org/voc/Place?5"
+        },
+        "title": "Port of Entry",
+        "description": "Port of Arrival into US"
+      },
+      "https://w3id.org/traceability?2#Entity?1": {
+        "$comment": {
+          "term": "carrier",
+          "@id": "https://w3id.org/traceability?2#Entity?1"
+        },
+        "title": "Carrier",
+        "description": "Entity responsible for transporting product"
+      },
+      "https://w3id.org/identifier?4": {
+        "$comment": {
+          "term": "irsNumber",
+          "@id": "https://w3id.org/identifier?4"
+        },
+        "title": "IRS Number",
+        "description": "Number for identification with IRS"
+      },
+      "https://w3id.org/traceability?2#Entity?2": {
+        "$comment": {
+          "term": "recipient",
+          "@id": "https://w3id.org/traceability?2#Entity?2"
+        },
+        "title": "Recipient",
+        "description": "Entity that will recieve product"
+      },
+      "https://w3id.org/identifier?5": {
+        "$comment": {
+          "term": "billOfLadingNumber",
+          "@id": "https://w3id.org/identifier?5"
+        },
+        "title": "BOL",
+        "description": "Identifier for the individual BOL"
+      },
+      "https://schema.org/DateTime#v2": {
+        "$comment": {
+          "term": "expectedDeliveryDate",
+          "@id": "https://schema.org/DateTime#v2"
+        },
+        "title": "Expected Delivery Date",
+        "description": "Date when the product is expected to arrive"
+      },
+      "https://schema.org/PriceSpecification?1": {
+        "$comment": {
+          "term": "valuePerItem",
+          "@id": "https://schema.org/PriceSpecification?1"
+        },
+        "title": "Value Per Item",
+        "description": "Total Value Per Item"
+      },
+      "https://schema.org/PriceSpecification": {
+        "$comment": {
+          "term": "totalOrderValue",
+          "@id": "https://schema.org/PriceSpecification"
+        },
+        "title": "totalOrderValue",
+        "description": "Total Value Per Item"
+      }
+    },
+    "schema": {
+      "$id": "https://w3id.org/traceability/schemas/Inbond.json",
+      "$schema": "https://json-schema.org/draft-07/schema#",
+      "$comment": "{\"term\": \"Inbond\", \"@id\": \"https://w3id.org/traceability#Inbond\"}",
+      "title": "Inbond",
+      "description": "",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "type": "array"
+        },
+        "id": {
+          "type": "string"
+        },
+        "issuanceDate": {
+          "type": "string"
+        },
+        "credentialSubject": {
+          "type": "object"
+        },
+        "issuer": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "object"
+            }
+          ]
+        },
+        "type": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array"
+            }
+          ]
+        },
+        "product": {
+          "$comment": "{\"term\": \"product\", \"@id\": \"https://www.gs1.org/voc/Product\"}",
+          "title": "Product",
+          "description": "Product details as outlined in the Product.json schema",
+          "$ref": "https://w3id.org/traceability/schemas/Product.json"
+        },
+        "shipment": {
+          "$comment": "{\"term\": \"shipment\", \"@id\": \"https://schema.org/ParcelDelivery\"}",
+          "title": "Shipment",
+          "description": "Details for a shipment of goods.",
+          "$ref": "https://w3id.org/traceability/schemas/ParcelDelivery.json"
+        },
+        "inBondNumber": {
+          "$comment": "{\"term\": \"inBondNumber\", \"@id\": \"https://w3id.org/identifier?1\"}",
+          "title": "InBond Number",
+          "description": "Identifier for the individual InBond",
+          "type": "string"
+        },
+        "entryId": {
+          "$comment": "{\"term\": \"entryId\", \"@id\": \"https://w3id.org/identifier?3\"}",
+          "title": "Entry ID",
+          "description": "ACE entry summary unique identifier",
+          "type": "string"
+        },
+        "ftzNo": {
+          "$comment": "{\"term\": \"ftzNo\", \"@id\": \"https://w3id.org/identifier?2\"}",
+          "title": "FTZ Number",
+          "description": "ACE admission no. into an FTZ zone",
+          "type": "string"
+        },
+        "inBondType": {
+          "$comment": "{\"term\": \"inBondType\", \"@id\": \"https://w3id.org/identifier?6\"}",
+          "title": "InBond Type",
+          "description": "Type of InBond",
+          "type": "string"
+        },
+        "portOfEntry": {
+          "$comment": "{\"term\": \"portOfEntry\", \"@id\": \"https://www.gs1.org/voc/Place?3\"}",
+          "title": "Port of Entry",
+          "description": "Port of Entry declared in US",
+          "$ref": "https://w3id.org/traceability/schemas/Place.json"
+        },
+        "portOfDestination": {
+          "$comment": "{\"term\": \"portOfDestination\", \"@id\": \"https://www.gs1.org/voc/Place?4\"}",
+          "title": "Port of final destination",
+          "description": "Port of Final destination in the US",
+          "$ref": "https://w3id.org/traceability/schemas/Place.json"
+        },
+        "portOfArrival": {
+          "$comment": "{\"term\": \"portOfArrival\", \"@id\": \"https://www.gs1.org/voc/Place?5\"}",
+          "title": "Port of Entry",
+          "description": "Port of Arrival into US",
+          "$ref": "https://w3id.org/traceability/schemas/Place.json"
+        },
+        "carrier": {
+          "$comment": "{\"term\": \"carrier\", \"@id\": \"https://w3id.org/traceability?2#Entity?1\"}",
+          "title": "Carrier",
+          "description": "Entity responsible for transporting product",
+          "$ref": "https://w3id.org/traceability/schemas/Entity.json"
+        },
+        "irsNumber": {
+          "$comment": "{\"term\": \"irsNumber\", \"@id\": \"https://w3id.org/identifier?4\"}",
+          "title": "IRS Number",
+          "description": "Number for identification with IRS",
+          "type": "string"
+        },
+        "recipient": {
+          "$comment": "{\"term\": \"recipient\", \"@id\": \"https://w3id.org/traceability?2#Entity?2\"}",
+          "title": "Recipient",
+          "description": "Entity that will recieve product",
+          "$ref": "https://w3id.org/traceability/schemas/Entity.json"
+        },
+        "billOfLadingNumber": {
+          "$comment": "{\"term\": \"billOfLadingNumber\", \"@id\": \"https://w3id.org/identifier?5\"}",
+          "title": "BOL",
+          "description": "Identifier for the individual BOL",
+          "type": "string"
+        },
+        "expectedDeliveryDate": {
+          "$comment": "{\"term\": \"expectedDeliveryDate\", \"@id\": \"https://schema.org/DateTime#v2\"}",
+          "title": "Expected Delivery Date",
+          "description": "Date when the product is expected to arrive",
+          "type": "string"
+        },
+        "valuePerItem": {
+          "$comment": "{\"term\": \"valuePerItem\", \"@id\": \"https://schema.org/PriceSpecification?1\"}",
+          "title": "Value Per Item",
+          "description": "Total Value Per Item",
+          "type": "string"
+        },
+        "totalOrderValue": {
+          "$comment": "{\"term\": \"totalOrderValue\", \"@id\": \"https://schema.org/PriceSpecification\"}",
+          "title": "totalOrderValue",
+          "description": "Total Value Per Item",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "examples": []
+    }
+  },
   "https://w3id.org/traceability#InspectionReport": {
     "$id": "https://w3id.org/traceability/schemas/InspectionReport.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "InspectionReport",
       "@id": "https://w3id.org/traceability#InspectionReport"
@@ -4989,10 +4520,9 @@
         "description": "List of observations"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/InspectionReport.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"InspectionReport\", \"@id\": \"https://w3id.org/traceability#InspectionReport\"}",
       "title": "Inspection Report",
       "description": "Series of observations",
@@ -5033,7 +4563,7 @@
   },
   "https://w3id.org/traceability#Inspector": {
     "$id": "https://w3id.org/traceability/schemas/Inspector.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Inspector",
       "@id": "https://w3id.org/traceability#Inspector"
@@ -5058,10 +4588,9 @@
         "description": "List of qualifications relevant to the inspection."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Inspector.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Inspector\", \"@id\": \"https://w3id.org/traceability#Inspector\"}",
       "title": "Inspector",
       "description": "Information on the person performing an inspection",
@@ -5099,7 +4628,7 @@
   },
   "https://w3id.org/traceability#IntentToSell": {
     "$id": "https://w3id.org/traceability/schemas/IntentToSell.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "IntentToSell",
       "@id": "https://w3id.org/traceability#IntentToSell"
@@ -5148,10 +4677,9 @@
         "description": "Date delcared as a non-binding target to sell product by."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/IntentToSell.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"IntentToSell\", \"@id\": \"https://w3id.org/traceability#IntentToSell\"}",
       "title": "IntentToSell",
       "description": "A simple case where an entity (person or organization) wishes to notify some third party that they intend to sell some product, likely into a different geographic region than in originated in.  This is a highly simplified version of an LOI that can be used to identify and declare intent earlier in the process than would be possible otherwise.  This object may be easily subclassed for extension with other data for other cases where additional regulatory data may be required",
@@ -5207,7 +4735,7 @@
   },
   "https://schema.org/Invoice": {
     "$id": "https://w3id.org/traceability/schemas/Invoice.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Invoice",
       "@id": "https://schema.org/Invoice"
@@ -5280,10 +4808,9 @@
         "description": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Invoice.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Invoice\", \"@id\": \"https://schema.org/Invoice\"}",
       "title": "Invoice",
       "description": "A statement of the money due for goods or services; a bill.",
@@ -5360,7 +4887,7 @@
   },
   "https://w3id.org/traceability#IssuerAgent": {
     "$id": "https://w3id.org/traceability/schemas/IssuerAgent.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "IssuerAgent",
       "@id": "https://w3id.org/traceability#IssuerAgent"
@@ -5441,7 +4968,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/IssuerAgent.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"IssuerAgent\", \"@id\": \"https://w3id.org/traceability#IssuerAgent\"}",
       "title": "IssuerAgent",
       "description": "IssuerAgent definition based on IATA electronic Air Way Bill https://blanker.org/files/air-waybill-2.xls",
@@ -5541,7 +5068,7 @@
   },
   "https://w3id.org/traceability#ItemShipped": {
     "$id": "https://w3id.org/traceability/schemas/ItemShipped.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "ItemShipped",
       "@id": "https://w3id.org/traceability#ItemShipped"
@@ -5615,7 +5142,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/ItemShipped.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"ItemShipped\", \"@id\": \"https://w3id.org/traceability#ItemShipped\"}",
       "title": "Part of an Ecommerce Order",
       "description": "Part of an Order listed in the Evidence data for a registered eCommerce Packing List based on schema.org",
@@ -5732,7 +5259,7 @@
   },
   "https://w3id.org/traceability#LEIaddress": {
     "$id": "https://w3id.org/traceability/schemas/LEIaddress.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "LEIaddress",
       "@id": "https://w3id.org/traceability#LEIaddress"
@@ -5804,10 +5331,9 @@
         "title": "Postalcode"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/LEIaddress.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"LEIaddress\", \"@id\": \"https://w3id.org/traceability#LEIaddress\"}",
       "title": "LEIaddress",
       "description": "GLEIF LEI Redord Level 1 Schema for LEI Address",
@@ -5889,7 +5415,7 @@
   },
   "https://w3id.org/traceability#LEIauthority": {
     "$id": "https://w3id.org/traceability/schemas/LEIauthority.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "LEIauthority",
       "@id": "https://w3id.org/traceability#LEIauthority"
@@ -5919,10 +5445,9 @@
         "title": "validationAuthorityEntityID"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/LEIauthority.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"LEIauthority\", \"@id\": \"https://w3id.org/traceability#LEIauthority\"}",
       "title": "LEIauthority",
       "description": "GLEIF LEI Redord Level 1 Schema for LEI Authority",
@@ -5968,7 +5493,7 @@
   },
   "https://w3id.org/traceability#LEIentity": {
     "$id": "https://w3id.org/traceability/schemas/LEIentity.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "LEIentity",
       "@id": "https://w3id.org/traceability#LEIentity"
@@ -6089,10 +5614,9 @@
         "title": "OtherAddresses"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/LEIentity.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"LEIentity\", \"@id\": \"https://w3id.org/traceability#LEIentity\"}",
       "title": "LEIentity",
       "description": "GLEIF LEI Redord Level 1 Schema for LEI Entity",
@@ -6220,7 +5744,7 @@
   },
   "https://w3id.org/traceability#LEIevidenceDocument": {
     "$id": "https://w3id.org/traceability/schemas/LEIevidenceDocument.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "LEIevidenceDocument",
       "@id": "https://w3id.org/traceability#LEIevidenceDocument"
@@ -6258,10 +5782,9 @@
         "description": "S.W.I.F.T. bank identifier code"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/LEIevidenceDocument.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"LEIevidenceDocument\", \"@id\": \"https://w3id.org/traceability#LEIevidenceDocument\"}",
       "title": "LEIevidenceDocument",
       "description": "GLEIF LEI Redord Level 1 Schema",
@@ -6314,7 +5837,7 @@
   },
   "https://w3id.org/traceability#LEIregistration": {
     "$id": "https://w3id.org/traceability/schemas/LEIregistration.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "LEIregistration",
       "@id": "https://w3id.org/traceability#LEIregistration"
@@ -6372,10 +5895,9 @@
         "title": "validationAuthority"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/LEIregistration.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"LEIregistration\", \"@id\": \"https://w3id.org/traceability#LEIregistration\"}",
       "title": "LEIregistration",
       "description": "GLEIF LEI Redord Level 1 Schema for LEI Registration",
@@ -6448,7 +5970,7 @@
   },
   "https://w3id.org/traceability#LegalEntityIdentifierCredential": {
     "$id": "https://w3id.org/traceability/schemas/LegalEntityIdentifierCredential.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "LegalEntityIdentifierCredential",
       "@id": "https://w3id.org/traceability#LegalEntityIdentifierCredential"
@@ -6473,10 +5995,9 @@
         "description": "Specific name of issued legal entity certificate"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/LegalEntityIdentifierCredential.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"LegalEntityIdentifierCredential\", \"@id\": \"https://w3id.org/traceability#LegalEntityIdentifierCredential\"}",
       "title": "LegalEntityIdentifierCredential",
       "description": "GLEIF verifiable Legal Entity Identifier Credential (verifiable leiCode Credential)",
@@ -6518,7 +6039,7 @@
   },
   "https://schema.org/LinkRole": {
     "$id": "https://w3id.org/traceability/schemas/LinkRole.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "LinkRole",
       "@id": "https://schema.org/LinkRole"
@@ -6543,10 +6064,9 @@
         "description": "Indicates the relationship type of a link."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/LinkRole.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"LinkRole\", \"@id\": \"https://schema.org/LinkRole\"}",
       "title": "Link Role",
       "description": "A Role that represents a Web link e.g. as expressed via the 'url' property.",
@@ -6584,7 +6104,7 @@
   },
   "https://w3id.org/traceability#MeasuredProperty": {
     "$id": "https://w3id.org/traceability/schemas/MeasuredProperty.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "MeasuredProperty",
       "@id": "https://w3id.org/traceability#MeasuredProperty"
@@ -6592,10 +6112,9 @@
     "title": "Measured Property",
     "description": "A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property.",
     "classProperties": {},
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/MeasuredProperty.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"MeasuredProperty\", \"@id\": \"https://w3id.org/traceability#MeasuredProperty\"}",
       "title": "Measured Property",
       "description": "A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property.",
@@ -6612,7 +6131,7 @@
   },
   "https://www.schema.org/QuantitativeValue": {
     "$id": "https://w3id.org/traceability/schemas/MeasuredValue.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "MeasuredValue",
       "@id": "https://www.schema.org/QuantitativeValue"
@@ -6634,13 +6153,12 @@
           "@id": "https://schema.org/unitCode"
         },
         "title": "Measurement Unit",
-        "description": "A string value indicating a Measurement Unit from UN/ECE Recommendation 20, Units of Measure used in International Trade, e.g., GRM = gram - see <a href=\"http://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf\">rec20_rev3</a>"
+        "description": "A string value indicating a Measurement Unit from UN/ECE Recommendation 20, Units of Measure used in International Trade, e.g., GRM = gram - see <a href=\"https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf\">rec20_rev3</a>"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/MeasuredValue.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"MeasuredValue\", \"@id\": \"https://www.schema.org/QuantitativeValue\"}",
       "title": "Measured Value",
       "description": "The measurement of an Observation.",
@@ -6668,7 +6186,7 @@
         "unitCode": {
           "$comment": "{\"term\": \"unitCode\", \"@id\": \"https://schema.org/unitCode\"}",
           "title": "Measurement Unit",
-          "description": "A string value indicating a Measurement Unit from UN/ECE Recommendation 20, Units of Measure used in International Trade, e.g., GRM = gram - see <a href=\"http://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf\">rec20_rev3</a>",
+          "description": "A string value indicating a Measurement Unit from UN/ECE Recommendation 20, Units of Measure used in International Trade, e.g., GRM = gram - see <a href=\"https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf\">rec20_rev3</a>",
           "type": "string"
         }
       },
@@ -6678,7 +6196,7 @@
   },
   "https://w3id.org/traceability#MechanicalProperty": {
     "$id": "https://w3id.org/traceability/schemas/MechanicalProperty.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "MechanicalProperty",
       "@id": "https://w3id.org/traceability#MechanicalProperty"
@@ -6711,10 +6229,9 @@
         "description": "The description of the item."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/MechanicalProperty.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"MechanicalProperty\", \"@id\": \"https://w3id.org/traceability#MechanicalProperty\"}",
       "title": "Mechanical Property",
       "description": "A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property.",
@@ -6756,9 +6273,510 @@
       "examples": []
     }
   },
+  "https://w3id.org/traceability#MillTestReport": {
+    "$id": "https://w3id.org/traceability/schemas/MillTestReport.json",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$comment": {
+      "term": "MillTestReport",
+      "@id": "https://w3id.org/traceability#MillTestReport"
+    },
+    "title": "Mill Test Report",
+    "description": "Test results made by a manufacturer of a metal product.",
+    "classProperties": {
+      "https://schema.org/Organization": {
+        "$comment": {
+          "term": "manufacturer",
+          "@id": "https://schema.org/Organization"
+        },
+        "title": "Manufacturer",
+        "description": "The manufacturer"
+      },
+      "https://w3id.org/traceability#SteelProduct": {
+        "$comment": {
+          "term": "product",
+          "@id": "https://w3id.org/traceability#SteelProduct"
+        },
+        "title": "Product",
+        "description": "Product details"
+      },
+      "https://w3id.org/traceability#Purchase": {
+        "$comment": {
+          "term": "purchase",
+          "@id": "https://w3id.org/traceability#Purchase"
+        },
+        "title": "Purchase",
+        "description": "Purchase details"
+      },
+      "https://schema.org/ParcelDelivery": {
+        "$comment": {
+          "term": "shipment",
+          "@id": "https://schema.org/ParcelDelivery"
+        },
+        "title": "Shipment",
+        "description": "Shipment details"
+      }
+    },
+    "schema": {
+      "$id": "https://w3id.org/traceability/schemas/MillTestReport.json",
+      "$schema": "https://json-schema.org/draft-07/schema#",
+      "$comment": "{\"term\": \"MillTestReport\", \"@id\": \"https://w3id.org/traceability#MillTestReport\"}",
+      "title": "Mill Test Report",
+      "description": "Test results made by a manufacturer of a metal product.",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "type": "array"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array"
+            }
+          ]
+        },
+        "manufacturer": {
+          "$comment": "{\"term\": \"manufacturer\", \"@id\": \"https://schema.org/Organization\"}",
+          "title": "Manufacturer",
+          "description": "The manufacturer",
+          "$ref": "https://w3id.org/traceability/schemas/Organization.json"
+        },
+        "product": {
+          "$comment": "{\"term\": \"product\", \"@id\": \"https://w3id.org/traceability#SteelProduct\"}",
+          "title": "Product",
+          "description": "Product details",
+          "$ref": "https://w3id.org/traceability/schemas/SteelProduct.json"
+        },
+        "purchase": {
+          "$comment": "{\"term\": \"purchase\", \"@id\": \"https://w3id.org/traceability#Purchase\"}",
+          "title": "Purchase",
+          "description": "Purchase details",
+          "$ref": "https://w3id.org/traceability/schemas/Purchase.json"
+        },
+        "shipment": {
+          "$comment": "{\"term\": \"shipment\", \"@id\": \"https://schema.org/ParcelDelivery\"}",
+          "title": "Shipment",
+          "description": "Shipment details",
+          "$ref": "https://w3id.org/traceability/schemas/ParcelDelivery.json"
+        }
+      },
+      "required": [
+        "@context",
+        "type",
+        "manufacturer",
+        "product",
+        "purchase",
+        "shipment"
+      ],
+      "additionalProperties": false,
+      "examples": []
+    }
+  },
+  "https://w3id.org/traceability#MillTestReportCertificate": {
+    "$id": "https://w3id.org/traceability/schemas/MillTestReportCertificate.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$comment": {
+      "term": "MillTestReportCertificate",
+      "@id": "https://w3id.org/traceability#MillTestReportCertificate"
+    },
+    "title": "Mill Test Report Certificate",
+    "description": "Certifications made by a manufacturer of a metal product.",
+    "classProperties": {
+      "https://w3id.org/traceability#LinkRole": {
+        "$comment": {
+          "term": "relatedLink",
+          "@id": "https://w3id.org/traceability#LinkRole"
+        },
+        "title": "Related Link",
+        "description": "Links related to this verifiable credential"
+      }
+    },
+    "schema": {
+      "$id": "https://w3id.org/traceability/schemas/MillTestReportCertificate.json",
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$comment": "{\"term\": \"MillTestReportCertificate\", \"@id\": \"https://w3id.org/traceability#MillTestReportCertificate\"}",
+      "title": "Mill Test Report Certificate",
+      "description": "Certifications made by a manufacturer of a metal product.",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "type": "array",
+          "const": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/traceability/v1"
+          ]
+        },
+        "type": {
+          "type": "array",
+          "const": [
+            "VerifiableCredential",
+            "MillTestReportCertificate"
+          ]
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "issuanceDate": {
+          "type": "string"
+        },
+        "issuer": {
+          "type": "object"
+        },
+        "credentialSubject": {
+          "type": "object"
+        },
+        "proof": {
+          "type": "object"
+        },
+        "relatedLink": {
+          "$comment": "{\"term\": \"relatedLink\", \"@id\": \"https://w3id.org/traceability#LinkRole\"}",
+          "title": "Related Link",
+          "description": "Links related to this verifiable credential",
+          "type": "array",
+          "items": {
+            "$ref": "https://w3id.org/traceability/schemas/LinkRole.json"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [],
+      "examples": []
+    }
+  },
+  "https://w3id.org/traceability#NaturalGasProduct": {
+    "$id": "https://w3id.org/traceability/schemas/NaturalGasProduct.json",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$comment": {
+      "term": "NaturalGasProduct",
+      "@id": "https://w3id.org/traceability#NaturalGasProduct"
+    },
+    "title": "Natural Gas Product",
+    "description": "Tombstone information regarding a natural gas product",
+    "classProperties": {
+      "https://www.gs1.org/voc/Product": {
+        "$comment": {
+          "term": "product",
+          "@id": "https://www.gs1.org/voc/Product"
+        },
+        "title": "Product",
+        "description": "Product details as outlined in the Product.json schema"
+      },
+      "https://www.gs1.org/voc/Place": {
+        "$comment": {
+          "term": "facility",
+          "@id": "https://www.gs1.org/voc/Place"
+        },
+        "title": "Manufacture Facility",
+        "description": "Information on the manufacture facility."
+      },
+      "https://schema.org/identifier?1": {
+        "$comment": {
+          "term": "UWI",
+          "@id": "https://schema.org/identifier?1"
+        },
+        "title": "Unique Well Identifier",
+        "description": "Unique Well Identifier used for individual well identification."
+      },
+      "https://w3id.org/identifier?2": {
+        "$comment": {
+          "term": "HSCode",
+          "@id": "https://w3id.org/identifier?2"
+        },
+        "title": "HSCode",
+        "description": "Defines the Harmonized System Code for the Commodity"
+      },
+      "https://schema.org/DateTime#v2": {
+        "$comment": {
+          "term": "productionDate",
+          "@id": "https://schema.org/DateTime#v2"
+        },
+        "title": "Production Date",
+        "description": "Date when the product was created"
+      },
+      "https://w3id.org/traceability#observation": {
+        "$comment": {
+          "term": "observation",
+          "@id": "https://w3id.org/traceability#observation"
+        },
+        "title": "Observation List",
+        "description": "List of observations as seen and specified in the Inspection Report schema https://w3id.org/traceability?#InspectionReport"
+      }
+    },
+    "schema": {
+      "$id": "https://w3id.org/traceability/schemas/NaturalGasProduct.json",
+      "$schema": "https://json-schema.org/draft-07/schema#",
+      "$comment": "{\"term\": \"NaturalGasProduct\", \"@id\": \"https://w3id.org/traceability#NaturalGasProduct\"}",
+      "title": "Natural Gas Product",
+      "description": "Tombstone information regarding a natural gas product",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "type": "array"
+        },
+        "id": {
+          "type": "string"
+        },
+        "issuanceDate": {
+          "type": "string"
+        },
+        "credentialSubject": {
+          "type": "object"
+        },
+        "issuer": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "object"
+            }
+          ]
+        },
+        "type": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array"
+            }
+          ]
+        },
+        "product": {
+          "$comment": "{\"term\": \"product\", \"@id\": \"https://www.gs1.org/voc/Product\"}",
+          "title": "Product",
+          "description": "Product details as outlined in the Product.json schema",
+          "$ref": "https://w3id.org/traceability/schemas/Product.json"
+        },
+        "facility": {
+          "$comment": "{\"term\": \"facility\", \"@id\": \"https://www.gs1.org/voc/Place\"}",
+          "title": "Manufacture Facility",
+          "description": "Information on the manufacture facility.",
+          "$ref": "https://w3id.org/traceability/schemas/Place.json"
+        },
+        "UWI": {
+          "$comment": "{\"term\": \"UWI\", \"@id\": \"https://schema.org/identifier?1\"}",
+          "title": "Unique Well Identifier",
+          "description": "Unique Well Identifier used for individual well identification.",
+          "type": "string"
+        },
+        "HSCode": {
+          "$comment": "{\"term\": \"HSCode\", \"@id\": \"https://w3id.org/identifier?2\"}",
+          "title": "HSCode",
+          "description": "Defines the Harmonized System Code for the Commodity",
+          "type": "string"
+        },
+        "productionDate": {
+          "$comment": "{\"term\": \"productionDate\", \"@id\": \"https://schema.org/DateTime#v2\"}",
+          "title": "Production Date",
+          "description": "Date when the product was created",
+          "type": "string"
+        },
+        "observation": {
+          "$comment": "{\"term\": \"observation\", \"@id\": \"https://w3id.org/traceability#observation\"}",
+          "title": "Observation List",
+          "description": "List of observations as seen and specified in the Inspection Report schema https://w3id.org/traceability?#InspectionReport",
+          "type": "array",
+          "items": {
+            "$ref": "https://w3id.org/traceability/schemas/Observation.json"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "examples": []
+    }
+  },
+  "https://w3id.org/traceability#OGBillOfLading": {
+    "$id": "https://w3id.org/traceability/schemas/OGBillOfLading.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$comment": {
+      "term": "OGBillOfLading",
+      "@id": "https://w3id.org/traceability#OGBillOfLading"
+    },
+    "title": "Bill of Lading for an Oil and Gas Product",
+    "description": "Information on the Inspection and the observations made",
+    "classProperties": {
+      "https://w3id.org/traceability#BillOfLading": {
+        "$comment": {
+          "term": "billOfLading",
+          "@id": "https://w3id.org/traceability#BillOfLading"
+        },
+        "title": "Bill Of Lading",
+        "description": "Bill Of Lading"
+      },
+      "https://schema.org/DateTime?1": {
+        "$comment": {
+          "term": "shippingDate",
+          "@id": "https://schema.org/DateTime?1"
+        },
+        "title": "Shipping Date",
+        "description": "Date of shipping"
+      },
+      "https://schema.org/DateTime?2": {
+        "$comment": {
+          "term": "arrivalDate",
+          "@id": "https://schema.org/DateTime?2"
+        },
+        "title": "Arrival Date",
+        "description": "Date of arrival."
+      },
+      "https://www.schema.org/value?1": {
+        "$comment": {
+          "term": "valuePerItem",
+          "@id": "https://www.schema.org/value?1"
+        },
+        "title": "Value Per Item",
+        "description": "Value Per Item"
+      },
+      "https://www.schema.org/value?2": {
+        "$comment": {
+          "term": "totalOrderValue",
+          "@id": "https://www.schema.org/value?2"
+        },
+        "title": "Total Order Value",
+        "description": "Total value of the order"
+      },
+      "https://www.schema.org/value?3": {
+        "$comment": {
+          "term": "freightChargeTerms",
+          "@id": "https://www.schema.org/value?3"
+        },
+        "title": "freight Charge Terms",
+        "description": "Terms of the freight charge"
+      },
+      "https://schema.org/identifier": {
+        "$comment": {
+          "term": "batchNumber",
+          "@id": "https://schema.org/identifier"
+        },
+        "title": "Unique Well Identifier",
+        "description": "Unique Well Identifier used for individual well identification."
+      },
+      "https://schema.org/MeasuredValue?2": {
+        "$comment": {
+          "term": "openingVolume",
+          "@id": "https://schema.org/MeasuredValue?2"
+        },
+        "title": "Opening Volume",
+        "description": "Volume at injection"
+      },
+      "https://schema.org/MeasuredValue?1": {
+        "$comment": {
+          "term": "closingVolume",
+          "@id": "https://schema.org/MeasuredValue?1"
+        },
+        "title": "closingVolume",
+        "description": "Volume at closing"
+      },
+      "https://w3id.org/traceability#observation": {
+        "$comment": {
+          "term": "observation",
+          "@id": "https://w3id.org/traceability#observation"
+        },
+        "title": "Observation List",
+        "description": "List of observations as seen and specified in the Inspection Report schema https://w3id.org/traceability?#InspectionReport"
+      }
+    },
+    "schema": {
+      "$id": "https://w3id.org/traceability/schemas/OGBillOfLading.json",
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$comment": "{\"term\": \"OGBillOfLading\", \"@id\": \"https://w3id.org/traceability#OGBillOfLading\"}",
+      "title": "Bill of Lading for an Oil and Gas Product",
+      "description": "Information on the Inspection and the observations made",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "type": "array"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array"
+            }
+          ]
+        },
+        "billOfLading": {
+          "$comment": "{\"term\": \"billOfLading\", \"@id\": \"https://w3id.org/traceability#BillOfLading\"}",
+          "title": "Bill Of Lading",
+          "description": "Bill Of Lading",
+          "$ref": "https://w3id.org/traceability/schemas/BillOfLading.json"
+        },
+        "shippingDate": {
+          "$comment": "{\"term\": \"shippingDate\", \"@id\": \"https://schema.org/DateTime?1\"}",
+          "title": "Shipping Date",
+          "description": "Date of shipping",
+          "type": "string"
+        },
+        "arrivalDate": {
+          "$comment": "{\"term\": \"arrivalDate\", \"@id\": \"https://schema.org/DateTime?2\"}",
+          "title": "Arrival Date",
+          "description": "Date of arrival.",
+          "type": "string"
+        },
+        "valuePerItem": {
+          "$comment": "{\"term\": \"valuePerItem\", \"@id\": \"https://www.schema.org/value?1\"}",
+          "title": "Value Per Item",
+          "description": "Value Per Item",
+          "type": "string"
+        },
+        "totalOrderValue": {
+          "$comment": "{\"term\": \"totalOrderValue\", \"@id\": \"https://www.schema.org/value?2\"}",
+          "title": "Total Order Value",
+          "description": "Total value of the order",
+          "type": "string"
+        },
+        "freightChargeTerms": {
+          "$comment": "{\"term\": \"freightChargeTerms\", \"@id\": \"https://www.schema.org/value?3\"}",
+          "title": "freight Charge Terms",
+          "description": "Terms of the freight charge",
+          "type": "string"
+        },
+        "batchNumber": {
+          "$comment": "{\"term\": \"batchNumber\", \"@id\": \"https://schema.org/identifier\"}",
+          "title": "Unique Well Identifier",
+          "description": "Unique Well Identifier used for individual well identification.",
+          "type": "string"
+        },
+        "openingVolume": {
+          "$comment": "{\"term\": \"openingVolume\", \"@id\": \"https://schema.org/MeasuredValue?2\"}",
+          "title": "Opening Volume",
+          "description": "Volume at injection",
+          "$ref": "https://w3id.org/traceability/schemas/MeasuredValue.json"
+        },
+        "closingVolume": {
+          "$comment": "{\"term\": \"closingVolume\", \"@id\": \"https://schema.org/MeasuredValue?1\"}",
+          "title": "closingVolume",
+          "description": "Volume at closing",
+          "$ref": "https://w3id.org/traceability/schemas/MeasuredValue.json"
+        },
+        "observation": {
+          "$comment": "{\"term\": \"observation\", \"@id\": \"https://w3id.org/traceability#observation\"}",
+          "title": "Observation List",
+          "description": "List of observations as seen and specified in the Inspection Report schema https://w3id.org/traceability?#InspectionReport",
+          "type": "array",
+          "items": {
+            "$ref": "https://w3id.org/traceability/schemas/Observation.json"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "examples": []
+    }
+  },
   "https://w3id.org/traceability#Observation": {
     "$id": "https://w3id.org/traceability/schemas/Observation.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Observation",
       "@id": "https://w3id.org/traceability#Observation"
@@ -6783,10 +6801,9 @@
         "description": "The measurement of an Observation."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Observation.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Observation\", \"@id\": \"https://w3id.org/traceability#Observation\"}",
       "title": "Observation",
       "description": "Instances of the class Observation are used to specify observations about an entity at a particular time.",
@@ -6824,7 +6841,7 @@
   },
   "https://w3id.org/traceability#OrderedItem": {
     "$id": "https://w3id.org/traceability/schemas/OrderedItem.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "OrderedItem",
       "@id": "https://w3id.org/traceability#OrderedItem"
@@ -6870,7 +6887,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/OrderedItem.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"OrderedItem\", \"@id\": \"https://w3id.org/traceability#OrderedItem\"}",
       "title": "Order Item Record",
       "description": "Order Item Record based on orderedItem from schema.org",
@@ -6946,7 +6963,7 @@
   },
   "https://schema.org/Organization": {
     "$id": "https://w3id.org/traceability/schemas/Organization.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Organization",
       "@id": "https://schema.org/Organization"
@@ -7043,10 +7060,9 @@
         "description": "Points of contact for this organization"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Organization.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Organization\", \"@id\": \"https://schema.org/Organization\"}",
       "title": "Organization",
       "description": "An organization such as a corporation, firm, club, etc.",
@@ -7138,7 +7154,7 @@
   },
   "https://schema.org/ParcelDelivery": {
     "$id": "https://w3id.org/traceability/schemas/ParcelDelivery.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "ParcelDelivery",
       "@id": "https://schema.org/ParcelDelivery"
@@ -7211,10 +7227,9 @@
         "description": "Item(s) being shipped."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/ParcelDelivery.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"ParcelDelivery\", \"@id\": \"https://schema.org/ParcelDelivery\"}",
       "title": "Parcel Delivery",
       "description": "Details on a shipment or delivery.",
@@ -7291,7 +7306,7 @@
   },
   "https://w3id.org/traceability#PartOfOrder": {
     "$id": "https://w3id.org/traceability/schemas/PartOfOrder.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "PartOfOrder",
       "@id": "https://w3id.org/traceability#PartOfOrder"
@@ -7316,7 +7331,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/PartOfOrder.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"PartOfOrder\", \"@id\": \"https://w3id.org/traceability#PartOfOrder\"}",
       "title": "Part of an Order",
       "description": "Part of an Order listed in the Evidence data for a registered eCommerce Packing List based on schema.org",
@@ -7362,7 +7377,7 @@
   },
   "https://schema.org/Person": {
     "$id": "https://w3id.org/traceability/schemas/Person.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Person",
       "@id": "https://schema.org/Person"
@@ -7419,10 +7434,9 @@
         "description": "Person's job title."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Person.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Person\", \"@id\": \"https://schema.org/Person\"}",
       "title": "Person",
       "description": "A person",
@@ -7484,7 +7498,7 @@
   },
   "https://w3id.org/traceability/Phytosanitary": {
     "$id": "https://w3id.org/traceability/schemas/Phytosanitary.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Phytosanitary",
       "@id": "https://w3id.org/traceability/Phytosanitary"
@@ -7663,10 +7677,9 @@
         "description": "List of observations"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Phytosanitary.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Phytosanitary\", \"@id\": \"https://w3id.org/traceability/Phytosanitary\"}",
       "title": "Phytosanitary",
       "description": "Generalized schema capture of most common phytosanitary inspection data and properties.  Any phyto forms that deviate greatly from this will need their own schemas, unless it seems like the properties are more universal and should be added to this schema.",
@@ -7821,7 +7834,7 @@
   },
   "https://schema.org/Place": {
     "$id": "https://w3id.org/traceability/schemas/Place.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Place",
       "@id": "https://schema.org/Place"
@@ -7854,10 +7867,9 @@
         "description": "The postal address for an organization or place."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Place.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Place\", \"@id\": \"https://schema.org/Place\"}",
       "title": "Place",
       "description": "Entities that have a somewhat fixed, physical location.",
@@ -7903,7 +7915,7 @@
   },
   "https://schema.org/PostalAddress": {
     "$id": "https://w3id.org/traceability/schemas/PostalAddress.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "PostalAddress",
       "@id": "https://schema.org/PostalAddress"
@@ -7984,10 +7996,9 @@
         "description": "The number that identifies a PO box. A PO box is a box in a post office or other postal service location assigned to an organization where postal items may be kept."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/PostalAddress.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"PostalAddress\", \"@id\": \"https://schema.org/PostalAddress\"}",
       "title": "Postal Address",
       "description": "The location at which a particular organization or person may be found or reached.",
@@ -8067,7 +8078,7 @@
   },
   "https://schema.org/PriceSpecification": {
     "$id": "https://w3id.org/traceability/schemas/PriceSpecification.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "PriceSpecification",
       "@id": "https://schema.org/PriceSpecification"
@@ -8092,10 +8103,9 @@
         "description": "The currency of the price, or a price component when attached to PriceSpecification and its subtypes."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/PriceSpecification.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"PriceSpecification\", \"@id\": \"https://schema.org/PriceSpecification\"}",
       "title": "PriceSpecification",
       "description": "A structured value representing a price or price range.",
@@ -8133,7 +8143,7 @@
   },
   "https://schema.org/Product": {
     "$id": "https://w3id.org/traceability/schemas/Product.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Product",
       "@id": "https://schema.org/Product"
@@ -8246,10 +8256,9 @@
         "description": "The Stock Keeping Unit (SKU), i.e., a merchant-specific identifier for a product or service, or for the product to which the offer refers."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Product.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Product\", \"@id\": \"https://schema.org/Product\"}",
       "title": "Product",
       "description": "A product",
@@ -8353,7 +8362,7 @@
   },
   "https://w3id.org/traceability#ProductRegistrationEvidenceDocument": {
     "$id": "https://w3id.org/traceability/schemas/ProductRegistrationEvidenceDocument.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "ProductRegistrationEvidenceDocument",
       "@id": "https://w3id.org/traceability#ProductRegistrationEvidenceDocument"
@@ -8520,7 +8529,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/ProductRegistrationEvidenceDocument.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"ProductRegistrationEvidenceDocument\", \"@id\": \"https://w3id.org/traceability#ProductRegistrationEvidenceDocument\"}",
       "title": "Product Registration Evidence Document",
       "description": "Evidence data for a registered eCommerce Product",
@@ -8764,7 +8773,7 @@
   },
   "https://w3id.org/traceability#Purchase": {
     "$id": "https://w3id.org/traceability/schemas/Purchase.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Purchase",
       "@id": "https://w3id.org/traceability#Purchase"
@@ -8797,10 +8806,9 @@
         "description": "The purchase order associated with a purchase"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Purchase.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Purchase\", \"@id\": \"https://w3id.org/traceability#Purchase\"}",
       "title": "Purchase",
       "description": "A purchase of a Product",
@@ -8842,234 +8850,9 @@
       "examples": []
     }
   },
-  "https://w3id.org/traceability#QPInbond": {
-    "$id": "https://w3id.org/traceability/schemas/QPInbond.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$comment": {
-      "term": "QPInbond",
-      "@id": "https://w3id.org/traceability#QPInbond"
-    },
-    "title": "QPInbond",
-    "description": "",
-    "classProperties": {
-      "https://www.gs1.org/voc/Product": {
-        "$comment": {
-          "term": "product",
-          "@id": "https://www.gs1.org/voc/Product"
-        },
-        "title": "Product",
-        "description": "Product details as outlined in the Product.json schema"
-      },
-      "https://schema.org/ParcelDelivery": {
-        "$comment": {
-          "term": "shipment",
-          "@id": "https://schema.org/ParcelDelivery"
-        },
-        "title": "Shipment",
-        "description": "Details for a shipment of goods."
-      },
-      "https://w3id.org/identifier?1": {
-        "$comment": {
-          "term": "inBondNumber",
-          "@id": "https://w3id.org/identifier?1"
-        },
-        "title": "InBond Number",
-        "description": "Identifier for the individual InBond"
-      },
-      "https://w3id.org/identifier": {
-        "$comment": {
-          "term": "inBondType",
-          "@id": "https://w3id.org/identifier"
-        },
-        "title": "InBond Type",
-        "description": "Type of InBond"
-      },
-      "https://www.gs1.org/voc/Place?3": {
-        "$comment": {
-          "term": "portOfEntry",
-          "@id": "https://www.gs1.org/voc/Place?3"
-        },
-        "title": "Port of Entry",
-        "description": "Port of Entry into US"
-      },
-      "https://w3id.org/traceability?2#Entity?1": {
-        "$comment": {
-          "term": "carrier",
-          "@id": "https://w3id.org/traceability?2#Entity?1"
-        },
-        "title": "Carrier",
-        "description": "Entity responsible for transporting product"
-      },
-      "https://w3id.org/identifier?3": {
-        "$comment": {
-          "term": "irsNumber",
-          "@id": "https://w3id.org/identifier?3"
-        },
-        "title": "IRS Number",
-        "description": "Number for identification with IRS"
-      },
-      "https://w3id.org/traceability?2#Entity?2": {
-        "$comment": {
-          "term": "recipient",
-          "@id": "https://w3id.org/traceability?2#Entity?2"
-        },
-        "title": "Recipient",
-        "description": "Entity that will recieve product"
-      },
-      "https://w3id.org/identifier?4": {
-        "$comment": {
-          "term": "billOfLadingNumber",
-          "@id": "https://w3id.org/identifier?4"
-        },
-        "title": "BOL",
-        "description": "Identifier for the individual BOL"
-      },
-      "https://schema.org/DateTime#v2": {
-        "$comment": {
-          "term": "expectedDeliveryDate",
-          "@id": "https://schema.org/DateTime#v2"
-        },
-        "title": "Expected Delivery Date",
-        "description": "Date when the product is expected to arrive"
-      },
-      "https://schema.org/PriceSpecification?1": {
-        "$comment": {
-          "term": "valuePerItem",
-          "@id": "https://schema.org/PriceSpecification?1"
-        },
-        "title": "Value Per Item",
-        "description": "Total Value Per Item"
-      },
-      "https://schema.org/PriceSpecification": {
-        "$comment": {
-          "term": "totalOrderValue",
-          "@id": "https://schema.org/PriceSpecification"
-        },
-        "title": "totalOrderValue",
-        "description": "Total Value Per Item"
-      }
-    },
-    "examples": [],
-    "schema": {
-      "$id": "https://w3id.org/traceability/schemas/QPInbond.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
-      "$comment": "{\"term\": \"QPInbond\", \"@id\": \"https://w3id.org/traceability#QPInbond\"}",
-      "title": "QPInbond",
-      "description": "",
-      "type": "object",
-      "properties": {
-        "@context": {
-          "type": "array"
-        },
-        "id": {
-          "type": "string"
-        },
-        "issuanceDate": {
-          "type": "string"
-        },
-        "credentialSubject": {
-          "type": "object"
-        },
-        "issuer": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "object"
-            }
-          ]
-        },
-        "type": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "array"
-            }
-          ]
-        },
-        "product": {
-          "$comment": "{\"term\": \"product\", \"@id\": \"https://www.gs1.org/voc/Product\"}",
-          "title": "Product",
-          "description": "Product details as outlined in the Product.json schema",
-          "$ref": "https://w3id.org/traceability/schemas/Product.json"
-        },
-        "shipment": {
-          "$comment": "{\"term\": \"shipment\", \"@id\": \"https://schema.org/ParcelDelivery\"}",
-          "title": "Shipment",
-          "description": "Details for a shipment of goods.",
-          "$ref": "https://w3id.org/traceability/schemas/ParcelDelivery.json"
-        },
-        "inBondNumber": {
-          "$comment": "{\"term\": \"inBondNumber\", \"@id\": \"https://w3id.org/identifier?1\"}",
-          "title": "InBond Number",
-          "description": "Identifier for the individual InBond",
-          "type": "string"
-        },
-        "inBondType": {
-          "$comment": "{\"term\": \"inBondType\", \"@id\": \"https://w3id.org/identifier\"}",
-          "title": "InBond Type",
-          "description": "Type of InBond",
-          "type": "string"
-        },
-        "portOfEntry": {
-          "$comment": "{\"term\": \"portOfEntry\", \"@id\": \"https://www.gs1.org/voc/Place?3\"}",
-          "title": "Port of Entry",
-          "description": "Port of Entry into US",
-          "$ref": "https://w3id.org/traceability/schemas/Place.json"
-        },
-        "carrier": {
-          "$comment": "{\"term\": \"carrier\", \"@id\": \"https://w3id.org/traceability?2#Entity?1\"}",
-          "title": "Carrier",
-          "description": "Entity responsible for transporting product",
-          "$ref": "https://w3id.org/traceability/schemas/Entity.json"
-        },
-        "irsNumber": {
-          "$comment": "{\"term\": \"irsNumber\", \"@id\": \"https://w3id.org/identifier?3\"}",
-          "title": "IRS Number",
-          "description": "Number for identification with IRS",
-          "type": "string"
-        },
-        "recipient": {
-          "$comment": "{\"term\": \"recipient\", \"@id\": \"https://w3id.org/traceability?2#Entity?2\"}",
-          "title": "Recipient",
-          "description": "Entity that will recieve product",
-          "$ref": "https://w3id.org/traceability/schemas/Entity.json"
-        },
-        "billOfLadingNumber": {
-          "$comment": "{\"term\": \"billOfLadingNumber\", \"@id\": \"https://w3id.org/identifier?4\"}",
-          "title": "BOL",
-          "description": "Identifier for the individual BOL",
-          "type": "string"
-        },
-        "expectedDeliveryDate": {
-          "$comment": "{\"term\": \"expectedDeliveryDate\", \"@id\": \"https://schema.org/DateTime#v2\"}",
-          "title": "Expected Delivery Date",
-          "description": "Date when the product is expected to arrive",
-          "type": "string"
-        },
-        "valuePerItem": {
-          "$comment": "{\"term\": \"valuePerItem\", \"@id\": \"https://schema.org/PriceSpecification?1\"}",
-          "title": "Value Per Item",
-          "description": "Total Value Per Item",
-          "type": "string"
-        },
-        "totalOrderValue": {
-          "$comment": "{\"term\": \"totalOrderValue\", \"@id\": \"https://schema.org/PriceSpecification\"}",
-          "title": "totalOrderValue",
-          "description": "Total Value Per Item",
-          "type": "string"
-        }
-      },
-      "additionalProperties": false,
-      "examples": []
-    }
-  },
   "https://schema.org/qualifications": {
     "$id": "https://w3id.org/traceability/schemas/Qualification.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Qualification",
       "@id": "https://schema.org/qualifications"
@@ -9094,10 +8877,9 @@
         "description": "Value of the qualification (if relevant), such as badge number or certification level."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Qualification.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"Qualification\", \"@id\": \"https://schema.org/qualifications\"}",
       "title": "Qualification",
       "description": "Skills, certifications, etc., required to perform a job properly.",
@@ -9135,7 +8917,7 @@
   },
   "https://schema.org/QuantitativeValue": {
     "$id": "https://w3id.org/traceability/schemas/QuantitativeValue.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "QuantitativeValue",
       "@id": "https://schema.org/QuantitativeValue"
@@ -9160,10 +8942,9 @@
         "description": "Value or amount."
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/QuantitativeValue.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"QuantitativeValue\", \"@id\": \"https://schema.org/QuantitativeValue\"}",
       "title": "Quantitative Value",
       "description": "A point value or interval for product characteristics and other purposes",
@@ -9201,7 +8982,7 @@
   },
   "https://w3id.org/traceability#ShippingStop": {
     "$id": "https://w3id.org/traceability/schemas/ShippingStop.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "ShippingStop",
       "@id": "https://w3id.org/traceability#ShippingStop"
@@ -9247,7 +9028,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/ShippingStop.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"ShippingStop\", \"@id\": \"https://w3id.org/traceability#ShippingStop\"}",
       "title": "Shipping Stop Schema",
       "description": "Shipping Stop definition based on IATA electronic Air Way Bill https://blanker.org/files/air-waybill-2.xls",
@@ -9293,7 +9074,7 @@
   },
   "https://w3id.org/traceability#SteelProduct": {
     "$id": "https://w3id.org/traceability/schemas/SteelProduct.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "SteelProduct",
       "@id": "https://w3id.org/traceability#SteelProduct"
@@ -9366,10 +9147,9 @@
         "description": "Shipment details about a product"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/SteelProduct.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"SteelProduct\", \"@id\": \"https://w3id.org/traceability#SteelProduct\"}",
       "title": "Steel Product",
       "description": "A finished or unfinisheed manufactured steel product",
@@ -9443,7 +9223,7 @@
   },
   "https://w3id.org/traceability#TotalCharge": {
     "$id": "https://w3id.org/traceability/schemas/TotalCharge.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "TotalCharge",
       "@id": "https://w3id.org/traceability#TotalCharge"
@@ -9510,7 +9290,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/TotalCharge.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"TotalCharge\", \"@id\": \"https://w3id.org/traceability#TotalCharge\"}",
       "title": "TotalCharge",
       "description": "TotalCharge definition based on IATA electronic Air Way Bill https://blanker.org/files/air-waybill-2.xls",
@@ -9585,7 +9365,7 @@
   },
   "https://w3id.org/traceability#UsdaSc6": {
     "$id": "https://w3id.org/traceability/schemas/UsdaSc6.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "UsdaSc6",
       "@id": "https://w3id.org/traceability#UsdaSc6"
@@ -9721,10 +9501,9 @@
         "description": "Certification by the shipment receiver that they have received the shipents and will displose of them in pursuant to the stated intended use.  Most commonly in SC-6 this would be 'processing,' 'charity', and 'livestock.'"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/UsdaSc6.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"UsdaSc6\", \"@id\": \"https://w3id.org/traceability#UsdaSc6\"}",
       "title": "USDA Form SC-6",
       "description": "Importer's Exempt Commodity Form (SC-6) to declare the intent to import an agricultural commodity exempt from grade requirements for the commodity.",
@@ -9840,7 +9619,7 @@
   },
   "https://w3id.org/traceability#chargeAndPaymentType": {
     "$id": "https://w3id.org/traceability/schemas/chargeAndPaymentType.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "chargeAndPaymentType",
       "@id": "https://w3id.org/traceability#chargeAndPaymentType"
@@ -9864,7 +9643,7 @@
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/chargeAndPaymentType.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"chargeAndPaymentType\", \"@id\": \"https://w3id.org/traceability#chargeAndPaymentType\"}",
       "title": "chargeAndPaymentType",
       "type": "object",
@@ -9903,7 +9682,7 @@
   },
   "https://w3id.org/traceability#ppq203": {
     "$id": "https://w3id.org/traceability/schemas/ppq203.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "ppq203",
       "@id": "https://w3id.org/traceability#ppq203"
@@ -9996,10 +9775,9 @@
         "description": "List of observations as seen and specified in the Inspection Report schema, https://w3id.org/traceability?#InspectionReport"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/ppq203.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"ppq203\", \"@id\": \"https://w3id.org/traceability#ppq203\"}",
       "title": "PPQ 203 Agricultural Foreign Site Inspection",
       "description": "United States Department of Agriculture Foreign Site Certificate of Inspection and/or Treatment.",
@@ -10088,7 +9866,7 @@
   },
   "https://w3id.org/traceability#ppq587": {
     "$id": "https://w3id.org/traceability/schemas/ppq587.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "ppq587",
       "@id": "https://w3id.org/traceability#ppq587"
@@ -10138,10 +9916,9 @@
         "description": "The intended use for the imported products.  Most commonly in ppq587 this would be 'plants for planting,' 'small lots of seed', and 'fruits and vegetables.'"
       }
     },
-    "examples": [],
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/ppq587.json",
-      "$schema": "http://json-schema.org/draft-07/schema#",
+      "$schema": "https://json-schema.org/draft-07/schema#",
       "$comment": "{\"term\": \"ppq587\", \"@id\": \"https://w3id.org/traceability#ppq587\"}",
       "title": "PPQ 587 Application",
       "description": "United States Department of Agriculture Animal and Plant Health Inspection Service.  Application for permit to import plants or plant products.",
