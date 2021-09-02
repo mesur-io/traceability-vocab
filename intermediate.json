@@ -871,16 +871,7 @@
     },
     "title": "Bill of Lading Certificate",
     "description": "Certifications made about an BOL",
-    "classProperties": {
-      "https://w3id.org/traceability#LinkRole": {
-        "$comment": {
-          "term": "relatedLink",
-          "@id": "https://w3id.org/traceability#LinkRole"
-        },
-        "title": "Related Link",
-        "description": "Links related to this verifiable credential"
-      }
-    },
+    "classProperties": {},
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/BillOfLadingCertificate.json",
       "$schema": "http://json-schema.org/draft-07/schema#",
@@ -925,7 +916,6 @@
           "type": "object"
         },
         "relatedLink": {
-          "$comment": "{\"term\": \"relatedLink\", \"@id\": \"https://w3id.org/traceability#LinkRole\"}",
           "title": "Related Link",
           "description": "Links related to this verifiable credential",
           "type": "array",
@@ -1390,16 +1380,7 @@
     },
     "title": "Commercial Invoice Certificate",
     "description": "Certifications made about an invoice",
-    "classProperties": {
-      "https://w3id.org/traceability#LinkRole": {
-        "$comment": {
-          "term": "relatedLink",
-          "@id": "https://w3id.org/traceability#LinkRole"
-        },
-        "title": "Related Link",
-        "description": "Links related to this verifiable credential"
-      }
-    },
+    "classProperties": {},
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/CommercialInvoiceCertificate.json",
       "$schema": "http://json-schema.org/draft-07/schema#",
@@ -1444,7 +1425,6 @@
           "type": "object"
         },
         "relatedLink": {
-          "$comment": "{\"term\": \"relatedLink\", \"@id\": \"https://w3id.org/traceability#LinkRole\"}",
           "title": "Related Link",
           "description": "Links related to this verifiable credential",
           "type": "array",
@@ -1792,6 +1772,97 @@
           "examples": [
             "mailto:jane-doe@xyz.edu"
           ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "https://w3id.org/traceability#DocumentVerificationEvidence": {
+    "$id": "https://w3id.org/traceability/schemas/DocumentVerificationEvidence.json",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$comment": {
+      "term": "DocumentVerificationEvidence",
+      "@id": "https://w3id.org/traceability#DocumentVerificationEvidence"
+    },
+    "title": "DocumentVerificationEvidence",
+    "description": "Verifiable Credential Evidence Document Schema",
+    "classProperties": {
+      "https://schema.org/Organization": {
+        "$comment": {
+          "term": "verifier",
+          "@id": "https://schema.org/Organization"
+        },
+        "title": "verifier"
+      },
+      "https://schema.org/DigitalDocument": {
+        "$comment": {
+          "term": "evidenceDocument",
+          "@id": "https://schema.org/DigitalDocument"
+        },
+        "title": "evidenceDocument"
+      },
+      "https://schema.org/Person": {
+        "$comment": {
+          "term": "subjectPresence",
+          "@id": "https://schema.org/Person"
+        },
+        "title": "subjectPresence"
+      },
+      "https://schema.org/PresentationDigitalDocument": {
+        "$comment": {
+          "term": "documentPresence",
+          "@id": "https://schema.org/PresentationDigitalDocument"
+        },
+        "title": "documentPresence"
+      }
+    },
+    "schema": {
+      "$id": "https://w3id.org/traceability/schemas/DocumentVerificationEvidence.json",
+      "$schema": "https://json-schema.org/draft-07/schema#",
+      "$comment": "{\"term\": \"DocumentVerificationEvidence\", \"@id\": \"https://w3id.org/traceability#DocumentVerificationEvidence\"}",
+      "title": "DocumentVerificationEvidence",
+      "description": "Verifiable Credential Evidence Document Schema",
+      "type": "object",
+      "required": [
+        "type",
+        "verifier",
+        "evidenceDocument",
+        "subjectPresence",
+        "documentPresence"
+      ],
+      "properties": {
+        "@context": {
+          "type": "array"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array"
+            }
+          ]
+        },
+        "verifier": {
+          "$comment": "{\"term\": \"verifier\", \"@id\": \"https://schema.org/Organization\"}",
+          "title": "verifier",
+          "type": "array"
+        },
+        "evidenceDocument": {
+          "$comment": "{\"term\": \"evidenceDocument\", \"@id\": \"https://schema.org/DigitalDocument\"}",
+          "title": "evidenceDocument",
+          "type": "string"
+        },
+        "subjectPresence": {
+          "$comment": "{\"term\": \"subjectPresence\", \"@id\": \"https://schema.org/Person\"}",
+          "title": "subjectPresence",
+          "type": "string"
+        },
+        "documentPresence": {
+          "$comment": "{\"term\": \"documentPresence\", \"@id\": \"https://schema.org/PresentationDigitalDocument\"}",
+          "title": "documentPresence",
+          "type": "string"
         }
       },
       "additionalProperties": false
@@ -4143,6 +4214,134 @@
       "examples": []
     }
   },
+  "https://schema.org/Event": {
+    "$id": "https://w3id.org/traceability/schemas/Event.json",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$comment": {
+      "term": "Event",
+      "@id": "https://schema.org/Event"
+    },
+    "title": "Organization",
+    "description": "An event such as a transformation, aggregation, commission, etc.",
+    "classProperties": {
+      "https://schema.org/value": {
+        "$comment": {
+          "term": "eventType",
+          "@id": "https://schema.org/value"
+        },
+        "title": "Event Type",
+        "description": "The Type of the Event."
+      },
+      "https://schema.org/identifier": {
+        "$comment": {
+          "term": "eventId",
+          "@id": "https://schema.org/identifier"
+        },
+        "title": "Event Identifier",
+        "description": "The Identifier of the Event."
+      },
+      "https://w3id.org/traceability#Organization": {
+        "$comment": {
+          "term": "actor",
+          "@id": "https://w3id.org/traceability#Organization",
+          "@type": "https://schema.org/ItemList"
+        },
+        "title": "Actor",
+        "description": "The organization performing the activity."
+      },
+      "https://w3id.org/traceability#place": {
+        "$comment": {
+          "term": "place",
+          "@id": "https://w3id.org/traceability#place"
+        },
+        "title": "Event Location",
+        "description": "The location where the event took place."
+      },
+      "https://schema.org/DateTime#v2": {
+        "$comment": {
+          "term": "eventTime",
+          "@id": "https://schema.org/DateTime#v2"
+        },
+        "title": "Event Time",
+        "description": "The time when the event took place."
+      },
+      "https://schema.org/Product": {
+        "$comment": {
+          "term": "products",
+          "@id": "https://schema.org/Product"
+        },
+        "title": "Products",
+        "description": "The products referenced by the event."
+      }
+    },
+    "schema": {
+      "$id": "https://w3id.org/traceability/schemas/Event.json",
+      "$schema": "https://json-schema.org/draft-07/schema#",
+      "$comment": "{\"term\": \"Event\", \"@id\": \"https://schema.org/Event\"}",
+      "title": "Organization",
+      "description": "An event such as a transformation, aggregation, commission, etc.",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "type": "array"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array"
+            }
+          ]
+        },
+        "eventType": {
+          "$comment": "{\"term\": \"eventType\", \"@id\": \"https://schema.org/value\"}",
+          "title": "Event Type",
+          "description": "The Type of the Event.",
+          "type": "string"
+        },
+        "eventId": {
+          "$comment": "{\"term\": \"eventId\", \"@id\": \"https://schema.org/identifier\"}",
+          "title": "Event Identifier",
+          "description": "The Identifier of the Event.",
+          "type": "string"
+        },
+        "actor": {
+          "$comment": "{\"term\": \"actor\", \"@id\": \"https://w3id.org/traceability#Organization\", \"@type\": \"https://schema.org/ItemList\"}",
+          "title": "Actor",
+          "description": "The organization performing the activity.",
+          "type": "array",
+          "items": {
+            "$ref": "https://w3id.org/traceability/schemas/Entity.json"
+          }
+        },
+        "place": {
+          "$comment": "{\"term\": \"place\", \"@id\": \"https://w3id.org/traceability#place\"}",
+          "title": "Event Location",
+          "description": "The location where the event took place.",
+          "$ref": "https://w3id.org/traceability/schemas/Place.json"
+        },
+        "eventTime": {
+          "$comment": "{\"term\": \"eventTime\", \"@id\": \"https://schema.org/DateTime#v2\"}",
+          "title": "Event Time",
+          "description": "The time when the event took place.",
+          "type": "string"
+        },
+        "products": {
+          "$comment": "{\"term\": \"products\", \"@id\": \"https://schema.org/Product\"}",
+          "title": "Products",
+          "description": "The products referenced by the event.",
+          "type": "array",
+          "items": {
+            "$ref": "https://w3id.org/traceability/schemas/Product.json"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "examples": []
+    }
+  },
   "https://schema.org/GeoCoordinates": {
     "$id": "https://w3id.org/traceability/schemas/GeoCoordinates.json",
     "$schema": "https://json-schema.org/draft-07/schema#",
@@ -6383,16 +6582,7 @@
     },
     "title": "Mill Test Report Certificate",
     "description": "Certifications made by a manufacturer of a metal product.",
-    "classProperties": {
-      "https://w3id.org/traceability#LinkRole": {
-        "$comment": {
-          "term": "relatedLink",
-          "@id": "https://w3id.org/traceability#LinkRole"
-        },
-        "title": "Related Link",
-        "description": "Links related to this verifiable credential"
-      }
-    },
+    "classProperties": {},
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/MillTestReportCertificate.json",
       "$schema": "http://json-schema.org/draft-07/schema#",
@@ -6437,7 +6627,6 @@
           "type": "object"
         },
         "relatedLink": {
-          "$comment": "{\"term\": \"relatedLink\", \"@id\": \"https://w3id.org/traceability#LinkRole\"}",
           "title": "Related Link",
           "description": "Links related to this verifiable credential",
           "type": "array",
@@ -6774,12 +6963,12 @@
       "examples": []
     }
   },
-  "https://w3id.org/traceability#Observation": {
+  "https://schema.org/Observation": {
     "$id": "https://w3id.org/traceability/schemas/Observation.json",
     "$schema": "https://json-schema.org/draft-07/schema#",
     "$comment": {
       "term": "Observation",
-      "@id": "https://w3id.org/traceability#Observation"
+      "@id": "https://schema.org/Observation"
     },
     "title": "Observation",
     "description": "Instances of the class Observation are used to specify observations about an entity at a particular time.",
@@ -6799,12 +6988,20 @@
         },
         "title": "Measured Value",
         "description": "The measurement of an Observation."
+      },
+      "https://schema.org/observationDate": {
+        "$comment": {
+          "term": "date",
+          "@id": "https://schema.org/observationDate"
+        },
+        "title": "Observation Date",
+        "description": "The date of the Observation."
       }
     },
     "schema": {
       "$id": "https://w3id.org/traceability/schemas/Observation.json",
       "$schema": "https://json-schema.org/draft-07/schema#",
-      "$comment": "{\"term\": \"Observation\", \"@id\": \"https://w3id.org/traceability#Observation\"}",
+      "$comment": "{\"term\": \"Observation\", \"@id\": \"https://schema.org/Observation\"}",
       "title": "Observation",
       "description": "Instances of the class Observation are used to specify observations about an entity at a particular time.",
       "type": "object",
@@ -6833,6 +7030,12 @@
           "title": "Measured Value",
           "description": "The measurement of an Observation.",
           "$ref": "https://w3id.org/traceability/schemas/MeasuredValue.json"
+        },
+        "date": {
+          "$comment": "{\"term\": \"date\", \"@id\": \"https://schema.org/observationDate\"}",
+          "title": "Observation Date",
+          "description": "The date of the Observation.",
+          "type": "string"
         }
       },
       "additionalProperties": false,
@@ -8978,6 +9181,71 @@
       },
       "additionalProperties": false,
       "examples": []
+    }
+  },
+  "https://w3id.org/traceability#RevocationList2020Status": {
+    "$id": "https://w3id.org/traceability/schemas/RevocationList2020Status.json",
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$comment": {
+      "term": "RevocationList2020Status",
+      "@id": "https://w3id.org/traceability#RevocationList2020Status"
+    },
+    "title": "RevocationList2020Status",
+    "description": "Verifiable Credential credentialStatus Schema for RevocationList2020Status",
+    "classProperties": {
+      "https://schema.org/itemListElement": {
+        "$comment": {
+          "term": "revocationListIndex",
+          "@id": "https://schema.org/itemListElement"
+        },
+        "title": "revocationListIndex"
+      },
+      "https://schema.org/LinkRole": {
+        "$comment": {
+          "term": "revocationListCredential",
+          "@id": "https://schema.org/LinkRole"
+        },
+        "title": "revocationListCredential"
+      }
+    },
+    "schema": {
+      "$id": "https://w3id.org/traceability/schemas/RevocationList2020Status.json",
+      "$schema": "https://json-schema.org/draft-07/schema#",
+      "$comment": "{\"term\": \"RevocationList2020Status\", \"@id\": \"https://w3id.org/traceability#RevocationList2020Status\"}",
+      "title": "RevocationList2020Status",
+      "description": "Verifiable Credential credentialStatus Schema for RevocationList2020Status",
+      "type": "object",
+      "required": [
+        "type",
+        "revocationListIndex",
+        "revocationListCredential"
+      ],
+      "properties": {
+        "@context": {
+          "type": "array"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array"
+            }
+          ]
+        },
+        "revocationListIndex": {
+          "$comment": "{\"term\": \"revocationListIndex\", \"@id\": \"https://schema.org/itemListElement\"}",
+          "title": "revocationListIndex",
+          "type": "string"
+        },
+        "revocationListCredential": {
+          "$comment": "{\"term\": \"revocationListCredential\", \"@id\": \"https://schema.org/LinkRole\"}",
+          "title": "revocationListCredential",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
     }
   },
   "https://w3id.org/traceability#ShippingStop": {
