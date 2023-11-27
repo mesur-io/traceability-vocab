@@ -1,0 +1,144 @@
+$linkedData:
+  term: CBPEntryEntity
+  '@id': https://w3id.org/traceability#CBPEntryEntity
+title: Entry Entity
+description: Entity identifier used on CBP 3461 Entry/Immediate Delivery Form.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - CBPEntryEntity
+    default:
+      - CBPEntryEntity
+    items:
+      type: string
+      enum:
+        - CBPEntryEntity
+  role: 
+    title: Role
+    type: string
+    enum:
+      - Manufacturer
+      - Consignee
+      - Seller 
+      - Buyer
+  organization:
+    title: Organization
+    type: object
+    properties:
+      type:
+        type: array
+        readOnly: true
+        const:
+          - Organization
+        default:
+          - Organization
+        items:
+          type: string
+          enum:
+            - Organization
+      id: 
+        title: Issuer's Identifier
+        description: Issuing organization identifier, typically a Decentralized Identifier (DID).
+        type: string
+        format: uri
+      name:
+        title: Name
+        description: Issuing organization name.
+        type: string
+      location:
+        title: Location
+        description: Issuing organization's location of business.
+        type: object
+        properties:
+          type:
+            type: array
+            readOnly: true
+            const:
+              - Place
+            default:
+              - Place
+            items:
+              type: string
+              enum:
+                - Place
+          address:
+            title: Postal Address
+            description: Issuing organization's postal address.
+            type: object
+            properties:
+              type:
+                type: array
+                readOnly: true
+                const:
+                  - PostalAddress
+                default:
+                  - PostalAddress
+                items:
+                  type: string
+                  enum:
+                    - PostalAddress
+              streetAddress:
+                title: Street Address
+                description: >-
+                  The street address expressed as free form text. The street address is
+                  printed on paper as the first lines below the name. For example, the name
+                  of the street and the number in the street, or the name of a building.
+                type: string
+              addressLocality:
+                title: City
+                description: Text specifying the name of the locality; for example, a city.
+                type: string
+              addressRegion:
+                title: State
+                description: >-
+                  Text specifying a province or state in abbreviated format; for example,
+                  NJ.
+                type: string
+              postalCode:
+                title: Postal Code
+                description: Text specifying the postal code for an address.
+                type: string
+              addressCountry:
+                title: Country
+                description: >-
+                  The two-letter ISO 3166-1 alpha-2 country code.
+                type: string
+            additionalProperties: false
+  importerOfRecord: 
+    title: Importer Of Record
+    description: US CBP importer of record.
+    $ref: ./CBPImporterOfRecord.yml
+    $linkedData:
+      term: importerOfRecord
+      '@id': https://w3id.org/traceability#importerOfRecord
+additionalProperties: false
+required:
+  - type
+  - importerOfRecord
+example: |-
+  {
+    "type": ["CBPEntryEntity"],
+    "role": "Consignee",
+    "organization": {
+      "type": ["Organization"],
+      "name": "Future Mobility, Inc.",
+      "location": {
+        "type": ["Place"],
+        "address": {
+          "type": ["PostalAddress"],
+          "streetAddress": "2016 W Farmington Rd",
+          "addressLocality": "West Peoria",
+          "postalCode": "61604",
+          "addressCountry": "US"
+        }
+      }
+    },
+    "importerOfRecord":   {
+      "type": ["CBPImporterOfRecord"],
+      "number": "10025672",
+      "identifierType": "CBP"
+    }
+  }

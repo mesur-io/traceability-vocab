@@ -1,0 +1,59 @@
+$linkedData:
+  term: PGAShipmentStatusList
+  '@id': https://w3id.org/traceability#PGAShipmentStatusList
+title: PGA Shipment Status List
+description: List of PGA Status messages.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - PGAShipmentStatusList
+    default:
+      - PGAShipmentStatusList
+    items:
+      type: string
+      enum:
+        - PGAShipmentStatusList
+  pgaShipmentStatusItems:
+    title: PGA Shipment Status Items
+    description: List of PGA Status Messages pertaining to per-line items
+    type: array
+    items:
+      $ref: ./PGAShipmentStatus.yml
+    $linkedData:
+      term: pgaShipmentStatusItems
+      '@id': https://schema.org/ItemList
+additionalProperties: true
+required:
+  - type
+  - pgaShipmentStatusItems
+example: |-
+  {
+    "type": ["PGAShipmentStatusList"],
+    "pgaShipmentStatusItems": [
+      {
+        "type": ["PGAShipmentStatus"],
+        "recordNo": "SO70",
+        "entryNo": "AAA-1234567-8",
+        "entryLineSequence": "L1:S1",
+        "statusCode": "O2",
+        "statusCodeDescription": "Hold Intact",
+        "validCodeReason": "25",
+        "validCodeReasonDescription": "Additional Verification Needed",
+        "subReasonCode": "132",
+        "subReasonCodeDescription": "Documentation Needed"
+      },
+      {
+        "type": ["PGAShipmentStatus"],
+        "recordNo": "SO70",
+        "entryNo": "AAA-1234567-8",
+        "entryLineSequence": "L1:S2",
+        "statusCode": "O7",
+        "statusCodeDescription": "May Proceed",
+        "validCodeReason": "23",
+        "validCodeReasonDescription": "Released"
+      }
+    ]
+  }

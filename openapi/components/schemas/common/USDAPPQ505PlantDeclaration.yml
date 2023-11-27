@@ -1,0 +1,215 @@
+$linkedData:
+  term: USDAPPQ505PlantDeclaration
+  '@id': https://w3id.org/traceability#USDAPPQ505PlantDeclaration
+title: USDA PPQ 505 Plant and Plant Product Declaration
+description: USDA APHIS (Animal and Plant Health Inspection Service) PPQ (Plant Protection and Quarantine) 505, Plant and Plant Product Declaration. This credential also encompasses PPQ 505B, Plant and Plant Product Declaration Supplemental Form, which provides room for additional product declarations.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - USDAPPQ505PlantDeclaration
+    default:
+      - USDAPPQ505PlantDeclaration
+    items:
+      type: string
+      enum:
+        - USDAPPQ505PlantDeclaration
+  shipment:
+    title: Shipment
+    description: Information regarding the shipment of declared goods.
+    $ref: ./AgricultureParcelDelivery.yml
+    $linkedData:
+      term: shipment
+      '@id': https://vocabulary.uncefact.org/transportPackage
+  productDeclarations:
+    title: Product Declarations
+    description: A series of entries providing details on each product declared as per Lacey Act requirements.
+    type: array
+    items:
+      $ref: ./LaceyActProductDeclaration.yml
+    $linkedData:
+      term: productDeclarations
+      '@id': https://w3id.org/traceability#LaceyActProductDeclaration
+  preparer:
+    title: Preparer
+    description: The individual preparing this declaration.
+    $ref: ./Person.yml
+    $linkedData:
+      term: preparer
+      '@id': https://vocabulary.uncefact.org/declarantParty
+  date:
+    title: Date
+    description: The date of completion for this declaration.
+    type: string
+    $linkedData:
+      term: date
+      '@id': https://vocabulary.uncefact.org/issueDateTime
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["USDAPPQ505PlantDeclaration"],
+    "shipment": {
+      "type": [
+        "AgricultureParcelDelivery"
+      ],
+      "deliveryAddress": {
+        "type": [
+          "PostalAddress"
+        ],
+        "name": "Industrial Distributions",
+        "streetAddress": "853 Wisozk River",
+        "addressLocality": "New Noemyfort",
+        "addressRegion": "New Mexico",
+        "postalCode": "18047-2038",
+        "addressCountry": "Togo"
+      },
+      "originAddress": {
+        "type": [
+          "PostalAddress"
+        ],
+        "name": "Green Fields",
+        "streetAddress": "97696 Weissnat Pines",
+        "addressLocality": "Reynabury",
+        "addressRegion": "North Dakota",
+        "postalCode": "51361-9603",
+        "addressCountry": "U.S."
+      },
+      "deliveryMethod": "Truck transport",
+      "trackingNumber": "866440000109",
+      "expectedArrival": "2021-03-14",
+      "specialInstructions": "The package is delicate so handle with appropriate caution.",
+      "consignee": {
+        "type": [
+          "Organization"
+        ],
+        "name": "Ace Foodstuffs",
+        "description": "Agricultural goods shipping & distribution",
+        "email": "Hipolito58@acefoodstuffs.org",
+        "phoneNumber": "+1-876-555-5169",
+        "faxNumber": "+1-853-555-2754"
+      },
+      "agriculturePackage": [
+        {
+          "type": [
+            "AgriculturePackage"
+          ],
+          "packageName": "Avocados, Bulk",
+          "grade": "AA",
+          "responsibleParty": {
+            "type": ["Organization"],
+            "name": "Example Responsible Party Organization",
+            "email": "Chadrick_Gibson@example.com",
+            "phoneNumber": "+1-445-555-2091"
+          },
+          "voicePickCode": "4642",
+          "date": "2021-03-14",
+          "labelImageUrl": "https://img.example.org/640/480/",
+          "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "agricultureProduct": [
+            {
+              "type": [
+                "AgricultureProduct"
+              ],
+              "plu": "94225",
+              "product": {
+                "type": [
+                  "Product"
+                ],
+                "manufacturer": {
+                  "type": [
+                    "Organization"
+                  ],
+                  "email": "Ashlee.Grady@example.net",
+                  "phoneNumber": "+1-160-555-8454"
+                },
+                "name": "Avocados",
+                "description": "Avocados, 4 pack boxes",
+                "sizeOrAmount": {
+                  "type": [
+                    "QuantitativeValue"
+                  ],
+                  "unitCode": "hg/ha",
+                  "value": "60"
+                },
+                "weight": {
+                  "type": [
+                    "QuantitativeValue"
+                  ],
+                  "unitCode": "hg/ha",
+                  "value": "6960"
+                },
+                "sku": "81055399441"
+              },
+              "scientificName": "Persea americana",
+              "labelImageUrl": "https://img.example.org/033383401508/640/480/",
+              "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ]
+        }
+      ],
+      "shipper": {
+        "type": ["Organization"],
+        "name": "Green Fields",
+        "description": "Growing & packaging for high quality produce",
+        "email": "sales@greenfields.org",
+        "phoneNumber": "+1-929-555-4177"
+      },
+      "purchaser": {
+        "type": ["Organization"],
+        "name": "Ace Foodstuffs",
+        "description": "Agricultural goods shipping & distribution",
+        "email": "Hipolito58@acefoodstuffs.org",
+        "phoneNumber": "+1-058-555-4766",
+        "faxNumber": "+1-761-555-9920"
+      },
+      "carrier": {
+        "type": [
+          "Organization"
+        ],
+        "email": "Adaline29@example.com",
+        "phoneNumber": "+1-630-555-6148"
+      },
+      "broker": {
+        "type": ["Organization"],
+        "name": "Cole United",
+        "leiCode": "54321351219389121979"
+      }
+    },
+    "productDeclarations": [
+      {
+        "type": ["LaceyActProductDeclaration"],
+        "htsNumber": "9401692010",
+        "enteredValue": 1354,
+        "articleOrComponent": "Bulk Avocadoes",
+        "plantScientificNames": [
+          {
+            "type": ["Taxonomy"],
+            "genus": "Persea",
+            "species": "americana"
+          }
+        ],
+        "countryOfHarvest": "Mexico"
+      }
+    ],
+    "preparer": {
+      "type": ["Person"],
+      "firstName": "Mary",
+      "lastName": "Smith",
+      "email": "msmith@example.org",
+      "phoneNumber": "+1-220-555-6163",
+      "worksFor": {
+        "type": ["Organization"],
+        "name": "Ace Foodstuffs",
+        "description": "Agricultural goods shipping & distribution",
+        "email": "Hipolito58@example.org",
+        "phoneNumber": "+1-032-555-8231",
+        "faxNumber": "+1-130-555-7457"
+      },
+      "jobTitle": "Import Specialist"
+    },
+    "date": "2022-04-21"
+  }

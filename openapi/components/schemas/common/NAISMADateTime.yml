@@ -1,0 +1,41 @@
+$linkedData:
+  term: NAISMADateTime
+  '@id': https://w3id.org/traceability#NAISMADateTime
+title: NAISMA Date and Time
+description: The date and time for an observation.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - NAISMADateTime
+    default:
+      - NAISMADateTime
+    items:
+      type: string
+      enum:
+        - NAISMADateTime
+  collectionDate:
+    title: Collection Date
+    description: The date the observation was made in the field.
+    type: string
+    $linkedData:
+      term: collectionDate
+      '@id': http://rs.tdwg.org/dwc/terms/eventDate
+  dateAccuracyDays:
+    title: Date Accuracy in Days
+    description: The range of days within which the data was collected.
+    type: number
+    $linkedData:
+      term: dateAccuracyDays
+      '@id': http://rs.tdwg.org/dwc/iri/measurementMethod
+additionalProperties: false  
+required:
+  - type
+example: |-
+  {
+    "type": ["NAISMADateTime"],
+    "collectionDate": "2002-10-03",
+    "dateAccuracyDays": 15
+  }

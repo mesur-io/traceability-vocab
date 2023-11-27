@@ -1,0 +1,90 @@
+$linkedData:
+  term: ServiceCharge
+  '@id': https://vocabulary.uncefact.org/ServiceCharge
+title: Service Charge
+description: A charge made for services rendered or assessed, such as freight charges.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - ServiceCharge
+    default:
+      - ServiceCharge
+    items:
+      type: string
+      enum:
+        - ServiceCharge
+  chargeCode:
+    description: The unique identifier for this logistics service charge.
+    type: string
+    enum:
+      - allCharges
+      - additionalCharges
+      - basicFreight
+      - destinationHaulageCharges
+      - destinationPortCharges
+      - originPortCharges
+      - originHaulageCharges
+      - otherCharges
+    $linkedData:
+      term: chargeCode
+      '@id': https://vocabulary.uncefact.org/chargeCategoryCode
+  paymentTerm:
+    description: Charge payment term.
+    type: string
+    enum:
+      - prepaid
+      - collect
+      - prepaidElsewhere
+    $linkedData:
+      term: paymentTerm
+      '@id': https://vocabulary.uncefact.org/PaymentTerms
+  chargeText:
+    title: Charge Text
+    description: A textual description of this logistics service charge.
+    type: string
+    $linkedData:
+      term: chargeText
+      '@id': https://schema.org/description
+  rate:
+    title: Rate
+    description: Per unit rate.
+    $ref: ./PriceSpecification.yml
+    $linkedData:
+      term: rate
+      '@id': https://vocabulary.uncefact.org/unitPrice
+  calculationBasis:
+    description: The code specifying a basis on which this service charge is to be calculated such as by volume or per unit.
+    type: string
+    $linkedData:
+      term: calculationBasis
+      '@id': https://vocabulary.uncefact.org/calculationBasis
+  appliedAmount:
+    description: A monetary value applied to this logistics service charge.
+    $ref: ./PriceSpecification.yml
+    $linkedData:
+      term: appliedAmount
+      '@id': https://vocabulary.uncefact.org/appliedAmount
+additionalProperties: false  
+required:
+  - type
+example: |-
+  {
+    "type": ["ServiceCharge"],
+    "chargeCode": "basicFreight",
+    "paymentTerm": "collect",
+    "chargeText": "Negotiated ocean freight",
+    "rate": {
+      "type": ["PriceSpecification"],
+      "price": 2250,
+      "priceCurrency": "USD"
+    },
+    "calculationBasis": "Per container",
+    "appliedAmount": {
+      "type": ["PriceSpecification"],
+      "price": 4500,
+      "priceCurrency": "USD"
+    }
+  }

@@ -1,0 +1,216 @@
+$linkedData:
+  term: Product
+  '@id': https://schema.org/Product
+title: Product
+description: A product
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - Product
+    default:
+      - Product
+    items:
+      type: string
+      enum:
+        - Product
+  id:
+    title: Product Identifier
+    description: The product identifier, such as ISBN.
+    type: string
+    $linkedData:
+      term: id
+      '@id': https://schema.org/productID
+  gtin:
+    title: Global Trade Item Number (GTIN)
+    description: >-
+      Global Trade Item Number (GTIN) can be used by a company to uniquely
+      identify all of its trade items.
+    type: string
+    $linkedData:
+      term: gtin
+      '@id': https://schema.org/gtin
+  manufacturer:
+    title: Manufacturer
+    description: The entity manufacturing the product.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: manufacturer
+      '@id': https://schema.org/manufacturer
+  countryOfOrigin:
+    title: Country of Origin
+    description: The country in which this product originated.
+    type: string
+    $linkedData:
+      term: countryOfOrigin
+      '@id': https://vocabulary.uncefact.org/originCountry
+  name:
+    title: Name
+    description: Name of the shipment item(s)
+    type: string
+    $linkedData:
+      term: name
+      '@id': https://schema.org/name
+  description:
+    title: Description
+    description: Description of the shipment.
+    type: string
+    $linkedData:
+      term: description
+      '@id': https://schema.org/description
+  category:
+    title: Category
+    description: A category for the item.
+    type: string
+    $linkedData:
+      term: category
+      '@id': https://schema.org/category
+  sizeOrAmount:
+    title: Size or Amount
+    description: The size or amount of the product
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: sizeOrAmount
+      '@id': https://schema.org/size
+  weight:
+    title: Weight
+    description: Weight of the product.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: weight
+      '@id': https://schema.org/weight
+  depth:
+    title: Depth
+    description: The depth of the item.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: depth
+      '@id': https://schema.org/depth
+  width:
+    title: Width
+    description: The width of the item.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: width
+      '@id': https://schema.org/width
+  height:
+    title: Height
+    description: The height of the item.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: height
+      '@id': https://schema.org/height
+  productPrice:
+    title: Product Price
+    description: The unit price.
+    $ref: ./PriceSpecification.yml
+    $linkedData:
+      term: productPrice
+      '@id': https://schema.org/priceSpecification
+  sku:
+    title: SKU Number
+    description: >-
+      The Stock Keeping Unit (SKU), i.e., a merchant-specific identifier for a
+      product or service, or for the product to which the offer refers.
+    type: string
+    $linkedData:
+      term: sku
+      '@id': https://schema.org/sku
+  batchNumber:
+    title: Batch Number
+    description: A tracking number for commodities
+    type: string
+    $linkedData:
+      term: batchNumber
+      '@id': https://vocabulary.uncefact.org/ReferenceCodeList#BT
+  commodity:
+    title: Commodity
+    description: Product commodity code, codification system and description
+    $ref: ./Commodity.yml
+    $linkedData:
+      term: commodity
+      '@id': https://w3id.org/traceability#Commodity
+  seller:
+    title: Seller
+    description: The entity manufacturing the product.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: seller
+      '@id': https://vocabulary.uncefact.org/sellerParty
+  images:
+    title: Images of the product
+    description: Images of the product as BLObs (Binary Large Object).
+    type: array
+    items: 
+      type: string
+    $linkedData:
+      term: images
+      '@id': https://schema.org/image
+  imageUrl:
+    title: Image URL
+    description: Image of the product.
+    type: string
+    $linkedData:
+      term: imageUrl
+      '@id': https://schema.org/url
+  imageHash:
+    title: Image Hash
+    description: >-
+      Hash value for securely identifying the product image.  More information can
+      be found at the following link: https://cybersecurityglossary.com/hashing
+    type: string
+    $linkedData:
+      term: imageHash
+      '@id': https://schema.org/sha256
+  htsCode:
+    title: HTS Code
+    description: The Harmonized Tariff Schedule (HTS) code, if applicable.
+    type: string
+    $linkedData:
+      term: htsCode
+      '@id': https://service.unece.org/trade/uncefact/vocabulary/uncefact/#applicableTax
+
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["Product"],
+    "manufacturer": {
+      "type": ["Organization"],
+      "name": "Zemlak - Wyman",
+      "description": "Progressive fault-tolerant task-force",
+      "location": {
+        "type": ["Place"],
+        "address": {
+          "type": ["PostalAddress"],
+          "streetAddress": "964 Mikayla Viaduct",
+          "addressLocality": "Runolfsdottirburgh",
+          "addressRegion": "Florida",
+          "postalCode": "48442-9522",
+          "addressCountry": "Barbados"
+        }
+      },
+      "email": "Reyna_Hamill56@example.com",
+      "phoneNumber": "+1-264-555-5427",
+      "faxNumber": "+1-597-555-6162"
+    },
+    "countryOfOrigin": "United States",
+    "name": "Handmade Fresh Hat",
+    "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+    "sizeOrAmount": {
+      "type": ["QuantitativeValue"],
+      "unitCode": "sqm",
+      "value": "47"
+    },
+    "weight": {
+      "type": ["QuantitativeValue"],
+      "unitCode": "kg",
+      "value": "4890"
+    },
+    "sku": "712120934258",
+    "imageUrl": "https://img.example.org/102934920857/937/903/",
+    "imageHash": "8kb47j986hklhde4rfh78okjhgjo08765fgu7tfg4t864fy876rfser45thj87f3"
+  }

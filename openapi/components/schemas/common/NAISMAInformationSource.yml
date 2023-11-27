@@ -1,0 +1,55 @@
+$linkedData:
+  term: NAISMAInformationSource
+  '@id': https://w3id.org/traceability#NAISMAInformationSource
+title: NAISMA Information Source
+description: Details regarding the information source for an observation.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - NAISMAInformationSource
+    default:
+      - NAISMAInformationSource
+    items:
+      type: string
+      enum:
+        - NAISMAInformationSource
+  reference:
+    title: Reference
+    description: A citation or descriptive method of finding the source of literature that data comes from.
+    type: string
+    $linkedData:
+      term: reference
+      '@id': http://rs.tdwg.org/dwc/terms/associatedReferences
+  examiner:
+    title: Examiner
+    description: The full name of the individual who collected the information in the field or is the contact person for the data.
+    type: string
+    $linkedData:
+      term: examiner
+      '@id': http://rs.tdwg.org/dwc/terms/recordedBy
+  dataSource:
+    title: Data Source
+    description: The owner or manager of the data (either a person of an organization).
+    $ref: ./Organization.yml
+    $linkedData:
+      term: dataSource
+      '@id': https://w3id.org/traceability#Entity
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["NAISMAInformationSource"],
+    "reference": "Booth, W.E., and J.C. Wright. 1966. Flora of Montana. Montana State University, Bozeman",
+    "examiner": "Ronald J. Weed",
+    "dataSource": {
+      "type": ["Organization"],
+      "name": "Parks Canada, Banff National Park",
+      "description": "Canada's first national park and the flagship of the nation's park system.",
+      "email": "contact@example.org",
+      "phoneNumber": "+1-315-555-5965"
+    }
+  }

@@ -1,0 +1,113 @@
+$linkedData:
+  term: TransformEvent
+  '@id': https://w3id.org/traceability#TransformEvent
+title: Transform Event
+description: A product transformation event, extending the Event schema.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - Event
+      - TransformEvent
+    default:
+      - Event
+      - TransformEvent
+    items:
+      type: string
+      enum:
+        - Event
+        - TransformEvent
+  eventType:
+    type: string
+  eventId:
+    type: string
+  eventTime:
+    type: string
+  place:
+    title: Place
+    description: Information on where the event took place.
+    $ref: ./Place.yml
+    $linkedData:
+      term: place
+      '@id': https://schema.org/Place
+  actor:
+    title: Event Actors
+    description: >-
+      List of organizations which acted during the event, https://w3id.org/traceability#Organization
+    type: array
+    items:
+      $ref: ./Organization.yml
+    $linkedData:
+      term: organization
+      '@id': https://w3id.org/traceability#Organization
+  newProducts:
+    title: New products created from the transformation event
+    description: The created products referenced by the event in hashlinks.
+    type: array
+    items:
+      type: string
+    $linkedData:
+      term: newProducts
+      '@id': https://w3c-ccg.github.io/hashlink/#hl-url-params
+  consumedProducts:
+    title: Old products consumed from the transformation event
+    description: The consumed products referenced by the event in hashlinks.
+    type: array
+    items:
+      type: string
+    $linkedData:
+      term: consumedProducts
+      '@id': https://w3c-ccg.github.io/hashlink/#hl-url-params
+additionalProperties: false  
+required:
+  - type
+example: |-
+  {
+    "type":[
+      "Event",
+      "TransformEvent"
+    ],
+    "eventType":"Smelt",
+    "eventId":"30ee76a2-9ff9-4884-8ecf-c85c9f3343f4",
+    "eventTime":"2022-01-14T18:24:31Z",
+    "place":{
+      "geo":{
+        "type":[
+          "GeoCoordinates"
+        ],
+        "latitude": "42.8864",
+        "longitude": "-78.8784"
+      },
+      "type":[
+        "Place"
+      ],
+      "address":{
+        "type":[
+          "PostalAddress"
+        ],
+        "postalCode":"",
+        "addressRegion":"New York",
+        "streetAddress":"",
+        "addressCountry":"USA",
+        "addressLocality":"Buffalo"
+      }
+    },
+    "actor":[
+      {
+        "name":"Fabricator Co.",
+        "type":[
+          "Organization"
+        ]
+      }
+    ],
+    "newProducts":[
+      "http://example.org/products/429d2c3b-73d3-429d-9bd0-91db17c1e2ec?hl=t10H2RwsspADWwmbwR2xCISYwBEJ49MoTi3heucZrKs="
+    ],
+    "consumedProducts":[
+      "http://example.org/products/05b6867b-2211-4c8f-ae7a-2a770b9510af?hl=ZfqLwiBj3yidP7p344d71z8ybyjb2+YVfhckGGHHEzk=",
+      "http://example.org/products/0f67ab5c-1a78-4744-8392-19c21ad0f6c7?hl=EK1bNv2VcnbjBlHe1v+JnZ1cBgI8jfVuS6jh1+hTH1A=",
+      "http://example.org/products/2c748483-cdde-49ec-826b-8b7c00584568?hl=yibnswLb+ROwnWWq0MJd5StoFe97iihzGpusGgwIex0="
+    ]
+  }

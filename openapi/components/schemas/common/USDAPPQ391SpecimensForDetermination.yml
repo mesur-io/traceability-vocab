@@ -1,0 +1,250 @@
+$linkedData:
+  term: USDAPPQ391SpecimensForDetermination
+  '@id': https://w3id.org/traceability#USDAPPQ391SpecimensForDetermination
+title: USDA PPQ 391 Specimens for Determination
+description: A record describing a pest sample submitted to a USDA APHIS (Animal and Plant Health Inspection Service) PPQ (Plant Protection and Quarantine) office as well as the findings of the recipient lab.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - USDAPPQ391SpecimensForDetermination
+    default:
+      - USDAPPQ391SpecimensForDetermination
+    items:
+      type: string
+      enum:
+        - USDAPPQ391SpecimensForDetermination
+  priority:
+    title: Priority
+    description: "The priority of the determination. Must be one of: Urgent, Prompt, Routine."
+    type: string
+    $linkedData:
+      term: priority
+      '@id': https://vocabulary.uncefact.org/priorityCode
+  priorityExplanation:
+    title: Priority Explanation
+    description: If prompt or urgent identification is requested, please provide a brief explanation.
+    type: string
+    $linkedData:
+      term: priorityExplanation
+      '@id': https://vocabulary.uncefact.org/remarks
+  collectionNumber:
+    title: Collection Number
+    description: >-
+      A number for the collection using your own convention or the year, followed by the
+      collector's initials and the collector's number. For example: in 2014, Brian K. Long
+      collected his first specimen of the year for determination. His first collection number is
+      14-BLK-00.
+    type: string
+    $linkedData:
+      term: collectionNumber
+      '@id': https://vocabulary.uncefact.org/identification
+  submissionDate:
+    title: Submission Date
+    description: The date the sample was submitted.
+    type: string
+    $linkedData:
+      term: submissionDate
+      '@id': https://vocabulary.uncefact.org/reportSubmissionDateTime
+  collectionDate:
+    title: Collection Date
+    description: The date the sample was collected.
+    type: string
+    $linkedData:
+      term: collectionDate
+      '@id': https://vocabulary.uncefact.org/actualOccurrenceDateTime
+  submittingAgency:
+    title: Submitting Agency
+    description: "Agency submitting specimens for identification. Generally one of: State Cooperator, University, APHIS PPQ."
+    type: string
+    $linkedData:
+      term: submittingAgency
+      '@id': https://vocabulary.uncefact.org/agencyId
+  submitter:
+    title: Submitter
+    description: The person who submitted the sample for identification.
+    $ref: ./Person.yml
+    $linkedData:
+      term: submitter
+      '@id': https://vocabulary.uncefact.org/PartyRoleCodeList#TB
+  collector:
+    title: Collector
+    description: The person who collected the sample; may or may not be the same as "submitter".
+    $ref: ./Person.yml
+    $linkedData:
+      term: collector
+      '@id': https://vocabulary.uncefact.org/inspectionParty
+  interceptionSite:
+    title: Interception Site
+    description: The property specimen was obtained from (farm, nursery, residence, etc.).
+    $ref: ./Place.yml
+    $linkedData:
+      term: interceptionSite
+      '@id': https://vocabulary.uncefact.org/occurrenceLocation
+  identificationReason:
+    title: Identification Reason
+    description: >-
+      Reason identification was performed. May include any of: Biological Control (Target pest name
+      in "Remarks"); Damaging Crops/Plants; Suspected Pest of Regulatory Concern (Explain in
+      "Remarks"); Stored Product Test; Export Certification; Targeted Survey (Pest name in
+      "Remarks"); Smuggling Interdiction/Trade Compliance (SITC); Other (Explain in "Remarks").
+    type: string
+    $linkedData:
+      term: identificationReason
+      '@id': https://vocabulary.uncefact.org/reasonCode
+  remarks:
+    title: Remarks
+    description: Any remarks or additional information to do with collection or submission.
+    type: string
+    $linkedData:
+      term: remarks
+      '@id': https://vocabulary.uncefact.org/remarks
+  tentativeDetermination:
+    title: Tentative Determination
+    description: Tentative determination of pest.
+    $ref: ./PestDetermination.yml
+    $linkedData:
+      term: tentativeDetermination
+      '@id': https://dwc.tdwg.org/list/#dwc_identificationID
+  finalDetermination:
+    title: Final Determination
+    description: Final determination of pest (not for field use).
+    $ref: ./PestDetermination.yml
+    $linkedData:
+      term: finalDetermination
+      '@id': https://dwc.tdwg.org/list/#dwc_identificationID
+  sampleDisposition:
+    title: Sample Disposition
+    description: "The current state of the sample. For example: Returned; Retained for Collection/Stored; Destroyed; Transferred to [location]."
+    type: string
+    $linkedData:
+      term: sampleDisposition
+      '@id': https://dwc.tdwg.org/list/#dwc_disposition
+  signatureDate:
+    title: Signature Date
+    description: The date of signature for the determination.
+    type: string
+    $linkedData:
+      term: signatureDate
+      '@id': https://vocabulary.uncefact.org/occurrenceDateTime
+  lab:
+    title: Lab
+    description: The lab responsible for the final determination.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: lab
+      '@id': https://vocabulary.uncefact.org/lodgementLocation
+  labConformationNumber:
+    title: Lab Conformation Number
+    description: The conformation number for the lab responsible for the final determination (not for field use).
+    type: string
+    $linkedData:
+      term: labConformationNumber
+      '@id': https://vocabulary.uncefact.org/identification
+  dateReceived:
+    title: Date Received
+    description: The date sample was received by the lab (not for field use).
+    type: string
+    $linkedData:
+      term: dateReceived
+      '@id': https://vocabulary.uncefact.org/acceptanceDateTime
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["USDAPPQ391SpecimensForDetermination"],
+    "priority": "Prompt",
+    "priorityExplanation": "Samples exected to decay within a week",
+    "collectionNumber": "21-RTH-80",
+    "submissionDate": "2021-05-29",
+    "collectionDate": "2021-05-28",
+    "submittingAgency": "State Cooperator",
+    "submitter": {
+      "type": [
+        "Person"
+      ],
+      "firstName": "Karson",
+      "lastName": "Mante",
+      "email": "Alexandrea_Wisozk44@example.org",
+      "phoneNumber": "+1-443-555-7044",
+      "worksFor": {
+        "type": [
+          "Organization"
+        ],
+        "name": "Jimbo's Awesome Farm",
+        "description": "Organic fruits & vegetables",
+        "email": "Chloe.Ondricka42@jimbofarm.example.org",
+        "phoneNumber": "+1-154-555-0933",
+        "faxNumber": "+1-097-555-0695"
+      },
+      "jobTitle": "Chief Markets Agent"
+    },
+    "identificationReason": "Suspected Pest of Regulatory Concern",
+    "remarks": "Aphids initially suspected",
+    "tentativeDetermination": {
+      "type": ["PestDetermination"],
+      "final": false,
+      "determination": {
+        "type": ["Taxonomy"],
+        "family": "Aphididae"
+      },
+      "method": "Morphology",
+      "determinedBy": {
+        "type": [
+          "Person"
+        ],
+        "firstName": "Karson",
+        "lastName": "Mante",
+        "email": "Alexandrea_Wisozk44@example.org",
+        "phoneNumber": "+1-693-555-1901",
+        "worksFor": {
+          "type": [
+            "Organization"
+          ],
+          "name": "Jimbo's Awesome Farm",
+          "description": "Organic fruits & vegetables",
+          "email": "Chloe.Ondricka42@jimbofarm.example.org",
+          "phoneNumber": "+1-292-555-0613",
+          "faxNumber": "+1-638-555-7799"
+        },
+        "jobTitle": "Chief Markets Agent"
+      },
+      "date": "2021-05-28"
+    },
+    "finalDetermination": {
+      "type": ["PestDetermination"],
+      "final": true,
+      "determination": {
+        "type": ["Taxonomy"],
+        "family": "Aphididae",
+        "genus": "Acyrthosiphon",
+        "species": "argus"
+      },
+      "method": "Morphology",
+      "determinedBy": {
+        "type": ["Person"],
+        "firstName": "Mary",
+        "lastName": "Smith",
+        "email": "msmith@example.org",
+        "phoneNumber": "+1-067-555-3114",
+        "worksFor": {
+          "type": [
+            "Organization"
+          ],
+          "name": "Glayson & Co. Inspections",
+          "description": "Agricultural cleanliness & organic assurance",
+          "email": "Marina96@glaysonco.net",
+          "phoneNumber": "+1-038-555-9360",
+          "faxNumber": "+1-488-555-8286"
+        },
+        "jobTitle": "Certification Specialist"
+      },
+      "date": "2021-06-02"
+    },
+    "sampleDisposition": "Retained for Collection/Stored",
+    "labConformationNumber": "04332",
+    "dateReceived": "2021-06-01"
+  }

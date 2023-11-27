@@ -1,0 +1,309 @@
+$linkedData:
+  term: OilAndGasDeliveryTicket
+  '@id': https://w3id.org/traceability#OilAndGasDeliveryTicket
+title: Oil and Gas Delivery Ticket
+description: A delivery ticket for an Oil and Gas pipeline shipment
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - OilAndGasDeliveryTicket
+    default:
+      - OilAndGasDeliveryTicket
+    items:
+      type: string
+      enum:
+        - OilAndGasDeliveryTicket
+
+  createdDate:
+    title: Created Date
+    description: Creation date of the oil delivery ticket
+    type: string
+    $linkedData:
+      term: createdDate
+      '@id': https://schema.org/dateIssued
+  openDate:
+    title: Open Date
+    description: Starting date of the oil delivery process
+    type: string
+    $linkedData:
+      term: openDate
+      '@id': https://schema.org/startDate
+  closeDate:
+    title: Close Date
+    description: Date of ending the oil delivery process
+    type: string
+    $linkedData:
+      term: closeDate
+      '@id': https://schema.org/endDate
+  carrier:
+    title: Carrier
+    description: >-
+      The party providing the transport of goods in this consignment between
+      named points.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: transporter
+      '@id': https://schema.org/agent
+  consignor:
+    title: Consignor
+    description: >-
+      The party consigning goods, as stipulated in the transport contract by the
+      party ordering transport.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: consignor
+      '@id': >-
+        https://vocabulary.uncefact.org/consignorParty
+  consignee:
+    title: Consignee
+    description: A party to which goods are consigned.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: consignee
+      '@id': >-
+        https://vocabulary.uncefact.org/consigneeParty
+  ticketControlNumber:
+    title: Ticket Control Number
+    description: Reference giving access to all the details associated with the ticket.
+    type: string
+    $linkedData:
+      term: ticketControlNumber
+      '@id': https://schema.org/ticketNumber
+  batchNumber:
+    title: Batch Number
+    description: A tracking number for commodities
+    type: string
+    $linkedData:
+      term: batchNumber
+      '@id': https://vocabulary.uncefact.org/ReferenceCodeList#BT
+  notificationOfShipment:
+    title: Notification of Shipment Month
+    description: Year and month of the notification of shipment statement
+    type: string
+  destination:
+    title: Delivery Destination
+    description: The address to which the commodity is being shipped
+    $ref: ./Place.yml
+    $linkedData:
+      term: place
+      '@id': https://schema.org/toLocation
+  product:
+    title: Product
+    description: Product details as outlined in the Product schema
+    $ref: ./Product.yml
+    $linkedData:
+      term: product
+      '@id': https://www.gs1.org/voc/Product
+  observation:
+    title: Observation List
+    description: List of observations
+    type: array
+    items:
+      $ref: ./Observation.yml
+    $linkedData:
+      term: observation
+      '@id': https://w3id.org/traceability#observation
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type":[
+      "OilAndGasDeliveryTicket"
+    ],
+    "createdDate":"2022-12-31 13:40:00",
+    "openDate":"2023-01-01 13:40:00",
+    "closeDate":"2023-01-01 20:44:00",
+    "carrier":{
+      "type":[
+        "Organization"
+      ],
+      "name":"Keystone"
+    },
+    "consignor":{
+      "type":[
+        "Organization"
+      ],
+      "name":"Consignor Co."
+    },
+    "consignee":{
+      "type":[
+        "Organization"
+      ],
+      "name":"Consignee Co."
+    },
+    "ticketControlNumber":"991205182",
+    "batchNumber":"CDB-0284-00",
+    "notificationOfShipment":"Jan-23",
+    "destination":{
+      "geo":{
+        "type":[
+          "GeoCoordinates"
+        ],
+        "latitude":"41.8781",
+        "longitude":"-87.6298"
+      },
+      "type":[
+        "Place"
+      ],
+      "address":{
+        "type":[
+          "PostalAddress"
+        ],
+        "postalCode":"",
+        "addressRegion":"IL",
+        "streetAddress":"",
+        "addressCountry":"US",
+        "addressLocality":"Chicago"
+      }
+    },
+    "product":{
+      "type":[
+        "Product"
+      ],
+      "manufacturer":{
+        "type":[
+          "Organization"
+        ],
+        "email":"Kellen.Cummerata48@example.org",
+        "phoneNumber":"+1-692-555-8095"
+      },
+      "name":"Crude Oil Barrel",
+      "description":"Heavy Sour Dilbit",
+      "sizeOrAmount":{
+        "type":[
+          "QuantitativeValue"
+        ],
+        "unitCode":"hg/ha",
+        "value":"8438"
+      },
+      "weight":{
+        "type":[
+          "QuantitativeValue"
+        ],
+        "unitCode":"hg/ha",
+        "value":"9813"
+      },
+      "sku":"391864383008",
+      "commodity":{
+        "type":[
+          "Commodity"
+        ],
+        "commodityCode":"2714.10.00.00",
+        "commodityCodeType":"HTS"
+      }
+    },
+    "observation":[
+      {
+        "type":[
+          "Observation"
+        ],
+        "property":{
+          "type":[
+            "MechanicalProperty"
+          ],
+          "name":"gsv_m3"
+        },
+        "measurement":{
+          "type":[
+            "MeasuredValue"
+          ],
+          "value":"9500",
+          "unitCode":"m3"
+        }
+      },
+      {
+        "type":[
+          "Observation"
+        ],
+        "property":{
+          "type":[
+            "MechanicalProperty"
+          ],
+          "name":"gsv_bbl"
+        },
+        "measurement":{
+          "type":[
+            "MeasuredValue"
+          ],
+          "value":"45000",
+          "unitCode":"bbl"
+        }
+      },
+      {
+        "type":[
+          "Observation"
+        ],
+        "property":{
+          "type":[
+            "MechanicalProperty"
+          ],
+          "name":"nsv_m3"
+        },
+        "measurement":{
+          "type":[
+            "MeasuredValue"
+          ],
+          "value":"9450",
+          "unitCode":"m3"
+        }
+      },
+      {
+        "type":[
+          "Observation"
+        ],
+        "property":{
+          "type":[
+            "MechanicalProperty"
+          ],
+          "name":"nsv_bbl"
+        },
+        "measurement":{
+          "type":[
+            "MeasuredValue"
+          ],
+          "value":"54000",
+          "unitCode":"bbl"
+        }
+      },
+      {
+        "type":[
+          "Observation"
+        ],
+        "property":{
+          "type":[
+            "MechanicalProperty"
+          ],
+          "name":"density"
+        },
+        "measurement":{
+          "type":[
+            "MeasuredValue"
+          ],
+          "value":"921.7",
+          "unitCode":"lbm/ft3"
+        }
+      },
+      {
+        "type":[
+          "Observation"
+        ],
+        "property":{
+          "type":[
+            "MechanicalProperty"
+          ],
+          "name":"API"
+        },
+        "measurement":{
+          "type":[
+            "MeasuredValue"
+          ],
+          "value":"28",
+          "unitCode":"degrees"
+        }
+      }
+    ]
+  }

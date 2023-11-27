@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Traceability Vocabulary v0.0</title>
+    <title>Traceability Vocabulary v0.1</title>
     <meta http-equiv=" Content-Type" content="text/html;charset=utf-8" />
 
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    
     <script
       src="https://www.w3.org/Tools/respec/respec-w3c"
       class="remove"
     ></script>
+
+    <style>
+      #network-main {
+        width: 100%;
+        height: 700px;
+      }
+      #network-container {
+        position: relative;
+        height: 100%;
+      }
+      #chart-main {
+        padding: 32px;
+        width: 100%;
+        height: 700px;
+      }
+      #chart-container {
+        position: relative;
+        height: 100%;
+      }
+    </style>
     <script type="text/javascript" class="remove">
       var respecConfig = {
-        // specification status (e.g., WD, LCWD, NOTE, etc.). If in doubt use ED.
+        github: {
+          repoURL: 'https://github.com/w3c-ccg/traceability-vocab/',
+          branch: 'main',
+        },
         specStatus: 'unofficial',
-
-        // the specification's short name, as in http://www.w3.org/TR/short-name/
         shortName: 'traceability-vocab',
-
-        // if you wish the publication date to be other than today, set this
-        // publishDate:  "2009-08-06",
-
-        //subtitle
         subtitle: 'A vocabulary for traceability in supply chains',
-
-
-        // if there is a previously published draft,
-        // uncomment this and set its YYYY-MM-DD date
-        // and its maturity status
-        previousPublishDate: '2020-09-30',
+        // previousPublishDate: '2020-09-30',
         previousMaturity: 'UNOFFICIAL',
-
-        // if there a publicly available Editor's Draft, this is the link
-        edDraftURI: 'https://w3c-ccg.github.io/traceability-vocab',
-
-        // if this is a LCWD, uncomment and set the end of its review period
-        // lcEnd: "2009-08-05",
-
-        // if you want to have extra CSS, append them to this list
-        // it is recommended that the respec.css stylesheet be kept
-        //extraCSS:             ["spec.css", "prettify.css"],
-
-        // editors, add as many as you like
-        // only "name" is required
+        edDraftURI: 'https://w3id.org/traceability',
         editors: [
           {
             name: 'Orie Steele',
@@ -55,40 +56,56 @@
             companyURL: 'https://www.mesur.io/',
           },
           {
-            name: 'Brian Munz',
-            url: 'https://github.com/brianwmunz',
-            company: 'Mesur.io',
-            companyURL: 'https://www.mesur.io/',
-          },
-          {
             name: 'Mahmoud Alkhraishi',
             url: 'https://github.com/mkhraisha',
             company: 'Mavennet',
             companyURL: 'https://www.mavennet.com/',
           },
         ],
-
-        // extend the bibliography entries
-        //localBiblio: webpayments.localBiblio,
-        // group: "w3c-ccg",
-        // {
-        //   name: "Credentials Community Group",
-        //   url: "https://www.w3.org/community/credentials/",
-        //   list: "public-credentials",
-        //   patentUri: "https://www.w3.org/community/about/agreements/cla/",
-        // }
-        // wg: respecPagesJson.group.name,
-        // // URI of the public WG page
-        // wgURI: respecPagesJson.group.url,
-        // // name (with the @w3c.org) of the public mailing to which comments are due
-        // wgPublicList: respecPagesJson.group.list,
-        // URI of the patent status for this WG, for Rec-track documents
-        // !!!! IMPORTANT !!!!
-        // This is important for Rec-track documents, do not copy a patent URI from a random
-        // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
-        // Team Contact.
-        // wgPatentURI: respecPagesJson.group.patentUri,
-
+        authors: [
+          {
+            name: 'Nis Jespersen',
+            url: 'https://github.com/nissimsan',
+            company: 'Transmute',
+            companyURL: 'https://www.transmute.industries/',
+          },
+          {
+            name: 'Benjamin Collins',
+            url: 'https://github.com/BenjaminMoe',
+            company: 'Transmute',
+            companyURL: 'https://www.transmute.industries/',
+          },
+          {
+            name: 'Brian Munz',
+            url: 'https://github.com/brianwmunz',
+            company: 'mesur.io',
+            companyURL: 'https://www.mesur.io/',
+          },
+          {
+            name: 'Ted Thibodeau Jr',
+            url: 'https://github.com/TallTed',
+            company: 'OpenLink Software, Inc',
+            companyURL: 'https://www.openlinksw.com/',
+          },
+          {
+            name: 'Vivien Fan',
+            url: 'https://github.com/vivienfan',
+            company: 'Mavennet Systems Inc',
+            companyURL: 'https://www.mavennet.com/',
+          },
+          {
+            name: 'Chris Abernethy',
+            url: 'https://github.com/brownoxford',
+            company: 'mesur.io',
+            companyURL: 'https://www.mesur.io/',
+          },       
+          {
+            name: 'Russell Hofvendahl',
+            url: 'https://github.com/rhofvendahl',
+            company: 'mesur.io',
+            companyURL: 'https://www.mesur.io/',
+          },       
+        ],
         otherLinks: [
           {
             key: 'Source Control',
@@ -109,26 +126,7 @@
             ],
           },
         ],
-
-        // URI of the patent status for this WG, for Rec-track documents
-        // !!!! IMPORTANT !!!!
-        // This is important for Rec-track documents, do not copy a patent URI from a random
-        // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
-        // Team Contact.
-        // wgPatentURI:  "",
         maxTocLevel: 2,
-        /*preProcess: [ webpayments.preProcess ],
-      alternateFormats: [ {uri: "diff-20111214.html", label: "diff to previous version"} ],
-      */
-        localBiblio: {
-          'RDF-DATASET-NORMALIZATION': {
-            title: 'RDF Dataset Normalization 1.0',
-            href: 'http://json-ld.github.io/normalization/spec/',
-            authors: ['David Longley', 'Manu Sporny'],
-            status: 'CGDRAFT',
-            publisher: 'JSON-LD Community Group',
-          },
-        },
       };
     </script>
     <style>
@@ -206,26 +204,178 @@
       <h2>Introduction</h2>
 
       <p>
-        This specification describes a Linked Data vocabulary for asserting
-        Verifiable Credentials related to traceability information, such as
-        chemical properties, mechanical properties, country of origin, and other
-        attributes used to determine the status of a products and materials in a
-        supply chain.
+        This specification is designed to enable global supply chain stakeholders to benefit from emerging technological web
+        standards like the Verifiable Credential (VC) Data Model, Linked Data (i.e. JSON-LD), and the Decentralized Identifier
+        (DID) Spec. This specification is relevant to prevalent supply chains but also allows for other use cases across a
+        variety of market segments. The corresponding data exchange schemas are modeled for Verifiable Credentials, which is a
+        standard for cryptographically signing business data. Schema semantics are precisely defined by use of Linked Data
+        which leverage established vocabularies such as schema.org, GS1, and UN/CEFACT.
       </p>
 
+      <h3>Supply Chain Digitization</h3>
+      <p>
+        While digitization has revolutionized other industries with decades of value, supply chain industries have been slow
+        and fragmented in their digital transformation journey. The sheer number and variety of supply chain actors makes
+        technological advances incredibly difficult. For example, physical paper, manual processing, and outdated technologies
+        still support the vast majority of supply chain information flows. Paper processing costs the supply chain industry
+        upwards of $3 billion every year (not counting the additional costs of paper, ink, and printing) (see "<a
+          href="https://www.supplychainbrain.com/blogs/1-think-tank/post/32802-paper-the-bane-of-the-supply-chain-and-how-to-combat-it">When
+          Will Supply Chains Finally Move on From Paper?</a>"). The resulting data silos and blind spots throughout the supply
+        chain have
+        created a crisis that enterprises and regulators can no longer ignore. This problem is made worse by the coordination
+        challenges inherent in increasingly global supply chains.
+      </p>
+      <p>
+        As long as semantic standards depend on manual adoption and complex implementations, the impacts of these investments
+        are limited and delayed. Semantic standards and code lists are being rigorously managed by various standards
+        organizations. However, language barriers and differing contexts between standards is a major source of imprecision
+        and errors. The fragmentary environment around different standard types, applications, and governing bodies only adds
+        to the complexity involved in adoption and integration of standards.
+      </p>
+      <p>
+        The identity of supply chain actors is another problem resulting in costs and errors. While nations and platforms have
+        established digital identity regimes within their boundaries, no useful global identity scheme has emerged or been
+        adopted. Public policy, borders, and commercial obstacles create large barriers for a global centralized model to be
+        adopted. The result is that most businesses need to invest heavily in IT infrastructure and middleware data mapping
+        tools to be integrated with their trading partners. In fact, digitizing a major supply chain will cost tens of
+        millions of dollars at the current pace and will be a 3-to-5 year transformation effort in the future (see "<a
+          href="https://hbr.org/2021/09/a-simpler-way-to-modernize-your-supply-chain">A Simpler
+          Way to Modernize Your Supply Chain</a>"). Today, most enterprises only have 20% visibility into their supply chains
+        when
+        they need about 70% to 90% visibility to properly monitor their investments (see "<a
+          href="https://www.supplychainbrain.com/blogs/1-think-tank/post/31062-in-2020-supply-chain-digitization-is-no-longer-optional">In
+          2020, Supply-Chain Digitization
+          Is No Longer Optional</a>"). This means a heavy investment of capital is required to achieve this visibility, which
+        results in de-facto vendor software lock-in.
+      </p>
+
+
+      <h2>Establishing Trust</h2>
+      <p>
+        Trust and efficiency are fundamental to supply chains and global trade. Supply chains are a network of economically
+        connected and collaborative stakeholders that includes shippers, carriers, importers, regulators, and other key
+        actors. Traditionally, trust is established in the supply chain by analogue signed contracts, physical meetings, phone
+        calls, faxes, and regular audits that prove credibility of the engaging parties and compliance with relevant
+        regulation. Digitization efforts in the sphere of “contractual trust” have been limited by challenges like altering
+        digital data such as PDFs, which is both easy to do and difficult to detect. Some noteworthy steps have been taken to
+        address this such as encrypted communication channels like HTTP-over-TLS (a/k/a HTTPS) and commercial digital
+        signature platforms (i.e. Docusign). However, a trusted channel does not prevent data alteration by either party and
+        globally scaling a proprietary platform is expensive and comes with political and practical implications.
+      </p>
+      <p>
+        This landscape has changed with the advent of the VC standard. This standard makes digital contractual trust
+        accessible and affordable for anyone on the planet. VCs work by applying existing cryptographic standards
+        (particularly modern curve-based digital signature algorithms) to business data that is typically exchanged over APIs
+        or XML. The VC specification provides a data model for how data paired with a cryptographic signature should be
+        represented in a data file. The data itself can be anything; it can describe a shipment, an organization, a product,
+        an agreement, etc. The cryptographic signature ensures that anyone with the VC can verify that the data is how the
+        issuer intended it to be. In other words, the VC standard enables the use of cryptographic standards and provides the
+        verifier a sense of trust when presented with the data file from the issuer. The implications of this technology for
+        global supply chains are far-reaching.
+      </p>
+      <p>
+        However, there remains a great deal of untapped potential from VCs. Trust can be established remotely and fully
+        automated provided that suitable claims are presented and issued by a trustworthy third party such as an existing
+        business partner, a commercial agent, or a government. "Chains of trust" can be established by linking back through
+        relevant claims to a known trust anchor. As you can see, VCs have a great deal of potential in the future of supply
+        chain technology.
+      </p>
+
+      <h2>Linked Semantics</h2>
+      <p>
+        Supply chain organizations use different words to say the same thing. For example, “Shipper” and “Consignor” are used
+        interchangeably in shipping. Ensuring precise communication across supply chain participants given these varying
+        vocabularies is challenging. For example, standards bodies govern semantic models with term definitions, APIs for
+        common use cases, and code lists in an attempt to avoid ambiguity. The traditional challenge for these technical
+        publications has been the human element: reading the spec, interpreting the API attribute name, or skimming through
+        the code lists. This labor is required because the data sender and the data receiver have to establish the same
+        understanding. This results in effort and IT costs for both the sender and receiver to ensure they’re communicating
+        unambiguously.
+      </p>
+      <p>
+        Linked Data addresses this problem by letting computers establish semantic meaning. Leveraging how the web works,
+        Linked Data explicitly ties terms to a precise Uniform Resource Identifier (URI). Much like a URL pointing at a
+        specific website, a URI defines a specific term. Thus, when the data sender defines a term by pointing at a URI, no
+        interpretation is needed and a computer can automatically understand it. Beyond the obvious benefit of establishing
+        shared understanding, integrating Linked Data is simpler and more cost-effective than data interpretation and mapping.
+      </p>
+      <p>
+        Linked Data is not new. It drives internet indexing and search engines. This traceability-vocab specification simply
+        introduces this technology for use in the supply chain industry. All of the schemas which define the data content of
+        Verifiable Credentials are constructed with explicit pointers to the most relevant URIs of the terms used. Existing
+        term definitions, which are available in online vocabularies, can be used to construct the Verifiable Credential
+        schemas.
+      </p>
+
+      <h2>Global Identifiers</h2>
+      <p>
+        A final important part of modernizing the digital supply chain is targeting the problem of identification. The
+        difficulty of scaling centralized solutions has led to the emergence of Decentralized Identifiers (DIDs). DIDs rely on
+        cryptography to prove that you are in control of a given identity. A variety of different types of DIDs exist and
+        apply to different use-cases, like short-term DIDs or long-term, enterprise, security-grade DIDs. A DID is trustless,
+        meaning that anyone can make and control a DID at any time. The value and credibility of a DID comes from its
+        relationship with credentials that are tied to it. These credentials are typically issued by third-party organizations
+        and/or governments.
+      </p>
+      <p>
+        While the identification of supply chain parties is a major identity problem, DIDs also provide value in other
+        contexts. DIDs can be used to represent products, shipments, contractual agreements, or anything else in the supply
+        chain that would benefit from the properties of DIDs. When paired with DIDs representing supply chain actors, DIDs
+        that represent supply chain products or shipments stand to offer an ever more granular snapshot of the supply chain.
+      </p>
+      <p>
+        Note that the traceability-vocab's use of Decentralized Identifiers is limited to example uses. Traditional means of
+        identification can also be used, but use of DIDs is encouraged to ensure that actual control of an identity can be
+        proven.
+      </p>
+
+      <h3>Technology Summary</h3>
+      <p>
+        This section describes the emerging technology standards of Verifiable Credentials, Linked Data, and Decentralized Identifiers with a real-world supply chain use case.
+      </p>
+      <p>
+        The Commercial Invoice is a critical supply chain document that is essential to Customs who use it for duty
+        determination and other tasks. This document includes data such as the description of the goods, where the goods are
+        being shipped to and from, and the value of the goods. This document is supplied by the shipper.
+      </p>
+      <p>
+        The Commercial Invoice document is typically exchanged via PDF, email, or EDI. With the use of Verifiable Credential
+        technology, we are able to digitize a Commercial Invoice into a verifiable Commercial Invoice credential. Each data
+        point on the Commercial Invoice VC is mapped to a semantic model for common definition using Linked Data. For example,
+        the “Consignee” field or the “Shipper” field on the Commercial Invoice are defined unambiguously to precise URIs. This
+        promotes a singular, common definition of the data labels so that organizations have a shared understanding.
+      </p>
+      <p>
+        In addition, certain data points on the Commercial Invoice are used to identify an organization. For example, the
+        “Consignee” field identifies the receiver of the goods and the “Shipper” field identifies the shipper of the goods. In
+        this example, both the consignee and shipper would be organizations. Using a Decentralized Identifier (DID), for
+        example, the consignee organization can self-authenticate as the receiver of the goods.
+      </p>
+      <p>
+        The Shipper’s Decentralized Identifier is included as the Verifiable Credential issuer, binding the claims on the
+        Commercial Invoice back to the Shipper. Cryptographic traceability of the Commercial Invoice is thus established from
+        the Shipper to the Consignee. Anyone presented with the Commercial Invoice can verify that it originates from the
+        Shipper and is targeted to the Consignee.
+      </p>
+      <p>
+        This example portrays a specific use case with a Commercial Invoice and shows how Verifiable Credentials, Linked Data,
+        and Decentralized Identifiers apply. We apply these technologies to common trade documents to further digitize
+        documents and promote trust throughout the entire supply chain.
+      </p>
+
+      <h2>Vocabulary</h2>
       <p>
         Generally, this vocabulary may be looked at as a set of common objects
-        that are shared across multiple business verticals, and vertical or
-        use case specific items that apply to one or more specific commodities
-        or market segments. A primary goal of this specification is to
-        standardize the creation of Verifiable Credentials from standardized
-        JSON-LD which is itself created from JSON Schema definitions as would
-        normally be passed of REST and other APIs.  This promotes code re-use
-        and establishes a pattern for the creation of JSON-LD and related
-        Verifiable Credentials derived from those JSON-LD objects in a manner
-        that is friendly to code and API development as well as to promote
-        better interoperability between vendors who serve common or related
-        markets.
+        that are shared across multiple business verticals, and vertical or use
+        case specific items that apply to one or more specific commodities or
+        market segments. A primary goal of this specification is to standardize
+        the creation of Verifiable Credentials from standardized JSON-LD which
+        is itself created from JSON Schema definitions as would normally be
+        passed of REST and other APIs. This promotes code re-use and establishes
+        a pattern for the creation of JSON-LD and related Verifiable Credentials
+        derived from those JSON-LD objects in a manner that is friendly to code
+        and API development as well as to promote better interoperability
+        between vendors who serve common or related markets.
       </p>
 
       <p>
@@ -236,354 +386,1193 @@
 
       <p>
         This repository has primary contributors from four main market segments,
-        and has subject matter experts from those market segments delegated
-        as leads for objects related to vocabulary items for each segment.
+        and has subject matter experts from those market segments delegated as
+        leads for objects related to vocabulary items for each segment.
         <br />
-        These subject matter leads help identify common elements across verticals
-        as well as in assessing contributions of new objects to the vocabulary.
-        <br />
-        <table>
-          <thead>
-            <tr>
-              <td>Market Segment</td>
-              <td>Subject Matter Expert</td>
-              <td>Contact</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Agriculture</td>
-              <td>Michael Prorock</td>
-              <td>mprorock@mesur.io</td>
-            </tr>
-            <tr>
-              <td>E-Commerce</td>
-              <td>Carsten Stöcker</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Oil and Gas</td>
-              <td>Mahmoud Alkhraishi</td>
-              <td>mahmoud@mavennet.com</td>
-            </tr>
-            <tr>
-              <td>Steel and Metals</td>
-              <td>Orie Steele</td>
-              <td>orie@transmute.industries</td>
-            </tr>
-          </tbody>
-        </table>
+        These subject matter leads help identify common elements across
+        verticals as well as in assessing contributions of new objects to the
+        vocabulary.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <td>Market Segment</td>
+            <td>Subject Matter Expert</td>
+            <td>Contact</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Agriculture</td>
+            <td>Michael Prorock</td>
+            <td>mprorock@mesur.io</td>
+          </tr>
+          <tr>
+            <td>E-Commerce</td>
+            <td>Nis Jespersen</td>
+            <td>nis@transmute.industries</td>
+          </tr>
+          <tr>
+            <td>Oil and Gas</td>
+            <td>Mahmoud Alkhraishi</td>
+            <td>mahmoud@mavennet.com</td>
+          </tr>
+          <tr>
+            <td>Software Supply Chain</td>
+            <td>Benjamin Collins</td>
+            <td>benjamin@transmute.industries</td>
+          </tr>
+          <tr>
+            <td>Steel and Metals</td>
+            <td>Orie Steele</td>
+            <td>orie@transmute.industries</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <section class="informative">
+        <h4>Vocabulary Linkage</h4>
+        <img src="vocab-linkage.png" , width="100%" />
+        <p>
+          The traceability-vocab ensures that coherent sets of use case-specific
+          schemas, blended together with corresponding resolvable @context data,
+          point all the schemas' terms to their defining URIs. These URIs will
+          generally point at existing, established vocabularies. Only when no
+          applicable vocabularies can be found are terms defined as part of the
+          traceability-vocab spec; these are considered exceptional cases.
+        </p>
+        <p>
+          In determining the most applicable vocabulary for a particular term,
+          the most generic and widely adopted vocabulary is chosen. For example,
+          a common term defined in schema.org will be chosen over a similar term
+          defined in a industry-specific vocabulary. This is to ensure the
+          broadest possible interoperability, within and beyond supply chain.
+        </p>
+      </section>
+
+      <section class="informative">
+        <h4>Open API</h4>
+        <p>
+          This vocabulary can also be viewed as an
+          <a href="https://w3id.org/traceability/openapi/"
+            >Open API Specification</a
+          >.
+        </p>
+      <p>
+      See <a href="https://w3id.org/traceability/interoperability">w3id.org/traceability/interoperability</a> 
+      for REST API and interoperability tests associated with this vocabulary.
+      </p>
+      </section>
+
+      <section>
+        <h4>Undefined Terms</h4>
+        <p>
+          This vocabulary uses
+          <code>
+            '@vocab': 'https://www.w3.org/ns/credentials/issuer-dependent#'
+          </code>
+          to disable JSON-LD related errors associated with Verifiable
+          Credentials, issued about terms that have not yet been added here.
+        </p>
+
+      <p class="advisement">
+      Issuers are advised to review the JSON-LD and all associated terms before issuing verifiable credentials.
+      </p>
+      </section>
+    </section>
+
+    <section class="informative">
+      <h3>Use Cases</h3>
+
+      <p>
+        The following use cases outline a number of key scenarios that readers
+        might find useful in a variety of sectors, especially those that deal
+        with cross border supply chain data interchange.
+      </p>
+
+      <!-- definition styling works well for these, but we can adjust at a later data should we want to break out into another format -->
+      <section>
+        <h4>Steel and Metals</h4>
+        <p>
+          The global steel industry relies on cross-party communication of
+          product and business information to successfully move materials from
+          mines, to manufacturers, through customs, to end customers (such as
+          automotive and construction companies). Today this information exists
+          primarily in siloed paper documents. In the current format it is very
+          difficult to make data comparisons across a small number of parties,
+          let alone across millions of shipments over time. It can also be
+          difficult to catch forged documents in the absence of digital
+          signatures and clearly defined organization data attributes.
+        </p>
+
+        <p>
+          A shared vocabulary creates opportunities for steel trading partners
+          to work from a common digital representation of trade information.
+          Take the example of a mill report for a steel product. This document
+          provides important information about the chemical make-up of steel
+          materials, helping to ensure the desired specification and grade have
+          been met. It also acts as evidence about the origins of steel
+          materials. Unambiguous representation of mill report fields is
+          critical for assessing appropriate duties, meeting customer
+          requirements, and ultimately ensuring consumer safely.
+        </p>
+
+        <p>
+          By defining the schema for each field, importers can now answer
+          questions like “How many pipes of specification XYZ did we purchase
+          last year?” (i.e.,
+          <a href="https://w3id.org/traceability#schemas/ChemicalProperty.json"
+            >ChemicalProperty</a
+          >). The mill report can also be linked to other trade documentation
+          such as commercial invoices and bills of lading when those credentials
+          are specified and defined. Regulators can also ask questions across a
+          large number of mill reports to help catch transshipment issues, such
+          as “How much steel product imported last month specified Vietnam as
+          the country of origin?” (i.e.,
+          <a href="https://schema.org/addressCountry">addressCountry</a>).
+        </p>
+
+      <h5>Mill Test Certification</h5>
+        <figure>
+          <img src="resources/mill-test-workflow.png" alt="Mill Test Certification Workflow" style="width:100%">
+          <figcaption>Mill Test Certification Workflow</figcaption>
+        </figure>
+        <p>
+          Steel Inspection Agency issues a <a href="https://w3id.org/traceability#MillTestReportCredential">Mill Test Report</a> (1) for the Steel Manufacturer, which gets presented (2) and verifies the <a href="https://w3id.org/traceability#MillTestReportCredential">Mill Test Report</a> (3).
+        </p>
+        <p>
+          Steel Manufacturer issues a <a href="https://w3id.org/traceability#CommercialInvoiceCredential">Commercial Invoice</a> as part of a sales transaction and an <a href="https://w3id.org/traceability#IntentToImportCredential">Intent To Import</a> to initiate the import (4). The documents are presented to the customer, Steel Importer (5), which can verify the originality of both documents, respectively tracing the <a href="https://w3id.org/traceability#CommercialInvoiceCredential">Commercial Invoice</a> back to the Manufacturer (6) and the <a href="https://w3id.org/traceability#MillTestReportCredential">Mill Test Report</a> back to a trusted steel certifying agent (7). 
+        </p>
+      <h5>SIMA Steel License</h5>
+        <figure>
+          <img src="resources/sima-workflow.png" alt="SIMA License Workflow" style="width:100%">
+          <figcaption>SIMA Steel License Workflow</figcaption>
+        </figure>
+        <p>
+          Steel Inc applies for a <a href="https://w3id.org/traceability#SIMASteelImportLicenseCertificate">SIMA License</a>, issuing (1) and presenting a <a href="https://w3id.org/traceability#SIMASteelImportLicenseApplicationCertificate">SIMA Steel License Application</a> to SIMA (2).
+        </p>
+        <p>
+          Steel Import Monitoring and Analysis verifies (3) and processes Steel Inc’s application, issues a <a href="https://w3id.org/traceability#SIMASteelImportLicenseCertificate">SIMA Steel License</a> (4) which is presented back to Steel Inc. (5).
+        </p>
+        <p>
+          At time of import, Steel Inc. issues an <a href="https://w3id.org/traceability#IntentToImportCredential">Intent To Import</a> and a <a href="https://w3id.org/traceability#CBP7501EntrySummaryCredential">7501 Entry Summary</a> (6) which are presented to CBP together with the <a href="https://w3id.org/traceability#SIMASteelImportLicenseCertificate">SIMA License</a> (7).
+        </p>
+        <p>
+          CBP Verifies that the SIMA Certificate originates from the SIMA issuer (8) and that the certified organization match the issuer of the import credentials (9). 
+        </p>
+      <h5>Steel Import Under USMCA Free Trade Agreement</h5>
+      <figure>
+        <img src="resources/usmca-workflow.png" alt="USMCA Steel Import Workflow" style="width:65%">
+        <figcaption>USMCA Steel Import Workflow</figcaption>
+      </figure>
+      <p>
+        Steel Importer issues a <a href="https://w3id.org/traceability#USMCACertificationOfOrigin">USCMA Certificate of Origin</a> (1). Initiating the importing workflow, Steel Importer also issues an <a href="https://w3id.org/traceability#IntentToImportCredential">Intent To Import</a> (2). 
+      </p>
+      <p>
+        Steel Importer presents the <a href="https://w3id.org/traceability#USMCACertificationOfOrigin">USMCA Certificate of Origin</a> and <a href="https://w3id.org/traceability#IntentToImportCredential">Intent To Import</a> along with a <a href="https://w3id.org/traceability#MillTestReportCredential">Mill Test Report</a> to Customs (3).
+      </p>
+      <p>
+        Customs verifies the <a href="https://w3id.org/traceability#USMCACertificationOfOrigin">USMCA Certification of Origin</a> (4), cross checks HTS codes with the <a href="https://w3id.org/traceability#MillTestReportCredential">Mill Test Report</a> (5), and initiates the import procedures (6). 
+      </p>
+      <h5>Steel Import Customs Brokerage</h5>
+      <figure>
+        <img src="resources/document-pouch-workflow.png" alt="Steel Import Customs Brokerage Workflow" style="width:100%">
+        <figcaption>Steel Import Customs Brokerage Workflow</figcaption>
+      </figure>
+      <p>
+        Steel Importer issues <a href="https://w3id.org/traceability#CommercialInvoiceCredential">Commercial Invoice</a> (1) and <a href="https://w3id.org/traceability#PackingListCredential">Packing List</a> (2) in relation to a shipment of steel. These are presented to the Customs Broker along with a <a href="https://w3id.org/traceability#SIMASteelImportLicenseCertificate">SIMA License</a>, a <a href="https://w3id.org/traceability#USMCACertificationOfOrigin">USMCA Declaration</a>, a <a href="https://w3id.org/traceability#MillTestReportCredential">Mill Test Report</a>, and a <a href="https://w3id.org/traceability#CTPATCredential">CTPAT Importer Certificate</a>. 
+      </p>
+      <p>
+        The Customs Broker issues a <a href="https://w3id.org/traceability#CBP3461ImmediateDeliveryCredential">3461 Immediate Delivery Certificate</a> (3) and an <a href="https://w3id.org/traceability#IntentToImportCredential">Intent To Import</a> (4), and has received the <a href="https://w3id.org/traceability#BillOfLadingCredential">Bill of Lading</a> from the carrier. 
+      </p>
+      <p>
+        The full pouch of documents are presented to Customs (5) for verification (6) and import processing.
       </p>
     </section>
 
-      <section class="informative">
-        <h3>Use Cases and Requirements</h3>
-
+      <section>
+        <h5>Food and Agriculture</h5>
         <p>
-          The following use cases outline a number of key scenarios that readers
-          might find useful in a variety of sectors, especially those that deal
-          with cross border supply chain data interchange.
+          Several use cases exist for common vocabulary in the food and
+          agriculture space. Key priorities for this project revolve around
+          items that are required for the safe and succesful importation of food
+          to various countries.
+        </p>
+        <p>
+          The top level
+          <a href="./schemas/AgInspectionReport.json">AgInspectionReport</a>
+          object has been created as a parent object that allows for the
+          recording of the following inspections and audits, while giving
+          flexibility to account for newly defined inspction types as needs
+          change in the food and agricultre industry. This object can be
+          sub-classed to allow for schema level validation of specific types of
+          inspections and audits as required by the specifics of a given use
+          case. Verifiable Credentials can be issued for this object or sub
+          classes of this object to allow for external verification by third
+          parties that are implementing the Verifiable Credentials sepcification
+        </p>
+        <dl>
+          <dt>Farm GAP Inspection Report</dt>
+          <dd>
+            Keep track of
+            <a href="https://www.ams.usda.gov/services/auditing/gap-ghp"
+              >Good Agricultural Practices (GAP)</a
+            >
+            audits and share results with a vendor
+          </dd>
+          <dt>FSMA Inspection</dt>
+          <dd>
+            <a
+              href="https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-safety-modernization-act-fsma"
+              >Food Safety Modernization Act</a
+            >
+            inspections and results for sharing with relevant parties,
+            regulatory bodies and vendors.
+          </dd>
+          <dt>Foreign Site Certificate of Inspection and/or Treatment</dt>
+          <dd>
+            <a
+              href="https://www.aphis.usda.gov/aphis/resources/forms/CT_PPQ_Forms"
+              >USDA APHIS PPQ FORM 203</a
+            >
+            that is required for pre-clearance of imported food and ag goods
+            into the US
+          </dd>
+        </dl>
+      </section>
+      <section>
+        <h5>Oil and Gas</h5>
+        <dl class="termlist">
+          <p>
+            A common traceability vocabulary will enable creation of a common
+            digital representation of an oil and gas assets and a variety of use
+            cases. The main priority of this project is the border clearance and
+            regulatory compliance use cases, that enable industry players to
+            rely on the asset history, origin, and composition recorded as
+            Verifiable credentials to be used in these processes.
+          </p>
+          <p>
+            The asset-specific CrudeOil VC (and NaturalGas VC) object serves as
+            a root object that stores the key attributes of the asset as well as
+            origin and composition. In addition to the asset VC, we are planning
+            to represent key events in the asset’s lifecycle (inspection,
+            transportation, transfer of ownership) as Verifiable Credentials.
+          </p>
+        </dl>
+      </section>
+      <section>
+        <h5>E-Commerce</h5>
+        <p>
+          A common traceability vocabulary will allow complex supply chains that
+          import goods to US-resident customers to register individual packages
+          and pre-register products intended for sale to the US with US Customs.
+          For the data needs of Customs to be met by highly heterogenous supply
+          chains that might require much "internal confidentiality" (between
+          supply chain actors), a highly sharded data model is required, whereby
+          many different actors can each submit data points separately that get
+          combined at time of customs processing.
+        </p>
+        <p>
+          Without strong identification of legal entities (i.e., legally defined
+          and registered supply chain actors) and of products, and without high
+          levels of semantic flexibility, the shards can be quite hard to
+          combine usefully. Linking the registration of individual packages
+          together with the pre-registration of commercial products and actors
+          is the key value-add of this system, but could also be a burdensome
+          request on importers, retailers, and freight forwarders. To minimize
+          this burden, we are aligning wherever possible with the ontology work
+          of GS1 (GTINs and vLEIs), and with shipping and tracking semantics
+          already adopted today by international logistics consortia. We
+          distinguish between the VCs that are issued in relation to a specific
+          package and the contextual information that needs to be queried to
+          validate package information, as well as to make valuable assessments,
+          inferences, and data quality remediation on Customs pre-entry data.
         </p>
 
-        <!-- definition styling works well for these, but we can adjust at a later data should we want to break out into another format -->
-        <section>
-          <h4>Steel and Metals</h4>
-          <dl class="termlist">
-            <p>
-              The global steel industry relies on cross-party communication of
-              product and business information to successfully move materials
-              from mines, to manufacturers, through customs, to end customers
-              (such as automotive and construction companies). Today this
-              information exists primarily in siloed paper documents. In the
-              current format it is very difficult to make data comparisons
-              across a small number of parties, let alone across millions of
-              shipments over time. It can also be difficult to catch forged
-              documents in the absence of digital signatures and clearly defined
-              organization data attributes.
-            </p>
 
-            <p>
-              A shared vocabulary creates opportunities for steel trading
-              partners to work from a common digital representation of trade
-              information. Take the example of a mill report for a steel
-              product. This document provides important information about the
-              chemical make-up of steel materials, helping to ensure the desired
-              specification and grade have been met. It also acts as evidence
-              about the origins of steel materials. Unambiguous representation
-              of mill report fields is critical for assessing appropriate
-              duties, meeting customer requirements, and ultimately ensuring
-              consumer safely.
-            </p>
+        <h5>CTPAT Ecommerce Incentive Program Marketplace Registration</h5>
+        <p>
+          Ecommerce Marketplace CTPAT EIP Certification workflow. Registration is mandatory for subsequent benefits, including pre-processing of shipments and issuance of CTPAT EIP Certificate. 
+        </p>
+        <figure>
+          <img src="resources/marketplace-registration.png" alt="Ecommerce Marketplace Registration Workflow" style="width:100%">
+          <figcaption>Ecommerce Marketplace Registration Workflow</figcaption>
+        </figure>
+        <p><b>Mandatory Input</b></p>
+        <dl>
+          <dt><a href="https://w3id.org/traceability#CTPATEIPApplicationCredential">CTPAT EIP Application</a></dt>
+          <dd>Issuer: Applicant Marketplace</dd>
+          <dd>Credential Subject: Applicant Marketplace</dd>
+          <dt><a href="https://w3id.org/traceability#VerifiableBusinessCard">Verifiable Business Card</a></dt>
+          <dd>Issuer: Applicant Marketplace</dd>
+          <dd>Credential Subject: Applicant Marketplace</dd>
+        </dl>
+        <p><b>Optional Input</b></p>
+        <dl>
+          <dt>AEO Certificates such as <a href="https://w3id.org/traceability#CTPATCredential">CTPAT Certificate</a></dt>
+          <dd>Issuer: CTPAT</dd>
+          <dd>Credential Subject: Applicant Marketplace</dd>
+          <dt>Other Organizational Evidence</dt>
+          <dd>Issuer: Relevant Issuer</dd>
+          <dd>Credential Subject: Applicant Marketplace</dd>
+        </dl>
+        <p><b>Output</b></p>
+        <dl>
+          <dt>Marketplace CTPAT EIP Certificate</dt>
+          <dd><a href="https://w3id.org/traceability#CTPATEIPMarketplaceCredential">CTPAT Ecommerce Incentive Program Marketplace Credential</a></dd>
+          <dd>Issuer: CTPAT EIP</dd>
+          <dd>Credential Subject: Applicant Marketplace</dd>
+        </dl>
 
-            <p>
-              By defining the schema for each field, importers can now answer
-              questions like “How many pipes of specification XYZ did we
-              purchase last year?” (i.e.,
-              <a
-                href="https://w3id.org/traceability#schemas/ChemicalProperty.json"
-                >ChemicalProperty</a
-              >). The mill report can also be linked to other trade
-              documentation such as commercial invoices and bills of lading when
-              those credentials are specified and defined. Regulators can also
-              ask questions across a large number of mill reports to help catch
-              transshipment issues, such as “How much steel product imported
-              last month specified Vietnam as the country of origin?” (i.e.,
-              <a href="https://schema.org/addressCountry">addressCountry</a>).
-            </p>
-          </dl>
 
-          <p>Credentials of interest:</p>
-          <ul>
-            <li>
-              <a href="#MillTestReportCertificate">Mill Test Report Certificate</a>
-            </li>
-            <li>
-              <a href="#CommercialInvoiceCertificate">Commercial Invoice Certificate</a>
-            </li>
-            <li>
-              <a href="#BillOfLadingCertificate">Bill of Lading Certificate</a>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h5>Food and Agriculture</h5>
-          <p>
-            Several use cases exist for common vocabulary in the food and
-            agriculture space. Key priorities for this project revolve around
-            items that are required for the safe and succesful importation of
-            food to various countries.
-          </p>
-          <p>
-            The top level
-            <a href="./schemas/AgInspectionReport.json">AgInspectionReport</a>
-            object has been created as a parent object that allows for the
-            recording of the following inspections and audits, while giving
-            flexibility to account for newly defined inspction types as needs
-            change in the food and agricultre industry. This object can be
-            sub-classed to allow for schema level validation of specific types
-            of inspections and audits as required by the specifics of a given
-            use case. Verifiable Credentials can be issued for this object or
-            sub classes of this object to allow for external verification by
-            third parties that are implementing the Verifiable Credentials
-            sepcification
-          </p>
-          <dl>
-            <dt><dfn>Farm GAP Inspection Report</dfn></dt>
-            <dd>
-              Keep track of
-              <a href="https://www.ams.usda.gov/services/auditing/gap-ghp"
-                >Good Agricultural Practices (GAP)</a
-              >
-              audits and share results with a vendor
-            </dd>
-            <dt><dfn>FSMA Inspection</dfn></dt>
-            <dd>
-              <a
-                href="https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-safety-modernization-act-fsma"
-                >Food Safety Modernization Act</a
-              >
-              inspections and results for sharing with relevant parties,
-              regulatory bodies and vendors.
-            </dd>
-            <dt>
-              <dfn>Foreign Site Certificate of Inspection and/or Treatment</dfn>
-            </dt>
-            <dd>
-              <a
-                href="https://www.aphis.usda.gov/aphis/resources/forms/CT_PPQ_Forms"
-                >USDA APHIS PPQ FORM 203</a
-              >
-              that is required for pre-clearance of imported food and ag goods
-              into the US
-            </dd>
-          </dl>
-        </section>
-        <section>
-          <h5>Oil and Gas</h5>
-          <dl class="termlist">
-            <p>
-              A common traceability vocabulary will enable creation of a common
-              digital representation of an oil and gas assets and a variety of
-              use cases. The main priority of this project is the border
-              clearance and regulatory compliance use cases, that enable
-              industry players to rely on the asset history, origin, and
-              composition recorded as Verifiable credentials to be used in these
-              processes.
-            </p>
-            <p>
-              The asset-specific CrudeOil VC (and NaturalGas VC) object serves
-              as a root object that stores the key attributes of the asset as
-              well as origin and composition. In addition to the asset VC, we
-              are planning to represent key events in the asset’s lifecycle
-              (inspection, transportation, transfer of ownership) as Verifiable
-              Credentials.
-            </p>
-          </dl>
-        </section>
-        <section>
-          <h5>E-Commerce</h5>
-          <dl class="termlist">
-            <p>
-              A common traceability vocabulary will allow complex supply chains
-              that import goods to US-resident customers to register individual
-              packages and pre-register products intended for sale to the US
-              with US Customs. For the data needs of Customs to be met by highly
-              heterogenous supply chains that might require much "internal
-              confidentiality" (between supply chain actors), a highly sharded
-              data model is required, whereby many different actors can each
-              submit data points separately that get combined at time of customs
-              processing.
-            </p>
-            <p>
-              Without strong identification of legal entities (i.e., legally
-              defined and registered supply chain actors) and of products, and
-              without high levels of semantic flexibility, the shards can be
-              quite hard to combine usefully. Linking the registration of
-              individual packages together with the pre-registration of
-              commercial products and actors is the key value-add of this
-              system, but could also be a burdensome request on importers,
-              retailers, and freight forwarders. To minimize this burden, we are
-              aligning wherever possible with the ontology work of GS1 (GTINs
-              and vLEIs), and with shipping and tracking semantics already
-              adopted today by international logistics consortia. We distinguish
-              between the VCs that are issued in relation to a specific package
-              and the contextual information that needs to be queried to
-              validate package information, as well as to make valuable
-              assessments, inferences, and data quality remediation on Customs
-              pre-entry data.
-            </p>
-            <p>
-              NOTE: To facilitate linking and alignment across internal and
-              external processes, many of the VCs modeled in this project are
-              labeled "process" VCs, meaning they refer to the internal
-              processes of a customs agency. Reusability here is likely minimal
-              compared to the rest of the vocabulary, but they are included for
-              informational purposes and to ensure they stay aligned with any
-              changes to the private-sector/logistics-industry data model being
-              consumed by those processes. These may also be less documented
-              than the product- and package- VCs, which correspond to
-              standardized data models in the logistics and shipping sector.
-            </p>
-          </dl>
-        </section>
+        <h5>De Minimis Shipment</h5>
+        <figure>
+          <img src="resources/de-minimis-shipment.png" alt="De Minimis Shipment Workflow" style="width:100%">
+          <figcaption>De Minimis Shipment Workflow</figcaption>
+        </figure>
+        <p>
+          As part of an international ecommerce sale, the Ecommerce platform issues a <a href="https://w3id.org/traceability#DeMinimisShipmentCertificate">De Minimis Shipment Certificate</a> (1) indicating exemption from importing duties. An <a href="https://w3id.org/traceability#IntentToImportCredential">Intent To Import</a> is also issued (2) to initiate the import workflow (3). 
+        </p>
+        <p>
+          Customs verifies both (4) and (5) and allows the shipment "direct pass" through customs. 
+        </p>
+        <h5>Packing and Shipping</h5>
+        <figure>
+          <img src="resources/shipping-workflow.png" alt="Packing and Shipping Workflow" style="width:100%">
+          <figcaption>Packing and Shipping Workflow</figcaption>
+        </figure>
+        <p>
+          A purchase is made on a US eCommerce platform, triggering issuance of a <a href="https://w3id.org/traceability#PurchaseOrderCredential">Purchase Order</a> (1), which is passed to the foreign fulfillment center (2).
+        </p>
+        <p>
+          Receiving and verifying the <a href="https://w3id.org/traceability#PurchaseOrderCredential">Purchase Order</a>, the fulfillment center organizes shipping with an international carrier, issuing (4) and presenting <a href="https://w3id.org/traceability#ShippingInstructionsCertificate">Shipping Instructions</a> (5).
+        </p>
+        <p>
+          Upon shipping, the Fulfillment Center issues a <a href="https://w3id.org/traceability#PackingListCredential">Packing List</a> (7), presented to the courier (8). The courier verifies the <a href="https://w3id.org/traceability#ShippingInstructionsCertificate">Shipping Instructions</a> (6) and prepares for shipping. 
+        </p>
+        <p>
+          The carrier verifies the <a href="https://w3id.org/traceability#PackingListCredential">Packing List</a> (9) and automatically correlates it to the shipment through the common workflow instance id.
+        </p>
+        <h5>Importing Procedures</h5>
+        <figure>
+          <img src="resources/import-procedures-workflow.png" alt="Import Procedures Workflow" style="width:100%">
+          <figcaption>Import Procedures Workflow</figcaption>
+        </figure>
+        <p>
+          Express Carrier issues a <a href="https://w3id.org/traceability#HouseBillOfLadingCredential">House Bill of Lading</a> (1), which is presented to the Customs Broker along with other documents associated with the <a href="https://w3id.org/traceability#PackingListCredential">Packing List</a> (2). 
+        </p>
+        <p>
+          The Customs Broker issues <a href="https://w3id.org/traceability#CBP3461ImmediateDeliveryCredential">3461 Immediate Delivery</a> (3) and <a href="https://w3id.org/traceability#IntentToImportCredential">Intent To Import</a> (4) certificates. The documents are submitted to Customs through a Traceable Presentation with a defined workflow instance id such as “a123-b456” (5).
+        </p>
+        <p>
+          Customs verifies the pouch of documents associated with the shipment (6) and initiates importing procedures based on submitted data (7). 
+        </p>
+        <h5>Import Completion</h5>
+        <figure>
+          <img src="resources/entry-summary-workflow.png" alt="Import Completion Workflow" style="width:65%">
+          <figcaption>Import Procedures Workflow</figcaption>
+        </figure>
+        <p>
+          The Customs Broker completes the importing procedures by issuing the <a href="https://w3id.org/traceability#CBP7501EntrySummaryCredential">7501 Entry Summary</a> (1), presenting it to Customs (2), and associating it with the earlier submission by correlating the workflow instance id ("a123-b456").
+        </p>
+        <p>
+          Customs verifies the <a href="https://w3id.org/traceability#CBP7501EntrySummaryCredential">Entry Summary</a> (3) and completes the importing assessment. 
+        </p>
+        <h5>Trusted Trader Program</h5>
+        <figure>
+          <img src="resources/ctpat-workflow.png" alt="Trusted Trader Program Workflow" style="width:100%">
+          <figcaption>Trusted Trader Program Workflow</figcaption>
+        </figure>
+        <p>
+          CTPAT runs vetting procedures, and issues and presents to the Importer (2) a <a href="https://w3id.org/traceability#CTPATCredential">CTPAT Certificate</a> (1).
+        </p>
+        <p>
+          Upon importing goods, the Importer issues a <a href="https://w3id.org/traceability#CBP7501EntrySummaryCredential">7501 Entry Summary</a> (4) and an <a href="https://w3id.org/traceability#IntentToImportCredential">Intent To Import</a> (5), which are presented to CBP (6) along with the <a href="https://w3id.org/traceability#CTPATCredential">CTPAT Certificate</a>.
+        </p>
+        <h5>Freight Forwarder Consignment</h5>
+        <p>
+          This workflow demonstrates how separate workflows graphs may be joined by use of the instance id array.  
+        </p>
+        <figure>
+          <img src="resources/workflow-graph-join.png" alt="Freight Forwarder Consignment Workflow" style="width:100%">
+          <figcaption>Freight Forwarder Consignment Workflow</figcaption>
+        </figure>
+        <p>
+          The product importer of record issues <a href="https://w3id.org/traceability#ProformaInvoiceCredential">Proforma Invoice</a> (1) and <a href="https://w3id.org/traceability#IntentToImportCredential">Intent To Import</a> (2) credentials which are presented to CBP (3) with instance id [inst_1] well ahead of shipping. 
+        </p>
+        <p>
+          CBP verifies the initial import documentation submitted by the Importer (4).
+        </p>
+        <p>
+          Upon shipping, the Freight Forwarder issues a <a href="https://w3id.org/traceability#HouseBillOfLadingCredential">House BL</a> (5) which is presented to CBP (6) with a separate instance id [inst_2].
+        </p>
+        <p>
+          The Importer issues the final <a href="https://w3id.org/traceability#CommercialInvoiceCredential">Commercial Invoice</a> (8) which is presented to the Freight Forwarder (9) also with instance id [inst_1]. Passing on the <a href="">Commercial Invoice</a>, the Freight Forwarder includes both its own and the Importer’s instance ids [inst_1, inst_2], indicating to Customs that the workflows are related.
+        </p>
+        <p>
+          Receiving the <a href="https://w3id.org/traceability#CommercialInvoiceCredential">Commercial Invoice</a> (10), CBP can also join the two graphs, thus knowing that the original <a href="https://w3id.org/traceability#ProformaInvoiceCredential">Proforma Invoice</a> relates to the Freight Forwarder’s presentations. 
+        </p>
+        <h5>Product Identifier Verification from Company Prefix License</h5>
+        <p>
+          Workflow for proving control over a GS1 Company Prefix, identification of a product, and makes data assertions about the product.
+        </p>
+        <figure>
+          <img src="resources/product-identifier-verification-from-company-prefix-license.png" alt="Product Identifier Verification from Company Prefix License" style="width:100%">
+          <figcaption>Product Identifier Verification from Company Prefix License</figcaption>
+        </figure>
+        <p>
+          A GS1 Member Organization issues <a href="https://w3id.org/traceability#GS1CompanyPrefixLicenseCredential">GS1 Company Prefix License Credential</a> (1), which is presented to the GS1 User Company (2). 
+        </p>
+        <p>
+          The GS1 User Company issues <a href="https://w3id.org/traceability#GS1KeyCredential">GS1 Key Credential</a> (3) for GTIN identification of a product.
+        </p>
+        <p>
+          The GS1 User Company associates product data by issuing a <a href="https://w3id.org/traceability#GS1DataCredential">GS1 Data Credential</a> (4) about the identified product.
+        </p>
+        <p>
+          The GS1 User Company presents License, Key and Data to CBP (5, 6, 7) to CBP. 
+        </p>
+        <h5>Product Identifier Verification from Identification Key License</h5>
+        <p>
+          Workflow for proving control over a GS1 Key, identification of a product, and makes data assertions about the product.
+        </p>
+        <figure>
+          <img src="resources/product-identifier-verification-from-identification-key-license.png" alt="Product Identifier Verification from Identification Key License" style="width:100%">
+          <figcaption>Product Identifier Verification from Identification Key License</figcaption>
+        </figure>
+        <p>
+          A GS1 Member Organization issues <a href="https://w3id.org/traceability#GS1IdentificationKeyLicenseCredential">GS1 Company Identification Key License Credential</a> (1), which is presented to the GS1 User Company (2). 
+        </p>
+        <p>
+          The GS1 User Company issues <a href="https://w3id.org/traceability#GS1KeyCredential">GS1 Key Credential</a> (3) for GTIN identification of a product.
+        </p>
+        <p>
+          The GS1 User Company associates product data by issuing a <a href="https://w3id.org/traceability#GS1DataCredential">GS1 Data Credential</a> (4) about the identified product.
+        </p>
+        <p>
+          The GS1 User Company presents License, Key and Data to CBP (5, 6, 7) to CBP. 
+        </p>
+        <h5>GS1 Prefix License Verification</h5>
+        <p>
+          Workflow for establishing the trust relationship from a GS1 Member Organizations to GS1 Global Office.
+        </p>
+        <figure>
+          <img src="resources/GS1-prefix-license-verification.png" alt="GS1 Prefix License Verification" style="width:100%">
+          <figcaption>GS1 Prefix License Verification</figcaption>
+        </figure>
+        <p>
+          GS1 Global Office issues <a href="https://w3id.org/traceability#GS1PrefixLicenseCredential">GS1 Prefix License Credential</a> (1) about a GS1 Member Organization.
+        </p>
+        <p>
+          In conjunction with verification of a GS1 User Company's claims, if the <a href="https://w3id.org/traceability#GS1PrefixLicenseCredential">GS1 Prefix License Credential</a> of an issuing GS1 Member Organization is not already cached, or if a cached <a href="https://w3id.org/traceability#GS1PrefixLicenseCredential">GS1 Prefix License Credential</a> has been revoked, the verifier fetches the corresponding <a href="https://w3id.org/traceability#GS1PrefixLicenseCredential">GS1 Prefix License Credential</a> which is publicly avaiable from GS1 Global Office (2). 
+        </p>
       </section>
+      <section>
+        <h5>Software Supply Chain</h5>
+        <dl class="termlist">
+          <p>
+            Modern physical supply chains are heavily dependent upon software
+            supply chains. As such, being able to secure digital services has
+            become a requirement for securing physical ones.
+          </p>
+          <p>
+            As with physical supply chains, customers demand vendors to take
+            responsibility and prove the provenance of software products and
+            platforms. Beyond organizations securing their supply chains, the
+            digital supply chain has become an issue of national security.
+            Notably, this led to the May 21st, 2021 US President
+            <a
+              href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/"
+            >
+              Executive Order</a
+            >
+            of enhancing software supply chain security, outlining minimum
+            software traceability requirements.
+          </p>
+          <p>
+            One approach for increased visibility and accountability in software
+            is to provide a Software Bill of Materials which allows consumers to
+            understand what is in the software, much like how food ingredients
+            are labeled. Software is widely built from open source and other
+            types of components, and the Software Bill of Materials document
+            lists all such dependencies, providing a detailed and accurate
+            understanding of organizations' software infrastructure. This is key
+            for remediating software vulnerability exposure and assessment of
+            software licensing compliance.
+          </p>
+          <p>
+            Including the Software Bill of Materials in a Verifiable Credential
+            establishes a verifiable link from the software back to its origin.
+          </p>
+        </dl>
+      </section>
+      <section>
+        <h5>Supporting Documents</h5>
+        <dl>
+          <dt>Mill Test Report Certificate</dt>
+          <dd>
+            <figure>
+              <img
+                src="samples/mill-test-report-ex.png"
+                alt="Mill Test Report example"
+                style="width: 40%"
+              />
+              <figcaption>Sample Mill Test Report</figcaption>
+            </figure>
+            <p>
+              The
+              <a href="#MillTestReportCredential">Mill Test Report</a>
+              certifies metal type and quality, listing chemical and mechanical
+              properties.
+            </p>
+          </dd>
+          <dt>Commercial Invoice Certificate</dt>
+          <dd>
+            <figure>
+              <img
+                src="samples/commercial-invoice-ex.png"
+                alt="Commercial Invoice example"
+                style="width: 40%"
+              />
+              <figcaption>Sample Commercial Invoice</figcaption>
+            </figure>
+            <p>
+              <a href="#CommercialInvoiceCredential">Commercial Invoice</a>
+              indicates to authorities the value of goods subject to tariffs and
+              duties.
+            </p>
+          </dd>
+          <dt>Bill of Lading Certificate</dt>
+          <dd>
+            <figure>
+              <img
+                src="samples/bill-of-lading-ex-2.png"
+                alt="Bill of Lading example"
+                style="width: 40%"
+              />
+              <figcaption>Sample Bill of Lading</figcaption>
+            </figure>
+            <p>
+              <a href="#BillOfLadingCredential">Bill of Lading</a> certificates
+              are issued by the carrier, indicating a) receipt of goods, b)
+              evidence of consignment contract, and c) title of goods.
+            </p>
+          </dd>
+          <dt>Verifiable Business Card</dt>
+          <dd>
+            <p>
+              <a href="#VerifiableBusinessCard">Verifiable Business Cards</a>
+              hold verifiable presentation endpoint addresses.
+            </p>
+          </dd>
 
-    <section id="terminology" class="informative">
-      <h2>Terminology</h2>
-      <p>
-        The following terms are used to describe concepts in this specification.
-      </p>
-
-      <dl class="termlist">
-        <dt><dfn data-lt="entities|entity's">entity</dfn></dt>
-        <dd>
-          A thing with distinct and independent existence, such as a person,
-          organization, or device that performs one or more roles in the
-          ecosystem.
-        </dd>
-        <dt><dfn>user agent</dfn></dt>
-        <dd>
-          A program, such as a browser or other Web client, that mediates the
-          communication between the various roles in this specification.
-        </dd>
-        <dt><dfn data-lt="URI|URIs">URI</dfn></dt>
-        <dd>An identifier as defined by [[RFC3986]].</dd>
-      </dl>
+          <dt>USMCA Certificate Of Origin</dt>
+          <dd>
+            <figure>
+              <img
+                src="samples/usmca-form.png"
+                alt="USMCA Certificate Of Origin"
+                style="width: 40%"
+              />
+              <figcaption>USMCA Certificate Of Origin</figcaption>
+            </figure>
+            <p>
+              The
+              <a href="#USMCACertificationOfOrigin"
+                >USMCA Certificate Of Origin</a
+              >
+              schema is adapted from
+              <a
+                href="https://www.fedex.com/content/dam/fedex/us-united-states/International/upload/FedEx_USMCA_T-MEC_CUSMA_Fillable_Form.pdf"
+              >
+                FedEx's</a
+              >
+              and
+              <a
+                href="https://www.ups.com/assets/resources/media/ups-usmca-fillable-form-us.pdf"
+                >UPS's</a
+              >
+              USMCA Forms, implementing the
+              <a href="https://trade.cbp.gov/USMCA/s/"
+                >United States - Mexico - Canada Agreement (USMCA)</a
+              >.
+            </p>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Purchase Order</dt>
+          <dd>
+            <figure>
+              <img
+                src="samples/purchase-order-ex.png"
+                alt="Purchase Order example"
+                style="width: 40%"
+              />
+              <figcaption>Sample Purchase Order</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="samples/purchase-order-form.png"
+                alt="Sample Purchase Order form"
+                style="width: 40%"
+              />
+              <figcaption>Sample Purchase Order form</figcaption>
+            </figure>
+            <p>
+              The <a href="#PurchaseOrderCredential">Purchase Order</a>
+              is a formal request of goods by buyer to seller.
+            </p>
+          </dd>
+          <dt>Packing List</dt>
+          <dd>
+            <figure>
+              <img
+                src="samples/packing-list-ex.png"
+                alt="Packing List example"
+                style="width: 40%"
+              />
+              <figcaption>Packing List example</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="samples/packing-list-form.png"
+                alt="Sample Packing List form"
+                style="width: 40%"
+              />
+              <figcaption>Sample Packing List form</figcaption>
+            </figure>
+            <p>
+              The <a href="#PackingListCredential">Packing List</a>
+              lists the goods of a shipment. It is used by the consignee and
+              Customs to practically manage and organize the consgned goods.
+            </p>
+          </dd>
+          <dt>Waybill</dt>
+          <dd>
+            <figure>
+              <img
+                src="samples/air-waybill-form.png"
+                alt="Sample Air Waybill form"
+                style="width: 40%"
+              />
+              <figcaption>Sample Air Waybill form</figcaption>
+            </figure>
+            <p>
+              A <a href="#IATAAirWaybillCredential">Waybill</a> is a transport 
+              document issued by the carrier. It serves a similar purpose as a 
+              Bill of Lading, except that it does not carry title. Instead, the 
+              consignee is identified on the document.
+            </p>
+          </dd>
+          <dt>Proforma Invoice</dt>
+          <dd>
+            <figure>
+              <img
+                src="samples/proforma-invoice-form.png"
+                alt="Sample Proforma Invoice form"
+                style="width: 40%"
+              />
+              <figcaption>Sample Proforma Invoice form</figcaption>
+            </figure>
+            <p>
+              The <a href="#ProformaInvoiceCredential">Proforma Invoice</a> is a 
+              sample invoice provided by an exporter prior to a sale.
+            </p>
+          </dd>
+          <dt>Commercial Invoice</dt>
+          <dd>
+            <figure>
+              <img
+                src="samples/invoice-ex.png"
+                alt="Commercial Invoice example"
+                style="width: 40%"
+              />
+              <figcaption>Sample Commercial Invoice</figcaption>
+            </figure>
+            <p>
+              An <a href="#CommercialInvoiceCredential">Invoice</a>
+              requests payment for a shipment of goods. It is based on the same
+              schema as the Commercial Invoice, but is typically at a finer
+              level of details, line items corresponding to the Purchase Order.
+            </p>
+          </dd>
+          <dd>
+            <figure>
+              <img
+                src="samples/isf-form.png"
+                alt="Importer Security Filing form"
+                style="width: 40%"
+              />
+              <figcaption>Sample Importer Security Filing form</figcaption>
+            </figure>
+            <p>
+              The <a href="#ImporterSecurityFilingCredential">Importer Security 
+              Filing</a>, commonly referred to as "10+2" is a requirement for 
+              import containerized cargo into the United States. 
+            </p>
+          </dd>
+        </dl>
+      </section>
     </section>
 
     <section
-      data-include="sections/vocab.html"
+    data-include="sections/workflows.html"
+    data-include-replace="true"
+  ></section>
+
+    <section
+      data-include="sections/credentials.html"
       data-include-replace="true"
     ></section>
 
-    <section id="conformance"></section>
+    <section id="conformance">
+      <section>
+        <h3>Extensions to Standard</h3>
+        <section>
+          <h4>Supported media types</h4>
+          <p>This profile supports the following media types.</p>
+          <ul>
+            <li>
+              <code>application/vc+ld+json</code>
+            </li>
+            <li>
+              <code>application/vp+ld+json</code>
+            </li>
+            <li>
+              <code>application/vc+ld+jwt</code>
+            </li>
+            <li>
+              <code>application/vp+ld+jwt</code>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h4>Verifiable Credential</h4>
+          <p>The object MUST conform to the basic requirements section of the <a href="https://www.w3.org/TR/vc-data-model/#basic-concepts">W3C VC Data Model</a>.</p>
+          <p>It is RECOMMENDED the <code>id</code> be a valid URN, for example <code>urn:uuid:3978344f-8596-4c3a-a978-8fcaba3903c5</code></p>
+        </section>
 
-    <section class="informative">
-      <h2>Privacy Considerations</h2>
+        <section>
+          <h4>Verifiable Presentation</h4>
+          <p>The object MUST conform to the basic requirements section of the <a href="https://www.w3.org/TR/vc-data-model/#basic-concepts">W3C VC Data Model</a>.</p>
+        </section>
 
-      <p>
-        This section details the general privacy considerations and specific
-        privacy implications of deploying this specification into production
-        environments.
-      </p>
+        <section>
+          <h4>Traceable Presentation</h4>
+          <p>This object extends <code>VerifiablePresentation</code> to support workflows.</p>
+          <p>The <code>@context</code> MUST contain <code>"https://w3id.org/traceability/v1"</code>.</p>
+          <p>The object MUST have an <code>id</code> property.</p>
+          <p>The <code>id</code> MUST be a UUID v4 URN per [[rfc4122]], for example, <code>urn:uuid:3978344f-8596-4c3a-a978-8fcaba3903c5</code>.</p>
+        </section>
+
+        <section>
+          <h4>Workflow</h4>
+          <p>
+            <em>Workflows</em> enable correlation of multiple Traceable Presentations, made at different points in time and between different holders and verifiers. 
+          </p>
+          <p>
+            A <code>TraceablePresentation</code> MAY specify a <code>workflow</code>. 
+          </p>
+          <p>
+            A <code>workflow</code> MAY reference one or more <a href="https://w3id.org/traceability#workflow-definition>">WorkflowDefinitions</a> to indicate the intention of the presentation. 
+          </p>
+          <p>
+            A <code>workflow</code> MAY reference one or more <a href="https://w3id.org/traceability#workflow-instance>">WorkflowInstances</a> to correlate multiple <code>TraceablePresentations</code>.
+          </p>
+          <p>
+            When a Workflow references both Definition(s) and Instance(s), the Workflow Instance's progress <em>MAY</em> be tracked by comparing the credentials which have been presented within the Workflow Instance (numerator) against the combined set of credentials types required by the targeted Workflow Definitions (denominator). 
+          </p>
+
+        <section>
+          <h5>Workflow Definition</h5>
+          <p>
+            The sequence of industrial, administrative, or other processes
+            through which a piece of work passes from initiation to completion,
+            or the <em>type</em> of workflow that the presented credentials belong to.
+          </p>
+
+          <p>
+            In the context of this vocabulary, we consider the specifics of
+            workflows out of scope. We acknowledge that different use cases may
+            have complicated workflows, which may yield many individual
+            presentations of credentials.
+          </p>
+
+          <p>
+            A Workflow Definition MUST be identified with an [[rfc3986]] conformant URI, 
+            for example, <code>https://w3id.org/traceability#us-cbp-entry</code>.
+          </p>
+          <p>
+            By referencing a Workflow Definition `id` in a Traceable Presentation, the holder indicates 
+            to the verifier their intent to make the presentation.
+          </p>
+
+          <p>
+            The Workflow Definition <em>SHOULD</em> resolve to a manifest file describing 
+            the intent to complete the workflow, participating parties, and required credential types.
+            For example, <a href="https://w3id.org/traceability#us-cbp-entry">https://w3id.org/traceability#us-cbp-entry</a> 
+            indicates that an Importer intends to import goods following common US CBP Entry filings.
+          </p>
+          <p class="note">
+            There are several systems for workflow definitions. See 
+            <a href="https://www.omg.org/spec/BPMN/2.0/About-BPMN/" target="_blank">BPMN</a>,
+            <a href="https://en.wikipedia.org/wiki/YAWL" target="_blank">YAWL</a>, and/or
+            <a href="https://docs.github.com/en/actions/using-workflows/about-workflows" target="_blank">GitHub Workflows</a>.
+          </p>
+
+          <p>      
+            Multiple Workflow Definitions <em>MAY</em> be referenced by a Traceable Presentation, 
+            indicating that multiple relevant circumstances apply. 
+          </p>          
+
+          <p>
+            We enable the grouping of all presentations related to a definition,
+            using the convention:
+          </p>
+
+          <pre class="js">
+                {
+                  "@context": [
+                    "https://www.w3.org/2018/credentials/v1",
+                    "https://w3id.org/traceability/v1"
+                  ],
+                  "id": "urn:uuid:3978344f-8596-4c3a-a978-8fcaba3903c5",
+                  "type":
+                  [
+                    "VerifiablePresentation",
+                    "TraceablePresentation"
+                  ],
+                  "workflow": {
+                    // This refers to a Workflow Definition
+                    "definition": [
+                      "https://w3id.org/traceability#us-cbp-entry" 
+                    ],
+                    "instance": [
+                      "urn:uuid:f5fb6ce4-b0b1-41b8-89b0-331ni58b7ee0"
+                    ],
+                  },
+                  "holder":{
+                    "id":"did:web:sender.example",
+                    "type":"Organization",
+                    "location":{
+                       "type":"Place",
+                       "geo":{
+                          "type":"GeoCoordinates",
+                          "latitude":"68.7083",
+                          "longitude":"4.6377"
+                       },
+                       "address":{
+                          "type":"PostalAddress",
+                          "organizationName":"Ratke - Bergstrom",
+                          "streetAddress":"21851 Ima Heights",
+                          "addressLocality":"O'Connellborough",
+                          "addressRegion":"Missouri",
+                          "postalCode":"65587",
+                          "addressCountry":"Cyprus"
+                       }
+                    }
+                 }
+                }
+                </pre
+          >
+        </section>
+
+        <section>
+          <h5>Workflow Instance</h5>
+          <p>
+            Each defined workflow may be executed many times for different sets
+            of inputs and among different stakeholders.
+          </p>
+          <p>
+            We refer to Workflow Instance's as an execution of a particular
+            workflow, which may or may not be formally defined.
+          </p>          
+          <p>
+            A Workflow Instance <em>MUST</em> be identified with a UUID v4 per [[rfc4122]], 
+            for example, <code>urn:uuid:f5fb6ce4-b0b1-41b8-89b0-331ni58b7ee0</code>.
+          </p>
+          <p>
+            By referencing the same Workflow Instance `id` in separate Traceable Presentations, 
+            the holder indicates to the verifier that the presentations are related. 
+          </p>
+          <p>
+            For example, an initial presentation of an Intent to Import Credential may be followed at a 
+            later date by presentation of a Commercial Invoice Credential. The two presentations reference 
+            a common Workflow Instance identifier to indicate that they relate to the same shipment import.
+          </p>
+
+          <p class="note">
+            An example of a workflow definition is 
+            <a href="https://www.cbp.gov/trade/programs-administration/entry-summary/ace-process-and-policy">US Customs ACE Entry Summary Process</a>.
+            Where specific instances are used to track cross border imports, it is important to be able to identify specific
+            collections of documents associated with a given import.
+            Workflow instances help achieve this by providing a topic
+            identifier enabling the grouping of related credentials and presentations.
+          </p>
+
+          <p>
+            The same Traceable Presentation <em>MAY</em> reference multiple Workflow Instances. 
+            This is a signal by the holder that the referenced Workflow Instances are the same and should be joined. 
+          </p>
+
+          <p>
+            We enable the grouping of all presentations related to an instance,
+            using the convention:
+          </p>
+          <pre class="js">
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/traceability/v1"
+  ],
+  "id": "urn:uuid:3978344f-8596-4c3a-a978-8fcaba3903c5",
+  "type":
+  [
+    "VerifiablePresentation",
+    "TraceablePresentation"
+  ],
+  "workflow": {
+    "definition": [
+      "https://w3id.org/traceability#us-cbp-entry"
+    ],
+    // This refers to a Workflow Instance
+    "instance": [
+      "urn:uuid:f5fb6ce4-b0b1-41b8-89b0-331ni58b7ee0"
+    ]
+  },
+  "holder":{
+    "id":"did:web:sender.example",
+    "type":"Organization",
+    "location":{
+        "type":"Place",
+        "geo":{
+          "type":"GeoCoordinates",
+          "latitude":"68.7083",
+          "longitude":"4.6377"
+        },
+        "address":{
+          "type":"PostalAddress",
+          "organizationName":"Ratke - Bergstrom",
+          "streetAddress":"21851 Ima Heights",
+          "addressLocality":"O'Connellborough",
+          "addressRegion":"Missouri",
+          "postalCode":"65587",
+          "addressCountry":"Cyprus"
+        }
+    }
+  }
+}
+</section>
+        </pre>
+        </section>
+        <section>
+          <h4>Presentation Replacement</h4>
+          <p>
+A holder MAY use the <code>replace</code> property of a <code>TraceablePresentation</code> 
+to communciate to a verifier that a previous presentation should be replaced with a new presentation.
+          </p>
+          <p>
+Holders SHOULD ensure the previous presentation was accepted before presenting a <code>replace</code> presentation.
+          </p>
+          <p>
+The presentation <code>id</code> of the <code>replace</code> presentation MUST be unique, 
+and MUST NOT be the same as any previously presented values.
+          </p>
+          <p>
+The credential <code>id</code> of any corrected credentials MUST be unique, 
+and MUST NOT be the same as any previously presented values.
+          </p>
+          <p>
+In the example below <code>did:web:customs.broker.1.example</code> 
+had made a mistake in a previous presentation, and corrects the mistake with a replace presentation.
+          </p>
+          <pre class="js">
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/traceability/v1"
+  ],
+  "id": "urn:uuid:p2",
+  "type": [
+    "VerifiablePresentation",
+    "TraceablePresentation"
+  ],
+  "replace": {
+    "id": "urn:uuid:p1",
+    "note": "I made a mistake in my presentation 'urn:uuid:p1', the invoice number was incorrect, this presentation corrects the error."
+  },
+  "workflow": {
+    "definition": [
+      "urn:definition:customs-commodity-import-workflow-456"
+    ],
+    "instance": [
+      "urn:instance:commodity-import-for-us-customs-123"
+    ]
+  },
+  "holder": {
+    "id": "did:web:customs.broker.1.example"
+  },
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/traceability/v1"
+      ],
+      "id": "urn:uuid:c2",
+      "type": [
+        "VerifiableCredential"
+      ],
+      "invoice": "123xxxx"
+    }
+  ]
+}
+          </pre>
+        </section>
+      </section>
     </section>
 
     <section class="informative">
-      <h2>Security Considerations</h2>
-
-      <p>
-        There are a number of security considerations that implementers should
-        be aware of when processing data described by this specification.
-        Ignoring or not understanding the implications of this section can
-        result in security vulnerabilities.
-      </p>
-
-      <p>
-        While this section attempts to highlight a broad set of security
-        considerations, it is not a complete list. Implementers are urged to
-        seek the advice of security and cryptography professionals when
-        implementing mission critical systems using the technology outlined in
-        this specification.
-      </p>
+      <h2>Considerations</h2>
+      <section class="informative">
+        <h2>Privacy Considerations</h2>
+  
+        <p>
+          This section details the general privacy considerations and specific
+          privacy implications of deploying this specification into production
+          environments.
+        </p>
+      </section>
+  
+      <section class="informative">
+        <h2>Security Considerations</h2>
+  
+        <p>
+          There are a number of security considerations that implementers should
+          be aware of when processing data described by this specification.
+          Ignoring or not understanding the implications of this section can
+          result in security vulnerabilities.
+        </p>
+  
+        <p>
+          While this section attempts to highlight a broad set of security
+          considerations, it is not a complete list. Implementers are urged to
+          seek the advice of security and cryptography professionals when
+          implementing mission critical systems using the technology outlined in
+          this specification.
+        </p>
+      </section>
+  
+      <section class="informative">
+        <h2>Accessibility Considerations</h2>
+  
+        <p>
+          There are a number of accessibility considerations implementers should
+          be aware of when processing data described in this specification. As
+          with any web standards or protocols implementation, ignoring
+          accessibility issues makes this information unusable to a large subset
+          of the population. It is important to follow accessibility guidelines
+          and standards, such as [[WCAG21]], to ensure all people, regardless of
+          ability, can make use of this data. This is especially important when
+          establishing systems utilizing cryptography, which have historically
+          created problems for assistive technologies.
+        </p>
+  
+        <p>
+          This section details the general accessibility considerations to take
+          into account when utilizing this data model.
+        </p>
+      </section>
+  
+      <section class="informative">
+        <h2>Internationalization Considerations</h2>
+  
+        <p>
+          There are a number of internationalization considerations implementers
+          should be aware of when publishing data described in this specification.
+          As with any web standards or protocols implementation, ignoring
+          internationalization makes it difficult for data to be produced and
+          consumed across a disparate set of languages and societies, which would
+          limit the applicability of the specification and significantly diminish
+          its value as a standard.
+        </p>
+  
+        <p>
+          This section outlines general internationalization considerations to
+          take into account when utilizing this data model.
+        </p>
+      </section>
     </section>
 
-    <section class="informative">
-      <h2>Accessibility Considerations</h2>
-
-      <p>
-        There are a number of accessibility considerations implementers should
-        be aware of when processing data described in this specification. As
-        with any web standards or protocols implementation, ignoring
-        accessibility issues makes this information unusable to a large subset
-        of the population. It is important to follow accessibility guidelines
-        and standards, such as [[WCAG21]], to ensure all people, regardless of
-        ability, can make use of this data. This is especially important when
-        establishing systems utilizing cryptography, which have historically
-        created problems for assistive technologies.
-      </p>
-
-      <p>
-        This section details the general accessibility considerations to take
-        into account when utilizing this data model.
-      </p>
-    </section>
-
-    <section class="informative">
-      <h2>Internationalization Considerations</h2>
-
-      <p>
-        There are a number of internationalization considerations implementers
-        should be aware of when publishing data described in this specification.
-        As with any web standards or protocols implementation, ignoring
-        internationalization makes it difficult for data to be produced and
-        consumed across a disparate set of languages and societies, which would
-        limit the applicability of the specification and significantly diminish
-        its value as a standard.
-      </p>
-
-      <p>
-        This section outlines general internationalization considerations to
-        take into account when utilizing this data model.
-      </p>
-    </section>
+    
 
     <section class="appendix">
-      <h2>Acknowledgements</h2>
-      <p>
-        Portions of the work on this specification have been funded by the
-        United States Department of Homeland Security's (US DHS) Silicon Valley
-        Innovation Program under contracts
-        70RSAT20T00000003,
-        70RSAT20T00000031,
-        70RSAT20T00000033,
-        70RSAT20T00000043,
-        and
-        70RSAT20T00000044.
-        The content of this specification does not
-        necessarily reflect the position or the policy of the U.S. Government
-        and no official endorsement should be inferred.
-      </p>
+      <h2>Appendix</h2>
+      <section>
+        <h2>Acknowledgements</h2>
+        <p>
+          Portions of the work on this specification have been funded by the
+          United States Department of Homeland Security's (US DHS) Silicon Valley
+          Innovation Program under contracts 70RSAT20T00000003, 70RSAT20T00000031,
+          70RSAT20T00000033, 70RSAT20T00000043, and 70RSAT20T00000044. The content
+          of this specification does not necessarily reflect the position or the
+          policy of the U.S. Government and no official endorsement should be
+          inferred.
+        </p>
+      </section>
+      <section>
+        <h2>RDF Type Details</h2>
+  
+        <section
+        data-include="sections/ontology-visualizations.html"
+        data-include-replace="true"
+      ></section>
+        <section
+          data-include="sections/vocab.html"
+          data-include-replace="true"
+        ></section>
+  
+        <section
+        data-include="sections/test-suite.html"
+        data-include-replace="true"
+      ></section>
+      </section>
     </section>
   </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"
+    integrity="sha512-CSBhVREyzHAjAFfBlIBakjoRUKp5h7VSweP0InR/pAJyptH7peuhCsqAI/snV+TwZmXZqoUklpXp6R6wMnYf5Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+ 
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.1.0/+esm'
+    mermaid.initialize({ startOnLoad: false });
+    async function tryRender() {
+      
+      const pre = document.getElementsByClassName('mermaid');
+      if(pre.length === 0) {
+        return setTimeout(tryRender, 50);
+      }
+      
+      for(let i = 0; i < pre.length; i++) {
+        const element = pre[i];
+        const graphDefinition = element.textContent;
+        const { svg } = await mermaid.render('mermaid', graphDefinition);
+        element.innerHTML = '';
+        const blob = new Blob([svg], {type: 'image/svg+xml'});
+        const url = URL.createObjectURL(blob);
+        const image = document.createElement('img');
+        image.src = url;
+        element.appendChild(image);
+      }
+      
+    }
+
+    tryRender();
+
+  </script>
+  <script src="./visualizations.js"></script>
+
 </html>

@@ -1,0 +1,234 @@
+$linkedData:
+  term: PlantSystemsInspection
+  '@id': https://w3id.org/traceability#PlantSystemsInspection
+title: Plant Systems Inspection
+description: Information regarding the plant systems inspection and results.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - PlantSystemsInspection
+    default:
+      - PlantSystemsInspection
+    items:
+      type: string
+      enum:
+        - PlantSystemsInspection
+  commonInfo:
+    title: Common Info
+    description:  Information common to agriculture inspection credentials.
+    $ref: ./AgricultureInspectionCommonInfo.yml
+    $linkedData:
+      term: commonInfo
+      '@id': https://w3id.org/traceability#AgricultureInspectionCommonInfo
+  productsPacked:
+    title: Products Packed
+    description: List of all products packed at the inspected facility.
+    type: array
+    items:
+      $ref: ./AgricultureProduct.yml
+    $linkedData:
+      term: productsPacked
+      '@id': https://vocabulary.uncefact.org/specifiedProduct
+  summaryOfDeficiencies:
+    title: Summary of Deficiencies
+    description: A summary of deficiencies observed.
+    type: string
+    $linkedData:
+      term: summaryOfDeficiencies
+      '@id': https://schema.org/description
+  observationsImprovements:
+    title: Observations / Improvements
+    description: Observations made and suggestions for improvements.
+    type: string
+    $linkedData:
+      term: observationsImprovements
+      '@id': https://schema.org/description
+  questions:
+    title: Questions
+    description: A list of questions & their point scores.
+    type: array
+    items:
+      $ref: ./PlantSystemsQuestion.yml
+    $linkedData:
+      term: questions
+      '@id': https://w3id.org/traceability#PlantSystemsQuestion
+  additionalViolations:
+    title: Additional Violations
+    description: Violations not previously identified in the report; deduct 5 points from the results score for each.
+    type: array
+    items:
+      type: string
+    $linkedData:
+      term: additionalViolations
+      '@id': https://schema.org/description
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["PlantSystemsInspection"],
+    "commonInfo": {
+      "type": ["AgricultureInspectionCommonInfo"],
+      "applicant": {
+        "type" : ["Organization"],
+        "name": "Miracle Produce",
+        "description": "Organic fruits & vegetables",
+        "email": "contact@example.com",
+        "phoneNumber": "+1-315-555-7390",
+        "url": "miracle.example.com"
+      },
+      "facility": {
+        "type": [
+          "Place"
+        ],
+        "globalLocationNumber": "5449782976823",
+        "geo": {
+          "type": [
+            "GeoCoordinates"
+          ],
+          "latitude": "-79.6395",
+          "longitude": "178.5353"
+        },
+        "address": {
+          "type": [
+            "PostalAddress"
+          ],
+          "name": "Miracle Produce",
+          "streetAddress": "853 Wisozk River",
+          "addressLocality": "New Noemyfort",
+          "addressRegion": "New Mexico",
+          "postalCode": "18047-2038",
+          "addressCountry": "USA"
+        },
+        "unLocode": "DKCPH"
+      },
+      "inspector": {
+        "type": [
+          "Inspector"
+        ],
+        "person": {
+          "type": [
+            "Person"
+          ],
+          "firstName": "Jason",
+          "lastName": "Grant",
+          "email": "Santa43@example.org",
+          "phoneNumber": "+1-881-555-2444",
+          "worksFor": {
+            "type": [
+              "Organization"
+            ],
+            "name": "Glayson & Co. Inspections",
+            "description": "Agricultural cleanliness & plant systems assurance",
+            "email": "Marina96@glaysonco.net",
+            "phoneNumber": "+1-046-555-2878",
+            "faxNumber": "+1-204-555-8977"
+          },
+          "jobTitle": "Principal Data Supervisor"
+        },
+        "qualification": [
+          {
+            "type": ["Qualification"],
+            "qualificationCategory": "Agricultural Security Analyst",
+            "qualificationValue": "Executive"
+          },
+          {
+            "type": ["Qualification"],
+            "qualificationCategory": "Future Metrics Planner",
+            "qualificationValue": "Coordinator"
+          },
+          {
+            "type": ["Qualification"],
+            "qualificationCategory": "Internal Identity Agent",
+            "qualificationValue": "Assistant"
+          }
+        ]
+      },
+      "delegateOf": {
+        "type": ["Organization"],
+        "name": "Glayson & Co. Inspections",
+        "description": "Agricultural cleanliness & plant systems assurance",
+        "email": "Marina96@glaysonco.net",
+        "phoneNumber": "+1-574-555-2263",
+        "faxNumber": "+1-180-555-8748"
+      },
+      "regulatoryAgency": {
+        "type": ["Organization"],
+        "name": "CDFA",
+        "description": "California Department of Food and Agriculture",
+        "email": "relations@example.org",
+        "phoneNumber": "+1-019-555-1267",
+        "faxNumber": "+1-876-555-8175"
+      },
+      "inspectionStarted": "2020-03-15T14:30-08:00",
+      "inspectionEnded": "2020-03-15T17:30-08:00"
+    },
+    "productsPacked": [
+      {
+        "type": [
+          "AgricultureProduct"
+        ],
+        "plu": "94225",
+        "product": {
+          "type": [
+            "Product"
+          ],
+          "manufacturer": {
+            "type": [
+              "Organization"
+            ],
+            "email": "Sven22@example.org",
+            "phoneNumber": "+1-161-555-3718"
+          },
+          "name": "Tomatoes",
+          "description": "Tomatoes, Cartons",
+          "sizeOrAmount": {
+            "type": [
+              "QuantitativeValue"
+            ],
+            "unitCode": "cartons",
+            "value": "348"
+          },
+          "weight": {
+            "type": [
+              "QuantitativeValue"
+            ],
+            "unitCode": "lbs",
+            "value": "640"
+          },
+          "sku": "164664203943"
+        },
+        "scientificName": "Solanum lycopersicum",
+        "labelImageUrl": "https://img.example.org/033383401508/640/480/",
+        "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "summaryOfDeficiencies": "Some issues observed with cross-contamination of peanut allergens, as well as improper storage of reagents.",
+    "observationsImprovements": "Implement employee training program for cross-contamination; reagent storage does not appear to be a consistent issue.",
+    "questions": [
+      {
+        "type": ["PlantSystemsQuestion"],
+        "code": "34",
+        "pointsWorth": 5,
+        "pointsDeducted": 0
+      },
+      {
+        "type": ["PlantSystemsQuestion"],
+        "code": "35",
+        "pointsWorth": 5,
+        "pointsDeducted": 3
+      },
+      {
+        "type": ["PlantSystemsQuestion"],
+        "code": "A3",
+        "pointsWorth": 10,
+        "pointsDeducted": 0
+      }
+    ],
+    "additionalViolations": [
+      "Reagents observed in partially open containers"
+    ]
+  }

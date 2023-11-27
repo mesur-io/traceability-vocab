@@ -1,0 +1,375 @@
+$linkedData:
+  term: DCSATransportDocument
+  '@id': >-
+    https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.1#/components/schemas/transportDocument
+title: DCSA Transport Document
+description: >-
+  The document that governs the terms of carriage between shipper and carrier
+  for maritime transportation. Two distinct types of transport documents exist:
+  Bill of Lading, Sea Waybill. Based on DCSA's eBL specification
+  (https://dcsa.org/standards/ebill-of-lading)
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - DCSATransportDocument
+    default:
+      - DCSATransportDocument
+    items:
+      type: string
+      enum:
+        - DCSATransportDocument
+  transportDocumentReference:
+    title: Transport Document Reference
+    description: >-
+      A unique number allocated by the shipping line to the transport document
+      and the main number used for the tracking of the status of the shipment.
+    type: string
+    $linkedData:
+      term: transportDocumentReference
+      '@id': >-
+        https://vocabulary.uncefact.org/ReferenceCodeList#BM
+  placeOfIssue:
+    title: Place Of Issue
+    description: >-
+      Generally used to capture location-related data, also for locations
+      without UN Location Codes.
+    $ref: ./Place.yml
+    $linkedData:
+      term: placeOfIssue
+      '@id': >-
+        https://vocabulary.uncefact.org/issueLocation
+  issueDate:
+    title: Issue Date
+    description: Date when the transport document has been issued
+    type: string
+    $linkedData:
+      term: issueDate
+      '@id': >-
+        https://vocabulary.uncefact.org/issueDateTime
+  shippedOnBoardDate:
+    title: Shipped On Board Date
+    description: >-
+      Date when the last container that is linked to the transport document is
+      physically loaded onboard the vessel indicated on the transport document.
+    type: string
+    $linkedData:
+      term: shippedOnBoardDate
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.2#/components/schemas/shippedOnBoardDate
+  receivedForShipmentDate:
+    title: Received For Shipment Date
+    description: >-
+      Date when the last container linked to the transport document is
+      physically in the terminal (customers cleared against the intended
+      vessel).
+    type: string
+    $linkedData:
+      term: receivedForShipmentDate
+      '@id': >-
+        https://vocabulary.uncefact.org/availabilityDueDateTime
+  termsAndConditions:
+    title: Terms And Conditions
+    description: Carrier general terms and conditions for this transport document.
+    type: string
+    $linkedData:
+      term: termsAndConditions
+      '@id': >-
+        https://vocabulary.uncefact.org/termsAndConditionsDescription
+  issuerCode:
+    title: Issuer Code
+    description: The code used for identifying the specific issuer.
+    type: string
+    $linkedData:
+      term: issuerCode
+      '@id': >-
+        https://vocabulary.uncefact.org/ReferenceCodeList#AAZ
+  issuerCodeListProvider:
+    title: Issuer Code List Provider
+    description: The provider used for identifying the issuer Code
+    type: string
+    $linkedData:
+      term: issuerCodeListProvider
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.2#/components/schemas/issuerCodeListProvider
+  declaredValueCurrency:
+    title: Declared Value Currency
+    description: >-
+      The currency used for the declared value, using the 3-character code
+      defined by ISO 4217.
+    type: string
+    $linkedData:
+      term: declaredValueCurrency
+      '@id': https://schema.org/currency
+  cargoMovementTypeAtOrigin:
+    title: Cargo Movement Type At Origin
+    description: >-
+      Refers to the shipment term at the loading of the cargo into the
+      container. Options are defined in the Cargo Movement Type entity.
+    type: string
+    $linkedData:
+      term: cargoMovementTypeAtOrigin
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.2#/components/schemas/cargoMovementTypeAtOrigin
+  cargoMovementTypeAtDestination:
+    title: Cargo Movement Type At Destination
+    description: >-
+      Refers to the shipment term at the unloading of the cargo out of the
+      container. Options are defined in the Cargo Movement Type entity.
+    type: string
+    $linkedData:
+      term: cargoMovementTypeAtDestination
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.2#/components/schemas/cargoMovementTypeAtDestination
+  receiptDeliveryTypeAtOrigin:
+    title: Receipt Delivery Type At Origin
+    description: >-
+      Indicates the type of service offered at Origin. Options are defined in
+      the Receipt/Delivery entity.
+    type: string
+    $linkedData:
+      term: receiptDeliveryTypeAtOrigin
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.2#/components/schemas/receiptDeliveryTypeAtOrigin
+  receiptDeliveryTypeAtDestination:
+    title: Receipt Delivery Type At Destination
+    description: >-
+      Indicates the type of service offered at Destination. Options are defined
+      in the Receipt/Delivery entity.
+    type: string
+    $linkedData:
+      term: receiptDeliveryTypeAtDestination
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.2#/components/schemas/receiptDeliveryTypeAtDestination
+  serviceContractReference:
+    title: Service Contract Reference
+    description: >-
+      Reference number for agreement between shipper and carrier through which
+      the shipper commits to provide a certain minimum quantity of cargo over a
+      fixed period, and the carrier commits to a certain rate or rate schedule.
+    type: string
+    $linkedData:
+      term: serviceContractReference
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.2#/components/schemas/serviceContractReference
+  shippingInstruction:
+    title: Shipping Instruction
+    description: >-
+      The Shipping Instruction is an enrichment to the original booking shared
+      by the shipper to the carrier. The shipping instruction includes volume or
+      weight, cargo items, shipping dates, origin, destination, and other
+      special instructions. The information given by the shipper through the
+      shipping instruction is the information required to create a Transport
+      Document.
+    $ref: ./DCSAShippingInstruction.yml
+    $linkedData:
+      term: shippingInstruction
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.1#/components/schemas/shippingInstruction
+  charges:
+    title: Charges
+    description: ''
+    type: string
+    $linkedData:
+      term: charges
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.1#/components/schemas/charges
+  clauses:
+    title: Clauses
+    description: ''
+    type: string
+    $linkedData:
+      term: clauses
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.1#/components/schemas/clauses
+  transports:
+    title: Transport legs
+    type: array
+    items:
+      $ref: ./Transport.yml
+    $linkedData:
+      term: transports
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.1#/components/schemas/transports
+required:
+  - type
+  - shippingInstruction
+  - issuerCode
+example: |-
+  {
+    "type": ["DCSATransportDocument"],
+    "transportDocumentReference": "XMANHR2102045",
+    "issuerCode": "MCLC",
+    "shippingInstruction": {
+      "type": ["DCSAShippingInstruction"],
+      "carrierBookingReference": "XMANHR2102045",
+      "transportDocumentType": "MBL",
+      "shipper": {
+        "type": ["Organization"],
+        "name": "Xxinau Manufacturing Co. Ltd.",
+        "description": "Advanced Production - Delivered",
+        "location": {
+          "type": ["Place"],
+          "address": {
+            "type": ["PostalAddress"],
+            "streetAddress": "Xin Fei Da Dao 139",
+            "addressLocality": "Xindao",
+            "addressRegion": "Fujian Province",
+            "postalCode": "361100",
+            "addressCountry": "CN"
+          }
+        },
+        "email": "xxinau-sales@example.org",
+        "phoneNumber": "+86-004-555-3261"
+      },
+      "consignee": {
+        "type": ["Organization"],
+        "name": "Better Life Tech",
+        "description": "Better Lives Products",
+        "location": {
+          "type": ["Place"],
+          "address": {
+            "type": ["PostalAddress"],
+            "streetAddress": "Rue de la Poste 272",
+            "addressLocality": "Ramegnies-Chin",
+            "addressRegion": "Hainaut",
+            "postalCode": "7520",
+            "addressCountry": "BE"
+          }
+        },
+        "email": "procurement@lifetech-example.org",
+        "phoneNumber": "+32-5555-0667"
+      },
+      "firstNotify": {
+        "type": ["Organization"],
+        "name": "Better Life Tech",
+        "description": "Better Lives Products",
+        "location": {
+          "type": ["Place"],
+          "address": {
+            "type": ["PostalAddress"],
+            "streetAddress": "Rue de la Poste 272",
+            "addressLocality": "Ramegnies-Chin",
+            "addressRegion": "Hainaut",
+            "postalCode": "7520",
+            "addressCountry": "BE"
+          }
+        },
+        "email": "procurement@lifetech-example.org",
+        "phoneNumber": "+32-5555-3980"
+      },
+      "consigneesFreightForwarder": {
+        "type": ["Organization"],
+        "name": "Intertrans NV [378]",
+        "location": {
+          "type": ["Place"],
+          "address": {
+            "type": ["PostalAddress"],
+            "streetAddress": "Belcrownlaan 25 - 3rd floor",
+            "addressLocality": "Antwerpen",
+            "postalCode": "BE-2100AN",
+            "addressCountry": "BE"
+          }
+        },
+        "phoneNumber": "+32-8-555.77.51"
+      },
+      "cargoItems": [
+        {
+          "type": ["CargoItem"],
+          "cargoLineItems": [
+            {
+              "type": ["CargoLineItem"],
+              "descriptionOfGoods": "Rollators",
+              "shippingMarks": "ByAcre Age is the new Black"
+            },
+            {
+              "type": ["CargoLineItem"],
+              "descriptionOfGoods": "Rollators Organizer Bags",
+              "shippingMarks": "ByAcre Age is the new Black"
+            },
+            {
+              "type": ["CargoLineItem"],
+              "descriptionOfGoods": "Rollators Backrest",
+              "shippingMarks": "ByAcre Age is the new Black"
+            },
+            {
+              "type": ["CargoLineItem"],
+              "descriptionOfGoods": "Rollators Cane Holder Bracket",
+              "shippingMarks": "ByAcre Age is the new Black"
+            },
+            {
+              "type": ["CargoLineItem"],
+              "descriptionOfGoods": "Rollators Cardboard Box",
+              "shippingMarks": "ByAcre Age is the new Black"
+            }
+          ],
+          "weight": 1671.9,
+          "weightUnit": "KGM",
+          "volume": 27.23,
+          "volumeUnit": "CBM",
+          "numberOfPackages": 245
+        }
+      ],
+      "utilizedTransportEquipments": [{
+        "type": ["TransportEquipment"],
+        "id": "urn:epc:id:bic:YMLU3380910",
+        "equipmentReference": "YMLU3380910",
+        "ISOEquipmentCode": "20G1",
+        "seals": [
+          {
+            "type": ["Seal"],
+            "sealNumber": "YMAI715692"
+          }
+        ]
+      }],
+      "shipmentLocations": [
+        {
+          "type": ["Place"],
+          "unLocode": "CNXMG"
+        },
+        {
+          "type": ["Place"],
+          "unLocode": "BEGNE"
+        }
+      ]
+    },
+    "transports": [{
+      "type": ["Transport"],
+      "departureLocation": {
+        "type": ["Place"],
+        "address": {
+          "type": ["PostalAddress"],
+          "addressRegion": "Xiamen",
+          "addressCountry": "CN"
+        }
+      },
+      "arrivalLocation": {
+        "type": ["Place"],
+        "address": {
+          "type": ["PostalAddress"],
+          "addressRegion": "Antwerp",
+          "addressCountry": "BE"
+        }
+      },
+      "modeOfTransport": "Vessel",
+      "carrier": {
+        "type": ["Organization"],
+        "name": "MULTI CONTAINER LINE",
+        "location": {
+          "type": ["Place"],
+          "address": {
+            "type": ["PostalAddress"],
+            "name": "MCL Multi Container Line LTD.",
+            "streetAddress": "Rm. 3501, 35/F Manhatten Place, 23 Wang Tai Road",
+            "addressLocality": "Kowloon Bay",
+            "addressRegion": "Hong Kong",
+            "addressCountry": "Hong Kong SAR"
+          }
+        }
+      },
+      "vesselNumber": "HMM Algeciras",
+      "voyageNumber": "V.0004W"
+    }]
+  }

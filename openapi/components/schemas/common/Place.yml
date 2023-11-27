@@ -1,0 +1,106 @@
+$linkedData:
+  term: Place
+  '@id': https://schema.org/Place
+title: Place
+description: Entities that have a somewhat fixed, physical location.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - Place
+    default:
+      - Place
+    items:
+      type: string
+      enum:
+        - Place
+  globalLocationNumber:
+    title: Global Location Number (GLN)
+    description: >-
+      A Global Location Number (GLN) is the GS1 Identification Key used to
+      identify physical locations or parties. The key comprises a GS1 Company
+      Prefix, Location Reference and Check Digit. For more information, see
+      http://www.gs1.org/gln.
+    type: string
+    minLength: 13
+    maxLength: 13
+    $linkedData:
+      term: globalLocationNumber
+      '@id': https://schema.org/globalLocationNumber
+  geo:
+    title: Geographic Coordinates
+    description: Links to information about geocoordinates for a place.
+    $ref: ./GeoCoordinates.yml
+    $linkedData:
+      term: geo
+      '@id': https://schema.org/GeoCoordinates
+  address:
+    title: Postal Address
+    description: The postal address for an organization or place.
+    $ref: ./PostalAddress.yml
+    $linkedData:
+      term: address
+      '@id': https://schema.org/PostalAddress
+  unLocode:
+    title: UN Locode
+    description: LOCODE
+    type: string
+    $linkedData:
+      term: unLocode
+      '@id': >-
+        https://vocabulary.uncefact.org/Location
+  iataAirportCode:
+    title: IATA Airport Code
+    description: IATA airport code (3 letter)
+    type: string
+    $linkedData:
+      term: iataAirportCode
+      '@id': https://onerecord.iata.org/cargo/Location#code
+  locationName:
+    title: Location Name
+    description: Physical Location Name (if available).
+    type: string
+    $linkedData:
+      term: locationName
+      '@id': https://schema.org/name
+  usPortCode: 
+    title: US CBP Port Code
+    description: CBP Automated Manifest Interface Requirements, Appendix E - Schedule D – U.S. CBP Port Codes. 4 character port code (https://www.cbp.gov/sites/default/files/assets/documents/2020-Jan/ACE%20Appendix%20E%20Schedule%20D%20January%202020%20(1).pdf).
+    type: string
+    $linkedData:
+      term: usPortCode
+      '@id': https://w3id.org/traceability#usPortCode
+  firmsCode: 
+    title: FIRMS Code
+    description: Facilities Information and Resources Management Code
+    type: string
+    $linkedData:
+      term: firmsCode
+      '@id': https://w3id.org/traceability#firmsCode
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["Place"],
+    "globalLocationNumber": "0577976000005",
+    "geo": {
+      "type": ["GeoCoordinates"],
+      "latitude": "55.67594",
+      "longitude": "12.56553"
+    },
+    "address": {
+      "type": ["PostalAddress"],
+      "name": "Ratke - Bergstrom",
+      "streetAddress": "Thomsen Gade 28",
+      "addressLocality": "Copenhagen",
+      "addressRegion": "Greater Copenhagen Metropolitan Area",
+      "postalCode": "1278",
+      "addressCountry": "Denmark"
+    },
+    "unLocode": "DKCPH",
+    "iataAirportCode": "CPH",
+    "locationName": "Scandinavian Office"
+  }

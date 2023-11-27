@@ -1,0 +1,301 @@
+$linkedData:
+  term: FreightManifest
+  '@id': https://vocabulary.uncefact.org/manifestRelatedDocument
+title: Freight Manifest
+description: Manifest documenting the cargo and freight of a vessel at time of arrival or departure.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - FreightManifest
+    default:
+      - FreightManifest
+    items:
+      type: string
+      enum:
+        - FreightManifest
+  carrier:
+    title: Carrier
+    description: >-
+      The party providing the transport of goods in this consignment between
+      named points.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: carrier
+      '@id': >-
+        https://vocabulary.uncefact.org/carrierParty
+  carrierCode:
+    title: Standard Carrier Alpha Code
+    description: The code used for identifying carrier.
+    type: string
+    $linkedData:
+      term: carrierCode
+      '@id': >-
+        https://vocabulary.uncefact.org/ReferenceCodeList#AAZ
+  transportMeans: 
+    title: Means of Transport
+    description: A means of transport, expressed as text, for this transport route.
+    type: string
+    $linkedData:
+      term: transportMeans
+      '@id': >-
+        https://vocabulary.uncefact.org/transportMeans
+  transportMeansId: 
+    title: Transport Means Identifier
+    description: Identifier of the means of transport such as IMO vessel number or truck license place. 
+    type: string
+    $linkedData:
+      term: transportMeansId
+      '@id': https://schema.org/identifier
+  voyage: 
+    title: Voyage
+    description: The conveyance (physical carriage) of people, animals, goods, or other objects from place to place.
+    type: string
+    $linkedData:
+      term: voyage
+      '@id': >-
+        https://vocabulary.uncefact.org/TransportMovement
+  billsOfLading:
+    title: Bills Of Lading
+    description: List of bills of lading of the cargo abord the vessel.
+    type: array
+    items:
+      $ref: ./BillOfLading.yml
+    $linkedData:
+      term: billsOfLading
+      '@id': https://vocabulary.uncefact.org/manifestRelatedDocument
+additionalProperties: true
+required:
+  - type
+example: |-
+  {
+    "type": ["FreightManifest"],
+    "carrier": {
+      "type": ["Organization"],
+      "name": "MULTI CONTAINER LINE",
+      "location": {
+        "type": ["Place"],
+        "address": {
+          "type": ["PostalAddress"],
+          "name": "MCL Multi Container Line LTD.",
+          "streetAddress": "Rm. 3501, 35/F Manhatten Place, 23 Wang Tai Road",
+          "addressLocality": "Kowloon Bay",
+          "addressRegion": "Hong Kong",
+          "addressCountry": "Hong Kong SAR"
+        }
+      }
+    },
+    "carrierCode": "MCML",
+    "transportMeans": "HMM Algeciras",
+    "transportMeansId": "urn:epc:id:imovn:9863297",
+    "voyage": "V.0004W",
+    "billsOfLading": [
+      {
+        "type": ["BillOfLading"],
+        "billOfLadingNumber": "XMANHR2102045",
+        "bookingNumber": "XMANHR2102045",
+        "consignor": {
+          "type": ["Organization"],
+          "name": "Xxinau Manufacturing Co. Ltd.",
+          "description": "Advanced Production - Delivered",
+          "location": {
+            "type": ["Place"],
+            "address": {
+              "type": ["PostalAddress"],
+              "streetAddress": "Xin Fei Da Dao 139",
+              "addressLocality": "Xindao",
+              "addressRegion": "Fujian Province",
+              "postalCode": "361100",
+              "addressCountry": "CN"
+            }
+          },
+          "email": "xxinau-sales@example.org",
+          "phoneNumber": "+86-208-555-0183"
+        },
+        "consignee": {
+          "type": ["Organization"],
+          "name": "Better Life Tech",
+          "description": "Better Lives Products",
+          "location": {
+            "type": ["Place"],
+            "address": {
+              "type": ["PostalAddress"],
+              "streetAddress": "Rue de la Poste 272",
+              "addressLocality": "Ramegnies-Chin",
+              "addressRegion": "Hainaut",
+              "postalCode": "7520",
+              "addressCountry": "BE"
+            }
+          },
+          "email": "procurement@lifetech-example.org",
+          "phoneNumber": "+32-5555-8791"
+        },
+        "notify": {
+          "type": ["Organization"],
+          "name": "Better Life Tech",
+          "description": "Better Lives Products",
+          "location": {
+            "type": ["Place"],
+            "address": {
+              "type": ["PostalAddress"],
+              "streetAddress": "Rue de la Poste 272",
+              "addressLocality": "Ramegnies-Chin",
+              "addressRegion": "Hainaut",
+              "postalCode": "7520",
+              "addressCountry": "BE"
+            }
+          },
+          "email": "procurement@lifetech-example.org",
+          "phoneNumber": "+32-5555-1325"
+        },
+        "freight": {
+          "type": ["ParcelDelivery"],
+          "deliveryAddress": {
+            "type": ["Place"],
+            "address": {
+              "type": ["PostalAddress"],
+              "addressRegion": "Antwerp",
+              "addressCountry": "BE"
+            }
+          },
+          "originAddress": {
+            "type":["Place"],
+            "address":{ 
+              "type": ["PostalAddress"],
+              "addressRegion": "Xiamen",
+              "addressCountry": "CN"
+            }
+          },
+          "deliveryMethod": "Ocean transport",
+          "trackingNumber": "178380801954"
+        },
+        "portOfLoading": {
+          "type": ["Place"],
+          "unLocode": "CNXMG"
+        },
+        "portOfDischarge": {
+          "type": ["Place"],
+          "unLocode": "BEANR"
+        },
+        "particulars": [
+          {
+            "type": ["ConsignmentItem"],
+            "marksAndNumbers": "Espresso Italiano",
+            "commodity": {
+              "type": ["Commodity"],
+              "commodityCode": "851671",
+              "commodityCodeType": "HS"
+            },
+            "packageQuantity": 2200,
+            "netWeight": {
+              "type": ["QuantitativeValue"],
+              "unitCode": "kg",
+              "value": "14600"
+            },
+            "grossWeight": {
+              "type": ["QuantitativeValue"],
+              "unitCode": "kg",
+              "value": "15960"
+            },
+            "grossVolume": {
+              "type": ["QuantitativeValue"],
+              "value": "856",
+              "unitCode": "cmb"
+            }
+          }
+        ]
+      },
+      {
+        "type": ["BillOfLading"],
+        "billOfLadingNumber": "XMANHR6182210B",
+        "bookingNumber": "XMANHR6182210",
+        "consignor": {
+          "type": ["Organization"],
+          "name": "Chuang's Enterprises",
+          "location": {
+            "type": ["Place"],
+            "address": {
+              "type": ["PostalAddress"],
+              "streetAddress": "Lido Gdns Sham Tseng",
+              "addressLocality": "Tsuen Wan District",
+              "addressRegion": "Hong Kong",
+              "addressCountry": "HK"
+            }
+          }
+        },
+        "consignee": {
+          "type": ["Organization"],
+          "name": "Intl. Construction Materials GMBH.",
+          "location": {
+            "type": ["Place"],
+            "address": {
+              "type": ["PostalAddress"],
+              "streetAddress": "Alsembergsesteenweg 326",
+              "addressLocality": "Nieuwmunster",
+              "addressRegion": "West Flanders",
+              "postalCode": "8377",
+              "addressCountry": "BE"
+            }
+          }
+        },
+        "freight": {
+          "type": ["ParcelDelivery"],
+          "deliveryAddress": {
+            "type": ["Place"],
+            "address":{ 
+              "type": ["PostalAddress"],
+              "addressRegion": "Nieuwmunster",
+              "addressCountry": "BE"
+            }
+          },
+          "originAddress": {
+            "type": ["Place"],
+            "address":{ 
+              "type": ["PostalAddress"],
+              "addressRegion": "Tsuen Wan District",
+              "addressCountry": "CN"
+            }
+          },
+          "deliveryMethod": "Ocean transport",
+          "trackingNumber": "178380801954"
+        },
+        "portOfLoading": {
+          "type": ["Place"],
+          "unLocode": "HKHKG"
+        },
+        "portOfDischarge": {
+          "type": ["Place"],
+          "unLocode": "BEANR"
+        },
+        "particulars": [
+          {
+            "type": ["ConsignmentItem"],
+            "marksAndNumbers": "Espresso Italiano",
+            "commodity": {
+              "type": ["Commodity"],
+              "commodityCode": "851671",
+              "commodityCodeType": "HS"
+            },
+            "packageQuantity": 2200,
+            "netWeight": {
+              "type": ["QuantitativeValue"],
+              "unitCode": "kg",
+              "value": "14600"
+            },
+            "grossWeight": {
+              "type": ["QuantitativeValue"],
+              "unitCode": "kg",
+              "value": "15960"
+            },
+            "grossVolume": {
+              "type": ["QuantitativeValue"],
+              "value": "856",
+              "unitCode": "cmb"
+            }
+          }
+        ]
+      }
+    ]
+  }

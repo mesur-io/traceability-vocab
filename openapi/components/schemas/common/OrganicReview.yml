@@ -1,0 +1,232 @@
+$linkedData:
+  term: OrganicReview
+  '@id': https://w3id.org/traceability#OrganicReview
+title: Organic Review
+description: Information regarding the review of an organic inspection report & related materials as well as the subsequent certification decision.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - OrganicReview
+    default:
+      - OrganicReview
+    items:
+      type: string
+      enum:
+        - OrganicReview
+  organicInspection:
+    title: Organic Inspection
+    description:  The organic inspection report under review.
+    $ref: ./OrganicInspection.yml
+    $linkedData:
+      term: inspectionReport
+      '@id': https://w3id.org/traceability#OrganicInspection
+  reviewer:
+    title: Reviewer
+    description: The person responsible for the organic certification review. The final review and the certification decision may be performed by the same person, but that person may not be the inspector.
+    $ref: ./Person.yml
+    $linkedData:
+      term: reviewer
+      '@id': https://vocabulary.uncefact.org/specifiedContactPerson
+  decisionMaker:
+    title: Decision Maker
+    description: The person responsible for the final organic certification decision. The final review and the certification decision may be performed by the same person, but that person may not be the inspector.
+    $ref: ./Person.yml
+    $linkedData:
+      term: decisionMaker
+      '@id': https://vocabulary.uncefact.org/specifiedContactPerson
+  certificationDecision:
+    title: Certification Decision
+    description: Must be one of "C" (Certification), "CC" (Certification with Conditions), "NNC" (Notice of Noncompliance for Correctable violations), or "NNDC" (combined Notice of Noncompliance and Denial of Certification).
+    type: string
+    $linkedData:
+      term: certificationDecision
+      '@id': https://www.gs1.org/voc/certificationStatus
+  additionalInformation:
+    title: Additional Information
+    description: Information on certification conditions, noncompliance details or other relevant topics.
+    type: string
+    $linkedData:
+      term: additionalInformation
+      '@id': https://vocabulary.uncefact.org/content
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["OrganicReview"],
+    "organicInspection": {
+      "type": ["OrganicInspection"],
+      "commonInfo": {
+        "type": ["AgricultureInspectionCommonInfo"],
+        "applicant": {
+          "type" : ["Organization"],
+          "name": "Miracle Produce",
+          "description": "Organic fruits & vegetables",
+          "email": "contact@example.com",
+          "phoneNumber": "+1-784-555-1725",
+          "url": "miracle.example.com"
+        },
+        "facility": {
+          "type": [
+            "Place"
+          ],
+          "globalLocationNumber": "5449782976823",
+          "geo": {
+            "type": [
+              "GeoCoordinates"
+            ],
+            "latitude": "-79.6395",
+            "longitude": "178.5353"
+          },
+          "address": {
+            "type": [
+              "PostalAddress"
+            ],
+            "name": "Miracle Produce",
+            "streetAddress": "853 Wisozk River",
+            "addressLocality": "New Noemyfort",
+            "addressRegion": "New Mexico",
+            "postalCode": "18047-2038",
+            "addressCountry": "USA"
+          },
+          "unLocode": "DKCPH"
+        },
+        "inspector": {
+          "type": [
+            "Inspector"
+          ],
+          "person": {
+            "type": [
+              "Person"
+            ],
+            "firstName": "Jason",
+            "lastName": "Grant",
+            "email": "Santa43@example.org",
+            "phoneNumber": "+1-876-555-6951",
+            "worksFor": {
+              "type": [
+                "Organization"
+              ],
+              "name": "Glayson & Co. Inspections",
+              "description": "Agricultural cleanliness & grade assurance",
+              "email": "Marina96@glaysonco.net",
+              "phoneNumber": "+1-372-555-2964",
+              "faxNumber": "+1-142-555-0666"
+            },
+            "jobTitle": "Principal Data Supervisor"
+          },
+          "qualification": [
+            {
+              "type": ["Qualification"],
+              "qualificationCategory": "Agricultural Security Analyst",
+              "qualificationValue": "Executive"
+            },
+            {
+              "type": ["Qualification"],
+              "qualificationCategory": "Future Metrics Planner",
+              "qualificationValue": "Coordinator"
+            },
+            {
+              "type": ["Qualification"],
+              "qualificationCategory": "Internal Identity Agent",
+              "qualificationValue": "Assistant"
+            }
+          ]
+        },
+        "delegateOf": {
+          "type": ["Organization"],
+          "name": "Glayson & Co. Inspections",
+          "description": "Agricultural cleanliness & grade assurance",
+          "email": "Marina96@glaysonco.net",
+          "phoneNumber": "+1-569-555-2605",
+          "faxNumber": "+1-636-555-3041"
+        },
+        "regulatoryAgency": {
+          "type": ["Organization"],
+          "name": "CDFA",
+          "description": "California Department of Food and Agriculture",
+          "email": "relations@example.org",
+          "phoneNumber": "+1-930-555-7168",
+          "faxNumber": "+1-928-555-0150"
+        },
+        "inspectionStarted": "2020-03-15T14:30-08:00",
+        "inspectionEnded": "2020-03-15T17:30-08:00"
+      },
+      "applicantCertificationNumber": "133892",
+      "newApplicant": false,
+      "continuingCertification": true,
+      "newLocationActivity": true,
+      "reinstatement": false,
+      "announcedInspection": true,
+      "estimatedHarvestDate": "2020-05-10",
+      "pesticideResidueSampling": true,
+      "samplingDetails": "no pesticide residues found",
+      "introductionOperationDescription": "Conditions generally appear to reflect the information stated in client's OSP. All relevant NOP standards are met. Client has additionally performed a GAP Plus+ inspection earlier in the year.",
+      "resolutionIssuesActionItems": "A previous inspection found there to be trace amounts of pesticide in field #208. However, the most recent analysis has found no remaining pesticide residues.",
+      "issuesRequests": "No issues or requests for information at this time",
+      "attachments": ["No attachments relevant to this report"],
+      "OSPSectionReviews": [
+        {
+          "type": ["OrganicOSPSectionReview"],
+          "OSPSectionCode": "DO 3",
+          "resultCode": "C",
+          "verificationExplanations": "The OSP accurately describes soil improvement & relative practices."
+        },
+        {
+          "type": ["OrganicOSPSectionReview"],
+          "OSPSectionCode": "Compost and Manure (CM) 1",
+          "resultCode": "C"
+        },
+        {
+          "type": ["OrganicOSPSectionReview"],
+          "OSPSectionCode": "LR 4a, b, and c",
+          "resultCode": "C",
+          "verificationExplanations": "Each parcel has distinct, defined boundaries and buffer zones, as detailed in provided fields map.",
+          "attachments": [
+            "Field Map \"A\""
+          ]
+        }
+      ]
+    },
+    "reviewer": {
+      "type": ["Person"],
+      "firstName": "Mary",
+      "lastName": "Smith",
+      "email": "msmith@example.org",
+      "phoneNumber": "+1-753-555-0470",
+      "worksFor": {
+        "type": [
+          "Organization"
+        ],
+        "name": "Glayson & Co. Inspections",
+        "description": "Agricultural cleanliness & organic assurance",
+        "email": "Marina96@glaysonco.net",
+        "phoneNumber": "+1-318-555-1554",
+        "faxNumber": "+1-718-555-2149"
+      },
+      "jobTitle": "Certification Specialist"
+    },
+    "decisionMaker": {
+      "type": ["Person"],
+      "firstName": "Mary",
+      "lastName": "Smith",
+      "email": "msmith@example.org",
+      "phoneNumber": "+1-507-555-8863",
+      "worksFor": {
+        "type": [
+          "Organization"
+        ],
+        "name": "Glayson & Co. Inspections",
+        "description": "Agricultural cleanliness & organic assurance",
+        "email": "Marina96@glaysonco.net",
+        "phoneNumber": "+1-134-555-9953",
+        "faxNumber": "+1-817-555-7500"
+      },
+      "jobTitle": "Certification Specialist"
+    },
+    "certificationDecision": "CC",
+    "additionalInformation": "Please see accompanying document, \"Conditions for Certification\"."
+  }

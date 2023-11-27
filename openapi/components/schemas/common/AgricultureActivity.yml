@@ -1,0 +1,249 @@
+$linkedData:
+  term: AgricultureActivity
+  '@id': https://w3id.org/traceability#AgricultureActivity
+title: Agriculture Activity
+description: >-
+  An activity that takes place on the farm that needs to be recorded, such as
+  planting, harvesting, applying fertilizer, etc.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - AgricultureActivity
+    default:
+      - AgricultureActivity
+    items:
+      type: string
+      enum:
+        - AgricultureActivity
+  business:
+    title: Business
+    description: The business entity performing the activity.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: business
+      '@id': https://w3id.org/traceability#dfn-entities
+  actor:
+    title: Actor
+    description: The actual person or persons performing the activity.
+    type: array
+    items:
+      $ref: ./Person.yml
+    $linkedData:
+      term: actor
+      '@id': https://w3id.org/traceability#Person
+  location:
+    title: Location
+    description: The location where the activity was performed.
+    $ref: ./Place.yml
+    $linkedData:
+      term: location
+      '@id': https://www.gs1.org/voc/Place
+  activityDate:
+    title: Activity Date
+    description: Date the activity occured.
+    type: string
+    $linkedData:
+      term: activityDate
+      '@id': https://schema.org/DateTime
+  activityType:
+    title: Activity Type
+    description: Type of Activity, e.g., plant, harvest, spray.
+    type: string
+    $linkedData:
+      term: activityType
+      '@id': https://schema.org/description
+  agricultureProduct:
+    title: Product List
+    description: Agricultural Product the Activity was performed on if known
+    type: array
+    items:
+      $ref: ./AgricultureProduct.yml
+    $linkedData:
+      term: agricultureProduct
+      '@id': https://schema.org/ItemList
+  observation:
+    title: Observation or Notes List
+    description: >-
+      List of observations or notes related to the activity, such as spray mix,
+      etc
+    type: array
+    items:
+      $ref: ./Observation.yml
+    $linkedData:
+      term: observation
+      '@id': https://w3id.org/traceability#observation
+additionalProperties: true
+required:
+  - type
+example: |-
+  {
+    "type": ["AgricultureActivity"],
+    "farm": {
+      "type": [
+        "Person"
+      ],
+      "email": "Elaina.Wiza@example.org",
+      "phoneNumber": "+1-980-555-6819"
+    },
+    "actor": [
+      {
+        "type": [
+          "Person"
+        ],
+        "firstName": "Karson",
+        "lastName": "Mante",
+        "email": "Alexandrea_Wisozk44@example.org",
+        "phoneNumber": "+1-688-555-6847",
+        "worksFor": {
+          "type": [
+            "Organization"
+          ],
+          "name": "Jimbo's Awesome Farm",
+          "description": "Organic fruits & vegetables",
+          "email": "Chloe.Ondricka42@jimbofarm.example.org",
+          "phoneNumber": "+1-155-555-9176",
+          "faxNumber": "+1-701-555-0319"
+        },
+        "jobTitle": "Chief Markets Agent"
+      }
+    ],
+    "field": {
+      "type": [
+        "Place"
+      ],
+      "globalLocationNumber": "9339929638102",
+      "geo": {
+        "type": [
+          "GeoCoordinates"
+        ],
+        "latitude": "40.9090",
+        "longitude": "151.8748"
+      },
+      "unLocode": "DKCPH"
+    },
+    "activityDate": "2020-02-15",
+    "activityType": "spray",
+    "agricultureProduct": [
+      {
+        "type": [
+          "AgricultureProduct"
+        ],
+        "plu": "94225",
+        "product": {
+          "type": [
+            "Product"
+          ],
+          "manufacturer": {
+            "type": [
+              "Organization"
+            ],
+            "email": "Jeremie_Bauch@example.org",
+            "phoneNumber": "+1-540-555-5299"
+          },
+          "name": "Avocados",
+          "description": "Avocados, 4 pack boxes",
+          "sizeOrAmount": {
+            "type": [
+              "QuantitativeValue"
+            ],
+            "unitCode": "boxes",
+            "value": "893"
+          },
+          "weight": {
+            "type": [
+              "QuantitativeValue"
+            ],
+            "unitCode": "lbs",
+            "value": "1784"
+          },
+          "sku": "563279941950"
+        },
+        "scientificName": "Persea americana",
+        "labelImageUrl": "https://img.example.org/033383401508/640/480/",
+        "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "type": [
+          "AgricultureProduct"
+        ],
+        "plu": "94225",
+        "product": {
+          "type": [
+            "Product"
+          ],
+          "manufacturer": {
+            "type": [
+              "Organization"
+            ],
+            "email": "Sven22@example.org",
+            "phoneNumber": "+1-516-555-4400"
+          },
+          "name": "Tomatoes",
+          "description": "Tomatoes, Cartons",
+          "sizeOrAmount": {
+            "type": [
+              "QuantitativeValue"
+            ],
+            "unitCode": "cartons",
+            "value": "348"
+          },
+          "weight": {
+            "type": [
+              "QuantitativeValue"
+            ],
+            "unitCode": "lbs",
+            "value": "640"
+          },
+          "sku": "164664203943"
+        },
+        "scientificName": "Solanum lycopersicum",
+        "labelImageUrl": "https://img.example.org/033383401508/640/480/",
+        "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "observation": [
+      {
+        "type": [
+          "Observation"
+        ],
+        "date": "2019-12-11T03:50:55Z",
+        "property": {
+          "type": [
+            "MechanicalProperty"
+          ],
+          "identifier": "ISO 3738",
+          "name": "Rockwell Hardness Test (Scale A)",
+          "description": "The Rockwell hardness test is an empirical indentation hardness test that can provide useful information about metallic materials."
+        },
+        "measurement": {
+          "type": [
+            "MeasuredValue"
+          ],
+          "value": "00.00",
+          "unitCode": "UNKNOWN"
+        }
+      },
+      {
+        "type": [
+          "Observation"
+        ],
+        "date": "2019-12-11T03:50:55Z",
+        "property": {
+          "type": [
+            "ChemicalProperty"
+          ],
+          "name": "Technetium"
+        },
+        "measurement": {
+          "type": [
+            "MeasuredValue"
+          ],
+          "value": "100.00",
+          "unitCode": "P1"
+        }
+      }
+    ]
+  }

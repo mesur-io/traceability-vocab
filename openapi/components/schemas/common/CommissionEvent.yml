@@ -1,0 +1,104 @@
+$linkedData:
+  term: CommissionEvent
+  '@id': https://w3id.org/traceability#CommissionEvent
+title: Commission Event
+description: A product commission event, extending the Event schema.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - Event
+      - CommissionEvent
+    default:
+      - Event
+      - CommissionEvent
+    items:
+      type: string
+      enum:
+        - Event
+        - CommissionEvent
+  eventType:
+    type: string
+    enum:
+      - Create
+      - Commission
+  eventId:
+    type: string
+  eventTime:
+    type: string
+  place:
+    title: Place
+    description: Information on where the event took place.
+    $ref: ./Place.yml
+    $linkedData:
+      term: place
+      '@id': https://schema.org/Place
+  actor:
+    title: Event Actors
+    description: >-
+      List of organizations that acted during the event, https://w3id.org/traceability#Organization
+    type: array
+    items:
+      $ref: ./Organization.yml
+    $linkedData:
+      term: organization
+      '@id': https://w3id.org/traceability#Organization
+  products:
+    title: Products
+    description: The products referenced by the event in hashlinks.
+    type: array
+    items:
+      type: string
+      format: url
+    $linkedData:
+      term: products
+      '@id': https://schema.org/Product
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type":[
+      "Event",
+      "CommissionEvent"
+    ],
+    "eventType":"Create",
+    "eventId":"dd0c6f9a-5df6-40a3-bb34-863cd1fda606",
+    "eventTime":"2022-04-01T18:09:00.351Z",
+    "place":{
+      "geo":{
+        "type":[
+          "GeoCoordinates"
+        ],
+        "latitude":"43.2557",
+        "longitude":"-79.8711"
+      },
+      "type":[
+        "Place"
+      ],
+      "address":{
+        "type":[
+          "PostalAddress"
+        ],
+        "postalCode":"",
+        "addressRegion":"Ontario",
+        "streetAddress":"",
+        "addressCountry":"CANADA",
+        "addressLocality":"Hamilton"
+      },
+      "globalLocationNumber":"SC720-0000001"
+    },
+    "actor":[
+      {
+        "name":"Steel Co.",
+        "type":[
+          "Organization"
+        ]
+      }
+    ],
+    "products":[
+      "http://example.org/products/05b6867b-2211-4c8f-ae7a-2a770b9510af?hl=ZfqLwiBj3yidP7p344d71z8ybyjb2+YVfhckGGHHEzk="
+    ]
+  }

@@ -1,0 +1,360 @@
+$linkedData:
+  term: AgricultureInspectionGeneric
+  '@id': https://w3id.org/traceability#AgricultureInspectionGeneric
+title: Agriculture Inspection Generic
+description: Information on the inspection and the observations made.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - AgricultureInspectionGeneric
+    default:
+      - AgricultureInspectionGeneric
+    items:
+      type: string
+      enum:
+        - AgricultureInspectionGeneric
+  commonInfo:
+    title: Common Info
+    description:  Information common to agriculture inspection credentials.
+    $ref: ./AgricultureInspectionCommonInfo.yml
+    $linkedData:
+      term: commonInfo
+      '@id': https://w3id.org/traceability#AgricultureInspectionCommonInfo
+  shipment:
+    title: Shipment
+    description: Details for a shipment of goods.
+    $ref: ./AgricultureParcelDelivery.yml
+    $linkedData:
+      term: shipment
+      '@id': https://vocabulary.uncefact.org/transportPackage
+  inspectionType:
+    title: Inspection Type
+    description: Type of Inspection.
+    type: string
+    $linkedData:
+      term: inspectionType
+      '@id': https://www.gs1.org/voc/certificationType
+  observation:
+    title: Observation List
+    description: >-
+      List of observations as seen and specified in the Inspection Report
+      schema, https://w3id.org/traceability#InspectionReport
+    type: array
+    items:
+      $ref: ./Observation.yml
+    $linkedData:
+      term: observation
+      '@id': https://vocabulary.uncefact.org/relatedObservation
+  name:
+    title: Inspection Name
+    description: The Data Field Name, or Grouping of data that is closely related.
+    type: string
+    $linkedData:
+      term: name
+      '@id': https://schema.org/name
+  status:
+    title: Status
+    description: Status of inspection (e.g. pending, NA, pass, fail).
+    type: string
+    $linkedData:
+      term: status
+      '@id': https://vocabulary.uncefact.org/status
+  productQuantity:
+    title: Product Quantity
+    description: The type of package (e.g., cartons) and the number of packages present.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: productQuantity
+      '@id': https://vocabulary.uncefact.org/Measurement
+  packageSize:
+    title: Product Size
+    description: The size of a typical product package.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: packageSize
+      '@id': https://vocabulary.uncefact.org/Measurement
+  inspectorCounted:
+    title: Counted by Inspector
+    description: The product was physically counted by an inspector.
+    type: boolean
+    $linkedData:
+      term: inspectorCounted
+      '@id': https://vocabulary.uncefact.org/applicableSpecifiedAction
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["AgricultureInspectionGeneric"],
+    "commonInfo": {
+      "type": ["AgricultureInspectionCommonInfo"],
+      "applicant": {
+        "type" : ["Organization"],
+        "name": "Miracle Produce",
+        "description": "Organic fruits & vegetables",
+        "email": "contact@example.com",
+        "phoneNumber": "+1-677-555-0177",
+        "url": "miracle.example.com"
+      },
+      "facility": {
+        "type": [
+          "Place"
+        ],
+        "globalLocationNumber": "5449782976823",
+        "geo": {
+          "type": [
+            "GeoCoordinates"
+          ],
+          "latitude": "-79.6395",
+          "longitude": "178.5353"
+        },
+        "address": {
+          "type": [
+            "PostalAddress"
+          ],
+          "name": "Miracle Produce",
+          "streetAddress": "853 Wisozk River",
+          "addressLocality": "New Noemyfort",
+          "addressRegion": "New Mexico",
+          "postalCode": "18047-2038",
+          "addressCountry": "Togo"
+        },
+        "unLocode": "DKCPH"
+      },
+      "inspector": {
+        "type": [
+          "Inspector"
+        ],
+        "person": {
+          "type": [
+            "Person"
+          ],
+          "firstName": "Jason",
+          "lastName": "Grant",
+          "email": "Santa43@example.org",
+          "phoneNumber": "+1-544-555-8849",
+          "worksFor": {
+            "type": [
+              "Organization"
+            ],
+            "name": "Glayson & Co. Inspections",
+            "description": "Agricultural cleanliness & grade assurance",
+            "email": "Marina96@glaysonco.net",
+            "phoneNumber": "+1-537-555-8017",
+            "faxNumber": "+1-896-555-1135"
+          },
+          "jobTitle": "Principal Data Supervisor"
+        },
+        "qualification": [
+          {
+            "type": ["Qualification"],
+            "qualificationCategory": "Agricultural Security Analyst",
+            "qualificationValue": "Executive"
+          },
+          {
+            "type": ["Qualification"],
+            "qualificationCategory": "Future Metrics Planner",
+            "qualificationValue": "Coordinator"
+          },
+          {
+            "type": ["Qualification"],
+            "qualificationCategory": "Internal Identity Agent",
+            "qualificationValue": "Assistant"
+          }
+        ]
+      },
+      "delegateOf": {
+        "type": ["Organization"],
+        "name": "Glayson & Co. Inspections",
+        "description": "Agricultural cleanliness & grade assurance",
+        "email": "Marina96@glaysonco.net",
+        "phoneNumber": "+1-835-555-9631",
+        "faxNumber": "+1-191-555-5242"
+      },
+      "regulatoryAgency": {
+        "type": ["Organization"],
+        "name": "CDFA",
+        "description": "California Department of Food and Agriculture",
+        "email": "relations@example.org",
+        "phoneNumber": "+1-830-555-0200",
+        "faxNumber": "+1-699-555-8128"
+      },
+      "inspectionStarted": "2020-03-15T14:30-08:00",
+      "inspectionEnded": "2020-03-15T17:30-08:00"
+    },
+    "shipment": {
+      "type": [
+        "AgricultureParcelDelivery"
+      ],
+      "deliveryAddress": {
+        "type": [
+          "PostalAddress"
+        ],
+        "name": "Industrial Distributions",
+        "streetAddress": "853 Wisozk River",
+        "addressLocality": "New Noemyfort",
+        "addressRegion": "New Mexico",
+        "postalCode": "18047-2038",
+        "addressCountry": "Togo"
+      },
+      "originAddress": {
+        "type": [
+          "PostalAddress"
+        ],
+        "name": "Green Fields",
+        "streetAddress": "97696 Weissnat Pines",
+        "addressLocality": "Reynabury",
+        "addressRegion": "North Dakota",
+        "postalCode": "51361-9603",
+        "addressCountry": "U.S."
+      },
+      "deliveryMethod": "Truck transport",
+      "trackingNumber": "866440000109",
+      "expectedArrival": "2021-03-14",
+      "specialInstructions": "The package is delicate so handle with appropriate caution.",
+      "consignee": {
+        "type": [
+          "Organization"
+        ],
+        "name": "Ace Foodstuffs",
+        "description": "Agricultural goods shipping & distribution",
+        "email": "Hipolito58@acefoodstuffs.org",
+        "phoneNumber": "+1-609-555-3496",
+        "faxNumber": "+1-051-555-6933"
+      },
+      "agriculturePackage": [
+        {
+          "type": [
+            "AgriculturePackage"
+          ],
+          "packageName": "Avocados, Bulk",
+          "grade": "AA",
+          "responsibleParty": {
+            "type": ["Organization"],
+            "name": "Example Responsible Party Organization",
+            "email": "Chadrick_Gibson@example.com",
+            "phoneNumber": "+1-383-555-4822"
+          },
+          "voicePickCode": "4642",
+          "date": "2021-03-14",
+          "labelImageUrl": "https://img.example.org/640/480/",
+          "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "agricultureProduct": [
+            {
+              "type": [
+                "AgricultureProduct" 
+              ],
+              "plu": "94225",
+              "product": {
+                "type": [
+                  "Product"
+                ],
+                "manufacturer": {
+                  "type": [
+                    "Organization"
+                  ],
+                  "email": "Ashlee.Grady@example.net",
+                  "phoneNumber": "+1-454-555-6841"
+                },
+                "name": "Avocados",
+                "description": "Avocados, 4 pack boxes",
+                "sizeOrAmount": {
+                  "type": [
+                    "QuantitativeValue"
+                  ],
+                  "unitCode": "hg/ha",
+                  "value": "60"
+                },
+                "weight": {
+                  "type": [
+                    "QuantitativeValue"
+                  ],
+                  "unitCode": "hg/ha",
+                  "value": "6960"
+                },
+                "sku": "81055399441"
+              },
+              "scientificName": "Persea americana",
+              "labelImageUrl": "https://img.example.org/033383401508/640/480/",
+              "labelImageHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ]
+        }
+      ],
+      "shipper": {
+        "type": ["Organization"],
+        "name": "Green Fields",
+        "description": "Growing & packaging for high quality produce",
+        "email": "sales@greenfields.org",
+        "phoneNumber": "+1-038-555-6710"
+      },
+      "purchaser": {
+        "type": ["Organization"],
+        "name": "Ace Foodstuffs",
+        "description": "Agricultural goods shipping & distribution",
+        "email": "Hipolito58@acefoodstuffs.org",
+        "phoneNumber": "+1-574-555-4596",
+        "faxNumber": "+1-563-555-2046"
+      },
+      "carrier": {
+        "type": [
+          "Organization"
+        ],
+        "email": "Adaline29@example.com",
+        "phoneNumber": "+1-378-555-5000"
+      },
+      "broker": {
+        "type": ["Organization"],
+        "name": "Cole United",
+        "leiCode": "54321351219389121979"
+      }
+    },
+    "inspectionType": "Contamination",
+    "observation": [
+      {
+        "type": [
+          "Observation"
+        ],
+        "date": "2019-12-11T03:50:55Z",
+        "property": {
+          "type": [
+            "MechanicalProperty"
+          ],
+          "identifier": "ISO 148",
+          "name": "Charpy Impact Strength Test",
+          "description": "ISO 148-1:2016 specifies the Charpy (V-notch and U-notch) pendulum impact test method for determining the energy absorbed in an impact test of metallic materials. This part of ISO 148 does not cover instrumented impact testing, which is specified in ISO 14556."
+        },
+        "measurement": {
+          "type": [
+            "MeasuredValue"
+          ],
+          "value": "75.947",
+          "unitCode": "B13"
+        }
+      },
+      {
+        "type": [
+          "Observation"
+        ],
+        "date": "2019-12-11T03:50:55Z",
+        "property": {
+          "type": [
+            "ChemicalProperty"
+          ],
+          "name": "Radon"
+        },
+        "measurement": {
+          "type": [
+            "MeasuredValue"
+          ],
+          "value": "58.340",
+          "unitCode": "P1"
+        }
+      }
+    ],
+    "name": "Agricultural Inspection",
+    "status": "pass"
+  }

@@ -1,0 +1,316 @@
+$linkedData:
+  term: SeaCargoManifest
+  '@id': https://w3id.org/traceability#SeaCargoManifest
+title: Sea Cargo Manifest
+description: The Sea Cargo Manifest is issued by the ocean carrier listing out all cargo that is on board the vessel. 
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - SeaCargoManifest
+    default:
+      - SeaCargoManifest
+    items:
+      type: string
+      enum:
+        - SeaCargoManifest
+  vesselName: 
+    title: Vessel Name
+    description: Identifier of the means of transport such as IMO vessel number or truck license place. 
+    type: string
+    $linkedData:
+      term: vesselName
+      '@id': https://vocabulary.uncefact.org/transportMeans
+  vesselNumber:
+    title: Vessel Number
+    description: The unique reference for a registered vessel such as IMO number.
+    type: string
+    $linkedData:
+      term: vesselNumber
+      '@id': https://schema.org/identifier
+  voyageNumber:
+    title: Voyage Number
+    description: The vessel operator-specific identifier of the Voyage.
+    type: string
+    $linkedData:
+      term: voyageNumber
+      '@id': https://vocabulary.uncefact.org/TransportMovement
+  registrationCountry:
+    title: Registration Country
+    description: The country of registration of this logistics means of transport.
+    type: string
+    $linkedData:
+      term: registrationCountry
+      '@id': https://vocabulary.uncefact.org/registrationCountry
+  plannedDepartureDateTime:
+    title: Planned Departure Date and Time
+    description: The planned date and time of departure.
+    type: string
+    $linkedData:
+      term: plannedDepartureDateTime
+      '@id': https://schema.org/Date
+  plannedArrivalDateTime:
+    title: Planned Arrival Date and Time
+    description: The planned date and time of arrival.
+    type: string
+    $linkedData:
+      term: plannedArrivalDateTime
+      '@id': https://schema.org/DateTime
+  portOfDeparture:
+    title: Port of Departure
+    $ref: ./Place.yml
+    $linkedData:
+      term: portOfDeparture
+      '@id': https://schema.org/Place
+  portOfArrival:
+    title: Port of Arrival
+    $ref: ./Place.yml
+    $linkedData:
+      term: portOfArrival
+      '@id': https://schema.org/Place
+  netTonnage:
+    title: Net Tonnage
+    description: Vessel net tonnage.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: netTonnage
+      '@id': https://vocabulary.uncefact.org/netWeightMeasure
+  grossTonnage:
+    title: Gross Tonnage
+    description: Vessel gross tonnage.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: grossTonnage
+      '@id': https://vocabulary.uncefact.org/grossWeightMeasure
+  totalNumberOfTransportDocuments: 
+    title: Total Number of Transport Documents
+    description: A number of transport documents (master bills of lading, house bills of lading, and sea waybill) listed on this manifest.
+    type: number
+    $linkedData:
+      term: totalNumberOfTransportDocuments
+      '@id': https://schema.org/Number
+  transportEquipmentQuantity: 
+    title: Transport Equipment Quantity
+    description: A number of pieces of transport equipment for the consignment or transport movement.
+    type: number
+    $linkedData:
+      term: transportEquipmentQuantity
+      '@id': https://vocabulary.uncefact.org/transportEquipmentQuantity
+  totalNumberOfPackages: 
+    title: Total Number of Packages
+    description: A number of packages.
+    type: number
+    $linkedData:
+      term: totalNumberOfPackages
+      '@id': https://vocabulary.uncefact.org/packageQuantity
+  transportDocumentInformation: 
+    title: Transport Document Information
+    description: A list of transport documents (master bills of lading, house bills of lading, and sea waybill) detailing the manifested cargo. 
+    type: array
+    items: 
+      $ref: ./TransportDocument.yml
+    $linkedData:
+      term: transportDocumentInformation
+      '@id': https://vocabulary.uncefact.org/transportContractDocument
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["SeaCargoManifest"],
+    "vesselName": "MS Seventh Sea",
+    "vesselNumber": "IMO1208812",
+    "voyageNumber": "W-0239",
+    "registrationCountry": "ES",
+    "plannedDepartureDateTime": "2022-03-11T08:10:00Z",
+    "plannedArrivalDateTime": "2022-03-13T06:30:00Z",
+    "portOfDeparture": {
+      "type": ["Place"],
+      "unLocode": "DEBRV"
+    },
+    "portOfArrival": {
+      "type": ["Place"],
+      "unLocode": "DKAAR"
+    },
+    "netTonnage": {
+      "type": ["QuantitativeValue"],
+      "value": "120800",
+      "unitCode": "T"
+    },
+    "grossTonnage": {
+      "type": ["QuantitativeValue"],
+      "value": "252100",
+      "unitCode": "T"
+    },
+    "totalNumberOfTransportDocuments": 342,
+    "transportEquipmentQuantity": 805,
+    "totalNumberOfPackages": 13044,
+    "transportDocumentInformation": [
+      {
+        "type": ["MasterBillOfLading"],
+        "billOfLadingNumber": "EX600822199A",
+        "bookingNumber": [
+          "EX600822199"
+        ],
+        "shipper": {
+          "type": ["Organization"],
+          "name": "Espresso Italiano Co.",
+          "location": {
+            "type": ["Place"],
+            "address": {
+              "type": ["PostalAddress"],
+              "streetAddress": "Via Vico Ferrovia 5",
+              "addressLocality": "Goro",
+              "addressRegion": "Ferrara",
+              "postalCode": "44020",
+              "addressCountry": "IT"
+            }
+          },
+          "email": "sales@espresso-italiano.example.com",
+          "phoneNumber": "+39 5555 8844141"
+        },
+        "consignee": {
+          "type": ["Organization"],
+          "name": "Prosumer Coffee Supplies, Ltd.",
+          "description": "Coffee Machine Imports",
+          "location": {
+            "type": ["Place"],
+            "address": {
+              "type": ["PostalAddress"],
+              "streetAddress": "3934 Spinnaker Lane",
+              "addressLocality": "Joliet",
+              "addressRegion": "Illinois",
+              "postalCode": "60432",
+              "addressCountry": "US"
+            }
+          }
+        },
+        "notifyParty": [
+          {
+            "type": ["Organization"],
+            "name": "Prosumer Coffee Supplies, Ltd.",
+            "description": "Coffee Machine Imports",
+            "location": {
+              "type": ["Place"],
+              "address": {
+                "type": ["PostalAddress"],
+                "streetAddress": "3934 Spinnaker Lane",
+                "addressLocality": "Joliet",
+                "addressRegion": "Illinois",
+                "postalCode": "60432",
+                "addressCountry": "US"
+              }
+            }
+          }
+        ],
+        "carrier": {
+          "type": ["Organization"],
+          "id": "did:key:z6Mku6sNEit2qhNyaKDoj6ozURx5ApD85Za5g6dmnpYi6Auv",
+          "name": "MULTI CONTAINER LINE",
+          "location": {
+            "type": ["Place"],
+            "address": {
+              "type": ["PostalAddress"],
+              "name": "MCL Multi Container Line LTD.",
+              "streetAddress": "Rm. 3501, 35/F Manhatten Place, 23 Wang Tai Road",
+              "addressLocality": "Kowloon Bay",
+              "addressRegion": "Hong Kong",
+              "addressCountry": "Hong Kong SAR"
+            }
+          }
+        },
+        "mainCarriageTransportMovement": {
+          "type": ["Transport"],
+          "vesselNumber": "MS Seven Seas",
+          "voyageNumber": "Atl-W0425"
+        },
+        "portOfLoading": {
+          "type": ["Place"],
+          "unLocode": "ITMIL"
+        },
+        "portOfDischarge": {
+          "type": ["Place"],
+          "unLocode": "USLGB"
+        },
+        "totalNumberOfPackages": 2200,
+        "transportEquipmentQuantity": 2,
+        "utilizedTransportEquipment": [
+          {
+            "type": ["TransportEquipment"],
+            "equipmentReference": "APZU4812090",
+            "ISOEquipmentCode": "40GP",
+            "seals": [
+              {
+                "type": ["Seal"],
+                "sealNumber": "PTW-002290109692"
+              }
+            ]
+          },
+          {
+            "type": ["TransportEquipment"],
+            "equipmentReference": "APZU5985096",
+            "ISOEquipmentCode": "40GP",
+            "seals": [
+              {
+                "type": ["Seal"],
+                "sealNumber": "PTW-002255398220"
+              }
+            ]
+          }
+        ],
+        "includedConsignmentItems": [
+          {
+            "type": ["ConsignmentItem"],
+            "marksAndNumbers": "Espresso Italiano",
+            "commodity": {
+              "type": ["Commodity"],
+              "commodityCode": "851671",
+              "commodityCodeType": "HS"
+            },
+            "packageQuantity": 2200,
+            "netWeight": {
+              "type": ["QuantitativeValue"],
+              "unitCode": "kg",
+              "value": "14600"
+            },
+            "grossWeight": {
+              "type": ["QuantitativeValue"],
+              "unitCode": "kg",
+              "value": "15960"
+            },
+            "grossVolume": {
+              "type": ["QuantitativeValue"],
+              "value": "856",
+              "unitCode": "cmb"
+            }
+          }
+        ],
+        "freightAndCharges": [{
+          "type": ["ServiceCharge"],
+          "chargeCode": "basicFreight",
+          "paymentTerm": "collect",
+          "chargeText": "Negotiated ocean freight",
+          "rate": {
+            "type": ["PriceSpecification"],
+            "price": 2250,
+            "priceCurrency": "USD"
+          },
+          "calculationBasis": "Per container",
+          "appliedAmount": {
+            "type": ["PriceSpecification"],
+            "price": 4500,
+            "priceCurrency": "USD"
+          }
+        }],
+        "declaredValue": {
+          "type": ["PriceSpecification"],
+          "price": 240000,
+          "priceCurrency": "USD"
+        },
+        "shippedOnBoardDate": "2022-02-02T09:30:00Z",
+        "termsAndConditions": "https://terms-of-shipment.carrier.example.com"
+      }
+    ]
+  }

@@ -1,0 +1,104 @@
+$linkedData:
+  term: ConsignmentItem
+  '@id': https://vocabulary.uncefact.org/ConsignmentItem
+title: Consignment Item
+description: A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - ConsignmentItem
+    default:
+      - ConsignmentItem
+    items:
+      type: string
+      enum:
+        - ConsignmentItem
+  marksAndNumbers: 
+    title: Marks and Numbers
+    description: Physical markings or labels on individual packages or transport units for shipping purposes.
+    type: string
+    $linkedData:
+      term: marksAndNumbers
+      '@id': https://vocabulary.uncefact.org/ShippingMarks
+  descriptionOfPackagesAndGoods: 
+    title: Description of Packages and Goods
+    description: Transport cargo details of the consignment or consignment item sufficient to identify its nature for customs, statistical, or transport purposes.
+    type: string
+    $linkedData:
+      term: descriptionOfPackagesAndGoods
+      '@id': https://vocabulary.uncefact.org/natureIdentificationCargo
+  commodity: 
+    title: Commodity
+    description: Commodity classification based on either WCO HS or USITS HTS codification.
+    $ref: ./Commodity.yml
+    $linkedData:
+      term: commodity
+      '@id': https://w3id.org/traceability#Commodity
+  packageQuantity: 
+    title: Number of Packages
+    description: A number of packages.
+    type: number
+    $linkedData:
+      term: packageQuantity
+      '@id': https://vocabulary.uncefact.org/packageQuantity
+  netWeight: 
+    title: Net Weight
+    description: Net weight of the product.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: netWeight
+      '@id': https://schema.org/weight
+  grossWeight:   
+    title: Gross Weight
+    description: Gross weight of the product.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: grossWeight
+      '@id': https://schema.org/weight
+  grossVolume:   
+    title: Gross Volume
+    description: A measure of the gross volume, normally calculated by multiplying the maximum length, width and height.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: grossVolume
+      '@id': https://vocabulary.uncefact.org/grossVolumeMeasure
+  countryOfOrigin: 
+    title: Country of Origin
+    description: A country of origin for the consignment, consignment item, or product. The two-letter ISO 3166-1 alpha-2 country code is recommended.
+    type: string
+    $linkedData:
+      term: countryOfOrigin
+      '@id': https://vocabulary.uncefact.org/originCountry
+  manufacturer:
+    title: Manufacturer
+    description: The entity manufacturing the product.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: manufacturer
+      '@id': https://vocabulary.uncefact.org/manufacturerParty
+required:
+  - type
+example: |-
+  {
+    "type": ["ConsignmentItem"],
+    "marksAndNumbers": "Espresso Italiano",
+    "commodity": {
+      "type": ["Commodity"],
+      "commodityCode": "851671",
+      "commodityCodeType": "HS"
+    },
+    "packageQuantity": 880,
+    "netWeight": {
+      "type": ["QuantitativeValue"],
+      "unitCode": "kg",
+      "value": "14600"
+    },
+    "grossWeight": {
+      "type": ["QuantitativeValue"],
+      "unitCode": "kg",
+      "value": "15960"
+    }
+  }

@@ -1,0 +1,325 @@
+$linkedData:
+  term: DCSAShippingInstruction
+  '@id': https://vocabulary.uncefact.org/TransportInstructions
+title: DCSA Shipping Instruction
+description: >-
+  The Shipping Instruction is an enrichment to the original booking shared by
+  the shipper to the carrier. The shipping instruction includes volume or
+  weight, cargo items, shipping dates, origin, destination, and other special
+  instructions. The information given by the shipper through the shipping
+  instruction is the information required to create a Transport Document. Based
+  on DCSA's eBL specification (https://dcsa.org/standards/ebill-of-lading)
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - DCSAShippingInstruction
+    default:
+      - DCSAShippingInstruction
+    items:
+      type: string
+      enum:
+        - DCSAShippingInstruction
+  shippingInstructionID:
+    title: Shipping Instruction ID
+    description: >-
+      The identifier for a shipping instruction provided by the carrier for
+      system purposes.
+    type: string
+    $linkedData:
+      term: shippingInstructionID
+      '@id': >-
+        https://vocabulary.uncefact.org/ReferenceCodeList#TIN
+  transportDocumentType:
+    title: Transport Document Type
+    description: >-
+      Specifies the type of the transport document (a Bill of Lading (BOL) or a
+      Sea Waybill (SWB)).
+    type: string
+    $linkedData:
+      term: transportDocumentType
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.1#/components/schemas/transportDocumentType
+  preCarriageUnderShippersResponsibility:
+    title: Pre Carriage Under Shippers Responsibility
+    description: >-
+      Mode of transportation for pre-carriage (e.g., truck, barge, rail), under
+      shipper's responsibility
+    type: string
+    $linkedData:
+      term: preCarriageUnderShippersResponsibility
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.1#/components/schemas/preCarriageUnderShippersResponsibility
+  invoicePayableAt:
+    title: Invoice Payable At
+    description: >-
+      A location object - here with an example with only UN location code and
+      City name present
+    $ref: ./Place.yml
+    $linkedData:
+      term: invoicePayableAt
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DCSA_DOMAIN/1.0.1#/components/schemas/invoicePayableAt
+  carrierBookingReference:
+    title: Carrier Booking Reference
+    description: >-
+      The associated booking number provided by the carrier. Cannot be used in
+      combination with Cargo Item level carrierBookingReference
+    type: string
+    $linkedData:
+      term: carrierBookingReference
+      '@id': >-
+        https://vocabulary.uncefact.org/ReferenceCodeList#BN
+  cargoItems:
+    title: Cargo Item
+    description: >-
+      Addresses the cargo items to be stuffed into a container for a shipment. A
+      cargo item cannot be split across containers.
+    type: array
+    items:
+      $ref: ./CargoItem.yml
+    $linkedData:
+      term: cargoItems
+      '@id': >-
+        https://vocabulary.uncefact.org/includedConsignmentItem
+  utilizedTransportEquipments:
+    title: Utilized Transport Equipments
+    description: >-
+      A piece of transport equipment utilized for the consignment or trade
+      delivery.
+    type: array
+    items:
+      $ref: ./TransportEquipment.yml
+    $linkedData:
+      term: utilizedTransportEquipments
+      '@id': >-
+        https://vocabulary.uncefact.org/utilizedTransportEquipment
+  shipmentLocations:
+    title: Shipment Locations
+    description: >-
+      Maps the relationship between Shipment and Location, e.g., the place of
+      receipt and the places of delivery for a specific shipment.
+    type: array
+    items:
+      $ref: ./Place.yml
+    $linkedData:
+      term: shipmentLocations
+      '@id': >-
+        https://api.swaggerhub.com/domains/dcsaorg/DOCUMENTATION_DOMAIN/1.0.0#/components/schemas/shipmentLocation
+  shipper:
+    title: Shipper
+    description: Original shipper
+    $ref: ./Organization.yml
+    $linkedData:
+      term: shipper
+      '@id': >-
+        https://vocabulary.uncefact.org/consignorParty
+  consignee:
+    title: Consignee
+    description: Consignee
+    $ref: ./Organization.yml
+    $linkedData:
+      term: consignee
+      '@id': >-
+        https://vocabulary.uncefact.org/consigneeParty
+  invoicePayerShipper:
+    title: Shippers's Invoice Payer
+    description: Invoice payer on behalf of the shipper
+    $ref: ./Organization.yml
+    $linkedData:
+      term: invoicePayerShipper
+      '@id': >-
+        https://vocabulary.uncefact.org/consignorParty
+  invoicePayerConsignee:
+    title: Consignee's Invoice Payer
+    description: Invoice payer on behalf of the consignee
+    $ref: ./Organization.yml
+    $linkedData:
+      term: invoicePayerConsignee
+      '@id': >-
+        https://vocabulary.uncefact.org/consigneeParty
+  firstNotify:
+    title: First Notify
+    description: First notify party.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: firstNotify
+      '@id': >-
+        https://vocabulary.uncefact.org/notifiedParty
+  secondNotify:
+    title: Second Notify
+    description: Second notify party.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: secondNotify
+      '@id': >-
+        https://vocabulary.uncefact.org/notifiedParty
+  otherNotify:
+    title: Other Notify
+    description: Other notify party.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: otherNotify
+      '@id': >-
+        https://vocabulary.uncefact.org/notifiedParty
+  shippersFreightForwarder:
+    title: Consignor's freight forwarder
+    description: Consignor's freight forwarder
+    $ref: ./Organization.yml
+    $linkedData:
+      term: shippersFreightForwarder
+      '@id': >-
+        https://vocabulary.uncefact.org/freightForwarderParty
+  consigneesFreightForwarder:
+    title: Consignee's freight forwarder
+    description: Consignee's freight forwarder
+    $ref: ./Organization.yml
+    $linkedData:
+      term: consigneesFreightForwarder
+      '@id': >-
+        https://vocabulary.uncefact.org/freightForwarderParty
+additionalProperties: false
+required:
+  - type
+  - shipper
+  - consignee
+  - cargoItems
+  - shipmentLocations
+example: |-
+  {
+    "type": ["DCSAShippingInstruction"],
+    "carrierBookingReference": "XMANHR2102045",
+    "transportDocumentType": "MBL",
+    "shipper": {
+      "type": ["Organization"],
+      "name": "Xxinau Manufacturing Co. Ltd.",
+      "description": "Advanced Production - Delivered",
+      "location": {
+        "type": ["Place"],
+        "address": {
+          "type": ["PostalAddress"],
+          "streetAddress": "Xin Fei Da Dao 139",
+          "addressLocality": "Xindao",
+          "addressRegion": "Fujian Province",
+          "postalCode": "361100",
+          "addressCountry": "CN"
+        }
+      },
+      "email": "xxinau-sales@example.org",
+      "phoneNumber": "+86-074-555-4172"
+    },
+    "consignee": {
+      "type": ["Organization"],
+      "name": "Better Life Tech",
+      "description": "Better Lives Products",
+      "location": {
+        "type": ["Place"],
+        "address": {
+          "type": ["PostalAddress"],
+          "streetAddress": "Rue de la Poste 272",
+          "addressLocality": "Ramegnies-Chin",
+          "addressRegion": "Hainaut",
+          "postalCode": "7520",
+          "addressCountry": "BE"
+        }
+      },
+      "email": "procurement@lifetech-example.org",
+      "phoneNumber": "+32-5555-6866"
+    },
+    "firstNotify": {
+      "type": ["Organization"],
+      "name": "Better Life Tech",
+      "description": "Better Lives Products",
+      "location": {
+        "type": ["Place"],
+        "address": {
+          "type": ["PostalAddress"],
+          "streetAddress": "Rue de la Poste 272",
+          "addressLocality": "Ramegnies-Chin",
+          "addressRegion": "Hainaut",
+          "postalCode": "7520",
+          "addressCountry": "BE"
+        }
+      },
+      "email": "procurement@lifetech-example.org",
+      "phoneNumber": "+32-5555-8327"
+    },
+    "consigneesFreightForwarder": {
+      "type": ["Organization"],
+      "name": "Intertrans NV [378]",
+      "location": {
+        "type": ["Place"],
+        "address": {
+          "type": ["PostalAddress"],
+          "streetAddress": "Belcrownlaan 25 - 3rd floor",
+          "addressLocality": "Antwerpen",
+          "postalCode": "BE-2100AN",
+          "addressCountry": "BE"
+        }
+      },
+      "phoneNumber": "+32-9-555.89.46"
+    },
+    "cargoItems": [
+      {
+        "type": ["CargoItem"],
+        "cargoLineItems": [
+          {
+            "type": ["CargoLineItem"],
+            "descriptionOfGoods": "Rollators",
+            "shippingMarks": "ByAcre Age is the new Black"
+          },
+          {
+            "type": ["CargoLineItem"],
+            "descriptionOfGoods": "Rollators Organizer Bags",
+            "shippingMarks": "ByAcre Age is the new Black"
+          },
+          {
+            "type": ["CargoLineItem"],
+            "descriptionOfGoods": "Rollators Backrest",
+            "shippingMarks": "ByAcre Age is the new Black"
+          },
+          {
+            "type": ["CargoLineItem"],
+            "descriptionOfGoods": "Rollators Cane Holder Bracket",
+            "shippingMarks": "ByAcre Age is the new Black"
+          },
+          {
+            "type": ["CargoLineItem"],
+            "descriptionOfGoods": "Rollators Cardboard Box",
+            "shippingMarks": "ByAcre Age is the new Black"
+          }
+        ],
+        "weight": 1671.9,
+        "weightUnit": "KGM",
+        "volume": 27.23,
+        "volumeUnit": "CBM",
+        "numberOfPackages": 245
+      }
+    ],
+    "utilizedTransportEquipments": [
+      {
+        "type": ["TransportEquipment"],
+        "id": "urn:epc:id:bic:YMLU3380910",
+        "equipmentReference": "YMLU3380910",
+        "ISOEquipmentCode": "20G1",
+        "seals": [
+          {
+            "type": ["Seal"],
+            "sealNumber": "YMAI715692"
+          }
+        ]
+      }
+    ],
+    "shipmentLocations": [
+      {
+        "type": ["Place"],
+        "unLocode": "CNXMG"
+      },
+      {
+        "type": ["Place"],
+        "unLocode": "BEGNE"
+      }
+    ]
+  }

@@ -1,0 +1,33 @@
+$linkedData:
+  term: Instructions
+  '@id': https://vocabulary.uncefact.org/TransportInstructions
+title: Instructions
+description: Information of an instructive or teaching nature that tells someone how to manage, manipulate, control, or cope with something.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - Instructions
+    default:
+      - Instructions
+    items:
+      type: string
+      enum:
+        - Instructions
+  description:
+    title: First Name
+    description: A textual description.
+    type: string
+    $linkedData:
+      term: description
+      '@id': https://schema.org/description
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["Instructions"],
+    "description": "Handle with care"
+  }

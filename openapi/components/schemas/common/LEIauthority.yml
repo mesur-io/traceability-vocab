@@ -1,0 +1,49 @@
+$linkedData:
+  term: LEIauthority
+  '@id': https://w3id.org/traceability#LEIauthority
+title: LEIauthority
+description: GLEIF LEI Redord Level 1 Schema for LEI Authority
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - LEIauthority
+    default:
+      - LEIauthority
+    items:
+      type: string
+      enum:
+        - LEIauthority
+  validationAuthorityID:
+    title: validationAuthorityID
+    type: string
+    $linkedData:
+      term: validationAuthorityID
+      '@id': https://schema.org/identifier
+  otherValidationAuthorityID:
+    title: otherValidationAuthorityID
+    type: string
+    $linkedData:
+      term: otherValidationAuthorityID
+      '@id': https://schema.org/taxID
+  validationAuthorityEntityID:
+    title: validationAuthorityEntityID
+    type: string
+    $linkedData:
+      term: validationAuthorityEntityID
+      '@id': https://schema.org/leiCode
+additionalProperties: false
+required:
+  - type
+  - validationAuthorityID
+  - otherValidationAuthorityID
+  - validationAuthorityEntityID
+example: |-
+  {
+    "type": ["LEIauthority"],
+    "validationAuthorityID": "RA000004",
+    "otherValidationAuthorityID": "I9LWK4HR",
+    "validationAuthorityEntityID": "IR6TTVJ948RGX9YQDM4V"
+  }

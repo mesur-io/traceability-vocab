@@ -1,0 +1,41 @@
+$linkedData:
+  term: RevocationList2020Status
+  '@id': https://w3id.org/traceability#RevocationList2020Status
+title: RevocationList2020Status
+description: Verifiable Credential credentialStatus Schema for RevocationList2020Status
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - RevocationList2020Status
+    default:
+      - RevocationList2020Status
+    items:
+      type: string
+      enum:
+        - RevocationList2020Status
+  revocationListIndex:
+    title: revocationListIndex
+    type: string
+    $linkedData:
+      term: revocationListIndex
+      '@id': https://schema.org/itemListElement
+  revocationListCredential:
+    title: revocationListCredential
+    type: string
+    $linkedData:
+      term: revocationListCredential
+      '@id': https://schema.org/LinkRole
+additionalProperties: false
+required:
+  - type
+  - revocationListIndex
+  - revocationListCredential
+example: |-
+  {
+    "type" : ["RevocationList2020Status"],
+    "revocationListIndex" : "0",
+    "revocationListCredential": "https://example.gov/revocation-lists/urn:uuid:3bc24f87-b47b-43a0-b5bf-b9fde7913746"
+  }

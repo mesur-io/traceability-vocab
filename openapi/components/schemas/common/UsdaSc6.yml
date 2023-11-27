@@ -1,0 +1,350 @@
+$linkedData:
+  term: UsdaSc6
+  '@id': https://w3id.org/traceability#UsdaSc6
+title: USDA Form SC-6
+description: >-
+  Importer's Exempt Commodity Form (SC-6) to declare the intent to import an
+  agricultural commodity exempt from grade requirements for the commodity.
+type: object
+properties:
+  type:
+    oneOf:
+      - type: array
+        items:
+          type: string
+          enum:
+            - UsdaSc6
+      - type: string
+        const: UsdaSc6
+  serialNumber:
+    title: Serial Number
+    description: Serial number of the form.
+    type: string
+    $linkedData:
+      term: serialNumber
+      '@id': https://w3id.org/traceability#serialNumber
+  customsEntryNumber:
+    title: Customs Service Entry Number
+    description: U.S. Customs Service Entry Number
+    type: string
+    $linkedData:
+      term: customsEntryNumber
+      '@id': https://w3id.org/traceability#customsEntryNumber
+  tariffCodeNumber:
+    title: Tariff Code Number
+    description: Haronized Tariff Code Number
+    type: string
+    $linkedData:
+      term: tariffCodeNumber
+      '@id': https://w3id.org/traceability#tariffCodeNumber
+  carrierId:
+    title: Carrier ID
+    description: Identifier of the carrier.
+    type: string
+    $linkedData:
+      term: carrierId
+      '@id': https://w3id.org/traceability#carrierId
+  lotId:
+    title: Lot ID
+    description: Identifier of the lot+.
+    type: string
+    $linkedData:
+      term: lotId
+      '@id': https://w3id.org/traceability#lotId
+  dateOfEntry:
+    title: dateOfEntry
+    description: Date when the the package entered the port of entry.
+    type: string
+    $linkedData:
+      term: dateOfEntry
+      '@id': https://w3id.org/traceability#dateOfEntry
+      '@type': http://www.w3.org/2001/XMLSchema#dateTime
+  signatureDate:
+    title: signatureDate
+    description: Date when the inspection was signed by the inspection officer.
+    type: string
+    $linkedData:
+      term: signatureDate
+      '@id': https://w3id.org/traceability#signatureDate
+      '@type': http://www.w3.org/2001/XMLSchema#dateTime
+  facility:
+    title: Facility
+    description: Information on the inspection facility.
+    $ref: ./Place.yml
+    $linkedData:
+      term: facility
+      '@id': https://www.gs1.org/voc/Place
+  inspector:
+    title: Inspector
+    description: >-
+      Inspector performing the Agriculture Inspection.  The following link
+      provides further insight:
+      https://www.lawinsider.com/dictionary/food-inspector
+    $ref: ./Inspector.yml
+    $linkedData:
+      term: inspector
+      '@id': https://w3id.org/traceability#Inspector
+  shipment:
+    title: Shipment
+    description: Details for a shipment of goods.
+    $ref: ./AgricultureParcelDelivery.yml
+    $linkedData:
+      term: shipment
+      '@id': https://w3id.org/traceability#AgricultureParcelDelivery
+  applicant:
+    title: Applicant
+    description: Organization that is applying for the inspection.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: applicant
+      '@id': https://w3id.org/traceability#applicant
+  importerSignatureDate:
+    title: importerSignatureDate
+    description: Date the importer signed the document.
+    type: string
+    $linkedData:
+      term: importerSignatureDate
+      '@id': https://w3id.org/traceability#importerSignatureDate
+  inspectionDate:
+    title: Inspection Date
+    description: Date of the completed inspection.
+    type: string
+    $linkedData:
+      term: inspectionDate
+      '@id': https://schema.org/DateTime
+  intendedUse:
+    title: Intended Use
+    description: >-
+      The intended use for the imported products.  Most commonly in SC-6 this
+      would be 'processing,' 'charity', and 'livestock.'
+    type: string
+    $linkedData:
+      term: intendedUse
+      '@id': https://w3id.org/traceability#intendedUse
+  intendedUseCert:
+    title: Certification of Intended Use
+    description: >-
+      Certification by the shipment receiver that they have received the
+      shipents and will displose of them in pursuant to the stated intended
+      use.  Most commonly in SC-6 this would be 'processing,' 'charity', and
+      'livestock.'
+    type: string
+    $linkedData:
+      term: intendedUseCert
+      '@id': https://w3id.org/traceability#intendedUseCert
+additionalProperties: false  
+required:
+  - type
+example: |-
+  {
+    "type": "UsdaSc6",
+    "facility": {
+      "type": [
+        "Place"
+      ],
+      "globalLocationNumber": "3475490139573",
+      "geo": {
+        "type": [
+          "GeoCoordinates"
+        ],
+        "latitude": "60.2752",
+        "longitude": "121.1738"
+      },
+      "address": {
+        "type": [
+          "PostalAddress"
+        ],
+        "name": "Friesen Inc",
+        "streetAddress": "0644 Grant Viaduct",
+        "addressLocality": "West Gretaton",
+        "addressRegion": "Rhode Island",
+        "postalCode": "96424",
+        "addressCountry": "French Guiana"
+      },
+      "unLocode": "DKCPH"
+    },
+    "inspector": {
+      "type": [
+        "Inspector"
+      ],
+      "person": {
+        "type": [
+          "Person"
+        ],
+        "firstName": "Kevon",
+        "lastName": "Bailey",
+        "email": "Gaston.Simonis27@example.com",
+        "phoneNumber": "+1-282-555-2442",
+        "worksFor": {
+          "type": [
+            "Organization"
+          ],
+          "name": "Glayson & Co. Inspections",
+          "description": "Agricultural cleanliness & grade assurance",
+          "email": "Marina96@glaysonco.net",
+          "phoneNumber": "+1-855-555-9256",
+          "faxNumber": "+1-969-555-4944"
+        },
+        "jobTitle": "Lead Response Assistant"
+      },
+      "qualification": [
+        {
+          "type": ["Qualification"],
+          "qualificationCategory": "Internal Factors Supervisor",
+          "qualificationValue": "Engineer"
+        },
+        {
+          "type": ["Qualification"],
+          "qualificationCategory": "Dynamic Division Coordinator",
+          "qualificationValue": "Consultant"
+        },
+        {
+          "type": ["Qualification"],
+          "qualificationCategory": "Product Communications Technician",
+          "qualificationValue": "Executive"
+        }
+      ]
+    },
+    "shipment": {
+      "type": [
+        "AgricultureParcelDelivery"
+      ],
+      "deliveryAddress": {
+        "type": [
+          "PostalAddress"
+        ],
+        "name": "Bartell - Doyle",
+        "streetAddress": "84189 Roberts Route",
+        "addressLocality": "Kautzerstad",
+        "addressRegion": "Louisiana",
+        "postalCode": "37950-5855",
+        "addressCountry": "Mongolia"
+      },
+      "originAddress": {
+        "type": [
+          "PostalAddress"
+        ],
+        "name": "Marks, Runte and Bartell",
+        "streetAddress": "97696 Weissnat Pines",
+        "addressLocality": "Reynabury",
+        "addressRegion": "North Dakota",
+        "postalCode": "51361-9603",
+        "addressCountry": "Virgin Islands, U.S."
+      },
+      "foreignPortExport": {
+        "type": [
+          "Place"
+        ],
+        "globalLocationNumber": "4947538126450",
+        "geo": {
+          "type": [
+            "GeoCoordinates"
+          ],
+          "latitude": "40.5464",
+          "longitude": "-37.6146"
+        },
+        "address": {
+          "type": [
+            "PostalAddress"
+          ],
+          "name": "Moen - Swift",
+          "streetAddress": "9746 Laron Gardens",
+          "addressLocality": "Port Flossie",
+          "addressRegion": "Hawaii",
+          "postalCode": "64687",
+          "addressCountry": "Djibouti"
+        },
+        "unLocode": "DKCPH"
+      },
+      "portOfEntry": {
+        "type": [
+          "Place"
+        ],
+        "globalLocationNumber": "2184109798407",
+        "geo": {
+          "type": [
+            "GeoCoordinates"
+          ],
+          "latitude": "38.8485",
+          "longitude": "-34.0883"
+        },
+        "address": {
+          "type": [
+            "PostalAddress"
+          ],
+          "name": "Mills, Daugherty and Nader",
+          "streetAddress": "39514 Kulas Terrace",
+          "addressLocality": "East Avis",
+          "addressRegion": "Utah",
+          "postalCode": "45553",
+          "addressCountry": "Northern Mariana Islands"
+        },
+        "unLocode": "DKCPH"
+      },
+      "deliveryMethod": "Truck transport",
+      "trackingNumber": "866440000109",
+      "expectedArrival": "2021-03-14",
+      "specialInstructions": "The package is top-heavy so handle with appropriate caution.",
+      "consignee": {
+        "type": [
+          "Organization"
+        ],
+        "name": "Ace Foodstuffs",
+        "description": "Agricultural goods shipping & distribution",
+        "email": "Hipolito58@acefoodstuffs.org",
+        "phoneNumber": "+1-304-555-1375",
+        "faxNumber": "+1-207-555-5326"
+      },
+      "agriculturePackage": [
+        {
+          "type": [
+            "AgriculturePackage"
+          ]
+        }
+      ],
+      "shipper": {
+        "type": ["Organization"],
+        "name": "Green Fields",
+        "description": "Growing & packaging for high quality produce",
+        "email": "sales@greenfields.org",
+        "phoneNumber": "+1-150-555-5196"
+      },
+      "purchaser": {
+        "type": ["Organization"],
+        "name": "Ace Foodstuffs",
+        "description": "Agricultural goods shipping & distribution",
+        "email": "Hipolito58@acefoodstuffs.org",
+        "phoneNumber": "+1-436-555-0048",
+        "faxNumber": "+1-494-555-3691"
+      },
+      "carrier": {
+        "type": [
+          "Organization"
+        ],
+        "email": "Adaline29@example.com",
+        "phoneNumber": "+1-568-555-7909"
+      },
+      "broker": {
+        "type": ["Organization"],
+        "name": "Cole United",
+        "leiCode": "54321351219389121979"
+      }
+    },
+    "applicant": {
+      "type": ["Organization"],
+      "name": "Example Application Organization",
+      "email": "Marjorie68@example.org",
+      "phoneNumber": "+1-926-555-2071"
+    },
+    "inspectionDate": "2020-03-15",
+    "serialNumber": "645034884751",
+    "customsEntryNumber": "212378528766",
+    "tariffCodeNumber": "848573918632",
+    "lotId": "857589100385",
+    "carrierId": "401636193922",
+    "dateOfEntry": "2021-02-14",
+    "signatureDate": "2021-02-16",
+    "importerSignatureDate": "2021-02-15",
+    "intendedUse": "Processing",
+    "intendedUseCert": "Processing"
+  }

@@ -1,0 +1,97 @@
+$linkedData:
+  term: MonthlyAdvanceManifest
+  '@id': https://w3id.org/traceability#MonthlyAdvanceManifest
+title: Monthly Advance Manifest
+description: A manifest that contains the scheduled deliveries by location for the upcoming month.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - MonthlyAdvanceManifest
+    default:
+      - MonthlyAdvanceManifest
+    items:
+      type: string
+      enum:
+        - MonthlyAdvanceManifest
+  date:
+    title: Date
+    description: A date time value when the manifest is created
+    type: string
+    $linkedData:
+      term: date
+      '@id': https://schema.org/Date
+  scheduledDeliveries:
+    title: scheduledDeliveries
+    description: Scheduled deliveries for the upcoming month
+    type: array
+    items:
+      scheduledDelivery:
+        title: ScheduledDelivery
+        description: sum of all deliveries scheduled for a given location
+        properties:
+          type:
+            type: array
+            readOnly: true
+            const:
+              - ScheduledDelivery
+            default:
+              - ScheduledDelivery
+            items:
+              type: string
+              enum:
+                - ScheduledDelivery
+          portCode: 
+            type: string
+            title: Port Code
+            description: The code of the port of arrival to which the product(s) were transferred. These codes are outlined in https://www.cbp.gov/sites/default/files/assets/documents/2020-Jan/ACE%20Appendix%20E%20Schedule%20D%20January%202020%20%281%29.pdf
+          deliveryLocation:
+            type: string
+            title: deliveryLocation
+            description: name of the delivery location
+          sumOfScheduledDeliveries:
+            type: array
+            title: Sum of Scheduled Deliveries
+            description: sum of volumes delivered to the delivery location in one month
+            items:
+              $ref: ./QuantitativeValue.yml
+            $linkedData:
+              term: sumOfScheduledDeliveries
+              '@id': https://schema.org/QuantitativeValue
+          numberOfBatches:
+            type: string
+            title: Number of Batches
+            description: Number of batches scheduled for the delivery location in one month       
+
+ 
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": [
+        "MonthlyAdvanceManifest"
+    ],
+    "date": "2019-12-11T03:50:55Z",
+    "scheduledDeliveries": [
+        {
+            "portCode": "3901",
+            "deliveryLocation": "Chicago",
+            "sumOfScheduledDeliveries": [
+              {
+                "type": ["QuantitativeValue"],
+                "unitCode": "m3",
+                "value": "18170.90"
+              },
+              {
+                "type": ["QuantitativeValue"],
+                "unitCode": "bbl",
+                "value": "114294.96"
+              }
+            ],
+            "numberOfBatches": "1"
+        }
+    ]
+  }

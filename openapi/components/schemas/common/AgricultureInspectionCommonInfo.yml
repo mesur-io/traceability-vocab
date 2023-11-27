@@ -1,0 +1,170 @@
+$linkedData:
+  term: AgricultureInspectionCommonInfo
+  '@id': https://w3id.org/traceability#AgricultureInspectionCommonInfo
+title: Agriculture Inspection Common Info
+description: Information common to agriculture inspection credentials.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - AgricultureInspectionCommonInfo
+    default:
+      - AgricultureInspectionCommonInfo
+    items:
+      type: string
+      enum:
+        - AgricultureInspectionCommonInfo
+  applicant:
+    title: Applicant
+    description: Organization that is applying for the inspection.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: applicant
+      '@id': https://vocabulary.uncefact.org/associatedParty
+  facility:
+    title: Facility
+    description: Information on the inspection facility.
+    $ref: ./Place.yml
+    $linkedData:
+      term: facility
+      '@id': https://www.gs1.org/voc/location
+  inspector:
+    title: Inspector
+    description: >-
+      Inspector performing the Agriculture Inspection.  The following link
+      provides further insight:
+      https://www.lawinsider.com/dictionary/food-inspector
+    $ref: ./Inspector.yml
+    $linkedData:
+      term: inspector
+      '@id': https://w3id.org/traceability#Inspector
+  delegateOf:
+    title: Delegate Of
+    description: Inspector is acting on behalf of this organization (common with many agricultural inspections).
+    $ref: ./Organization.yml
+    $linkedData:
+      term: delegateOf
+      '@id': https://vocabulary.uncefact.org/specifiedLegalOrganization
+  regulatoryAgency:
+    title: Regulatory Agency
+    description: The regulatory agency responsible for the regulation (public or private) that mandates or implies the inspection.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: regulatoryAgency
+      '@id': https://vocabulary.uncefact.org/specifiedLegalOrganization
+  inspectionStarted:
+    title: Inspection Started
+    description: Date and time inspection started in 24hr ISO 8601 format (e.g. 1970-01-01T00:00Z for UTC, or 1970:01:01T00:00-5:00 for New York on standard time).
+    type: string
+    $linkedData:
+      term: inspectionStarted
+      '@id': https://schema.org/startDate
+  inspectionEnded:
+    title: Inspection Ended
+    description: Date and time inspection ended in ISO 8601 format (e.g. 1970-01-01T00:00Z for UTC, or 1970:01:01T00:00-5:00 for New York on standard time).
+    type: string
+    $linkedData:
+      term: inspectionEnded
+      '@id': https://schema.org/endDate
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["AgricultureInspectionCommonInfo"],
+    "applicant": {
+      "type" : ["Organization"],
+      "name": "Miracle Produce",
+      "description": "Organic fruits & vegetables",
+      "email": "contact@example.com",
+      "phoneNumber": "+1-980-555-4579",
+      "url": "miracle.example.com"
+    },
+    "facility": {
+      "type": [
+        "Place"
+      ],
+      "globalLocationNumber": "5449782976823",
+      "geo": {
+        "type": [
+          "GeoCoordinates"
+        ],
+        "latitude": "-79.6395",
+        "longitude": "178.5353"
+      },
+      "address": {
+        "type": [
+          "PostalAddress"
+        ],
+        "name": "Miracle Produce",
+        "streetAddress": "853 Wisozk River",
+        "addressLocality": "New Noemyfort",
+        "addressRegion": "New Mexico",
+        "postalCode": "18047-2038",
+        "addressCountry": "Togo"
+      },
+      "unLocode": "DKCPH"
+    },
+    "inspector": {
+      "type": [
+        "Inspector"
+      ],
+      "person": {
+        "type": [
+          "Person"
+        ],
+        "firstName": "Jason",
+        "lastName": "Grant",
+        "email": "Santa43@example.org",
+        "phoneNumber": "+1-871-555-0751",
+        "worksFor": {
+          "type": [
+            "Organization"
+          ],
+          "name": "Glayson & Co. Inspections",
+          "description": "Agricultural cleanliness & grade assurance",
+          "email": "Marina96@glaysonco.net",
+          "phoneNumber": "+1-322-555-4286",
+          "faxNumber": "+1-568-555-9836"
+        },
+        "jobTitle": "Principal Data Supervisor"
+      },
+      "qualification": [
+        {
+          "type": ["Qualification"],
+          "qualificationCategory": "Agricultural Security Analyst",
+          "qualificationValue": "Executive"
+        },
+        {
+          "type": ["Qualification"],
+          "qualificationCategory": "Future Metrics Planner",
+          "qualificationValue": "Coordinator"
+        },
+        {
+          "type": ["Qualification"],
+          "qualificationCategory": "Internal Identity Agent",
+          "qualificationValue": "Assistant"
+        }
+      ]
+    },
+    "delegateOf": {
+      "type": ["Organization"],
+      "name": "Glayson & Co. Inspections",
+      "description": "Agricultural cleanliness & grade assurance",
+      "email": "Marina96@glaysonco.net",
+      "phoneNumber": "+1-181-555-1399",
+      "faxNumber": "+1-914-555-0338"
+    },
+    "regulatoryAgency": {
+      "type": ["Organization"],
+      "name": "CDFA",
+      "description": "California Department of Food and Agriculture",
+      "email": "relations@example.org",
+      "phoneNumber": "+1-549-555-9297",
+      "faxNumber": "+1-590-555-1901"
+    },
+    "inspectionStarted": "2020-03-15T14:30-08:00",
+    "inspectionEnded": "2020-03-15T17:30-08:00"
+  }

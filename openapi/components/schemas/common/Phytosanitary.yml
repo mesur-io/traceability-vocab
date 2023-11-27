@@ -1,0 +1,467 @@
+$linkedData:
+  term: Phytosanitary
+  '@id': https://w3id.org/traceability/Phytosanitary
+title: Phytosanitary
+description: >-
+  Generalized schema capture of most common phytosanitary inspection data and
+  properties.  Any phyto forms that deviate greatly from this will need their
+  own schemas, unless it seems like the properties are more universal and should
+  be added to this schema.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - Phytosanitary
+    default:
+      - Phytosanitary
+    items:
+      type: string
+      enum:
+        - Phytosanitary
+  certificateNumber:
+    title: Certificate Number
+    description: ID number of the certificate
+    type: string
+    $linkedData:
+      term: certificateNumber
+      '@id': https://schema.org/identifier
+  plantOrg:
+    title: Plant Protection Organization
+    description: The phytosanitary standard-setting organization for a region.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: plantOrg
+      '@id': https://www.gs1.org/voc/Organization
+  distinguishingMarks:
+    title: Distinguishing Marks
+    description: Any notable marks or variants of the items being inspected.
+    type: string
+    $linkedData:
+      term: distinguishingMarks
+      '@id': https://www.gs1.org/voc/variantDescription
+  portOfEntry:
+    title: Port of Entry
+    description: >-
+      US port through which the imports passed.  Click the following link for
+      more information:
+      https://www.govinfo.gov/content/pkg/CFR-2011-title19-vol1/pdf/CFR-2011-title19-vol1-sec24-24.pdf
+    $ref: ./Place.yml
+    $linkedData:
+      term: portOfEntry
+      '@id': https://w3id.org/traceability#portOfEntry
+      '@type': https://schema.org/Place
+  additionalDeclaration:
+    title: Additional Declaration
+    description: Additional declaration for the plants being shipped and inspected.
+    type: string
+    $linkedData:
+      term: additionalDeclaration
+      '@id': https://schema.org/Comment
+  disinfectionDate:
+    title: Disinfection Date
+    description: Date when the disinfection treatment was applied.
+    type: string
+    $linkedData:
+      term: disinfectionDate
+      '@id': https://schema.org/validFrom
+  disinfectionTreatment:
+    title: Disinfection Treatment
+    description: >-
+      Type of disinfection treatment applied to the product. More information
+      can be found at the following link:
+      https://www.ecfr.gov/cgi-bin/text-idx?rgn=div5&node=7:5.1.1.1.4#se7.5.305_12
+    type: string
+    $linkedData:
+      term: disinfectionTreatment
+      '@id': https://w3id.org/traceability#disinfectionTreatment
+  disinfectionChemical:
+    title: Disinfection Chemical
+    description: Chemical and/or active ingredient used in the disinfection.
+    type: string
+    $linkedData:
+      term: disinfectionChemical
+      '@id': https://schema.org/activeIngredient
+  disinfectionDuration:
+    title: Disinfection Duration
+    description: Duraction that the disinfection chemical was applied.
+    type: string
+    $linkedData:
+      term: disinfectionDuration
+      '@id': https://schema.org/duration
+  disinfectionTemperature:
+    title: Disinfection Temperature
+    description: Temperature at which the disinfection chemical was applied.
+    $ref: ./MeasuredValue.yml
+    $linkedData:
+      term: disinfectionTemperature
+      '@id': https://schema.org/MeasuredValue
+  disinfectionConcentration:
+    title: Disinfection Concentration
+    description: >-
+      Chemical concentration at which the disinfection chemical was applied in
+      the disinfection process. More information can be found at the following
+      link:
+      https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/04._Reactions_in_Aqueous_Solution/4.5%3A_Concentration_of_Solutions
+    $ref: ./MeasuredValue.yml
+    $linkedData:
+      term: disinfectionConcentration
+      '@id': https://w3id.org/traceability#disinfectionConcentration
+  signatureDate:
+    title: signatureDate
+    description: Date when the inspection was signed by the inspection officer.
+    type: string
+    $linkedData:
+      term: signatureDate
+      '@id': https://schema.org/DateTime
+  facility:
+    title: Facility
+    description: Information on the inspection facility.
+    $ref: ./Place.yml
+    $linkedData:
+      term: facility
+      '@id': https://www.gs1.org/voc/Place
+  inspector:
+    title: Inspector
+    description: >-
+      Inspector performing the Agriculture Inspection.  More information can be
+      found at the following link:
+      https://www.lawinsider.com/dictionary/food-inspector
+    $ref: ./Inspector.yml
+    $linkedData:
+      term: inspector
+      '@id': https://w3id.org/traceability#Inspector
+  shipment:
+    title: Shipment
+    description: Details for a shipment of goods.
+    $ref: ./AgricultureParcelDelivery.yml
+    $linkedData:
+      term: shipment
+      '@id': https://schema.org/AgricultureParcelDelivery
+  agriculturePackage:
+    title: Agriculture Package
+    description: >-
+      Package, crate, or other container holding an agricultural product or
+      products for inspection.
+    $ref: ./AgriculturePackage.yml
+    $linkedData:
+      term: agriculturePackage
+      '@id': https://w3id.org/traceability#AgriculturePackage
+  applicant:
+    title: Applicant
+    description: Organization that is applying for the inspection.
+    $ref: ./Organization.yml
+    $linkedData:
+      term: applicant
+      '@id': https://w3c-ccg.github.io/traceability-vocab/#dfn-entities
+  inspectionDate:
+    title: Inspection Date
+    description: Date of the completed inspection.
+    type: string
+    $linkedData:
+      term: inspectionDate
+      '@id': https://schema.org/DateTime
+  inspectionType:
+    title: Inspection Type
+    description: Type of Inspection.
+    type: string
+    $linkedData:
+      term: inspectionType
+      '@id': https://vocabulary.uncefact.org/inspectionStandard
+  notes:
+    title: Inspection Notes
+    description: >-
+      Any notes or comments the inspector wishes to make relevant to the
+      inspection.
+    type: string
+    $linkedData:
+      term: notes
+      '@id': https://schema.org/Comment
+  observation:
+    title: Observation List
+    description: List of observations
+    type: array
+    items:
+      $ref: ./Observation.yml
+    $linkedData:
+      term: observation
+      '@id': https://schema.org/ItemList
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["Phytosanitary"],
+    "facility": {
+      "type": [
+        "Place"
+      ],
+      "globalLocationNumber": "6064198436045",
+      "geo": {
+        "type": [
+          "GeoCoordinates"
+        ],
+        "latitude": "80.0906",
+        "longitude": "144.7640"
+      },
+      "address": {
+        "type": [
+          "PostalAddress"
+        ],
+        "name": "Von LLC",
+        "streetAddress": "825 Strosin Knoll",
+        "addressLocality": "West Alivia",
+        "addressRegion": "New Mexico",
+        "postalCode": "17004",
+        "addressCountry": "Cuba"
+      },
+      "unLocode": "DKCPH"
+    },
+    "inspector": {
+      "type": [
+        "Inspector"
+      ],
+      "person": {
+        "type": [
+          "Person"
+        ],
+        "firstName": "Magdalena",
+        "lastName": "Huels",
+        "email": "Rose.Runolfsson@example.org",
+        "phoneNumber": "+1-787-555-7633",
+        "worksFor": {
+          "type": [
+            "Organization"
+          ],
+          "name": "Koepp - Grant",
+          "description": "Inverse disintermediate database",
+          "email": "Adeline96@example.com",
+          "phoneNumber": "+1-228-555-6425",
+          "faxNumber": "+1-891-555-2149"
+        },
+        "jobTitle": "Customer Interactions Manager"
+      },
+      "qualification": [
+        {
+          "type": ["Qualification"],
+          "qualificationCategory": "International Markets Consultant",
+          "qualificationValue": "Planner"
+        },
+        {
+          "type": ["Qualification"],
+          "qualificationCategory": "Central Operations Developer",
+          "qualificationValue": "Developer"
+        }
+      ]
+    },
+    "shipment": {
+      "type": [
+        "AgricultureParcelDelivery"
+      ],
+      "deliveryAddress": {
+        "type": [
+          "PostalAddress"
+        ],
+        "name": "Bartell - Doyle",
+        "streetAddress": "84189 Roberts Route",
+        "addressLocality": "Kautzerstad",
+        "addressRegion": "Louisiana",
+        "postalCode": "37950-5855",
+        "addressCountry": "Mongolia"
+      },
+      "originAddress": {
+        "type": [
+          "PostalAddress"
+        ],
+        "name": "Marks, Runte and Bartell",
+        "streetAddress": "97696 Weissnat Pines",
+        "addressLocality": "Reynabury",
+        "addressRegion": "North Dakota",
+        "postalCode": "51361-9603",
+        "addressCountry": "Virgin Islands, U.S."
+      },
+      "foreignPortExport": {
+        "type": [
+          "Place"
+        ],
+        "globalLocationNumber": "4947538126450",
+        "geo": {
+          "type": [
+            "GeoCoordinates"
+          ],
+          "latitude": "40.5464",
+          "longitude": "-37.6146"
+        },
+        "address": {
+          "type": [
+            "PostalAddress"
+          ],
+          "name": "Moen - Swift",
+          "streetAddress": "9746 Laron Gardens",
+          "addressLocality": "Port Flossie",
+          "addressRegion": "Hawaii",
+          "postalCode": "64687",
+          "addressCountry": "Djibouti"
+        },
+        "unLocode": "DKCPH"
+      },
+      "portOfEntry": {
+        "type": [
+          "Place"
+        ],
+        "globalLocationNumber": "2184109798407",
+        "geo": {
+          "type": [
+            "GeoCoordinates"
+          ],
+          "latitude": "38.8485",
+          "longitude": "-34.0883"
+        },
+        "address": {
+          "type": [
+            "PostalAddress"
+          ],
+          "name": "Mills, Daugherty and Nader",
+          "streetAddress": "39514 Kulas Terrace",
+          "addressLocality": "East Avis",
+          "addressRegion": "Utah",
+          "postalCode": "45553",
+          "addressCountry": "Northern Mariana Islands"
+        },
+        "unLocode": "DKCPH"
+      },
+      "deliveryMethod": "Truck transport",
+      "trackingNumber": "866440000109",
+      "expectedArrival": "2021-03-14",
+      "specialInstructions": "The package is top-heavy so handle with appropriate caution.",
+      "consignee": {
+        "type": [
+          "Organization"
+        ],
+        "name": "Ace Foodstuffs",
+        "description": "Agricultural goods shipping & distribution",
+        "email": "Hipolito58@acefoodstuffs.org",
+        "phoneNumber": "+1-909-555-3974",
+        "faxNumber": "+1-455-555-7047"
+      },
+      "agriculturePackage": [
+        {
+          "type": [
+            "AgriculturePackage"
+          ]
+        }
+      ],
+      "shipper": {
+        "type": ["Organization"],
+        "name": "Green Fields",
+        "description": "Growing & packaging for high quality produce",
+        "email": "sales@greenfields.org",
+        "phoneNumber": "+1-420-555-6663"
+      },
+      "purchaser": {
+        "type": ["Organization"],
+        "name": "Ace Foodstuffs",
+        "description": "Agricultural goods shipping & distribution",
+        "email": "Hipolito58@acefoodstuffs.org",
+        "phoneNumber": "+1-111-555-4727",
+        "faxNumber": "+1-945-555-4783"
+      },
+      "carrier": {
+        "type": [
+          "Organization"
+        ],
+        "email": "Adaline29@example.com",
+        "phoneNumber": "+1-885-555-8926"
+      },
+      "broker": {
+        "type": ["Organization"],
+        "name": "Koch LLC",
+        "leiCode": "54321351219389121979"
+      }
+    },
+    "applicant": {
+      "type": ["Organization"],
+      "name": "Example Application Organization",
+      "email": "Talia.Abbott@example.net",
+      "phoneNumber": "+1-812-555-8615"
+    },
+    "inspectionDate": "2020-03-15",
+    "inspectionType": "Food Safety",
+    "observation": [
+      {
+        "type": [
+          "Observation"
+        ],
+        "date": "2019-12-11T03:50:55Z",
+        "property": {
+          "type": [
+            "ChemicalProperty"
+          ],
+          "name": "Radium"
+        },
+        "measurement": {
+          "type": [
+            "MeasuredValue"
+          ],
+          "value": "57.243",
+          "unitCode": "P1"
+        }
+      },
+      {
+        "type": [
+          "Observation"
+        ],
+        "date": "2019-12-11T03:50:55Z",
+        "property": {
+          "type": [
+            "MechanicalProperty"
+          ],
+          "identifier": "ISO 1352",
+          "name": "Torque-controlled fatigue testing",
+          "description": "ISO 1352:2011 specifies the conditions for performing torsional, constant-amplitude, nominally elastic stress fatigue tests on metallic specimens without deliberately introducing stress concentrations. The tests are carried out at ambient temperature (ideally at between 10 °C and 35 °C) in air by applying a pure couple to the specimen about its longitudinal axis."
+        },
+        "measurement": {
+          "type": [
+            "MeasuredValue"
+          ],
+          "value": "00.00",
+          "unitCode": "UNKNOWN"
+        }
+      }
+    ],
+    "certificateNumber": "330893782475",
+    "plantOrg": {
+      "type": ["Organization"],
+      "name": "APHIS",
+      "description": "Animal and Plant Health Inspection Service",
+      "email": "Irwin_OConnell83@aphis.usda.gov",
+      "phoneNumber": "+1-404-555-5401",
+      "faxNumber": "+1-937-555-6293"
+    },
+    "distinguishingMarks": "Enim repudiandae excepturi rem.",
+    "portOfEntry": {
+      "type": ["Place"],
+      "address": {
+        "type": ["PostalAddress"],
+        "addressLocality": "Mariannaton",
+        "addressRegion": "Utah"
+      }
+    },
+    "additionalDeclaration": "Similique excepturi non tempore provident iure.",
+    "disinfectionDate": "2021-02-22",
+    "disinfectionTreatment": "Fumigant - Methyl Bromide - Structure Fumigation",
+    "disinfectionChemical": "Methyl Bromide",
+    "disinfectionDuration": "79 minutes",
+    "disinfectionTemperature": {
+      "type": ["MeasuredValue"],
+      "value": "2",
+      "unitCode": "Celsius"
+    },
+    "disinfectionConcentration": {
+      "type": ["MeasuredValue"],
+      "value": "21",
+      "unitCode": "Percent"
+    },
+    "signatureDate": "2021-03-12"
+  }

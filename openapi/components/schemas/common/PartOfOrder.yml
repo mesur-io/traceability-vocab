@@ -1,0 +1,117 @@
+$linkedData:
+  term: PartOfOrder
+  '@id': https://schema.org/OrderItem
+title: Part of an Order
+description: >-
+  Part of an Order listed in the Evidence data for a registered eCommerce
+  Packing List based on schema.org
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - PartOfOrder
+    default:
+      - PartOfOrder
+    items:
+      type: string
+      enum:
+        - PartOfOrder
+  manufacturer:
+    title: Manufacturer
+    $ref: ./Organization.yml
+    $linkedData:
+      term: manufacturer
+      '@id': https://schema.org/Organization
+  orderNumber:
+    title: Order Number
+    type: string
+    $linkedData:
+      term: orderNumber
+      '@id': https://schema.org/orderNumber
+  transportPackages:
+    title: >-
+      Any self-contained wrapping or container within which goods can be
+      contained, such as a box or a barrel which can be filled, partially filled
+      or empty.
+    type: array
+    items:
+      $ref: ./Package.yml
+    $linkedData:
+      term: transportPackages
+      '@id': https://vocabulary.uncefact.org/Package
+  netWeight:
+    title: A measure of the net weight (mass).
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: netWeight
+      '@id': https://vocabulary.uncefact.org/netWeightMeasure
+  grossWeight:
+    title: >-
+      A measure of the gross weight (mass) which includes packaging but excludes
+      any transport equipment.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: grossWeight
+      '@id': https://vocabulary.uncefact.org/grossWeightMeasure
+  grossVolume:
+    title: Volume
+    description: >-
+      Calculated by multiplying the width, height, and length of the packed
+      cargo.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: grossVolume
+      '@id': https://vocabulary.uncefact.org/grossVolumeMeasure
+  packageQuantity:
+    title: Package Quantity
+    description: A number of packages
+    type: number
+    $linkedData:
+      term: packageQuantity
+      '@id': https://vocabulary.uncefact.org/packageQuantity
+  itemQuantity:
+    title: Item Quantity
+    description: A number of trade line items in the consignment item.
+    type: number
+    $linkedData:
+      term: itemQuantity
+      '@id': https://vocabulary.uncefact.org/tradeLineItemQuantity
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["PartOfOrder"],
+    "packageQuantity": 540,
+    "transportPackages": [
+      {
+        "type": ["Package"],
+        "physicalShippingMarks": "by ACRE AGE IS THE NEW BLACK",
+        "perPackageUnitQuantity": 1,
+        "includedTradeLineItems": [
+          {
+            "type": ["TradeLineItem"],
+            "description": "Rollators",
+            "itemCount": 540
+          }
+        ],
+        "netWeight": {
+          "type": ["QuantitativeValue"],
+          "value": "3834",
+          "unitCode": "kg"
+        },
+        "grossWeight": {
+          "type": ["QuantitativeValue"],
+          "value": "4302",
+          "unitCode": "kg"
+        },
+        "grossVolume": {
+          "type": ["QuantitativeValue"],
+          "value": "66.96",
+          "unitCode": "cbm"
+        }
+      }
+    ]
+  }

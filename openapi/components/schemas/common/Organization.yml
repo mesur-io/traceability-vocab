@@ -1,0 +1,164 @@
+$linkedData:
+  term: Organization
+  '@id': https://schema.org/Organization
+title: Organization
+description: An organization such as a corporation, firm, club, etc.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - Organization
+    default:
+      - Organization
+    items:
+      type: string
+      enum:
+        - Organization
+  name:
+    title: Name
+    description: Name of the organization.
+    type: string
+    $linkedData:
+      term: name
+      '@id': https://schema.org/name
+  id: 
+    title: Identifier
+    description: Organization identifier. This must be an Internationalized Resource Identifier such as a DID, URI, URL, or URN.
+    type: string
+  legalName:
+    title: Legal Name
+    description: The official name of the organization, i.e., the registered company name.
+    type: string
+    $linkedData:
+      term: legalName
+      '@id': https://schema.org/legalName
+  leiCode:
+    title: Legal Entity Identifier Code
+    description: Legal entity identifier code
+    type: string
+    $linkedData:
+      term: leiCode
+      '@id': https://schema.org/leiCode
+  url:
+    title: URL
+    description: URL of the organization.
+    type: string
+    $linkedData:
+      term: url
+      '@id': https://schema.org/url
+  description:
+    title: Description
+    description: Description of the company.
+    type: string
+    $linkedData:
+      term: description
+      '@id': https://schema.org/description
+  globalLocationNumber:
+    title: Global Location Number
+    description: The GS1 GLN of the organization.
+    type: string
+    $linkedData:
+      term: globalLocationNumber
+      '@id': https://schema.org/globalLocationNumber
+  location:
+    title: Location
+    description: The location of, for example, where an event is happening, where an organization is located, or where an action takes place.
+    $ref: ./Place.yml
+    $linkedData:
+      term: location
+      '@id': https://schema.org/location
+  email:
+    title: Email Address
+    description: Organization's primary email address.
+    type: string
+    $linkedData:
+      term: email
+      '@id': https://schema.org/email
+  phoneNumber:
+    title: Phone Number
+    description: Organization's contact phone number.
+    type: string
+    $linkedData:
+      term: phoneNumber
+      '@id': https://schema.org/telephone
+  logo:
+    type: string
+    format: uri
+    description: Logo of the entity.
+    $linkedData:
+      term: logo
+      '@id': https://schema.org/logo
+  faxNumber:
+    title: Fax Number
+    description: Organization's fax number.
+    type: string
+    $linkedData:
+      term: faxNumber
+      '@id': https://schema.org/faxNumber
+  contactPoint:
+    title: Contact Point
+    description: Points of contact for this organization
+    $ref: ./ContactPoint.yml
+    $linkedData:
+      term: contactPoint
+      '@id': https://schema.org/ContactPoint
+  taxId:
+    title: Tax Identification Number
+    description: >-
+      The Tax / Fiscal ID of the organization or person, e.g., the TIN in the US
+      or the CIF/NIF in Spain.
+    type: string
+    $linkedData:
+      term: taxId
+      '@id': https://schema.org/taxID
+  iataCarrierCode:
+    title: IATA Carrier Code
+    description: Carrier's three-digit IATA airline code number
+    type: string
+    $linkedData:
+      term: iataCarrierCode
+      '@id': https://onerecord.iata.org/cargo/Company#airlineCode
+  scac:
+    title: SCAC
+    description: >-
+      For maritime shipments, this code qualifies a Standard Alpha Carrier Code
+      (SCAC) as issued by the United Stated National Motor Traffic Association
+      Inc.
+    type: string
+    $linkedData:
+      term: scac
+      '@id': >-
+        https://vocabulary.uncefact.org/ReferenceCodeList#AAZ
+additionalProperties: false
+required:
+  - type
+example: |-
+  {
+    "type": ["Organization"],
+    "name": "Glover - Gleason",
+    "legalName": "Glover and Gleason, Llc.",
+    "description": "Customs Brokering since 2012",
+    "location" : {
+      "type": ["Place"],
+      "geo": {
+        "type": ["GeoCoordinates"],
+        "latitude": "68.7083",
+        "longitude": "4.6377"
+      },
+      "address": {
+        "type": ["PostalAddress"],
+        "streetAddress": "210 Jermey Fort",
+        "addressLocality": "Lake Evalyn",
+        "addressRegion": "Montana",
+        "postalCode": "71172",
+        "addressCountry": "US"
+      }
+    },
+    "email": "contact@glover-gleason.example.net",
+    "phoneNumber": "+1-173-555-4650",
+    "faxNumber": "+1-539-555-8952",
+    "taxId": "789-56-123",
+    "url": "glover-gleason.example.net"
+  }

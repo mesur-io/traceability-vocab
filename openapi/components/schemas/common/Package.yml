@@ -1,0 +1,124 @@
+$linkedData:
+  term: Package
+  '@id': https://vocabulary.uncefact.org/Package
+title: Package
+description: >-
+  Any self-contained wrapping or container within which goods can be contained,
+  such as a box or a barrel which can be filled, partially filled or empty.
+type: object
+properties:
+  type:
+    type: array
+    readOnly: true
+    const:
+      - Package
+    default:
+      - Package
+    items:
+      type: string
+      enum:
+        - Package
+  physicalShippingMarks:
+    title: Physical Shipping Marks
+    description: >-
+      The identifying details of a package or the actual markings that appear on
+      the package(s). This information is provided by the shipper.
+    type: string
+    $linkedData:
+      term: physicalShippingMarks
+      '@id': >-
+        https://vocabulary.uncefact.org/physicalShippingMarks
+  packagingType:
+    title: Packaging Type
+    description: Links to details about packaging material type, quantity, and thickness
+    type: string
+    $linkedData:
+      term: packagingType
+      '@id': https://www.gs1.org/voc/packagingMaterial
+  perPackageUnitQuantity:
+    title: Per Package Unit Quantity
+    description: A number of units per package in the package or trade delivery.
+    type: number
+    $linkedData:
+      term: perPackageUnitQuantity
+      '@id': https://vocabulary.uncefact.org/perPackageUnitQuantity
+  includedTradeLineItems:
+    title: Included Trade Line Item
+    description: An included trade line item.
+    type: array
+    items:
+      $ref: ./TradeLineItem.yml
+    $linkedData:
+      term: includedTradeLineItems
+      '@id': https://vocabulary.uncefact.org/specifiedTradeLineItem
+  netWeight:
+    title: A measure of the net weight (mass).
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: netWeight
+      '@id': >-
+        https://vocabulary.uncefact.org/netWeightMeasure
+  grossWeight:
+    title: >-
+      A measure of the gross weight (mass) which includes packaging but excludes
+      any transport equipment.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: grossWeight
+      '@id': >-
+        https://vocabulary.uncefact.org/grossWeightMeasure
+  height:
+    title: Height of the product
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: height
+      '@id': https://schema.org/height
+  width:
+    title: Width of the product
+    type: string
+    $linkedData:
+      term: width
+      '@id': https://schema.org/width
+  depth:
+    title: Depth of the Product
+    type: string
+    $linkedData:
+      term: depth
+      '@id': https://schema.org/depth
+  grossVolume:
+    title: Volume
+    description: Calculated by multiplying the width, height, and length of the packed cargo.
+    $ref: ./QuantitativeValue.yml
+    $linkedData:
+      term: grossVolume
+      '@id': https://vocabulary.uncefact.org/grossVolumeMeasure
+required:
+  - type
+example: |-
+  {
+    "type": ["Package"],
+    "physicalShippingMarks": "by ACRE AGE IS THE NEW BLACK",
+    "perPackageUnitQuantity": 1,
+    "includedTradeLineItems": [
+      {
+        "type": ["TradeLineItem"],
+        "description": "Rollators",
+        "itemCount": 540
+      }
+    ],
+    "netWeight": {
+      "type": ["QuantitativeValue"],
+      "value": "3834",
+      "unitCode": "kg"
+    },
+    "grossWeight": {
+      "type": ["QuantitativeValue"],
+      "value": "4302",
+      "unitCode": "kg"
+    },
+    "grossVolume": {
+      "type": ["QuantitativeValue"],
+      "value": "66.96",
+      "unitCode": "cbm"
+    }
+  }
