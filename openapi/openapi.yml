@@ -1784,6 +1784,18 @@ paths:
                 $ref: './components/schemas/common/SteelProduct.yml'
     
 
+  /schemas/common/TSCACertification.yml:
+    get:
+      tags:
+      - common
+      responses:
+        '200':
+          content:
+            application/yml:
+              schema:
+                $ref: './components/schemas/common/TSCACertification.yml'
+    
+
   /schemas/common/Taxonomy.yml:
     get:
       tags:
@@ -2048,6 +2060,18 @@ paths:
                 $ref: './components/schemas/common/USDAPPQ587PlantImportPermit.yml'
     
 
+  /schemas/common/USDASC6ExemptCommodity.yml:
+    get:
+      tags:
+      - common
+      responses:
+        '200':
+          content:
+            application/yml:
+              schema:
+                $ref: './components/schemas/common/USDASC6ExemptCommodity.yml'
+    
+
   /schemas/common/USDASpecialtyCrops237AForm.yml:
     get:
       tags:
@@ -2094,18 +2118,6 @@ paths:
             application/yml:
               schema:
                 $ref: './components/schemas/common/USMCAProduct.yml'
-    
-
-  /schemas/common/UsdaSc6.yml:
-    get:
-      tags:
-      - common
-      responses:
-        '200':
-          content:
-            application/yml:
-              schema:
-                $ref: './components/schemas/common/UsdaSc6.yml'
     
 
   /schemas/credentials/ActivityPubActorCard.yml:
@@ -2910,6 +2922,18 @@ paths:
             application/yml:
               schema:
                 $ref: './components/schemas/credentials/SoftwareBillofMaterialsCredential.yml'
+    
+
+  /schemas/credentials/TSCACertificationCredential.yml:
+    get:
+      tags:
+      - credentials
+      responses:
+        '200':
+          content:
+            application/yml:
+              schema:
+                $ref: './components/schemas/credentials/TSCACertificationCredential.yml'
     
 
   /schemas/credentials/ThingCredential.yml:
